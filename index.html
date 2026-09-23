@@ -1290,9 +1290,14 @@
   </div>
 
   <!-- viewport toggle -->
-  <div style="position:fixed;right:22px;bottom:22px;z-index:80;display:flex;background:#FFFFFF;border:1px solid #BFBFBF;box-shadow:0 8px 24px rgba(0,55,100,.18)">
-    <a href="#" onClick="{{ setDesktop }}" style="{{ vDesktop }}">Desktop</a>
-    <a href="#" onClick="{{ setMobile }}" style="{{ vMobile }}">Mobile</a>
+  <div style="position:fixed;right:22px;bottom:22px;z-index:80;display:flex;align-items:stretch;gap:8px">
+    <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+    <a href="https://ids-website-editor.netlify.app/admin/#/collections/pages/entries/home" target="_blank" style="display:flex;align-items:center;background:#003764;color:#FFFFFF;font-size:12px;font-weight:bold;letter-spacing:.04em;padding:0 14px;box-shadow:0 8px 24px rgba(0,55,100,.18)" style-hover="background:#DB6015">Edit this page</a>
+    </sc-if>
+    <div style="display:flex;background:#FFFFFF;border:1px solid #BFBFBF;box-shadow:0 8px 24px rgba(0,55,100,.18)">
+      <a href="#" onClick="{{ setDesktop }}" style="{{ vDesktop }}">Desktop</a>
+      <a href="#" onClick="{{ setMobile }}" style="{{ vMobile }}">Mobile</a>
+    </div>
   </div>
 
 </div>
