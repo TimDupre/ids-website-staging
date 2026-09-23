@@ -1,0 +1,87 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Netlify Identity + Git Gateway handles login here. Nothing works until that
+# piece is wired up on the Netlify side (separate step, tracked with Tim).
+
+publish_mode: simple
+media_folder: "assets"
+public_folder: "assets"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "home"
+        label: "Home Page"
+        file: "content/home.json"
+        fields:
+          - { label: "Hero", name: "hero", widget: "object", fields: [
+              { label: "Eyebrow", name: "eyebrow", widget: "string" },
+              { label: "Headline", name: "headline", widget: "string" },
+              { label: "Body", name: "body", widget: "text" },
+              { label: "Primary button text", name: "ctaPrimary", widget: "string" },
+              { label: "Secondary button text", name: "ctaSecondary", widget: "string" },
+            ] }
+          - { label: "Reassembly card", name: "reassembly", widget: "object", fields: [
+              { label: "Eyebrow", name: "eyebrow", widget: "string" },
+              { label: "Headline", name: "headline", widget: "string" },
+              { label: "Sources (list of chips)", name: "sources", widget: "list", field: { label: "Source", name: "source", widget: "string" } },
+              { label: "Result label", name: "resultLabel", widget: "string" },
+              { label: "Result text", name: "resultText", widget: "text" },
+              { label: "Footnote", name: "footnote", widget: "text" },
+            ] }
+          - { label: "Story (client is the hero)", name: "storyBrand", widget: "object", fields: [
+              { label: "Eyebrow", name: "eyebrow", widget: "string" },
+              { label: "Headline", name: "headline", widget: "text" },
+              { label: "Body", name: "body", widget: "text" },
+              { label: "Cards", name: "cards", widget: "list", fields: [
+                  { label: "Label", name: "label", widget: "string" },
+                  { label: "Text", name: "text", widget: "text" },
+                ] },
+            ] }
+          - { label: "The plan", name: "plan", widget: "object", fields: [
+              { label: "Eyebrow", name: "eyebrow", widget: "string" },
+              { label: "Headline", name: "headline", widget: "string" },
+              { label: "Steps", name: "steps", widget: "list", fields: [
+                  { label: "Number", name: "num", widget: "string" },
+                  { label: "Title", name: "title", widget: "string" },
+                  { label: "Text", name: "text", widget: "text" },
+                ] },
+              { label: "Primary button text", name: "ctaPrimary", widget: "string" },
+              { label: "Secondary button text", name: "ctaSecondary", widget: "string" },
+            ] }
+          - { label: "How we help", name: "howWeHelp", widget: "object", fields: [
+              { label: "Headline", name: "headline", widget: "string" },
+              { label: "Body", name: "body", widget: "text" },
+              { label: "Verticals", name: "verticals", widget: "list", fields: [
+                  { label: "Title", name: "title", widget: "string" },
+                  { label: "Subtitle", name: "subtitle", widget: "string" },
+                  { label: "Text", name: "text", widget: "text" },
+                ] },
+              { label: "Foundation eyebrow", name: "foundationEyebrow", widget: "string" },
+              { label: "Foundation title", name: "foundationTitle", widget: "string" },
+              { label: "Foundation text", name: "foundationText", widget: "text" },
+            ] }
+          - { label: "Statement band", name: "statementBand", widget: "object", fields: [
+              { label: "Eyebrow", name: "eyebrow", widget: "string" },
+              { label: "Headline", name: "headline", widget: "text" },
+              { label: "Body", name: "body", widget: "text" },
+              { label: "Points", name: "points", widget: "list", field: { label: "Point", name: "point", widget: "string" } },
+            ] }
+          - { label: "Can You...?", name: "canYou", widget: "object", fields: [
+              { label: "Eyebrow", name: "eyebrow", widget: "string" },
+              { label: "Headline", name: "headline", widget: "text" },
+              { label: "Body", name: "body", widget: "text" },
+              { label: "Questions", name: "questions", widget: "list", field: { label: "Question", name: "question", widget: "text" } },
+              { label: "Closing button text", name: "ctaFinal", widget: "string" },
+            ] }
+          - { label: "Beyond eDiscovery", name: "beyond", widget: "object", fields: [
+              { label: "Headline", name: "headline", widget: "string" },
+              { label: "Body paragraph 1", name: "body1", widget: "text" },
+              { label: "Body paragraph 2", name: "body2", widget: "text" },
+              { label: "\"Not\" list", name: "notList", widget: "list", field: { label: "Item", name: "item", widget: "string" } },
+              { label: "\"We are\" label", name: "weAreLabel", widget: "string" },
+              { label: "\"We are\" text", name: "weAreText", widget: "string" },
+            ] }
