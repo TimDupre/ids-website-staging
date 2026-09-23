@@ -3,6 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+  // Netlify Identity invite/recovery/confirmation links land on this
+  // homepage, not /admin/. Send them straight to the CMS login so the
+  // "set your password" step actually has something to attach to.
+  if (/invite_token=|recovery_token=|confirmation_token=|email_change_token=/.test(location.hash)) {
+    location.replace('/admin/' + location.hash);
+  }
+</script>
 <script src="./support.js"></script>
 </head>
 <body>
