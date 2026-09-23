@@ -74,24 +74,22 @@
       <div style="position:absolute;top:0;right:-80px;width:640px;height:100%;background:radial-gradient(circle at 60% 40%, rgba(219,96,21,.13) 0%, rgba(219,96,21,0) 62%);animation:idsGlow 14s ease-in-out infinite alternate"></div>
       <div style="position:relative;max-width:1200px;margin:0 auto;padding:{{ heroPad }};display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:44px;align-items:center">
         <div>
-          <div style="border-left:3px solid #DB6015;padding-left:14px;color:#DB6015;font-size:13px;font-weight:bold;letter-spacing:.16em;text-transform:uppercase;margin-bottom:26px">Truth Through Data</div>
-          <h1 style="font-family:Arial,Helvetica,sans-serif;font-weight:bold;font-size:{{ h1Size }};line-height:1.04;letter-spacing:-.025em;color:#003764;margin:0 0 24px;text-wrap:pretty">Know what your evidence shows before the other side does.</h1>
-          <p style="font-size:19px;line-height:1.6;color:#404040;margin:0 0 36px;max-width:560px;text-wrap:pretty">The story is rarely in one system. It is in the email, plus the text message, plus the GPS record, connected and tested and explained by an expert who will defend the conclusion. That is Truth Through Data.</p>
+          <div style="border-left:3px solid #DB6015;padding-left:14px;color:#DB6015;font-size:13px;font-weight:bold;letter-spacing:.16em;text-transform:uppercase;margin-bottom:26px">{{ home.hero.eyebrow }}</div>
+          <h1 style="font-family:Arial,Helvetica,sans-serif;font-weight:bold;font-size:{{ h1Size }};line-height:1.04;letter-spacing:-.025em;color:#003764;margin:0 0 24px;text-wrap:pretty">{{ home.hero.headline }}</h1>
+          <p style="font-size:19px;line-height:1.6;color:#404040;margin:0 0 36px;max-width:560px;text-wrap:pretty">{{ home.hero.body }}</p>
           <div style="display:flex;gap:14px;flex-wrap:wrap">
-            <a href="#" onClick="{{ goContact }}" style="background:#DB6015;color:#FFFFFF;font-size:15px;font-weight:bold;padding:16px 28px" style-hover="background:#003764;color:#FFFFFF">Start building your narrative</a>
-            <a href="#" onClick="{{ goServices }}" style="border:1px solid #003764;color:#003764;font-size:15px;font-weight:bold;padding:16px 28px" style-hover="background:#003764;color:#FFFFFF">See how we work</a>
+            <a href="#" onClick="{{ goContact }}" style="background:#DB6015;color:#FFFFFF;font-size:15px;font-weight:bold;padding:16px 28px" style-hover="background:#003764;color:#FFFFFF">{{ home.hero.ctaPrimary }}</a>
+            <a href="#" onClick="{{ goServices }}" style="border:1px solid #003764;color:#003764;font-size:15px;font-weight:bold;padding:16px 28px" style-hover="background:#003764;color:#FFFFFF">{{ home.hero.ctaSecondary }}</a>
           </div>
         </div>
         <div style="background:#FFFFFF;box-shadow:0 0 0 1px #E6E9ED;padding:32px 30px 28px">
-          <div style="font-size:13px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;color:#666666;margin-bottom:6px">What reassembly looks like</div>
-          <div style="font-size:22px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:24px">No single source told the story. Together they did.</div>
+          <div style="font-size:13px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;color:#666666;margin-bottom:6px">{{ home.reassembly.eyebrow }}</div>
+          <div style="font-size:22px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:24px">{{ home.reassembly.headline }}</div>
           <div style="display:grid;grid-template-columns:1fr 44px 1fr;align-items:center">
             <div style="display:grid;gap:8px">
-              <div style="background:#F6F7F9;box-shadow:0 0 0 1px #E6E9ED;padding:11px 14px;font-size:14px;font-weight:bold;color:#003764">Email</div>
-              <div style="background:#F6F7F9;box-shadow:0 0 0 1px #E6E9ED;padding:11px 14px;font-size:14px;font-weight:bold;color:#003764">Text messages</div>
-              <div style="background:#F6F7F9;box-shadow:0 0 0 1px #E6E9ED;padding:11px 14px;font-size:14px;font-weight:bold;color:#003764">GPS &amp; travel</div>
-              <div style="background:#F6F7F9;box-shadow:0 0 0 1px #E6E9ED;padding:11px 14px;font-size:14px;font-weight:bold;color:#003764">Badge access</div>
-              <div style="background:#F6F7F9;box-shadow:0 0 0 1px #E6E9ED;padding:11px 14px;font-size:14px;font-weight:bold;color:#003764">Cloud file activity</div>
+              <sc-for list="{{ home.reassembly.sources }}" as="src" hint-placeholder-count="5">
+              <div style="background:#F6F7F9;box-shadow:0 0 0 1px #E6E9ED;padding:11px 14px;font-size:14px;font-weight:bold;color:#003764">{{ src }}</div>
+              </sc-for>
             </div>
             <div style="position:relative;align-self:stretch">
               <div style="position:absolute;left:0;right:50%;top:10%;height:1px;background:#DB6015"></div>
@@ -103,11 +101,11 @@
               <div style="position:absolute;left:50%;right:0;top:50%;height:1px;background:#DB6015"></div>
             </div>
             <div style="background:#003764;padding:22px 18px">
-              <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:8px">Reassembled</div>
-              <div style="font-size:18px;font-weight:bold;line-height:1.25;color:#FFFFFF">One sequence of events, on one clock, that held up on cross</div>
+              <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:8px">{{ home.reassembly.resultLabel }}</div>
+              <div style="font-size:18px;font-weight:bold;line-height:1.25;color:#FFFFFF">{{ home.reassembly.resultText }}</div>
             </div>
           </div>
-          <p style="font-size:14px;line-height:1.6;color:#595959;margin:22px 0 0;padding-top:18px;border-top:1px solid #E6E9ED">The order of events was never in any one system. It existed across five, in five formats, on five different clocks. Reassembling it, and explaining why that reassembly is sound, is the work.</p>
+          <p style="font-size:14px;line-height:1.6;color:#595959;margin:22px 0 0;padding-top:18px;border-top:1px solid #E6E9ED">{{ home.reassembly.footnote }}</p>
         </div>
       </div>
       <div style="position:relative;border-top:1px solid #E6E9ED;background:#F6F7F9">
@@ -123,55 +121,41 @@
     <div style="background:#FFFFFF">
       <div data-reveal style="max-width:1200px;margin:0 auto;padding:88px 32px 24px;max-width:1200px">
         <div style="max-width:760px">
-          <h2 style="font-size:15px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;color:#666666;margin:0 0 18px">Your matter. Your client. Your outcome.</h2>
-          <p style="font-family:Arial,Helvetica,sans-serif;font-size:40px;font-weight:bold;line-height:1.14;color:#003764;margin:0 0 20px;text-wrap:pretty">You are the one who has to stand up and explain what happened. We make sure the evidence is ready when you do.</p>
+          <h2 style="font-size:15px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;color:#666666;margin:0 0 18px">{{ home.storyBrand.eyebrow }}</h2>
+          <p style="font-family:Arial,Helvetica,sans-serif;font-size:40px;font-weight:bold;line-height:1.14;color:#003764;margin:0 0 20px;text-wrap:pretty">{{ home.storyBrand.headline }}</p>
           <div data-rule style="width:56px;height:3px;background:#DB6015;transform-origin:left center;margin:0 0 22px"></div>
-          <p style="font-size:17px;line-height:1.6;color:#404040;margin:0;max-width:680px;text-wrap:pretty">Counsel carries the narrative. Their client carries the risk. Our role is the one in between: determine what the evidence shows, what it does not, and what it means for strategy. Then we stand in front of those conclusions when they are challenged. We stand behind our work, and we stand in front of our opinions.</p>
+          <p style="font-size:17px;line-height:1.6;color:#404040;margin:0;max-width:680px;text-wrap:pretty">{{ home.storyBrand.body }}</p>
         </div>
       </div>
       <div data-reveal style="max-width:1200px;margin:0 auto;padding:36px 32px 92px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2px;background:transparent">
+        <sc-for list="{{ home.storyBrand.cards }}" as="card" hint-placeholder-count="3">
         <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:34px 30px">
-          <div style="font-size:13px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:14px">The problem</div>
-          <p style="font-size:16px;line-height:1.6;margin:0;color:#595959">Emails, databases, cloud systems, mobile devices, transaction logs, AI-influenced environments. You have access to the data. Access is not clarity.</p>
+          <div style="font-size:13px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:14px">{{ card.label }}</div>
+          <p style="font-size:16px;line-height:1.6;margin:0;color:#595959">{{ card.text }}</p>
         </div>
-        <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:34px 30px">
-          <div style="font-size:13px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:14px">What is at stake</div>
-          <p style="font-size:16px;line-height:1.6;margin:0;color:#595959">Evidence lost before it is preserved. Assumptions documented as fact. A theory that reads well until an opposing expert takes it apart on cross.</p>
-        </div>
-        <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:34px 30px">
-          <div style="font-size:13px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:14px">The outcome</div>
-          <p style="font-size:16px;line-height:1.6;margin:0;color:#595959">A narrower range of bad outcomes. A clear view of what can be shown, where the risk sits, and conclusions built to withstand scrutiny.</p>
-        </div>
+        </sc-for>
       </div>
     </div>
 
     <!-- The plan -->
     <div style="background:#FFFFFF;border-top:1px solid #E6E9ED">
       <div data-reveal style="max-width:1200px;margin:0 auto;padding:80px 32px 30px">
-        <h2 style="font-size:15px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;color:#666666;margin:0 0 16px">How an engagement works</h2>
-        <p style="font-size:32px;font-weight:bold;letter-spacing:-.02em;line-height:1.14;color:#003764;margin:0 0 12px;max-width:700px;text-wrap:pretty">Three steps to an answer you can use.</p>
+        <h2 style="font-size:15px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;color:#666666;margin:0 0 16px">{{ home.plan.eyebrow }}</h2>
+        <p style="font-size:32px;font-weight:bold;letter-spacing:-.02em;line-height:1.14;color:#003764;margin:0 0 12px;max-width:700px;text-wrap:pretty">{{ home.plan.headline }}</p>
         <div data-rule style="width:56px;height:3px;background:#DB6015;transform-origin:left center;margin:0 0 8px"></div>
       </div>
       <div data-reveal style="max-width:1200px;margin:0 auto;padding:24px 32px 40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2px;background:transparent">
+        <sc-for list="{{ home.plan.steps }}" as="step" hint-placeholder-count="3">
         <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:32px 30px">
-          <div style="font-size:15px;letter-spacing:.14em;color:#DB6015;font-weight:bold;margin-bottom:14px">01</div>
-          <div style="font-size:19px;font-weight:bold;color:#003764;margin-bottom:10px">Call us with your question</div>
-          <p style="font-size:15px;line-height:1.6;margin:0">Not a scope document. The thing you need to establish, and the deadline you are working against. We will tell you on that call whether we are the right firm for it.</p>
+          <div style="font-size:15px;letter-spacing:.14em;color:#DB6015;font-weight:bold;margin-bottom:14px">{{ step.num }}</div>
+          <div style="font-size:19px;font-weight:bold;color:#003764;margin-bottom:10px">{{ step.title }}</div>
+          <p style="font-size:15px;line-height:1.6;margin:0">{{ step.text }}</p>
         </div>
-        <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:32px 30px">
-          <div style="font-size:15px;letter-spacing:.14em;color:#DB6015;font-weight:bold;margin-bottom:14px">02</div>
-          <div style="font-size:19px;font-weight:bold;color:#003764;margin-bottom:10px">Retain us and hand over the evidence</div>
-          <p style="font-size:15px;line-height:1.6;margin:0">Our engagement process is built to move at the pace of your matter. Once we are retained, your data comes to one team that manages it end to end.</p>
-        </div>
-        <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:32px 30px">
-          <div style="font-size:15px;letter-spacing:.14em;color:#DB6015;font-weight:bold;margin-bottom:14px">03</div>
-          <div style="font-size:19px;font-weight:bold;color:#003764;margin-bottom:10px">You get clarity you can act on</div>
-          <p style="font-size:15px;line-height:1.6;margin:0">What the evidence shows, what it does not, and what it means for strategy. Documented, and defended by the expert who reached it.</p>
-        </div>
+        </sc-for>
       </div>
       <div data-reveal style="max-width:1200px;margin:0 auto;padding:0 32px 84px;display:flex;gap:14px;flex-wrap:wrap;align-items:center">
-        <a href="#" onClick="{{ goContact }}" style="background:#DB6015;color:#FFFFFF;font-size:15px;font-weight:bold;padding:16px 28px" style-hover="background:#003764;color:#FFFFFF">Start building your narrative</a>
-        <a href="#" onClick="{{ goCases }}" style="border:1px solid #003764;color:#003764;font-size:15px;font-weight:bold;padding:16px 28px" style-hover="background:#003764;color:#FFFFFF">Or start with the Can You&hellip;? questions</a>
+        <a href="#" onClick="{{ goContact }}" style="background:#DB6015;color:#FFFFFF;font-size:15px;font-weight:bold;padding:16px 28px" style-hover="background:#003764;color:#FFFFFF">{{ home.plan.ctaPrimary }}</a>
+        <a href="#" onClick="{{ goCases }}" style="border:1px solid #003764;color:#003764;font-size:15px;font-weight:bold;padding:16px 28px" style-hover="background:#003764;color:#FFFFFF">{{ home.plan.ctaSecondary }}</a>
       </div>
     </div>
 
@@ -180,34 +164,26 @@
       <img src="assets/gfx-records-light.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55;animation:idsFloat 38s ease-in-out infinite alternate;will-change:transform" />
       <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(246,247,249,.94) 0%,rgba(246,247,249,.97) 100%)"></div>
       <div data-reveal style="position:relative;max-width:1200px;margin:0 auto;padding:88px 32px 30px">
-        <h2 style="font-size:26px;font-weight:bold;color:#404040;margin:0 0 12px">How we help</h2>
+        <h2 style="font-size:26px;font-weight:bold;color:#404040;margin:0 0 12px">{{ home.howWeHelp.headline }}</h2>
         <div data-rule style="width:56px;height:3px;background:#DB6015;transform-origin:left center;margin:0 0 18px"></div>
-        <p style="font-size:17px;line-height:1.6;color:#404040;margin:0;max-width:700px">Three phases of a dispute, each with its own expertise. All of it standing on one evidentiary foundation.</p>
+        <p style="font-size:17px;line-height:1.6;color:#404040;margin:0;max-width:700px">{{ home.howWeHelp.body }}</p>
       </div>
       <div data-reveal style="position:relative;max-width:1200px;margin:0 auto;padding:0 32px 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2px;background:transparent">
+        <sc-for list="{{ home.howWeHelp.verticals }}" as="v" hint-placeholder-count="3">
         <a href="#" onClick="{{ goServices }}" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;border-top:3px solid #003764;padding:34px 30px 36px;transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease" style-hover="transform:translateY(-4px);box-shadow:0 14px 34px rgba(0,55,100,.14);border-top-color:#DB6015">
-          <div style="font-size:26px;font-weight:bold;letter-spacing:-.01em;color:#003764;margin-bottom:6px">Discovery</div>
-          <div style="font-size:14px;font-style:italic;font-weight:bold;color:#DB6015;margin-bottom:14px">Getting to a complete, defensible record</div>
-          <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Identification, preservation, forensic collection, processing, hosting, and review support, including Relativity. The phase that determines what every later phase is allowed to say.</p>
+          <div style="font-size:26px;font-weight:bold;letter-spacing:-.01em;color:#003764;margin-bottom:6px">{{ v.title }}</div>
+          <div style="font-size:14px;font-style:italic;font-weight:bold;color:#DB6015;margin-bottom:14px">{{ v.subtitle }}</div>
+          <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">{{ v.text }}</p>
         </a>
-        <a href="#" onClick="{{ goServices }}" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;border-top:3px solid #003764;padding:34px 30px 36px;transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease" style-hover="transform:translateY(-4px);box-shadow:0 14px 34px rgba(0,55,100,.14);border-top-color:#DB6015">
-          <div style="font-size:26px;font-weight:bold;letter-spacing:-.01em;color:#003764;margin-bottom:6px">Merits</div>
-          <div style="font-size:14px;font-style:italic;font-weight:bold;color:#DB6015;margin-bottom:14px">What happened, and what the record supports</div>
-          <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Digital forensics, structured data analysis, authenticity, and reconstruction. Competing accounts tested against the artifacts rather than against each other.</p>
-        </a>
-        <a href="#" onClick="{{ goServices }}" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;border-top:3px solid #003764;padding:34px 30px 36px;transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease" style-hover="transform:translateY(-4px);box-shadow:0 14px 34px rgba(0,55,100,.14);border-top-color:#DB6015">
-          <div style="font-size:26px;font-weight:bold;letter-spacing:-.01em;color:#003764;margin-bottom:6px">Damages</div>
-          <div style="font-size:14px;font-style:italic;font-weight:bold;color:#DB6015;margin-bottom:14px">What the exposure is, and how firm the number is</div>
-          <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Forensic accounting, economics, and valuation. Scenarios rather than a single figure, with every assumption named, sourced, and testable by the other side.</p>
-        </a>
+        </sc-for>
       </div>
       <div data-reveal style="position:relative;max-width:1200px;margin:0 auto;padding:0 32px 88px">
         <div style="background:#003764;padding:34px 32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px;align-items:center">
           <div>
-            <div style="font-size:12px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;color:#DB6015;margin-bottom:10px">The foundation under all three</div>
-            <div style="font-size:28px;font-weight:bold;letter-spacing:-.01em;line-height:1.15;color:#FFFFFF">Evidence Intelligence</div>
+            <div style="font-size:12px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;color:#DB6015;margin-bottom:10px">{{ home.howWeHelp.foundationEyebrow }}</div>
+            <div style="font-size:28px;font-weight:bold;letter-spacing:-.01em;line-height:1.15;color:#FFFFFF">{{ home.howWeHelp.foundationTitle }}</div>
           </div>
-          <p style="font-size:16px;line-height:1.65;color:rgba(255,255,255,.84);margin:0">One team managing the evidence end to end: how it comes in, how custody is kept, how testing protocols are set, how the analysis is documented, and how the report is written. Vertical expertise is only as good as the foundation it stands on, so we own that foundation rather than renting it.</p>
+          <p style="font-size:16px;line-height:1.65;color:rgba(255,255,255,.84);margin:0">{{ home.howWeHelp.foundationText }}</p>
         </div>
       </div>
     </div>
@@ -218,13 +194,13 @@
       <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(246,247,249,.97) 0%,rgba(246,247,249,.86) 55%,rgba(246,247,249,.5) 100%)"></div>
       <div data-reveal style="position:relative;max-width:1200px;margin:0 auto;padding:96px 32px 100px">
         <div style="max-width:640px">
-          <div style="border-left:3px solid #DB6015;padding-left:14px;color:#DB6015;font-size:13px;font-weight:bold;letter-spacing:.16em;text-transform:uppercase;margin-bottom:24px">Digital Evidence, Understood</div>
-          <p style="font-family:Arial,Helvetica,sans-serif;font-size:40px;font-weight:bold;line-height:1.1;letter-spacing:-.02em;color:#003764;margin:0 0 20px;text-wrap:pretty">The timeline already exists. Someone has to reassemble it.</p>
-          <p style="font-size:17px;line-height:1.65;color:#404040;margin:0 0 32px">Events unfolded along a timeline. They were never recorded on one. Devices, cloud services, applications, and transactional systems each hold a fragment of it, in a different format, on a different clock. Layer those fragments over one another and a shape appears that no single source could show you. That triangulation is both the challenge of digital evidence and its strength.</p>
+          <div style="border-left:3px solid #DB6015;padding-left:14px;color:#DB6015;font-size:13px;font-weight:bold;letter-spacing:.16em;text-transform:uppercase;margin-bottom:24px">{{ home.statementBand.eyebrow }}</div>
+          <p style="font-family:Arial,Helvetica,sans-serif;font-size:40px;font-weight:bold;line-height:1.1;letter-spacing:-.02em;color:#003764;margin:0 0 20px;text-wrap:pretty">{{ home.statementBand.headline }}</p>
+          <p style="font-size:17px;line-height:1.65;color:#404040;margin:0 0 32px">{{ home.statementBand.body }}</p>
           <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:24px">
-            <div><div style="height:2px;background:#DB6015;margin-bottom:12px"></div><div style="font-size:15px;color:#003764;font-weight:bold;line-height:1.5">Triangulate across sources, not within one</div></div>
-            <div><div style="height:2px;background:#BFBFBF;margin-bottom:12px"></div><div style="font-size:15px;color:#595959;line-height:1.5">Name the gaps as gaps</div></div>
-            <div><div style="height:2px;background:#BFBFBF;margin-bottom:12px"></div><div style="font-size:15px;color:#595959;line-height:1.5">One expert who can explain the assembly</div></div>
+            <sc-for list="{{ home.statementBand.points }}" as="pt" hint-placeholder-count="3">
+            <div><div style="height:2px;background:#BFBFBF;margin-bottom:12px"></div><div style="font-size:15px;color:#595959;line-height:1.5">{{ pt }}</div></div>
+            </sc-for>
           </div>
         </div>
       </div>
@@ -235,16 +211,14 @@
       <img src="assets/gfx-signal-light.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.8;animation:idsFloat 38s ease-in-out infinite alternate;will-change:transform" />
       <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.95) 0%,rgba(255,255,255,.9) 55%,rgba(255,255,255,.96) 100%)"></div>
       <div data-reveal style="position:relative;max-width:1200px;margin:0 auto;padding:88px 32px 92px">
-        <div style="border-left:3px solid #DB6015;padding-left:14px;color:#DB6015;font-size:13px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;margin-bottom:22px">Can You&hellip;?</div>
-        <p style="font-family:Arial,Helvetica,sans-serif;font-size:36px;font-weight:bold;line-height:1.12;letter-spacing:-.02em;color:#003764;margin:0 0 12px;max-width:780px;text-wrap:pretty">Questions clients bring us. Anonymized, but every one of them is real.</p>
-        <p style="font-size:16px;line-height:1.6;color:#595959;margin:0 0 40px;max-width:640px">Our answer is yes, because we have done each of these. Some of them several times over. Select one to see how it was approached.</p>
+        <div style="border-left:3px solid #DB6015;padding-left:14px;color:#DB6015;font-size:13px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;margin-bottom:22px">{{ home.canYou.eyebrow }}</div>
+        <p style="font-family:Arial,Helvetica,sans-serif;font-size:36px;font-weight:bold;line-height:1.12;letter-spacing:-.02em;color:#003764;margin:0 0 12px;max-width:780px;text-wrap:pretty">{{ home.canYou.headline }}</p>
+        <p style="font-size:16px;line-height:1.6;color:#595959;margin:0 0 40px;max-width:640px">{{ home.canYou.body }}</p>
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px">
-          <a href="#" onClick="{{ goCases }}" style="display:flex;flex-direction:column;justify-content:space-between;gap:16px;border-left:3px solid #DB6015;background:#F6F7F9;padding:22px 24px;font-size:17px;line-height:1.5;color:#003764;font-weight:bold;transition:background .18s ease, transform .18s ease" style-hover="background:#FFF1E6;color:#003764;transform:translateY(-3px)">Can you disprove commonality in a class action built on billions of records?<span style="font-size:13px;font-weight:bold;letter-spacing:.08em;text-transform:uppercase;color:#DB6015">Read how &rarr;</span></a>
-          <a href="#" onClick="{{ goCases }}" style="display:flex;flex-direction:column;justify-content:space-between;gap:16px;border-left:3px solid #DB6015;background:#F6F7F9;padding:22px 24px;font-size:17px;line-height:1.5;color:#003764;font-weight:bold;transition:background .18s ease, transform .18s ease" style-hover="background:#FFF1E6;color:#003764;transform:translateY(-3px)">Can you authenticate evidence that everyone else has assumed is valid?<span style="font-size:13px;font-weight:bold;letter-spacing:.08em;text-transform:uppercase;color:#DB6015">Read how &rarr;</span></a>
-          <a href="#" onClick="{{ goCases }}" style="display:flex;flex-direction:column;justify-content:space-between;gap:16px;border-left:3px solid #DB6015;background:#F6F7F9;padding:22px 24px;font-size:17px;line-height:1.5;color:#003764;font-weight:bold;transition:background .18s ease, transform .18s ease" style-hover="background:#FFF1E6;color:#003764;transform:translateY(-3px)">Can you locate decades-old policies buried in millions of archived documents?<span style="font-size:13px;font-weight:bold;letter-spacing:.08em;text-transform:uppercase;color:#DB6015">Read how &rarr;</span></a>
-          <a href="#" onClick="{{ goCases }}" style="display:flex;flex-direction:column;justify-content:space-between;gap:16px;border-left:3px solid #DB6015;background:#F6F7F9;padding:22px 24px;font-size:17px;line-height:1.5;color:#003764;font-weight:bold;transition:background .18s ease, transform .18s ease" style-hover="background:#FFF1E6;color:#003764;transform:translateY(-3px)">Can you correlate mobile, cloud, and application data to reconstruct a timeline no one else can see?<span style="font-size:13px;font-weight:bold;letter-spacing:.08em;text-transform:uppercase;color:#DB6015">Read how &rarr;</span></a>
-          <a href="#" onClick="{{ goCases }}" style="display:flex;flex-direction:column;justify-content:space-between;gap:16px;border-left:3px solid #DB6015;background:#F6F7F9;padding:22px 24px;font-size:17px;line-height:1.5;color:#003764;font-weight:bold;transition:background .18s ease, transform .18s ease" style-hover="background:#FFF1E6;color:#003764;transform:translateY(-3px)">Can you resolve a matter without relying on email as the primary evidence source?<span style="font-size:13px;font-weight:bold;letter-spacing:.08em;text-transform:uppercase;color:#DB6015">Read how &rarr;</span></a>
-          <a href="#" onClick="{{ goCases }}" style="border-left:3px solid #003764;background:#003764;padding:22px 24px;font-size:17px;line-height:1.5;color:#FFFFFF;font-weight:bold;display:flex;align-items:center" style-hover="background:#DB6015;color:#FFFFFF">See how these questions get answered &rarr;</a>
+          <sc-for list="{{ home.canYou.questions }}" as="q" hint-placeholder-count="5">
+          <a href="#" onClick="{{ goCases }}" style="display:flex;flex-direction:column;justify-content:space-between;gap:16px;border-left:3px solid #DB6015;background:#F6F7F9;padding:22px 24px;font-size:17px;line-height:1.5;color:#003764;font-weight:bold;transition:background .18s ease, transform .18s ease" style-hover="background:#FFF1E6;color:#003764;transform:translateY(-3px)">{{ q }}<span style="font-size:13px;font-weight:bold;letter-spacing:.08em;text-transform:uppercase;color:#DB6015">Read how &rarr;</span></a>
+          </sc-for>
+          <a href="#" onClick="{{ goCases }}" style="border-left:3px solid #003764;background:#003764;padding:22px 24px;font-size:17px;line-height:1.5;color:#FFFFFF;font-weight:bold;display:flex;align-items:center" style-hover="background:#DB6015;color:#FFFFFF">{{ home.canYou.ctaFinal }}</a>
         </div>
       </div>
     </div>
@@ -255,16 +229,16 @@
       <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.97) 0%,rgba(255,255,255,.93) 60%,rgba(255,255,255,.97) 100%)"></div>
       <div data-reveal style="position:relative;max-width:1200px;margin:0 auto;padding:88px 32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:56px;align-items:start">
         <div>
-          <h2 style="font-size:26px;font-weight:bold;color:#404040;margin:0 0 12px">Beyond eDiscovery</h2>
+          <h2 style="font-size:26px;font-weight:bold;color:#404040;margin:0 0 12px">{{ home.beyond.headline }}</h2>
           <div data-rule style="width:56px;height:3px;background:#DB6015;transform-origin:left center;margin:0 0 22px"></div>
-          <p style="font-size:17px;line-height:1.65;color:#404040;margin:0 0 18px">We handle discovery, and we handle it well, in part because we rely on it ourselves. Our experts work on the evidence our own teams collect, process, and manage, which is exactly why the foundation has to be sound. But that is not why most clients call. They call because they need expert judgment on what the evidence means, and someone who will defend that judgment under oath.</p>
-          <p style="font-size:16px;line-height:1.65;color:#595959;margin:0">Technology enables the work. Expert reasoning governs the conclusions.</p>
+          <p style="font-size:17px;line-height:1.65;color:#404040;margin:0 0 18px">{{ home.beyond.body1 }}</p>
+          <p style="font-size:16px;line-height:1.65;color:#595959;margin:0">{{ home.beyond.body2 }}</p>
         </div>
         <div style="display:grid;gap:2px;background:transparent">
-          <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:22px 24px;display:flex;gap:16px;align-items:baseline"><span style="color:#DB6015;font-weight:bold;font-size:15px;flex:0 0 84px">Not</span><span style="font-size:16px;color:#404040">a processing vendor</span></div>
-          <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:22px 24px;display:flex;gap:16px;align-items:baseline"><span style="color:#DB6015;font-weight:bold;font-size:15px;flex:0 0 84px">Not</span><span style="font-size:16px;color:#404040">a staffing firm</span></div>
-          <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:22px 24px;display:flex;gap:16px;align-items:baseline"><span style="color:#DB6015;font-weight:bold;font-size:15px;flex:0 0 84px">Not</span><span style="font-size:16px;color:#404040">a software company</span></div>
-          <div style="background:#003764;padding:26px 24px;display:flex;gap:16px;align-items:baseline"><span style="color:#DB6015;font-weight:bold;font-size:15px;flex:0 0 84px">We are</span><span style="font-size:17px;color:#FFFFFF;font-weight:bold">a firm of experts who stand behind our work, and in front of our opinions</span></div>
+          <sc-for list="{{ home.beyond.notList }}" as="item" hint-placeholder-count="3">
+          <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:22px 24px;display:flex;gap:16px;align-items:baseline"><span style="color:#DB6015;font-weight:bold;font-size:15px;flex:0 0 84px">Not</span><span style="font-size:16px;color:#404040">{{ item }}</span></div>
+          </sc-for>
+          <div style="background:#003764;padding:26px 24px;display:flex;gap:16px;align-items:baseline"><span style="color:#DB6015;font-weight:bold;font-size:15px;flex:0 0 84px">{{ home.beyond.weAreLabel }}</span><span style="font-size:17px;color:#FFFFFF;font-weight:bold">{{ home.beyond.weAreText }}</span></div>
         </div>
       </div>
     </div>
@@ -1572,6 +1546,87 @@ const EXPERTS = [
     education: [], affiliations: [], talks: [], pubs: [] }
 ];
 
+// Default/fallback copy for the Home page, shown until content/home.json loads
+// (and if it ever fails to load). Editable content lives in that JSON file,
+// not here — this only prevents a flash of empty content on first paint.
+const HOME_DEFAULT = {
+  hero: {
+    eyebrow: "Truth Through Data",
+    headline: "Know what your evidence shows before the other side does.",
+    body: "The story is rarely in one system. It is in the email, plus the text message, plus the GPS record, connected and tested and explained by an expert who will defend the conclusion. That is Truth Through Data.",
+    ctaPrimary: "Start building your narrative",
+    ctaSecondary: "See how we work"
+  },
+  reassembly: {
+    eyebrow: "What reassembly looks like",
+    headline: "No single source told the story. Together they did.",
+    sources: ["Email", "Text messages", "GPS & travel", "Badge access", "Cloud file activity"],
+    resultLabel: "Reassembled",
+    resultText: "One sequence of events, on one clock, that held up on cross",
+    footnote: "The order of events was never in any one system. It existed across five, in five formats, on five different clocks. Reassembling it, and explaining why that reassembly is sound, is the work."
+  },
+  storyBrand: {
+    eyebrow: "Your matter. Your client. Your outcome.",
+    headline: "You are the one who has to stand up and explain what happened. We make sure the evidence is ready when you do.",
+    body: "Counsel carries the narrative. Their client carries the risk. Our role is the one in between: determine what the evidence shows, what it does not, and what it means for strategy. Then we stand in front of those conclusions when they are challenged. We stand behind our work, and we stand in front of our opinions.",
+    cards: [
+      { label: "The problem", text: "Emails, databases, cloud systems, mobile devices, transaction logs, AI-influenced environments. You have access to the data. Access is not clarity." },
+      { label: "What is at stake", text: "Evidence lost before it is preserved. Assumptions documented as fact. A theory that reads well until an opposing expert takes it apart on cross." },
+      { label: "The outcome", text: "A narrower range of bad outcomes. A clear view of what can be shown, where the risk sits, and conclusions built to withstand scrutiny." }
+    ]
+  },
+  plan: {
+    eyebrow: "How an engagement works",
+    headline: "Three steps to an answer you can use.",
+    steps: [
+      { num: "01", title: "Call us with your question", text: "Not a scope document. The thing you need to establish, and the deadline you are working against. We will tell you on that call whether we are the right firm for it." },
+      { num: "02", title: "Retain us and hand over the evidence", text: "Our engagement process is built to move at the pace of your matter. Once we are retained, your data comes to one team that manages it end to end." },
+      { num: "03", title: "You get clarity you can act on", text: "What the evidence shows, what it does not, and what it means for strategy. Documented, and defended by the expert who reached it." }
+    ],
+    ctaPrimary: "Start building your narrative",
+    ctaSecondary: "Or start with the Can You…? questions"
+  },
+  howWeHelp: {
+    headline: "How we help",
+    body: "Three phases of a dispute, each with its own expertise. All of it standing on one evidentiary foundation.",
+    verticals: [
+      { title: "Discovery", subtitle: "Getting to a complete, defensible record", text: "Identification, preservation, forensic collection, processing, hosting, and review support, including Relativity. The phase that determines what every later phase is allowed to say." },
+      { title: "Merits", subtitle: "What happened, and what the record supports", text: "Digital forensics, structured data analysis, authenticity, and reconstruction. Competing accounts tested against the artifacts rather than against each other." },
+      { title: "Damages", subtitle: "What the exposure is, and how firm the number is", text: "Forensic accounting, economics, and valuation. Scenarios rather than a single figure, with every assumption named, sourced, and testable by the other side." }
+    ],
+    foundationEyebrow: "The foundation under all three",
+    foundationTitle: "Evidence Intelligence",
+    foundationText: "One team managing the evidence end to end: how it comes in, how custody is kept, how testing protocols are set, how the analysis is documented, and how the report is written. Vertical expertise is only as good as the foundation it stands on, so we own that foundation rather than renting it."
+  },
+  statementBand: {
+    eyebrow: "Digital Evidence, Understood",
+    headline: "The timeline already exists. Someone has to reassemble it.",
+    body: "Events unfolded along a timeline. They were never recorded on one. Devices, cloud services, applications, and transactional systems each hold a fragment of it, in a different format, on a different clock. Layer those fragments over one another and a shape appears that no single source could show you. That triangulation is both the challenge of digital evidence and its strength.",
+    points: ["Triangulate across sources, not within one", "Name the gaps as gaps", "One expert who can explain the assembly"]
+  },
+  canYou: {
+    eyebrow: "Can You…?",
+    headline: "Questions clients bring us. Anonymized, but every one of them is real.",
+    body: "Our answer is yes, because we have done each of these. Some of them several times over. Select one to see how it was approached.",
+    questions: [
+      "Can you disprove commonality in a class action built on billions of records?",
+      "Can you authenticate evidence that everyone else has assumed is valid?",
+      "Can you locate decades-old policies buried in millions of archived documents?",
+      "Can you correlate mobile, cloud, and application data to reconstruct a timeline no one else can see?",
+      "Can you resolve a matter without relying on email as the primary evidence source?"
+    ],
+    ctaFinal: "See how these questions get answered →"
+  },
+  beyond: {
+    headline: "Beyond eDiscovery",
+    body1: "We handle discovery, and we handle it well, in part because we rely on it ourselves. Our experts work on the evidence our own teams collect, process, and manage, which is exactly why the foundation has to be sound. But that is not why most clients call. They call because they need expert judgment on what the evidence means, and someone who will defend that judgment under oath.",
+    body2: "Technology enables the work. Expert reasoning governs the conclusions.",
+    notList: ["a processing vendor", "a staffing firm", "a software company"],
+    weAreLabel: "We are",
+    weAreText: "a firm of experts who stand behind our work, and in front of our opinions"
+  }
+};
+
 class Component extends DCLogic {
   static bucket(w) {
     if (w < 760) return 'tight';
@@ -1580,9 +1635,13 @@ class Component extends DCLogic {
     return 'wide';
   }
 
-  state = { page: 'home', scrolled: false, open: 1, filter: 'All', view: 'desktop', need: '', sent: false, menuOpen: false, bucket: 'wide', roster: 'experts', sel: null, fileName: '', dragging: false, cat: 'All' };
+  state = { page: 'home', scrolled: false, open: 1, filter: 'All', view: 'desktop', need: '', sent: false, menuOpen: false, bucket: 'wide', roster: 'experts', sel: null, fileName: '', dragging: false, cat: 'All', homeContent: HOME_DEFAULT };
 
   componentDidMount() {
+    fetch('content/home.json', { cache: 'no-store' })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((json) => { if (json) this.setState({ homeContent: json }); })
+      .catch(() => {});
     this._onScroll = () => {
       const s = (window.scrollY || document.documentElement.scrollTop) > 12;
       if (s !== this.state.scrolled) this.setState({ scrolled: s });
@@ -1727,6 +1786,7 @@ class Component extends DCLogic {
     const narrow = b === 'mid';
 
     return {
+      home: this.state.homeContent,
       isHome: p === 'home', isServices: p === 'services', isExperts: p === 'experts',
       isCases: p === 'cases', isAI: p === 'ai', isInsights: p === 'insights',
       showClose: p !== 'contact',
