@@ -5,6 +5,10 @@ backend:
 # Netlify Identity + Git Gateway handles login here. Nothing works until that
 # piece is wired up on the Netlify side (separate step, tracked with Tim).
 
+# Powers the "View" link on an entry, taking you to the live published page
+# (Sevalla), not the Netlify copy used only for logging into this CMS.
+site_url: https://ids-staging-z4swi.kinsta.page
+
 publish_mode: simple
 media_folder: "assets"
 public_folder: "assets"
@@ -16,6 +20,7 @@ collections:
       - name: "home"
         label: "Home Page"
         file: "content/home.json"
+        preview_path: ""
         fields:
           - { label: "Hero", name: "hero", widget: "object", fields: [
               { label: "Eyebrow", name: "eyebrow", widget: "string" },
