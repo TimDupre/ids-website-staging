@@ -1482,16 +1482,12 @@
   </div>
   </div>
 
-  <!-- viewport toggle -->
-  <div style="position:fixed;right:22px;bottom:22px;z-index:80;display:flex;align-items:stretch;gap:8px">
-    <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
-    <a href="https://ids-website-editor.netlify.app/admin/#/collections/pages/entries/home" target="_blank" style="display:flex;align-items:center;background:#003764;color:#FFFFFF;font-size:12px;font-weight:bold;letter-spacing:.04em;padding:0 14px;box-shadow:0 8px 24px rgba(0,55,100,.18)" style-hover="background:#DB6015">Edit this page</a>
-    </sc-if>
-    <div style="display:flex;background:#FFFFFF;border:1px solid #BFBFBF;box-shadow:0 8px 24px rgba(0,55,100,.18)">
-      <a href="#" onClick="{{ setDesktop }}" style="{{ vDesktop }}">Desktop</a>
-      <a href="#" onClick="{{ setMobile }}" style="{{ vMobile }}">Mobile</a>
-    </div>
+  <!-- edit-this-page shortcut -->
+  <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+  <div style="position:fixed;right:22px;bottom:22px;z-index:80">
+    <a href="https://ids-website-editor.netlify.app/admin/#/collections/pages/entries/home" target="_blank" style="display:flex;align-items:center;background:#003764;color:#FFFFFF;font-size:12px;font-weight:bold;letter-spacing:.04em;padding:12px 14px;box-shadow:0 8px 24px rgba(0,55,100,.18)" style-hover="background:#DB6015">Edit this page</a>
   </div>
+  </sc-if>
 
 </div>
 
@@ -1841,7 +1837,7 @@ class Component extends DCLogic {
     return 'wide';
   }
 
-  state = { page: 'home', scrolled: false, open: 1, filter: 'All', view: 'desktop', need: '', sent: false, menuOpen: false, bucket: 'wide', roster: 'experts', sel: null, fileName: '', dragging: false, cat: 'All', homeContent: HOME_DEFAULT };
+  state = { page: 'home', scrolled: false, open: 1, filter: 'All', need: '', sent: false, menuOpen: false, bucket: 'wide', roster: 'experts', sel: null, fileName: '', dragging: false, cat: 'All', homeContent: HOME_DEFAULT };
 
   componentDidMount() {
     fetch('content/home.json', { cache: 'no-store' })
@@ -1871,7 +1867,7 @@ class Component extends DCLogic {
     if (prevState.page !== this.state.page) {
       window.scrollTo(0, 0);
       setTimeout(() => this._observe(), 30);
-    } else if (prevState.filter !== this.state.filter || prevState.view !== this.state.view) {
+    } else if (prevState.filter !== this.state.filter) {
       this._observe();
     }
   }
@@ -1951,11 +1947,6 @@ class Component extends DCLogic {
       (active ? '#003764' : '#F6F7F9') + ';color:' + (active ? '#FFFFFF' : '#666666') +
       ';box-shadow:0 0 0 1px #E6E9ED;white-space:nowrap';
   }
-  vbtn(active) {
-    return 'font-size:12px;font-weight:bold;letter-spacing:.08em;text-transform:uppercase;padding:11px 16px;background:' +
-      (active ? '#003764' : '#FFFFFF') + ';color:' + (active ? '#FFFFFF' : '#666666');
-  }
-
   renderVals() {
     const COVER = 'position:absolute;inset:0;background-color:#001D40;background-size:cover;background-position:center;transition:transform .9s cubic-bezier(.2,.7,.2,1)';
     const p = this.state.page;
@@ -1985,8 +1976,7 @@ class Component extends DCLogic {
       (this.state.need === v ? '#DB6015' : '#BFBFBF') + ';background:' + (this.state.need === v ? '#FFF1E6' : '#FFFFFF') +
       ';color:' + (this.state.need === v ? '#DB6015' : '#404040');
     const pick = (v) => (e) => { e.preventDefault(); this.setState({ need: v }); };
-    const mobile = this.state.view === 'mobile';
-    const b = mobile ? 'tight' : this.state.bucket;
+    const b = this.state.bucket;
     const tight = b === 'tight';
     const compact = tight || b === 'compact';
     const narrow = b === 'mid';
@@ -2104,11 +2094,8 @@ class Component extends DCLogic {
       heroPad: tight ? '52px 24px 56px' : '96px 32px 104px',
       h1Size: tight ? '38px' : '56px',
       subH1Size: tight ? '34px' : '50px',
-      frameWidth: this.state.view === 'mobile' ? '430px' : '100%',
-      frameBorder: this.state.view === 'mobile' ? '1px solid #BFBFBF' : 'none',
-      setDesktop: (e) => { e.preventDefault(); this.setState({ view: 'desktop' }); },
-      setMobile: (e) => { e.preventDefault(); this.setState({ view: 'mobile' }); },
-      vDesktop: this.vbtn(this.state.view === 'desktop'), vMobile: this.vbtn(this.state.view === 'mobile'),
+      frameWidth: '100%',
+      frameBorder: 'none',
       needForensics: need('forensics'), needData: need('data'), needDamages: need('damages'),
       needAI: need('ai'), needNotSure: need('notsure'),
       pickForensics: pick('forensics'), pickData: pick('data'), pickDamages: pick('damages'),
