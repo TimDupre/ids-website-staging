@@ -47,7 +47,7 @@ img { max-width:100%; }
 
 /* About Us mega-menu (desktop only) */
 .nav-item { position: static; display: flex; align-items: center; }
-.nav-item > button { font: 700 15px var(--display); color: #003764; background: none; border: 0; padding: 6px 0; cursor: pointer; display: flex; align-items: center; gap: 6px; white-space: nowrap; }
+.nav-item > button { font: 700 14px var(--display); letter-spacing:.04em; text-transform:uppercase; color: #003764; background: none; border: 0; padding: 6px 0; cursor: pointer; display: flex; align-items: center; gap: 6px; white-space: nowrap; }
 .nav-item > button::after { content:""; width:6px; height:6px; border-right:1.5px solid currentColor; border-bottom:1.5px solid currentColor; transform: translateY(-2px) rotate(45deg); transition: transform .15s; }
 .nav-item > button[aria-expanded="true"] { color: var(--orange); }
 .nav-item > button[aria-expanded="true"]::after { transform: translateY(2px) rotate(-135deg); }
@@ -211,6 +211,23 @@ details.disc[open] .plus::after { content: "\2013"; }
 .st p { margin:0; font-size:15px; line-height:1.6; color:#595959; }
 @media (max-width:860px) { .steps { grid-template-columns:1fr; gap:28px; } .steps::before { left:22px; right:auto; top:0; bottom:0; border-top:0; border-left:2px solid var(--orange); } .st { padding:0 0 0 72px; } }
 
+/* Insights post body (migrated article content) */
+.post-body { font-size:17px; line-height:1.75; color:#404040; }
+.post-body p { margin:0 0 22px; }
+.post-body h2 { font-size:28px; font-weight:bold; color:#003764; margin:44px 0 16px; line-height:1.22; }
+.post-body h3 { font-size:22px; font-weight:bold; color:#003764; margin:36px 0 14px; line-height:1.28; }
+.post-body h4 { font-size:18px; font-weight:bold; color:#003764; margin:28px 0 12px; }
+.post-body ul, .post-body ol { margin:0 0 22px; padding-left:24px; }
+.post-body li { margin-bottom:10px; }
+.post-body a { color:#DB6015; }
+.post-body a:hover { color:#003764; }
+.post-body strong { color:#16212C; }
+.post-body img { display:block; max-width:100%; height:auto; margin:28px 0; }
+.post-body hr { border:0; border-top:1px solid #E6E9ED; margin:36px 0; }
+.post-body .wp-block-buttons { margin:28px 0; list-style:none; padding:0; }
+.post-body .wp-block-button__link { display:inline-block; background:#DB6015 !important; color:#FFFFFF !important; padding:13px 22px; font-weight:bold; text-decoration:none !important; }
+.post-body .wp-block-button__link:hover { background:#003764 !important; }
+
 /* Closing CTA box (shared across pages) */
 .close-cta { border:1px solid #E6E9ED; display:flex; flex-direction:column; }
 .close-cta .primary { background:var(--band); padding:30px 30px 28px; }
@@ -335,9 +352,9 @@ details.disc[open] .plus::after { content: "\2013"; }
 
 <div style="background:#FFFFFF">
   <div style="max-width:1200px;margin:0 auto;padding:64px 32px 0">
-    <a href="https://idsinc.com/beyond-chain-of-custody/" target="_blank" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0;border:1px solid #E6E9ED;background:#FFFFFF">
+    <a href="/insights/beyond-chain-of-custody/" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0;border:1px solid #E6E9ED;background:#FFFFFF">
       <div style="min-height:340px;position:relative;overflow:hidden;background:#001D40">
-        <img src="https://idsinc.com/wp-content/uploads/2026/07/Beyond-Chain-of-Custody-The-Case-for-Proof-of-Origin-e1784667788862.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+        <img src="/assets/uploads/Beyond-Chain-of-Custody-The-Case-for-Proof-of-Origin-e1784667788862.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
         <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,29,64,.42),rgba(0,29,64,.05))"></div>
         <div style="position:absolute;left:34px;top:32px;color:#DB6015;font-size:12px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase">Featured</div>
       </div>
@@ -356,424 +373,424 @@ details.disc[open] .plus::after { content: "\2013"; }
   </div>
 
   <div style="max-width:1200px;margin:0 auto;padding:26px 32px 40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px">
-    <a href="https://idsinc.com/ai-in-adjudication/" target="_blank" data-cat="AI & Emerging Tech" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2026/08/Are-You-Ready-for-AI-in-Adjudication-e1787777124332.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+    <a href="/insights/ai-in-adjudication/" data-cat="AI & Emerging Tech" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/Are-You-Ready-for-AI-in-Adjudication-e1787777124332.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">AI & Emerging Tech</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">Are You Ready for AI in Adjudication?</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">When a decision-maker leans on a model, the questions counsel has to ask change shape.</p>
   </div>
 </a>
-<a href="https://idsinc.com/pre-trial-framework/" target="_blank" data-cat="Litigation Strategy" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2026/08/Win-the-Digital-Case-Before-the-Trial-Begins-e1787167357978.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/pre-trial-framework/" data-cat="Litigation Strategy" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/Win-the-Digital-Case-Before-the-Trial-Begins-e1787167357978.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Litigation Strategy</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">Win the Digital Case Before the Trial Begins</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">A pre-trial framework for getting the evidence in order while it still changes the outcome.</p>
   </div>
 </a>
-<a href="https://idsinc.com/presenting-digital-evidence-to-juries/" target="_blank" data-cat="Digital Evidence" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2026/08/TGC-Smoking-Trend-e1786629668144.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/presenting-digital-evidence-to-juries/" data-cat="Digital Evidence" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/TGC-Smoking-Trend-e1786629668144.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Digital Evidence</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">The Smoking Trend: Presenting Digital Evidence to Juries</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">The exhibit that persuades is rarely the one that is technically complete.</p>
   </div>
 </a>
-<a href="https://idsinc.com/ids-talks-our-newest-team-member-ken-gustafson-with-drew-oshaughnessy/" target="_blank" data-cat="iDS Talks" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2026/08/iDS-talks-art-6.5.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/ids-talks-our-newest-team-member-ken-gustafson-with-drew-oshaughnessy/" data-cat="iDS Talks" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/iDS-talks-art-6.5.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">iDS Talks</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">Our Newest Team Member, Ken Gustafson</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Ken Gustafson on economics and valuation, with Drew O’Shaughnessy.</p>
   </div>
 </a>
-<a href="https://idsinc.com/internet-of-things-evidence/" target="_blank" data-cat="Digital Evidence" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2026/08/08.03-ids-blog-IoT-TGCblog-e1785848524153.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/internet-of-things-evidence/" data-cat="Digital Evidence" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/08.03-ids-blog-IoT-TGCblog-e1785848524153.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Digital Evidence</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">Your Smart Home Has a Long Memory</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">IoT evidence in litigation, and the records people forget their houses are keeping.</p>
   </div>
 </a>
-<a href="https://idsinc.com/beyond-chain-of-custody/" target="_blank" data-cat="Digital Evidence" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2026/07/Beyond-Chain-of-Custody-The-Case-for-Proof-of-Origin-e1784667788862.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/beyond-chain-of-custody/" data-cat="Digital Evidence" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/Beyond-Chain-of-Custody-The-Case-for-Proof-of-Origin-e1784667788862.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Digital Evidence</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">Beyond Chain of Custody: The Case for Proof of Origin</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Repeatability carried defensibility for two decades. Probabilistic systems do not repeat.</p>
   </div>
 </a>
-<a href="https://idsinc.com/follow-the-data-not-the-phone/" target="_blank" data-cat="Forensics" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2026/07/Follow-the-Data-Not-the-Phone-e1783955082153.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/follow-the-data-not-the-phone/" data-cat="Forensics" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/Follow-the-Data-Not-the-Phone-e1783955082153.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Forensics</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">Follow the Data, Not the Phone</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Conduct moved to devices, cloud services, and applications. Collection habits have not always followed.</p>
   </div>
 </a>
-<a href="https://idsinc.com/deepfakes-in-the-courtroom/" target="_blank" data-cat="AI & Emerging Tech" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2026/07/Deepfakes-in-the-Courtroom-Can-You-Trust-the-Evidence--e1783370194118.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/deepfakes-in-the-courtroom/" data-cat="AI & Emerging Tech" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/Deepfakes-in-the-Courtroom-Can-You-Trust-the-Evidence--e1783370194118.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">AI & Emerging Tech</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">Deepfakes in the Courtroom: Can You Trust the Evidence?</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">What can be established about an artifact that may have been generated rather than recorded.</p>
   </div>
 </a>
-<a href="https://idsinc.com/what-examiner-looks-for/" target="_blank" data-cat="Forensics" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2026/07/What-the-Examiner-Is-Actually-Looking-For-LIV-Golf-Series-Part-2-of-4-e1783007906646.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/what-examiner-looks-for/" data-cat="Forensics" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/What-the-Examiner-Is-Actually-Looking-For-LIV-Golf-Series-Part-2-of-4-e1783007906646.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Forensics</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">What the Examiner Is Actually Looking For</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">LIV Golf series, part two. Teddy Brown and Mark Clews on how an examination really proceeds.</p>
   </div>
 </a>
-<a href="https://idsinc.com/digital-forensics-kincade-fire/" target="_blank" data-cat="Forensics" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2026/06/When-the-Smoke-Clears-Digital-Forensics-and-the-Kincade-Fire-e1782140940319.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/digital-forensics-kincade-fire/" data-cat="Forensics" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/When-the-Smoke-Clears-Digital-Forensics-and-the-Kincade-Fire-e1782140940319.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Forensics</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">When the Smoke Clears: Digital Forensics and the Kincade Fire</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Reconstructing a sequence of events when the physical scene is gone.</p>
   </div>
 </a>
-<a href="https://idsinc.com/ids-talks-out-of-bounds-unpacking-the-taylormade-v-callaway-lawsuit-w-bobby-williams-guests/" target="_blank" data-cat="iDS Talks" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2026/06/iDS-talks-art-6.42.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/ids-talks-out-of-bounds-unpacking-the-taylormade-v-callaway-lawsuit-w-bobby-williams-guests/" data-cat="iDS Talks" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/iDS-talks-art-6.42.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">iDS Talks</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">Out of Bounds: Unpacking TaylorMade v. Callaway</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Bobby Williams and Drew O’Shaughnessy on the false advertising dispute.</p>
   </div>
 </a>
-<a href="https://idsinc.com/system-generated-evidence/" target="_blank" data-cat="Digital Evidence" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2026/06/The-Courtrooms-New-Witness-System-Generated-Evidence-e1781205004235.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/system-generated-evidence/" data-cat="Digital Evidence" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/The-Courtrooms-New-Witness-System-Generated-Evidence-e1781205004235.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Digital Evidence</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">The Courtroom’s New Witness: System-Generated Evidence</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Records nobody wrote, offered as proof of what people did.</p>
   </div>
 </a>
-<a href="https://idsinc.com/liv-golf-collapse/" target="_blank" data-cat="Litigation Strategy" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2026/06/The-Digital-Paper-Trail-What-the-LIV-Golf-Collapse-Already-Tells-Us-2-e1780583010978.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/liv-golf-collapse/" data-cat="Litigation Strategy" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/The-Digital-Paper-Trail-What-the-LIV-Golf-Collapse-Already-Tells-Us-2-e1780583010978.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Litigation Strategy</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">The Digital Paper Trail: What the LIV Golf Collapse Tells Us</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">What the record already shows before anyone is deposed.</p>
   </div>
 </a>
-<a href="https://idsinc.com/technology-stack-concealment/" target="_blank" data-cat="Forensics" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2026/06/Why-the-Modern-Technology-Stack-Makes-Concealment-So-Hard-e1780429781208.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/technology-stack-concealment/" data-cat="Forensics" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/Why-the-Modern-Technology-Stack-Makes-Concealment-So-Hard-e1780429781208.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Forensics</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">Why the Modern Technology Stack Makes Concealment So Hard</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Every system keeps its own copy, on its own clock.</p>
   </div>
 </a>
-<a href="https://idsinc.com/ai-in-your-legal-firm/" target="_blank" data-cat="AI & Emerging Tech" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2026/05/iDS-May-2026-Blogs-e1779304134877.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/ai-in-your-legal-firm/" data-cat="AI & Emerging Tech" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/iDS-May-2026-Blogs-e1779304134877.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">AI & Emerging Tech</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">Before You Deploy AI in Your Legal Department, Ask These Five Questions</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Five questions to consider before prompting. Does the tool fit your process?</p>
   </div>
 </a>
-<a href="https://idsinc.com/building-teams/" target="_blank" data-cat="Leadership" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2026/05/iDS-May-2026-Blogs2-e1779114330416.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/building-teams/" data-cat="Leadership" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/iDS-May-2026-Blogs2-e1779114330416.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Leadership</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">The One Question That Builds Clarity, Confidence, and Resilient Teams</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Keep asking why, even when you think you already know the answer.</p>
   </div>
 </a>
-<a href="https://idsinc.com/evolution-of-ediscovery/" target="_blank" data-cat="Litigation Strategy" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2026/04/Bankers-Boxes-to-the-Cloud-The-Evolution-of-eDiscovery-scaled-e1777561155405.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/evolution-of-ediscovery/" data-cat="Litigation Strategy" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/Bankers-Boxes-to-the-Cloud-The-Evolution-of-eDiscovery-scaled-e1777561155405.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Litigation Strategy</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">Banker’s Boxes to the Cloud: The Evolution of eDiscovery</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">How the discipline got here, and what it means for the next decade.</p>
   </div>
 </a>
-<a href="https://idsinc.com/taylormade-v-callaway/" target="_blank" data-cat="IP & Employee Risk" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2026/04/TaylorMade-v.-Callaway-scaled-e1777558950600.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/taylormade-v-callaway/" data-cat="IP & Employee Risk" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/TaylorMade-v.-Callaway-scaled-e1777558950600.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">IP & Employee Risk</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">TaylorMade v. Callaway: What the Golf Ball Lawsuit Means for Sports Litigation</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">False advertising, testing data, and the evidentiary questions underneath.</p>
   </div>
 </a>
-<a href="https://idsinc.com/when-ai-goes-on-trial/" target="_blank" data-cat="AI & Emerging Tech" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2026/04/When-AI-Goes-on-Trial-scaled-e1777301755886.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/when-ai-goes-on-trial/" data-cat="AI & Emerging Tech" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/When-AI-Goes-on-Trial-scaled-e1777301755886.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">AI & Emerging Tech</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">When AI Goes on Trial</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">What happens when the system itself becomes the subject of the dispute.</p>
   </div>
 </a>
-<a href="https://idsinc.com/forensic-data-takes-the-stand/" target="_blank" data-cat="Digital Evidence" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2026/04/When-Forensic-Data-Takes-the-Stand-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/forensic-data-takes-the-stand/" data-cat="Digital Evidence" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/When-Forensic-Data-Takes-the-Stand-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Digital Evidence</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">When Forensic Data Takes the Stand</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">The gap between having the artifact and being able to use it.</p>
   </div>
 </a>
-<a href="https://idsinc.com/boutique-firm-is-back/" target="_blank" data-cat="AI & Emerging Tech" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2026/04/The-Boutique-Firm-Is-Back-—-And-AI-Is-Why-scaled-e1776183656628.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/boutique-firm-is-back/" data-cat="AI & Emerging Tech" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/The-Boutique-Firm-Is-Back-—-And-AI-Is-Why-scaled-e1776183656628.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">AI & Emerging Tech</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">The Boutique Firm Is Back, and AI Is Why</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Leverage used to require headcount. Hunter McMahon on what changed.</p>
   </div>
 </a>
-<a href="https://idsinc.com/caught-on-company-time/" target="_blank" data-cat="IP & Employee Risk" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2026/04/Caught-on-Company-Time-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/caught-on-company-time/" data-cat="IP & Employee Risk" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/Caught-on-Company-Time-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">IP & Employee Risk</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">Caught on Company Time</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">What the corporate record shows about conduct on corporate systems.</p>
   </div>
 </a>
-<a href="https://idsinc.com/case-for-human-expertise/" target="_blank" data-cat="AI & Emerging Tech" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2026/04/The-Case-for-Human-Expertise-in-an-AI-World-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/case-for-human-expertise/" data-cat="AI & Emerging Tech" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/The-Case-for-Human-Expertise-in-an-AI-World-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">AI & Emerging Tech</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">The Case for Human Expertise in an AI World</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Not all outcomes are created equal, however fast you reach them.</p>
   </div>
 </a>
-<a href="https://idsinc.com/broken-covenants/" target="_blank" data-cat="IP & Employee Risk" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2026/04/Broken-Covenants-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/broken-covenants/" data-cat="IP & Employee Risk" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/Broken-Covenants-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">IP & Employee Risk</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">Private Messages, Public Consequences</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">The forensic trail behind non-compete violations.</p>
   </div>
 </a>
-<a href="https://idsinc.com/never-stop-asking-why/" target="_blank" data-cat="Investigations" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2026/04/The-Best-Investigators-Never-Stop-Asking-22Why22-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/never-stop-asking-why/" data-cat="Investigations" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/The-Best-Investigators-Never-Stop-Asking-22Why22-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Investigations</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">The Best Investigators Never Stop Asking Why</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Curiosity as method, not temperament.</p>
   </div>
 </a>
-<a href="https://idsinc.com/intellectual-property-data/" target="_blank" data-cat="IP & Employee Risk" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2026/03/LEX-Part-1-Invisible-Heist-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/intellectual-property-data/" data-cat="IP & Employee Risk" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/LEX-Part-1-Invisible-Heist-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">IP & Employee Risk</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">When Intellectual Property Walks Out the Door, the Data Stays Behind</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">The invisible heist, and what it leaves on the systems.</p>
   </div>
 </a>
-<a href="https://idsinc.com/ai-information-governance-risks/" target="_blank" data-cat="Privacy & Compliance" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2026/03/AI-Is-Already-in-Your-Organization.-Is-Your-Information-Governance-Keeping-Up-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/ai-information-governance-risks/" data-cat="Privacy & Compliance" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/AI-Is-Already-in-Your-Organization.-Is-Your-Information-Governance-Keeping-Up-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Privacy & Compliance</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">AI Is Already in Your Organization. Is Your Information Governance Keeping Up?</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Shadow AI use is already creating records you will have to account for.</p>
   </div>
 </a>
-<a href="https://idsinc.com/sparkle-service-leadership/" target="_blank" data-cat="iDS Talks" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2026/03/iDS-talks-art-6.1.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/sparkle-service-leadership/" data-cat="iDS Talks" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/iDS-talks-art-6.1.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">iDS Talks</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">Sparkle, Service & Leadership</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Bobby Williams and Bree Murphy.</p>
   </div>
 </a>
-<a href="https://idsinc.com/navigating-ediscovery-on-mobile/" target="_blank" data-cat="Forensics" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2026/03/Mobile-Data-Real-Consequences-Navigating-eDiscovery-on-Personal-Devices-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/navigating-ediscovery-on-mobile/" data-cat="Forensics" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/Mobile-Data-Real-Consequences-Navigating-eDiscovery-on-Personal-Devices-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Forensics</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">Mobile Data, Real Consequences: eDiscovery on Personal Devices</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">BYOD, and the collection problem it creates.</p>
   </div>
 </a>
-<a href="https://idsinc.com/ediscovery-response-to-epstein-files/" target="_blank" data-cat="iDS Talks" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2026/03/iDS-talks-art-6.2.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/ediscovery-response-to-epstein-files/" data-cat="iDS Talks" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/iDS-talks-art-6.2.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">iDS Talks</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">An eDiscovery Response to the Epstein Files</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Bobby Williams and Drew O’Shaughnessy on discovery at extreme scale.</p>
   </div>
 </a>
-<a href="https://idsinc.com/forensic-data-validation/" target="_blank" data-cat="AI & Emerging Tech" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2025/11/The-Fake-the-Forensic-and-the-Fight-for-Truth-scaled-e1764101619125.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/forensic-data-validation/" data-cat="AI & Emerging Tech" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/The-Fake-the-Forensic-and-the-Fight-for-Truth-scaled-e1764101619125.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">AI & Emerging Tech</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">The Fake, the Forensic, and the Fight for Truth</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Forensic data validation when the artifact may have been generated.</p>
   </div>
 </a>
-<a href="https://idsinc.com/advantages-of-ai/" target="_blank" data-cat="AI & Emerging Tech" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2025/11/The-AI-Advantage-scaled-e1763660545280.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/advantages-of-ai/" data-cat="AI & Emerging Tech" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/The-AI-Advantage-scaled-e1763660545280.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">AI & Emerging Tech</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">Faster Isn’t Better: The Real Advantage of AI</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Speed is the least interesting thing AI offers.</p>
   </div>
 </a>
-<a href="https://idsinc.com/cross-border-data/" target="_blank" data-cat="Investigations" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2025/11/From-Data-Burden-to-Strategic-Advantage-scaled-e1762374688317.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/cross-border-data/" data-cat="Investigations" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/From-Data-Burden-to-Strategic-Advantage-scaled-e1762374688317.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Investigations</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">From Data Burden to Strategic Advantage</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Cross-border data in investigations, treated as an asset rather than a cost.</p>
   </div>
 </a>
-<a href="https://idsinc.com/select-plaintiff-analysis/" target="_blank" data-cat="Structured Data" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2025/09/Initial-Look-at-Select-Plaintiffs-vs.-Entire-Class-Analysis-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/select-plaintiff-analysis/" data-cat="Structured Data" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/Initial-Look-at-Select-Plaintiffs-vs.-Entire-Class-Analysis-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Structured Data</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">Initial Look at Select Plaintiffs vs. Entire Class Analysis</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Phased discovery and early case assessment on class data.</p>
   </div>
 </a>
-<a href="https://idsinc.com/multi-source-data/" target="_blank" data-cat="Structured Data" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2025/06/Data-Layers-of-Truth-The-Power-of-Multiple-Sources-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/multi-source-data/" data-cat="Structured Data" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/Data-Layers-of-Truth-The-Power-of-Multiple-Sources-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Structured Data</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">Data Layers of Truth: The Power of Multiple Sources</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Why single-source analysis keeps getting reversed.</p>
   </div>
 </a>
-<a href="https://idsinc.com/data-skepticism/" target="_blank" data-cat="Structured Data" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2025/03/iDS-Blog2025-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/data-skepticism/" data-cat="Structured Data" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/iDS-Blog2025-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Structured Data</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">Rethinking Data Assumptions: The Power of Skepticism</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Time zones, verification technique, and the errors that survive review.</p>
   </div>
 </a>
-<a href="https://idsinc.com/digital-evidence-authentication/" target="_blank" data-cat="Digital Evidence" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2025/05/Forgery-Metadata-and-the-190K-Lesson-What-Laba-v.-JBO-Means-for-Digital-Evidence-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/digital-evidence-authentication/" data-cat="Digital Evidence" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/Forgery-Metadata-and-the-190K-Lesson-What-Laba-v.-JBO-Means-for-Digital-Evidence-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Digital Evidence</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">Forgery, Metadata, and the $190K Lesson</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">What Laba v. JBO means for digital evidence authentication.</p>
   </div>
 </a>
-<a href="https://idsinc.com/power-of-collaborative-investigations/" target="_blank" data-cat="Investigations" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2025/05/Power-of-Collaborative-Investigations-scaled-e1747931293972.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/power-of-collaborative-investigations/" data-cat="Investigations" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/Power-of-Collaborative-Investigations-scaled-e1747931293972.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Investigations</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">Power of Collaborative Investigations</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Cross-functional investigation, and why the disciplines have to talk.</p>
   </div>
 </a>
-<a href="https://idsinc.com/feeding-ai/" target="_blank" data-cat="AI & Emerging Tech" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2025/05/Feeding-the-Beast-What-AI-Really-Eats—and-Why-It-Matters-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/feeding-ai/" data-cat="AI & Emerging Tech" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/Feeding-the-Beast-What-AI-Really-Eats—and-Why-It-Matters-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">AI & Emerging Tech</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">Feeding the Beast: What AI Really Eats, and Why It Matters</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Training data, privacy, and IP exposure.</p>
   </div>
 </a>
-<a href="https://idsinc.com/ai-hallucinations/" target="_blank" data-cat="AI & Emerging Tech" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2025/01/Artificial-Intelligence-Did-Not-Help-Me-Write-This-Expert-Report-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/ai-hallucinations/" data-cat="AI & Emerging Tech" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/Artificial-Intelligence-Did-Not-Help-Me-Write-This-Expert-Report-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">AI & Emerging Tech</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">Artificial Intelligence Did (Not) Help Me Write This Expert Report</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Disclosure, hallucination, and what an expert can stand behind.</p>
   </div>
 </a>
-<a href="https://idsinc.com/ids-talks-exit-strategies/" target="_blank" data-cat="iDS Talks" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2025/05/iDS-talks-art-5.4.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/ids-talks-exit-strategies/" data-cat="iDS Talks" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/iDS-talks-art-5.4.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">iDS Talks</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">Exit Strategies: Safeguarding ERAs for Departing Employees</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Mike Perelman on departing employee risk assessments.</p>
   </div>
 </a>
-<a href="https://idsinc.com/departing-employee-risk-assessment/" target="_blank" data-cat="IP & Employee Risk" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2025/04/Employee-Risk-Assessments-for-Departing-Employees-scaled-e1744300568258.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/departing-employee-risk-assessment/" data-cat="IP & Employee Risk" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/Employee-Risk-Assessments-for-Departing-Employees-scaled-e1744300568258.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">IP & Employee Risk</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">Employee Risk Assessments for Departing Employees</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Digital forensics for offboarding, before the data leaves.</p>
   </div>
 </a>
-<a href="https://idsinc.com/system-generated-data/" target="_blank" data-cat="Digital Evidence" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2025/03/The-Evolution-of-Evidence-From-Testimony-to-System-Generated-Data-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/system-generated-data/" data-cat="Digital Evidence" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/The-Evolution-of-Evidence-From-Testimony-to-System-Generated-Data-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Digital Evidence</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">The Evolution of Evidence: From Testimony to System-Generated Data</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Dan Regard on how the nature of proof has shifted.</p>
   </div>
 </a>
-<a href="https://idsinc.com/the-pixel-problem/" target="_blank" data-cat="Privacy & Compliance" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2025/03/How-Undisclosed-Tracking-Pixels-Are-Tanking-Consumer-Trust—And-Costing-Companies-Millions-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/the-pixel-problem/" data-cat="Privacy & Compliance" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/How-Undisclosed-Tracking-Pixels-Are-Tanking-Consumer-Trust—And-Costing-Companies-Millions-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Privacy & Compliance</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">The Pixel Problem: A Wake-Up Call for Businesses</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Undisclosed tracking pixels, consumer trust, and the litigation that follows.</p>
   </div>
 </a>
-<a href="https://idsinc.com/gdpr/" target="_blank" data-cat="Privacy & Compliance" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2024/10/Global-Data-Privacy-Laws-GDPR-What-You-Need-to-Know-iDS-Blog-scaled-e1730131904959.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/gdpr/" data-cat="Privacy & Compliance" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/Global-Data-Privacy-Laws-GDPR-What-You-Need-to-Know-iDS-Blog-scaled-e1730131904959.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Privacy & Compliance</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">Global Data Privacy Laws (GDPR): What You Need to Know</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Cross-border data protection, in practical terms.</p>
   </div>
 </a>
-<a href="https://idsinc.com/large-scale-forensic-preservation/" target="_blank" data-cat="Forensics" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2024/08/2024-Blogs-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/large-scale-forensic-preservation/" data-cat="Forensics" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/2024-Blogs-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Forensics</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">Large-Scale Forensic Preservation: Ensuring Data Integrity and Compliance</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Preservation at a scale where process is the only thing that holds.</p>
   </div>
 </a>
-<a href="https://idsinc.com/ediscovery-budgeting/" target="_blank" data-cat="Litigation Strategy" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2025/02/Balancing-Needs-Wants-Budget3-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/ediscovery-budgeting/" data-cat="Litigation Strategy" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/Balancing-Needs-Wants-Budget3-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Litigation Strategy</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">Needs Versus Wants: Budgeting in Investigations and eDiscovery</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Where the money should go, and where it usually goes instead.</p>
   </div>
 </a>
-<a href="https://idsinc.com/data-in-corporate-investigations/" target="_blank" data-cat="Investigations" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2024/07/The-Crucial-Role-of-Data-in-Corporate-Investigations-with-Bill-Taylor-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/data-in-corporate-investigations/" data-cat="Investigations" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/The-Crucial-Role-of-Data-in-Corporate-Investigations-with-Bill-Taylor-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Investigations</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">The Crucial Role of Data in Corporate Investigations</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Bill Taylor on BYOD policy and internal investigations.</p>
   </div>
 </a>
-<a href="https://idsinc.com/digital-data-management/" target="_blank" data-cat="Digital Evidence" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2024/08/Avoiding-Common-Pitfalls-in-Digital-Data-Management-Assumptions-Mislabeling-and-Lost-Context-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/digital-data-management/" data-cat="Digital Evidence" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/Avoiding-Common-Pitfalls-in-Digital-Data-Management-Assumptions-Mislabeling-and-Lost-Context-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Digital Evidence</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">Avoiding Common Pitfalls in Digital Data Management</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Assumptions, mislabeling, and lost context.</p>
   </div>
 </a>
-<a href="https://idsinc.com/ids-talks-overcoming-data-challenges-in-high-stakes-litigation-with-julian-ackert/" target="_blank" data-cat="iDS Talks" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2024/07/iDS-talks-art-4.1.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/ids-talks-overcoming-data-challenges-in-high-stakes-litigation-with-julian-ackert/" data-cat="iDS Talks" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/iDS-talks-art-4.1.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">iDS Talks</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">Overcoming Data Challenges in High-Stakes Litigation</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Julian Ackert on collection strategy under pressure.</p>
   </div>
 </a>
-<a href="https://idsinc.com/information-without-perspective/" target="_blank" data-cat="Leadership" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2025/05/iDS-2025-Blogs2-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/information-without-perspective/" data-cat="Leadership" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/iDS-2025-Blogs2-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Leadership</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">Leading With Curiosity in an AI-Enabled World</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">More information does not mean better decisions.</p>
   </div>
 </a>
-<a href="https://idsinc.com/strategic-questioning/" target="_blank" data-cat="Leadership" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2025/10/For-Better-Business-Solutions-Try-Asking-Why-Like-a-Three-Year-Old-But-Smarter-iDS-x-Forbes-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/strategic-questioning/" data-cat="Leadership" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/For-Better-Business-Solutions-Try-Asking-Why-Like-a-Three-Year-Old-But-Smarter-iDS-x-Forbes-scaled.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Leadership</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">For Better Business Solutions, Try Asking Why Like a Three-Year-Old</div>
     <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">The Five Whys, and what it unlocks. Hunter McMahon in Forbes.</p>
   </div>
 </a>
-<a href="https://idsinc.com/chambers-partners-9/" target="_blank" data-cat="Privacy & Compliance" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
-  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="https://idsinc.com/wp-content/uploads/2026/06/iDS-Recognized-for-9th-Consecutive-Year-by-Chambers-and-Partners-as-a-Leading-eDiscovery-Consultancy-e1782856564629.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
+<a href="/insights/chambers-partners-9/" data-cat="Privacy & Compliance" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+  <div style="height:180px;position:relative;overflow:hidden;background:#001D40"><img src="/assets/uploads/iDS-Recognized-for-9th-Consecutive-Year-by-Chambers-and-Partners-as-a-Leading-eDiscovery-Consultancy-e1782856564629.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" /></div>
   <div style="padding:26px 24px 28px">
     <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Privacy & Compliance</div>
     <div style="font-size:20px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:10px">iDS Recognized for a 9th Consecutive Year by Chambers & Partners</div>
