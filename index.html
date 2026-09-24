@@ -51,23 +51,23 @@
         </a>
       </div>
       <div style="{{ navLinksStyle }}">
+        <a href="#" onClick="{{ goAbout }}" style="font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:{{ cAbout }};white-space:nowrap">About Us</a>
         <a href="#" onClick="{{ goServices }}" style="font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:{{ cServices }};white-space:nowrap">Capabilities</a>
         <a href="#" onClick="{{ goExperts }}" style="font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:{{ cExperts }};white-space:nowrap">Our Experts</a>
         <a href="#" onClick="{{ goCases }}" style="font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:{{ cCases }};white-space:nowrap">Can You&hellip;?</a>
         <a href="#" onClick="{{ goAI }}" style="font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:{{ cAI }};white-space:nowrap">AI &amp; Evidence</a>
         <a href="#" onClick="{{ goInsights }}" style="font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:{{ cInsights }};white-space:nowrap">Insights</a>
-        <a href="#" onClick="{{ goCareers }}" style="font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:{{ cCareers }};white-space:nowrap">Join Our Team</a>
         <a href="#" onClick="{{ goContact }}" style="background:#DB6015;color:#FFFFFF;font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;padding:12px 20px;white-space:nowrap" style-hover="background:#003764;color:#FFFFFF">Start Building Your Narrative</a>
       </div>
     </div>
     <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
       <div style="border-top:1px solid #E6E9ED;background:#FFFFFF;display:grid">
+        <a href="#" onClick="{{ goAbout }}" style="padding:18px 24px;border-bottom:1px solid #E6E9ED;font-size:15px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764">About Us</a>
         <a href="#" onClick="{{ goServices }}" style="padding:18px 24px;border-bottom:1px solid #E6E9ED;font-size:15px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764">Capabilities</a>
         <a href="#" onClick="{{ goExperts }}" style="padding:18px 24px;border-bottom:1px solid #E6E9ED;font-size:15px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764">Our Experts</a>
         <a href="#" onClick="{{ goCases }}" style="padding:18px 24px;border-bottom:1px solid #E6E9ED;font-size:15px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764">Can You&hellip;?</a>
         <a href="#" onClick="{{ goAI }}" style="padding:18px 24px;border-bottom:1px solid #E6E9ED;font-size:15px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764">AI &amp; Evidence</a>
-        <a href="#" onClick="{{ goInsights }}" style="padding:18px 24px;border-bottom:1px solid #E6E9ED;font-size:15px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764">Insights</a>
-        <a href="#" onClick="{{ goCareers }}" style="padding:18px 24px;font-size:15px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764">Join Our Team</a>
+        <a href="#" onClick="{{ goInsights }}" style="padding:18px 24px;font-size:15px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764">Insights</a>
       </div>
     </sc-if>
   </div>
@@ -1067,6 +1067,164 @@
   </div>
   </sc-if>
 
+  <!-- ================= ABOUT ================= -->
+  <sc-if value="{{ isAbout }}" hint-placeholder-val="{{ false }}">
+  <div data-screen-label="About Us">
+
+    <div style="position:relative;background:#FFFFFF;overflow:hidden;border-bottom:1px solid #E6E9ED">
+      <img src="assets/gfx-rings-light.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.85;animation:idsFloat 38s ease-in-out infinite alternate;will-change:transform" />
+      <div style="position:absolute;inset:0;background:linear-gradient(100deg,rgba(255,255,255,.97) 0%,rgba(255,255,255,.9) 44%,rgba(255,255,255,.62) 100%)"></div>
+      <div style="position:relative;max-width:900px;margin:0 auto;padding:76px 32px 80px">
+        <div style="border-left:3px solid #DB6015;padding-left:14px;color:#DB6015;font-size:13px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;margin-bottom:22px">Who We Are</div>
+        <h1 style="font-family:Arial,Helvetica,sans-serif;font-size:{{ subH1Size }};font-weight:bold;line-height:1.06;letter-spacing:-.02em;color:#003764;margin:0 0 20px;text-wrap:pretty">Experts who stand behind their work, and in front of their opinions.</h1>
+        <p style="font-size:18px;line-height:1.6;color:#595959;margin:0;max-width:700px">Founded in 2008, iDS is a professional services consulting firm specializing in Digital Forensics, eDiscovery &amp; eDisclosure, Structured Data, Cybersecurity, Data Privacy, and Information Governance. Over 60 full-time employees across the U.S. and U.K. have worked more than 3,000 matters, from a single mobile device to cases with 450,000 plaintiffs and billions of records.</p>
+      </div>
+    </div>
+
+    <!-- History + Mission -->
+    <div style="background:#FFFFFF">
+      <div data-reveal style="max-width:1200px;margin:0 auto;padding:76px 32px 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:48px">
+        <div>
+          <h2 style="font-size:26px;font-weight:bold;color:#404040;margin:0 0 12px">History</h2>
+          <div data-rule style="width:56px;height:3px;background:#DB6015;transform-origin:left center;margin:0 0 20px"></div>
+          <p style="font-size:17px;line-height:1.65;color:#404040;margin:0 0 16px">iDiscovery Solutions was founded in Washington, DC in 2008 by industry veterans with more than 50 years of litigation and consulting experience combined. Initial offerings included consulting, data analytics, and processing and hosting of electronically stored information, alongside expert services in electronic discovery, digital forensics, and enterprise applications.</p>
+          <p style="font-size:16px;line-height:1.65;color:#595959;margin:0">Under founder and CEO Dan Regard, iDS has grown into a global provider of consultative data solutions, with offices in Washington, D.C., California, Georgia, and London.</p>
+        </div>
+        <div>
+          <h2 style="font-size:26px;font-weight:bold;color:#404040;margin:0 0 12px">Our Mission</h2>
+          <div data-rule style="width:56px;height:3px;background:#DB6015;transform-origin:left center;margin:0 0 20px"></div>
+          <div style="box-shadow:0 0 0 1px #E6E9ED;background:#F6F7F9;padding:28px 26px">
+            <p style="font-size:18px;line-height:1.55;color:#003764;font-weight:bold;margin:0">To provide our clients with a consultative experience that follows a structured process in order to deliver customized solutions &mdash; giving them the opportunity to control the narrative and make informed decisions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The iDS Way: STEPS + Three Pillars -->
+    <div style="position:relative;overflow:hidden;background:#F6F7F9;border-top:1px solid #E6E9ED;border-bottom:1px solid #E6E9ED">
+      <img src="assets/gfx-signal-light.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.6;animation:idsFloat 38s ease-in-out infinite alternate;will-change:transform" />
+      <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(246,247,249,.94) 0%,rgba(246,247,249,.97) 100%)"></div>
+      <div data-reveal style="position:relative;max-width:1200px;margin:0 auto;padding:80px 32px 24px">
+        <h2 style="font-size:26px;font-weight:bold;color:#404040;margin:0 0 12px">The iDS Way</h2>
+        <div data-rule style="width:56px;height:3px;background:#DB6015;transform-origin:left center;margin:0 0 18px"></div>
+        <p style="font-size:17px;line-height:1.6;color:#404040;margin:0;max-width:760px">Our STEPS&trade; framework was built to maximize efficiency, minimize disruption, and drive success on every engagement &mdash; covering conflicts, privacy, security, budget, and execution. It is integrated into the fabric of how we work: our systems, our training, our ethos.</p>
+      </div>
+      <div data-reveal style="position:relative;max-width:1200px;margin:0 auto;padding:24px 32px 88px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2px;background:transparent">
+        <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:32px 30px">
+          <div style="font-size:26px;font-weight:bold;letter-spacing:-.01em;color:#003764;margin-bottom:10px">Consultative Experts</div>
+          <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Subject matter experts and data strategists who provide solutions to data problems, and testimony to support the findings when needed.</p>
+        </div>
+        <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:32px 30px">
+          <div style="font-size:26px;font-weight:bold;letter-spacing:-.01em;color:#003764;margin-bottom:10px">Structured Process</div>
+          <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">The STEPS&trade; framework converts vast amounts of data into strategic legal assets, with timely and consistent execution.</p>
+        </div>
+        <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:32px 30px">
+          <div style="font-size:26px;font-weight:bold;letter-spacing:-.01em;color:#003764;margin-bottom:10px">Customized Solutions</div>
+          <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Tailored to each client and matter. We avoid cookie-cutter answers that rarely address what makes your data problem unique.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recognition -->
+    <div data-reveal style="max-width:1200px;margin:0 auto;padding:80px 32px 88px">
+      <h2 style="font-size:26px;font-weight:bold;color:#404040;margin:0 0 12px">Recognition</h2>
+      <div data-rule style="width:56px;height:3px;background:#DB6015;transform-origin:left center;margin:0 0 24px"></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2px;background:transparent">
+        <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:26px 24px">
+          <div style="font-size:16px;font-weight:bold;color:#003764;margin-bottom:6px">Chambers &amp; Partners, Band One</div>
+          <p style="font-size:14px;line-height:1.55;color:#595959;margin:0">Recognized as a leading eDiscovery consultancy for nine consecutive years, with founder Dan Regard individually ranked Band One.</p>
+        </div>
+        <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:26px 24px">
+          <div style="font-size:16px;font-weight:bold;color:#003764;margin-bottom:6px">Industry Leadership</div>
+          <p style="font-size:14px;line-height:1.55;color:#595959;margin:0">Multiple INC 5000 awards and recognitions for growth and standing in the legal technology industry.</p>
+        </div>
+        <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:26px 24px">
+          <div style="font-size:16px;font-weight:bold;color:#003764;margin-bottom:6px">The Sedona Conference</div>
+          <p style="font-size:14px;line-height:1.55;color:#595959;margin:0">Active participation and leadership shaping the standards our industry works from.</p>
+        </div>
+        <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:26px 24px">
+          <div style="font-size:16px;font-weight:bold;color:#003764;margin-bottom:6px">Electronic Discovery Institute</div>
+          <p style="font-size:14px;line-height:1.55;color:#595959;margin:0">An active leadership role at EDI, advancing research and education across the discipline.</p>
+        </div>
+        <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:26px 24px">
+          <div style="font-size:16px;font-weight:bold;color:#003764;margin-bottom:6px">Georgetown AEDI</div>
+          <p style="font-size:14px;line-height:1.55;color:#595959;margin:0">Leadership involvement with Georgetown&rsquo;s Advanced eDiscovery Institute.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Community -->
+    <div style="position:relative;overflow:hidden;background:#F6F7F9;border-top:1px solid #E6E9ED;border-bottom:1px solid #E6E9ED">
+      <img src="assets/gfx-records-light.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55;animation:idsFloat 38s ease-in-out infinite alternate;will-change:transform" />
+      <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(246,247,249,.94) 0%,rgba(246,247,249,.97) 100%)"></div>
+      <div data-reveal style="position:relative;max-width:1200px;margin:0 auto;padding:80px 32px 88px">
+        <h2 style="font-size:26px;font-weight:bold;color:#404040;margin:0 0 12px">Community</h2>
+        <div data-rule style="width:56px;height:3px;background:#DB6015;transform-origin:left center;margin:0 0 24px"></div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2px;background:transparent">
+          <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:30px 28px">
+            <div style="font-size:13px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Pro Bono Program</div>
+            <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">iDS believes equal access to digital evidence should not depend on ability to pay. We maintain an annual pro bono budget and treat that work equivalently with billable client work in performance reviews and compensation.</p>
+          </div>
+          <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:30px 28px">
+            <div style="font-size:13px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Diversity, Equity &amp; Inclusion</div>
+            <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Diverse talent means diverse skills, and better outcomes for clients. Our DEI Committee, training, and employee resource groups keep that intention active, not just stated.</p>
+          </div>
+          <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:30px 28px">
+            <div style="font-size:13px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Lawyers Have Heart</div>
+            <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">A proud sponsor of the American Heart Association&rsquo;s Lawyers Have Heart 10K, 5K &amp; Fun Walk &mdash; an annual DC-area event since 1991 that has raised over $14 million for heart disease and stroke research.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- UK & EU -->
+    <div data-reveal style="max-width:1200px;margin:0 auto;padding:80px 32px 24px">
+      <h2 style="font-size:26px;font-weight:bold;color:#404040;margin:0 0 12px">UK &amp; EU</h2>
+      <div data-rule style="width:56px;height:3px;background:#DB6015;transform-origin:left center;margin:0 0 18px"></div>
+      <p style="font-size:17px;line-height:1.6;color:#404040;margin:0 0 8px;max-width:760px">iDS opened its London office to expand our international footprint, bringing the full suite of iDS services &mdash; from forensic collections and investigations to data processing and hosting &mdash; to clients across Europe.</p>
+      <p style="font-size:15px;line-height:1.6;color:#595959;margin:0 0 32px">71&ndash;73 Carter Lane, London EC4V 5EQ &nbsp;&middot;&nbsp; +44 (0)20 8242 4130</p>
+    </div>
+    <div data-reveal style="max-width:1200px;margin:0 auto;padding:0 32px 88px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2px;background:transparent">
+      <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:28px 26px">
+        <div style="font-size:19px;font-weight:bold;color:#003764;margin-bottom:4px">Tim LaTulippe</div>
+        <div style="font-size:13px;font-weight:bold;letter-spacing:.06em;text-transform:uppercase;color:#DB6015;margin-bottom:14px">Managing Director, Europe</div>
+        <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Leads the London office, advising on complex investigations, data privacy, and information security across the US and Europe.</p>
+      </div>
+      <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:28px 26px">
+        <div style="font-size:19px;font-weight:bold;color:#003764;margin-bottom:4px">Dominic Tucker</div>
+        <div style="font-size:13px;font-weight:bold;letter-spacing:.06em;text-transform:uppercase;color:#DB6015;margin-bottom:14px">Associate Director, UK/EEA</div>
+        <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Focused on the application of technology across every phase of disclosure, including analytics and predictive coding.</p>
+      </div>
+    </div>
+
+    <!-- Partners -->
+    <div style="background:#003764">
+      <div data-reveal style="max-width:1200px;margin:0 auto;padding:64px 32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px;align-items:center">
+        <div>
+          <div style="font-size:12px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;color:#DB6015;margin-bottom:10px">Partners</div>
+          <div style="font-size:26px;font-weight:bold;letter-spacing:-.01em;line-height:1.15;color:#FFFFFF;margin-bottom:14px">QAS International</div>
+          <p style="font-size:16px;line-height:1.65;color:rgba(255,255,255,.84);margin:0">Our ISO/IEC 27001:2013 certification is maintained in partnership with QAS International, an accredited certification body &mdash; independent assurance that the systems handling your data meet a recognized security standard.</p>
+        </div>
+        <div>
+          <a href="https://www.qas-international.com/" target="_blank" style="display:inline-block;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);color:#FFFFFF;font-size:13px;font-weight:bold;letter-spacing:.06em;text-transform:uppercase;padding:14px 22px" style-hover="background:#DB6015;border-color:#DB6015">Visit QAS International &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Careers callout -->
+    <div style="background:#F6F7F9;border-top:1px solid #E6E9ED">
+      <div data-reveal style="max-width:1200px;margin:0 auto;padding:56px 32px;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between">
+        <div>
+          <div style="font-size:19px;font-weight:bold;color:#003764;margin-bottom:4px">Careers at iDS</div>
+          <p style="font-size:15px;line-height:1.5;color:#595959;margin:0">A firm built by experts, for experts. See where you fit.</p>
+        </div>
+        <a href="#" onClick="{{ goCareers }}" style="background:#DB6015;color:#FFFFFF;font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;padding:14px 24px;white-space:nowrap" style-hover="background:#003764;color:#FFFFFF">Join Our Team &rarr;</a>
+      </div>
+    </div>
+
+  </div>
+  </sc-if>
+
   <!-- ================= CAREERS ================= -->
   <sc-if value="{{ isCareers }}" hint-placeholder-val="{{ false }}">
   <div data-screen-label="Join Our Team">
@@ -1251,15 +1409,22 @@
 
   <!-- ================= FOOTER ================= -->
   <div style="background:#003764">
-    <div style="max-width:1200px;margin:0 auto;padding:64px 32px 26px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:40px">
+    <div style="max-width:1200px;margin:0 auto;padding:64px 32px 26px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:40px">
       <div>
         <img src="assets/ids-logo-reversed.png" alt="iDiscovery Solutions" style="height:52px;width:auto;display:block;margin-bottom:20px" />
         <p style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:bold;color:#FFFFFF;margin:0 0 6px">Truth Through Data</p>
-        <p style="font-size:14px;line-height:1.6;color:rgba(255,255,255,.7);margin:0">Where expertise leads, defensible outcomes follow.</p>
+        <p style="font-size:14px;line-height:1.6;color:rgba(255,255,255,.7);margin:0 0 20px">Where expertise leads, defensible outcomes follow.</p>
+        <div style="display:flex;gap:10px">
+          <a href="https://twitter.com/iDiscoveryInc" target="_blank" aria-label="X (Twitter)" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid rgba(255,255,255,.3);color:rgba(255,255,255,.82);font-size:13px;font-weight:bold" style-hover="border-color:#DB6015;color:#DB6015">X</a>
+          <a href="https://www.facebook.com/iDiscovery-Solutions-110210573904472" target="_blank" aria-label="Facebook" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid rgba(255,255,255,.3);color:rgba(255,255,255,.82);font-size:13px;font-weight:bold" style-hover="border-color:#DB6015;color:#DB6015">f</a>
+          <a href="https://www.linkedin.com/company/idsinc" target="_blank" aria-label="LinkedIn" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid rgba(255,255,255,.3);color:rgba(255,255,255,.82);font-size:13px;font-weight:bold" style-hover="border-color:#DB6015;color:#DB6015">in</a>
+          <a href="https://www.youtube.com/channel/UCarv7o1MeYfCp0eZ1IrufIw" target="_blank" aria-label="YouTube" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid rgba(255,255,255,.3);color:rgba(255,255,255,.82);font-size:13px;font-weight:bold" style-hover="border-color:#DB6015;color:#DB6015">&#9654;</a>
+        </div>
       </div>
       <div>
         <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:16px">Firm</div>
         <div style="display:grid;gap:10px">
+          <a href="#" onClick="{{ goAbout }}" style="font-size:15px;color:rgba(255,255,255,.82)" style-hover="color:#DB6015">About Us</a>
           <a href="#" onClick="{{ goServices }}" style="font-size:15px;color:rgba(255,255,255,.82)" style-hover="color:#DB6015">Capabilities</a>
           <a href="#" onClick="{{ goExperts }}" style="font-size:15px;color:rgba(255,255,255,.82)" style-hover="color:#DB6015">Our Experts</a>
           <a href="#" onClick="{{ goCases }}" style="font-size:15px;color:rgba(255,255,255,.82)" style-hover="color:#DB6015">Can You&hellip;?</a>
@@ -1274,6 +1439,27 @@
         </div>
       </div>
       <div>
+        <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:16px">Offices</div>
+        <div style="display:grid;gap:14px">
+          <div>
+            <div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">Washington, DC</div>
+            <div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">3000 K Street NW, Suite 425<br />Washington, DC 20007<br />+1.800.813.4832</div>
+          </div>
+          <div>
+            <div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">Costa Mesa, CA</div>
+            <div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">535 Anton Blvd., Suite 860<br />Costa Mesa, CA 92626<br />+1.714.581.4830</div>
+          </div>
+          <div>
+            <div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">Alpharetta, GA</div>
+            <div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">11720 Amber Park Drive, Suite 160<br />Alpharetta, GA 30009<br />+1.626.224.3864</div>
+          </div>
+          <div>
+            <div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">London</div>
+            <div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">71&ndash;73 Carter Lane<br />London EC4V 5EQ<br />+44 (0)20 8242 4130</div>
+          </div>
+        </div>
+      </div>
+      <div>
         <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:16px">Contact</div>
         <div style="display:grid;gap:10px">
           <a href="mailto:info@idsinc.com" style="font-size:15px;color:rgba(255,255,255,.82)" style-hover="color:#DB6015">info@idsinc.com</a>
@@ -1281,8 +1467,15 @@
         </div>
       </div>
     </div>
-    <div style="max-width:1200px;margin:0 auto;padding:22px 32px 40px;border-top:1px solid rgba(255,255,255,.16)">
-      <p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6);margin:0">iDiscovery Solutions &nbsp;|&nbsp; Website Mockup (20260818) &nbsp;|&nbsp; info@idsinc.com</p>
+    <div style="max-width:1200px;margin:0 auto;padding:22px 32px 90px;border-top:1px solid rgba(255,255,255,.16);display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between">
+      <p style="font-size:13px;color:rgba(255,255,255,.6);margin:0">Copyright &copy; 2026 iDiscovery Solutions, Inc. All Rights Reserved &nbsp;|&nbsp; <a href="https://idsinc.com/ids-privacy-policy/" target="_blank" style="color:rgba(255,255,255,.6)" style-hover="color:#DB6015">Privacy Policy</a></p>
+      <div style="display:flex;gap:14px;font-size:13px;color:rgba(255,255,255,.6)">
+        <a href="#" style="color:#FFFFFF;font-weight:bold" style-hover="color:#DB6015">EN</a>
+        <a href="#" style="color:rgba(255,255,255,.6)" style-hover="color:#DB6015">EN-GB</a>
+        <a href="#" style="color:rgba(255,255,255,.6)" style-hover="color:#DB6015">DE</a>
+        <a href="#" style="color:rgba(255,255,255,.6)" style-hover="color:#DB6015">ES</a>
+        <a href="#" style="color:rgba(255,255,255,.6)" style-hover="color:#DB6015">FR</a>
+      </div>
     </div>
   </div>
 
@@ -1803,12 +1996,12 @@ class Component extends DCLogic {
       isHome: p === 'home', isServices: p === 'services', isExperts: p === 'experts',
       isCases: p === 'cases', isAI: p === 'ai', isInsights: p === 'insights',
       showClose: p !== 'contact',
-      isCareers: p === 'careers', isContact: p === 'contact',
+      isAbout: p === 'about', isCareers: p === 'careers', isContact: p === 'contact',
       goHome: this.nav('home'), goServices: this.nav('services'), goExperts: this.nav('experts'),
       goCases: this.nav('cases'), goAI: this.nav('ai'), goInsights: this.nav('insights'),
-      goCareers: this.nav('careers'), goContact: this.nav('contact'),
+      goAbout: this.nav('about'), goCareers: this.nav('careers'), goContact: this.nav('contact'),
       cServices: link(p === 'services'), cExperts: link(p === 'experts'), cCases: link(p === 'cases'),
-      cAI: link(p === 'ai'), cInsights: link(p === 'insights'), cCareers: link(p === 'careers'),
+      cAI: link(p === 'ai'), cInsights: link(p === 'insights'), cAbout: link(p === 'about'), cCareers: link(p === 'careers'),
       navShadow: this.state.scrolled ? '0 6px 20px rgba(0,55,100,.10)' : 'none',
       open1: this.state.open === 1, open2: this.state.open === 2, open3: this.state.open === 3,
       open4: this.state.open === 4, open5: this.state.open === 5, open6: this.state.open === 6,
