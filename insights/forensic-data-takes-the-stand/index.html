@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>When Forensic Data Takes the Stand | iDiscovery Solutions</title>
+<meta name="description" content="The gap between having the artifact and being able to use it.">
+<link rel="canonical" href="https://ids-staging-z4swi.kinsta.page/insights/forensic-data-takes-the-stand/">
+<meta property="og:title" content="When Forensic Data Takes the Stand | iDiscovery Solutions">
+<meta property="og:description" content="The gap between having the artifact and being able to use it.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ids-staging-z4swi.kinsta.page/insights/forensic-data-takes-the-stand/">
+<meta property="og:image" content="https://ids-staging-z4swi.kinsta.page/assets/ids-logo-navy.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="/assets/ids-logo-navy.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>:root {
+  --navy:#003764; --navy-deep:#0A2440; --orange:#DB6015; --orange-deep:#B94E0E;
+  --ink:#16212C; --text:#45515E; --muted:#6F7B88; --rule:#D5DBE1; --band:#F2F4F6; --paper:#FFFFFF;
+  --sticker:#F3D65A; --noise:#B7C0CA; --on-navy:#D3DEEA; --on-navy-muted:#9FC0DF;
+  --display:"Jost","Futura","Century Gothic","Avenir Next",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+html, body { margin:0; padding:0; }
+body { font-family: var(--display); color:#595959; background:#FFFFFF; -webkit-font-smoothing:antialiased; }
+* { box-sizing: border-box; }
+a { text-decoration:none; }
+::selection { background:#FFF1E6; color:#003764; }
+img { max-width:100%; }
+.mono-label { font:500 12px var(--mono); letter-spacing:.1em; text-transform:uppercase; color:var(--orange); }
+.textlink { font:500 15px var(--display); color:var(--navy); text-decoration:none; border-bottom:1.5px solid currentColor; padding-bottom:2px; }
+.textlink:hover { color: var(--orange); }
+@keyframes idsDrift { 0%{transform:translateY(0)} 50%{transform:translateY(-10px)} 100%{transform:translateY(0)} }
+@keyframes idsFloat { from { transform: scale(1.02) translate3d(0,0,0); } to { transform: scale(1.07) translate3d(-1.2%,-1%,0); } }
+@keyframes idsGlow { from { opacity: .5; } to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+
+/* Nav: collapses to hamburger below 1120px (matches old JS "compact" bucket) */
+.nav-mobile { display: none; }
+@media (max-width: 1119px) {
+  .nav-links { display: none !important; }
+  .nav-mobile { display: flex !important; }
+  .nav-logo { height: 34px !important; }
+}
+#nav-toggle:checked ~ .nav-mobile-menu { display: grid !important; }
+
+/* About Us mega-menu (desktop only) */
+.nav-item { position: static; display: flex; align-items: center; }
+.nav-item > button { font: 700 14px var(--display); letter-spacing:.04em; text-transform:uppercase; color: #003764; background: none; border: 0; padding: 6px 0; cursor: pointer; display: flex; align-items: center; gap: 6px; white-space: nowrap; }
+.nav-item > button::after { content:""; width:6px; height:6px; border-right:1.5px solid currentColor; border-bottom:1.5px solid currentColor; transform: translateY(-2px) rotate(45deg); transition: transform .15s; }
+.nav-item > button[aria-expanded="true"] { color: var(--orange); }
+.nav-item > button[aria-expanded="true"]::after { transform: translateY(2px) rotate(-135deg); }
+.mega { position:absolute; left:0; right:0; top:100%; background:#FFFFFF; border-top:1px solid #E6E9ED; border-bottom:1px solid #E6E9ED; box-shadow:0 24px 40px -28px rgba(0,30,60,.45); }
+.mega .mega-wrap { max-width:1200px; margin:0 auto; padding:36px 24px 40px; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)) minmax(0,1.15fr); gap:36px; align-items:start; }
+.mega h4 { margin:0 0 6px; font:500 12px var(--mono); letter-spacing:.1em; text-transform:uppercase; color:var(--orange); }
+.mega ul { list-style:none; margin:0; padding:0; display:grid; }
+.mega li a { display:block; padding:12px 0; border-bottom:1px solid #E6E9ED; }
+.mega li:last-child a { border-bottom:0; }
+.mega li b { display:block; font:500 16px/1.25 var(--display); color:#003764; }
+.mega li span { display:block; margin-top:4px; font:14px/1.45 var(--display); color:#595959; }
+.mega li a:hover b { color: var(--orange); }
+.mega-feature { background:var(--navy-deep); color:var(--on-navy); padding:28px 28px 26px; display:flex; flex-direction:column; gap:14px; }
+.mega-feature svg { width:56px; height:56px; }
+.mega-feature p { font:15px/1.5 var(--display); margin:0; }
+.mega-feature dl { margin:0; display:grid; grid-template-columns:1fr 1fr; gap:14px 18px; border-top:1px solid #23415F; padding-top:14px; }
+.mega-feature dt { font:500 26px/1 var(--display); color:#fff; margin:0; }
+.mega-feature dd { margin:4px 0 0; font:13px/1.35 var(--display); color:var(--on-navy-muted); }
+.mega-feature a { font:500 15px var(--display); color:#fff; border-bottom:1.5px solid var(--orange); align-self:flex-start; padding:0 0 2px; }
+@media (max-width:1119px) { .mega { display:none !important; } }
+
+/* Hero heading: scales down below 760px (matches old "tight" bucket) */
+@media (max-width: 759px) {
+  .hero-h1 { font-size: 38px !important; }
+  .sub-h1 { font-size: 34px !important; }
+  .hero-pad { padding: 52px 24px 56px !important; }
+}
+@media (max-width: 960px) {
+  .hero-pad { grid-template-columns: 1fr !important; gap: 40px !important; }
+}
+
+details.disc > summary { list-style: none; cursor: pointer; }
+details.disc > summary::-webkit-details-marker { display: none; }
+details.disc .plus::after { content: "+"; }
+details.disc[open] .plus::after { content: "\2013"; }
+
+.filter-chip.is-off { display: none; }
+
+/* Masthead: "Truth Through Data", led by the iDS puck */
+.masthead { position:relative; background:var(--navy-deep); overflow:hidden; }
+.masthead .mh-wrap { position:relative; max-width:1200px; margin:0 auto; padding-inline:32px; display:flex; align-items:center; min-height:clamp(150px,15vw,210px); padding-block:36px; }
+.mast-art { position:absolute; left:32px; top:50%; height:clamp(96px,9vw,132px); width:auto; transform:translateY(-50%); overflow:visible; }
+.mast-art .trace { stroke:rgba(255,255,255,.16); stroke-width:4; fill:none; stroke-dasharray:2400; stroke-dashoffset:0; }
+.mast-art .node { fill:var(--orange); }
+.mast-art .end { fill:rgba(255,255,255,.28); }
+.masthead.play .trace { animation: mastTrace 1.6s ease-out both; }
+.masthead.play .trace:nth-of-type(2){animation-delay:.08s}.masthead.play .trace:nth-of-type(3){animation-delay:.16s}
+.masthead.play .trace:nth-of-type(4){animation-delay:.24s}.masthead.play .trace:nth-of-type(5){animation-delay:.32s}
+@keyframes mastTrace { from{stroke-dashoffset:2400} to{stroke-dashoffset:0} }
+.mast-text { position:relative; margin-left:calc(clamp(96px,9vw,132px) + clamp(28px,3vw,44px) - 18px); padding:10px 18px; background:var(--navy-deep); }
+.mast-text h2 { font:500 clamp(30px,3.8vw,52px)/1 var(--display); letter-spacing:.01em; color:#fff; margin:0; }
+.mast-text h2 span { color: var(--orange); }
+.mast-tag { margin-top:12px; font:400 clamp(14px,1.35vw,18px)/1.4 var(--display); letter-spacing:.02em; color:var(--on-navy); }
+@media (max-width:640px) { .mast-art { left:18px; } }
+
+/* Pillars strip */
+.pillars-strip { border-block:1px solid #E6E9ED; }
+.pillars-strip .pw { max-width:1200px; margin:0 auto; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); }
+.pillars-strip .pw > div { padding:20px 22px; font:500 14px var(--display); letter-spacing:.1em; text-transform:uppercase; color:#003764; border-left:1px solid #E6E9ED; }
+.pillars-strip .pw > div:first-child { border-left:0; padding-left:32px; }
+.pillars-strip .pw > div.hi { color: var(--orange); }
+@media (max-width:760px) { .pillars-strip .pw { grid-template-columns:1fr; } .pillars-strip .pw > div { border-left:0; border-top:1px solid #E6E9ED; padding-left:32px !important; } .pillars-strip .pw > div:first-child { border-top:0; } }
+
+/* Exhibit card (hero) */
+.exhibit { position:relative; margin:0; background:#FFFFFF; border:1px solid #C4CCD4; box-shadow:0 1px 0 #E6EAEE, 0 18px 40px -24px rgba(0,40,80,.35); }
+.ex-head { display:flex; justify-content:space-between; align-items:flex-start; gap:16px; padding:22px 24px 0; }
+.ex-head h3 { font-size:20px; line-height:1.25; max-width:20em; margin:6px 0 0; color:#16212C; }
+.ex-sticker { flex:0 0 auto; width:44px; height:30px; background:var(--sticker); transform:rotate(-2.5deg); box-shadow:0 1px 2px rgba(0,0,0,.18); }
+.ex-body { padding:6px 12px 0; overflow-x:auto; }
+.ex-body svg { display:block; width:100%; min-width:480px; height:auto; }
+.lane-label { font:500 12.5px var(--display); fill:#16212C; }
+.ex-grid { stroke:#E4E8EC; stroke-width:1; }
+.ex-lane { stroke:#CBD2D9; stroke-width:1; }
+.ex-noise { fill:var(--noise); }
+.ex-key { fill:var(--navy); transition:fill .5s ease .2s; }
+.ex-chain { fill:none; stroke:var(--orange); stroke-width:2; stroke-linejoin:round; stroke-dasharray:900; stroke-dashoffset:0; }
+.exhibit.play .ex-chain { animation: exDraw 2.4s ease .5s both; }
+.exhibit.done .ex-key { fill: var(--orange); }
+@keyframes exDraw { from{stroke-dashoffset:900} to{stroke-dashoffset:0} }
+.ex-result { display:grid; grid-template-columns:auto 1fr; gap:6px 16px; align-items:baseline; margin:6px 24px 0; padding:14px 0 16px; border-top:1px dashed #D5DBE1; }
+.ex-result .mono-label { grid-row:1/3; }
+.ex-result p { font:500 17px/1.35 var(--display); color:#16212C; margin:0; }
+
+/* Problem / stake / outcome */
+.pso-wrap { max-width:1200px; margin:0 auto; padding:64px 32px; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:0; }
+.pso-col { position:relative; padding:0 36px 0 0; }
+.pso-col + .pso-col { padding-left:36px; border-left:1px solid #E6E9ED; }
+.pso-col::after { content:""; position:absolute; right:-9px; top:6px; width:16px; height:16px; background:var(--band); border-top:1.5px solid var(--orange); border-right:1.5px solid var(--orange); transform:rotate(45deg); }
+.pso-col:last-child::after { display:none; }
+.pso-col p.pso-body { margin-top:14px; font:400 19px/1.5 var(--display); color:#16212C; }
+.pso-col:last-child p.pso-body { font:500 21px/1.4 var(--display); color:#003764; }
+@media (max-width:900px) { .pso-wrap { grid-template-columns:1fr; gap:34px; } .pso-col, .pso-col + .pso-col { padding:0; border-left:0; } .pso-col + .pso-col { padding-top:34px; border-top:1px solid #E6E9ED; } .pso-col::after { display:none; } }
+
+/* Why clients call us */
+.why-wrap { max-width:1200px; margin:0 auto; padding:92px 32px; display:grid; grid-template-columns:minmax(0,5fr) minmax(0,6fr); gap:64px; align-items:start; }
+.why-statement { margin-top:16px; font:500 clamp(28px,3vw,38px)/1.18 var(--display); color:#16212C; letter-spacing:-.01em; }
+.why-body { margin-top:18px; font-size:16px; line-height:1.65; color:#45515E; max-width:34em; }
+.diffs { border-top:1px solid #16212C; }
+.diff { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:4px 24px; padding:24px 0; border-bottom:1px solid #E6E9ED; }
+.diff h3 { font-size:22px; margin:0; color:#003764; }
+.diff p { grid-column:1; max-width:34em; margin:8px 0 0; font-size:15px; line-height:1.6; color:#595959; }
+.diff::after { content:"\2192"; grid-column:2; grid-row:1; color:var(--orange); font:20px var(--display); }
+@media (max-width:900px) { .why-wrap { grid-template-columns:1fr; gap:32px; } }
+
+/* Bench of people */
+.bench-wrap { max-width:1200px; margin:0 auto; padding:92px 32px; }
+.bench-head { display:flex; justify-content:space-between; align-items:flex-end; gap:24px; flex-wrap:wrap; margin-bottom:36px; }
+.bench-head h2 { font-size:clamp(30px,3vw,42px); line-height:1.1; letter-spacing:-.01em; margin:0; color:#16212C; }
+.bench-head p { margin-top:12px; max-width:36em; color:#45515E; font-size:16px; line-height:1.6; }
+.bench { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:20px; }
+.person { display:flex; flex-direction:column; gap:12px; }
+.person img { width:100%; aspect-ratio:4/5; object-fit:cover; object-position:50% 22%; display:block; background:#DDE2E7; }
+.person b { font:500 18px/1.2 var(--display); color:#16212C; }
+.person span { font:14px/1.35 var(--display); color:#6F7B88; }
+.person:hover b { color: var(--orange); }
+@media (max-width:900px) { .bench { grid-template-columns:repeat(3,minmax(0,1fr)); } }
+@media (max-width:560px) { .bench { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+
+/* Where we fit: phases on a foundation */
+.phases-wrap { max-width:1200px; margin:0 auto; padding:92px 32px 0; }
+.phases { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:0; margin-top:36px; }
+.phase { padding:28px 28px 32px; border-left:1px solid #E6E9ED; }
+.phase:first-child { border-left:0; padding-left:0; }
+.phase h3 { font-size:26px; margin:10px 0 10px; color:#003764; }
+.phase p { margin:0; font-size:15px; line-height:1.6; color:#595959; }
+@media (max-width:860px) { .phases { grid-template-columns:1fr; } .phase { border-left:0; border-top:1px solid #E6E9ED; padding-left:0; } .phase:first-child { border-top:0; } }
+.foundation-wrap { max-width:1200px; margin:36px auto 0; padding:0 32px 92px; }
+.foundation { background:var(--navy); color:var(--on-navy); display:grid; grid-template-columns:minmax(0,4fr) minmax(0,6fr); gap:40px; padding:30px 34px; position:relative; }
+.foundation h3 { color:#fff; font-size:30px; margin:6px 0 0; }
+.foundation p { margin:0; color:rgba(255,255,255,.84); font-size:16px; line-height:1.65; }
+@media (max-width:860px) { .foundation { grid-template-columns:1fr; gap:12px; } }
+
+/* Digital Evidence, Understood (point of view) */
+.pov-band { background:var(--navy-deep); color:var(--on-navy); overflow:hidden; }
+.pov-wrap { max-width:1200px; margin:0 auto; padding:96px 32px; display:grid; grid-template-columns:minmax(0,6fr) minmax(0,5fr); gap:56px; align-items:center; }
+.pov-wrap h2 { margin-top:18px; color:#fff; font:400 clamp(34px,4vw,54px)/1.08 var(--display); letter-spacing:-.015em; }
+.pov-wrap > div > p { margin-top:22px; font-size:19px; line-height:1.6; max-width:30em; color:var(--on-navy); }
+.pov-points { margin-top:28px; display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:20px; }
+.pov-points div div:first-child { height:2px; background:rgba(255,255,255,.3); margin-bottom:10px; }
+.pov-points div div:last-child { font-size:14px; color:var(--on-navy); line-height:1.5; }
+.pov-wrap .textlink { margin-top:28px; display:inline-block; color:#fff; font:500 15px var(--display); border-bottom:1.5px solid var(--orange); padding-bottom:2px; }
+.pov-wrap canvas { width:100%; height:auto; aspect-ratio:5/4; display:block; }
+@media (max-width:900px) { .pov-wrap { grid-template-columns:1fr; } }
+
+/* Can You...? rows */
+.qs-wrap { max-width:1200px; margin:0 auto; padding:92px 32px; }
+.qs { border-top:1px solid #16212C; margin-top:36px; }
+.qrow { display:grid; grid-template-columns:22px minmax(0,1fr) auto; gap:24px; align-items:baseline; padding:26px 0; border-bottom:1px solid #E6E9ED; }
+.qrow .q-no { width:22px; height:22px; background:var(--sticker); align-self:center; transform:rotate(-2.5deg); box-shadow:0 1px 2px rgba(0,0,0,.18); }
+.qrow h3 { font:400 clamp(21px,2.2vw,28px)/1.25 var(--display); color:#16212C; margin:0; }
+.qrow .go { font:500 15px var(--display); color:var(--orange); white-space:nowrap; }
+@media (max-width:640px) { .qrow { grid-template-columns:22px minmax(0,1fr); } .qrow .go { grid-column:2; } }
+
+/* Engagement steps */
+.steps-wrap { max-width:1200px; margin:0 auto; padding:92px 32px; }
+.steps { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:36px; position:relative; margin-top:36px; }
+.steps::before { content:""; position:absolute; left:0; right:0; top:22px; border-top:2px solid var(--orange); }
+.st { position:relative; padding-top:58px; }
+.st .n { position:absolute; top:0; left:0; width:46px; height:46px; border-radius:50%; background:#FFFFFF; border:2px solid var(--orange); display:flex; align-items:center; justify-content:center; font:500 16px var(--display); color:var(--orange); }
+.st h3 { font-size:22px; line-height:1.25; margin:0 0 10px; color:#003764; }
+.st p { margin:0; font-size:15px; line-height:1.6; color:#595959; }
+@media (max-width:860px) { .steps { grid-template-columns:1fr; gap:28px; } .steps::before { left:22px; right:auto; top:0; bottom:0; border-top:0; border-left:2px solid var(--orange); } .st { padding:0 0 0 72px; } }
+
+/* Insights post body (migrated article content) */
+.post-body { font-size:17px; line-height:1.75; color:#404040; }
+.post-body p { margin:0 0 22px; }
+.post-body h2 { font-size:28px; font-weight:bold; color:#003764; margin:44px 0 16px; line-height:1.22; }
+.post-body h3 { font-size:22px; font-weight:bold; color:#003764; margin:36px 0 14px; line-height:1.28; }
+.post-body h4 { font-size:18px; font-weight:bold; color:#003764; margin:28px 0 12px; }
+.post-body ul, .post-body ol { margin:0 0 22px; padding-left:24px; }
+.post-body li { margin-bottom:10px; }
+.post-body a { color:#DB6015; }
+.post-body a:hover { color:#003764; }
+.post-body strong { color:#16212C; }
+.post-body img { display:block; max-width:100%; height:auto; margin:28px 0; }
+.post-body hr { border:0; border-top:1px solid #E6E9ED; margin:36px 0; }
+.post-body .wp-block-buttons { margin:28px 0; list-style:none; padding:0; }
+.post-body .wp-block-button__link { display:inline-block; background:#DB6015 !important; color:#FFFFFF !important; padding:13px 22px; font-weight:bold; text-decoration:none !important; }
+.post-body .wp-block-button__link:hover { background:#003764 !important; }
+
+/* Closing CTA box (shared across pages) */
+.close-cta { border:1px solid #E6E9ED; display:flex; flex-direction:column; }
+.close-cta .primary { background:var(--band); padding:30px 30px 28px; }
+.close-cta .primary h3 { color:#003764; font-size:22px; margin:0 0 10px; }
+.close-cta .secondary { background:#FFFFFF; padding:26px 30px; border-top:1px solid #E6E9ED; }
+.close-cta .secondary h3 { font-size:19px; color:#003764; margin:0 0 8px; }
+</style>
+</head>
+<body>
+<div class="site-nav" style="position:sticky;top:0;z-index:50;background:#FFFFFF;border-bottom:1px solid #E6E9ED">
+  <div style="max-width:1200px;margin:0 auto;padding:0 24px;height:76px;display:flex;align-items:center;gap:26px">
+    <a href="/" style="display:flex;align-items:center;flex:0 0 auto"><img src="/assets/ids-logo-navy.png" alt="iDiscovery Solutions" class="nav-logo" style="height:44px;width:auto;display:block" /></a>
+    <div class="nav-mobile" style="flex:1 1 auto;align-items:center;justify-content:flex-end;gap:10px">
+      <a href="/contact/" style="background:#DB6015;color:#FFFFFF;font-size:12px;font-weight:bold;letter-spacing:.06em;text-transform:uppercase;padding:12px 14px;white-space:nowrap">Contact</a>
+      <label for="nav-toggle" style="border:1px solid #BFBFBF;color:#003764;padding:11px 14px;display:flex;flex-direction:column;gap:4px;width:44px;height:44px;justify-content:center;align-items:stretch;cursor:pointer">
+        <span style="display:block;height:2px;background:#003764"></span>
+        <span style="display:block;height:2px;background:#003764"></span>
+        <span style="display:block;height:2px;background:#003764"></span>
+      </label>
+    </div>
+    <div class="nav-links" style="flex:1 1 auto;display:flex;align-items:center;justify-content:flex-end;gap:24px;flex-wrap:nowrap">
+      <div class="nav-item">
+        <button type="button" id="about-btn" aria-expanded="false" aria-controls="about-menu">About Us</button>
+      </div>
+      <a href="/capabilities/" style="font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764;white-space:nowrap">Capabilities</a>
+        <a href="/our-experts/" style="font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764;white-space:nowrap">Our Experts</a>
+        <a href="/can-you/" style="font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764;white-space:nowrap">Can You&hellip;?</a>
+        <a href="/ai-evidence/" style="font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764;white-space:nowrap">AI &amp; Evidence</a>
+        <a href="/insights/" style="font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#DB6015;white-space:nowrap">Insights</a>
+      <a href="/careers/" style="font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764;white-space:nowrap">Join Our Team</a>
+      <a href="/contact/" style="background:#DB6015;color:#FFFFFF;font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;padding:12px 20px;white-space:nowrap" onmouseover="this.style.background='#003764'" onmouseout="this.style.background='#DB6015'">Start Building Your Narrative</a>
+    </div>
+  </div>
+  <div class="mega" id="about-menu" hidden>
+    <div class="mega-wrap">
+      <div>
+        <h4>Who we are</h4>
+        <ul>
+          <li><a href="/about/"><b>About iDS</b><span>Founded in 2008, a professional services consulting firm specializing in Digital Forensics, eDiscovery &amp; eDisclosure, Structured Data, Cybersecurity, Data Privacy, and Information Governance.</span></a></li>
+          <li><a href="/about/#mission"><b>Our Mission</b><span>A consultative experience that follows a structured process in order to provide customized solutions.</span></a></li>
+          <li><a href="/about/#history"><b>History</b><span>Founded in Washington, DC by industry veterans with more than 50 years of litigation and consulting experience combined.</span></a></li>
+          <li><a href="/our-experts/"><b>Our Team</b><span>Leadership, testifying experts, and the teams who work alongside them.</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>How we work</h4>
+        <ul>
+          <li><a href="/about/#the-ids-way"><b>The iDS Way</b><span>An established path for optimal outcomes: Consultative Experts, Structured Process, and Customized Solutions.</span></a></li>
+          <li><a href="/about/#the-ids-way"><b>Core Fundamentals</b><span>Behaviors that transform words into actions and bring our culture to life.</span></a></li>
+          <li><a href="/about/#recognition"><b>Recognition</b><span>Honored as a Band One and Band Two consulting firm by Chambers and Partners.</span></a></li>
+          <li><a href="/about/#recognition"><b>Industry Leadership</b><span>The Sedona Conference, the Electronic Discovery Institute, and the Georgetown Global Advanced Electronic Discovery Institute.</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Community &amp; offices</h4>
+        <ul>
+          <li><a href="/about/#community"><b>Pro Bono Program</b><span>Every person with a viable case deserves to have equal justice under the law.</span></a></li>
+          <li><a href="/about/#community"><b>Diversity, Equity &amp; Inclusion</b><span>Diverse talent means diverse skills, which yields better outcomes for clients.</span></a></li>
+          <li><a href="/about/#uk-eu"><b>iDS UK &amp; EU</b><span>Tim LaTulippe and Dominic Tucker head up the iDS offices in London.</span></a></li>
+          <li><a href="/contact/"><b>Locations</b><span>Washington, DC &middot; Alpharetta, GA &middot; Costa Mesa, CA &middot; London</span></a></li>
+        </ul>
+      </div>
+      <div class="mega-feature">
+        <svg viewBox="0 0 270 270" aria-hidden="true"><circle cx="135" cy="135" r="135" fill="#DB6015" mask="url(#puck-cut)"/></svg>
+        <p>A global provider of consultative data solutions, under the leadership of founder and CEO Dan Regard.</p>
+        <dl>
+          <div><dt>3,000+</dt><dd>Matters since 2008</dd></div>
+          <div><dt>60+</dt><dd>Full-time employees</dd></div>
+          <div><dt>4</dt><dd>Offices in the US and UK</dd></div>
+          <div><dt>Band 1</dt><dd>Chambers and Partners</dd></div>
+        </dl>
+        <a href="/about/">About iDS &rarr;</a>
+      </div>
+    </div>
+  </div>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle-input" style="display:none" />
+  <div class="nav-mobile-menu" style="border-top:1px solid #E6E9ED;background:#FFFFFF;display:none">
+      <a href="/about/" style="padding:18px 24px;border-bottom:1px solid #E6E9ED;font-size:15px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764">About Us</a>
+      <a href="/capabilities/" style="padding:18px 24px;border-bottom:1px solid #E6E9ED;font-size:15px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764">Capabilities</a>
+        <a href="/our-experts/" style="padding:18px 24px;border-bottom:1px solid #E6E9ED;font-size:15px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764">Our Experts</a>
+        <a href="/can-you/" style="padding:18px 24px;border-bottom:1px solid #E6E9ED;font-size:15px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764">Can You&hellip;?</a>
+        <a href="/ai-evidence/" style="padding:18px 24px;border-bottom:1px solid #E6E9ED;font-size:15px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764">AI &amp; Evidence</a>
+        <a href="/insights/" style="padding:18px 24px;border-bottom:1px solid #E6E9ED;font-size:15px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764">Insights</a>
+      <a href="/careers/" style="padding:18px 24px;border-bottom:1px solid #E6E9ED;font-size:15px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764">Join Our Team</a>
+  </div>
+</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><mask id="puck-cut" maskUnits="userSpaceOnUse" x="0" y="0" width="270" height="270">
+  <rect x="0" y="0" width="270" height="270" fill="#fff"/>
+  <g fill="#000">
+    <rect x="-10" y="41" width="195" height="10"/><rect x="-10" y="88" width="217" height="10"/>
+    <rect x="-10" y="127" width="187" height="10"/><rect x="-10" y="175" width="97" height="10"/>
+    <rect x="-10" y="213" width="129" height="10"/>
+    <circle cx="185" cy="46" r="14"/><circle cx="207" cy="93" r="14"/><circle cx="177" cy="132" r="14"/>
+    <circle cx="87" cy="180" r="14"/><circle cx="119" cy="218" r="14"/>
+  </g>
+</mask></defs></svg>
+<script>
+(function(){
+  var ab=document.getElementById('about-btn'), am=document.getElementById('about-menu');
+  if(!ab||!am) return;
+  var item=ab.closest('.nav-item'), hideT;
+  function setAbout(open){am.hidden=!open;ab.setAttribute('aria-expanded',open);}
+  ab.addEventListener('click',function(){setAbout(am.hidden);});
+  item.addEventListener('mouseenter',function(){clearTimeout(hideT);setAbout(true);});
+  item.addEventListener('mouseleave',function(){hideT=setTimeout(function(){setAbout(false);},180);});
+  am.addEventListener('mouseenter',function(){clearTimeout(hideT);});
+  am.addEventListener('mouseleave',function(){hideT=setTimeout(function(){setAbout(false);},180);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!am.hidden){setAbout(false);ab.focus();}});
+  document.addEventListener('click',function(e){if(!item.contains(e.target)&&!am.contains(e.target))setAbout(false);});
+})();
+</script>
+
+<div style="position:relative;background:#FFFFFF;overflow:hidden;border-bottom:1px solid #E6E9ED">
+  <div class="hero-pad" style="position:relative;max-width:760px;margin:0 auto;padding:64px 32px 0">
+    <a href="/insights/" class="textlink" style="font-size:14px">&larr; Insights</a>
+    <div style="border-left:3px solid #DB6015;padding-left:14px;color:#DB6015;font-size:13px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;margin:24px 0 22px">Digital Evidence</div>
+    <h1 class="sub-h1" style="font-size:42px;font-weight:bold;line-height:1.12;letter-spacing:-.015em;color:#003764;margin:0 0 20px;text-wrap:pretty">When Forensic Data Takes the Stand</h1>
+    <p style="font-size:18px;line-height:1.6;color:#595959;margin:0 0 40px;max-width:640px">The gap between having the artifact and being able to use it.</p>
+  </div>
+  <img src="/assets/uploads/When-Forensic-Data-Takes-the-Stand-scaled.jpg" alt="" style="display:block;width:100%;max-width:1000px;margin:0 auto;max-height:480px;object-fit:cover" />
+</div>
+
+<div style="max-width:760px;margin:0 auto;padding:56px 32px 40px">
+  <div class="post-body">
+    <p class="wp-block-paragraph"><strong>By iDiscovery Solutions<br></strong></p>
+
+<p class="wp-block-paragraph">Gathering digital evidence is only half the battle. The other half — arguably the harder half — is making it count in court.</p>
+
+<p class="wp-block-paragraph">In the fourth and final installment of the <em>Broken Covenants</em> series on <a href="https://www.lexology.com/" target="_blank" rel="noreferrer noopener">Lexology</a>, iDS team member <a href="https://idsinc.com/timothy-latulippe/" target="_blank" rel="noreferrer noopener"><strong>Timothy LaTulippe</strong></a> closes out a journey that has taken us from the invisible traces of IP theft, through the forensics of private messaging and non-compete violations, to the shadow competitor building a rival business on company time. This final article asks the question that underpins all of it: what happens when all that data needs to survive a courtroom?</p>
+
+<p class="wp-block-paragraph">If you&#8217;re joining mid-series, you can start from the beginning <a href="/insights/intellectual-property-data/" target="_blank" rel="noreferrer noopener">here</a>.</p>
+
+<h3 class="wp-block-heading" id="h-the-battle-of-the-experts"><strong>The Battle of the Experts</strong></h3>
+
+<p class="wp-block-paragraph">LaTulippe frames the final stage of any employment law investigation as the <strong>battle of the experts</strong> — a phase where admissibility and narrative clarity can determine the outcome just as much as the evidence itself. Technical precision, he argues, must be matched by an equally high standard of storytelling. If the data cannot be explained clearly to a layperson or a judge, it cannot be used effectively as a weapon in litigation.</p>
+
+<p class="wp-block-paragraph">The global standard for forensic readiness has shifted accordingly. Presenting a spreadsheet of raw logs or system events is no longer sufficient. Legal teams are now expected to deliver a defensible chain of custody alongside a narrative the court can intuitively follow — one that demonstrates the evidence was captured using forensically sound methods, untainted from the moment of collection to the moment of trial.</p>
+
+<h3 class="wp-block-heading" id="h-turning-metadata-into-a-story"><strong>Turning Metadata Into a Story</strong></h3>
+
+<p class="wp-block-paragraph">This demand for clarity has driven what LaTulippe describes as a revolution in data visualisation. Thousands of lines of complex metadata — registry keys, file system timestamps, network logs — are transformed into colour-coded timelines that pinpoint the exact moment an employee&#8217;s loyalty began to shift. Rather than asking a judge to interpret raw technical output, investigators present a visual map of behaviour that is far harder for a defendant to dismiss as a technical anomaly or innocent error.</p>
+
+<p class="wp-block-paragraph">That transformation, from binary data to coherent narrative, is what moves a forensic practitioner from data processor to critical storyteller.</p>
+
+<h3 class="wp-block-heading" id="h-the-settlement-advantage"><strong>The Settlement Advantage</strong></h3>
+
+<p class="wp-block-paragraph">LaTulippe also explores one of the most powerful — and often overlooked — tools in the forensic arsenal: the settlement catalyst. A well-constructed forensic report detailing an individual&#8217;s every digital move, including their failed attempts to scrub or delete evidence, frequently drives resolution long before the parties ever set foot in a courtroom. When the defence of &#8220;innocent mistake&#8221; becomes impossible to sustain, the appetite for a costly trial tends to disappear quickly.</p>
+
+<h3 class="wp-block-heading" id="h-the-proactive-forensic-hold"><strong>The Proactive Forensic Hold</strong></h3>
+
+<p class="wp-block-paragraph">The series closes with a forward-looking argument: the best time to act is before a dispute arises. A proactive forensic hold — the early preservation of data as a matter of policy — is not just a technical safeguard. It is a strategic insurance policy and a deterrent against future misconduct. In an increasingly mobile workforce, securing the truth early gives organisations a solid foundation for whatever legal path they ultimately choose to follow.</p>
+
+<p class="wp-block-paragraph">At iDS, this end-to-end capability — from initial investigation through to courtroom-ready evidence — is central to what we offer. Our <a href="https://idsinc.com/what-we-do/digital-forensics/" target="_blank" rel="noreferrer noopener">Digital Forensics</a>, <a href="https://idsinc.com/what-we-do/#SpecialInvestigationsUnit" target="_blank" rel="noreferrer noopener">Investigations</a>, <a href="https://idsinc.com/what-we-do/#ediscovery" target="_blank" rel="noreferrer noopener">eDiscovery &amp; Disclosure</a>, and <a href="https://idsinc.com/what-we-do/#testimony" target="_blank" rel="noreferrer noopener">Testimony</a> practices are built to take clients from discovery to resolution with evidence that holds up under the most rigorous cross-examination.</p>
+
+<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex" style="margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--60)">
+<div class="wp-block-button"><a class="wp-block-button__link has-white-color has-text-color has-background has-link-color wp-element-button" href="https://www.lexology.com/contributors/1092793/" style="background-color:#ee5d20" target="_blank" rel="noreferrer noopener"><strong>Read the full article on Lexology</strong></a></div>
+</div>
+
+<p class="wp-block-paragraph">To speak with an iDS expert, visit <a href="https://idsinc.com" target="_blank" rel="noreferrer noopener"><strong>idsinc.com</strong></a>.</p>
+
+<hr class="wp-block-separator has-text-color has-cyan-bluish-gray-color has-alpha-channel-opacity has-cyan-bluish-gray-background-color has-background"/>
+
+<p class="wp-block-paragraph"><strong><em>iDS provides consultative data solutions to corporations and law firms around the world, giving them a decisive advantage – both in and out of the courtroom. iDS’s subject matter experts and data strategists specialize in finding solutions to complex data problems, ensuring data can be leveraged as an asset, not a liability. To learn more, visit </em></strong><a href="https://idsinc.com/" target="_blank" rel="noreferrer noopener"><strong><em>idsinc.com</em></strong></a><strong><em>.</em></strong></p>
+
+<p class="wp-block-paragraph"><em><br>Having trouble with a technical term used in this post? Check out our </em><a href="https://idsinc.com/glossary/" target="_blank" rel="noreferrer noopener"><em>Data Investigators Glossary</em></a><em> to crack the code. </em></p>
+  </div>
+  <div style="margin-top:48px;padding-top:28px;border-top:1px solid #E6E9ED">
+    <a href="/insights/" class="textlink">&larr; Back to Insights</a>
+  </div>
+</div>
+
+<div style="background:#FFFFFF;border-top:1px solid #E6E9ED">
+  <div style="max-width:1200px;margin:0 auto;padding:88px 32px;display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:56px;align-items:start">
+    <div>
+      <div class="mono-label" style="margin-bottom:22px;display:block">What is at risk</div>
+      <p style="font-size:clamp(28px,3vw,40px);font-weight:500;font-family:var(--display);letter-spacing:-.02em;line-height:1.16;color:#003764;margin:14px 0 18px;text-wrap:pretty">Without a foundation of evidence, a legal team can only argue the law.</p>
+      <p style="font-size:16px;line-height:1.65;color:#404040;margin:0 0 16px;max-width:34em">A talented team without the raw material is reasoning from assumption. The theory gets built, the position hardens, and the fact that would have changed it surfaces at the eleventh hour. Get your team standing on the actual record early and you are building on a foundation instead of a house of cards.</p>
+      <p style="font-size:16px;line-height:1.65;color:#595959;margin:0;max-width:34em">Our engagement process is built to move at the pace of a live matter, so starting is rarely the thing that slows you down.</p>
+    </div>
+    <div class="close-cta">
+      <div class="primary">
+        <h3>Start building your narrative</h3>
+        <p style="font-size:15px;line-height:1.6;margin:0 0 20px;color:#45515E">Tell us what you are trying to establish. We will tell you whether the evidence can get you there, and how quickly we can be working on it.</p>
+        <a href="/contact/" style="display:inline-block;background:#DB6015;color:#FFFFFF;font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;padding:14px 22px">Contact iDS</a>
+      </div>
+      <div class="secondary">
+        <h3>Not ready for that yet</h3>
+        <p style="font-size:15.5px;line-height:1.6;margin:0 0 14px;color:#45515E">Read how we approached matters that started as unanswerable questions. No client details, no case statistics.</p>
+        <a href="/can-you/" style="font-size:14px;font-weight:bold;letter-spacing:.06em;text-transform:uppercase;color:#DB6015">See the Can You&hellip;? questions &rarr;</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="background:#0A2440">
+  <div style="max-width:1200px;margin:0 auto;padding:64px 32px 26px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:40px">
+    <div>
+      <img src="/assets/ids-logo-reversed.png" alt="iDiscovery Solutions" style="height:52px;width:auto;display:block;margin-bottom:20px" />
+      <p style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:bold;color:#FFFFFF;margin:0 0 6px">Truth Through Data</p>
+      <p style="font-size:14px;line-height:1.6;color:rgba(255,255,255,.7);margin:0 0 20px">Where expertise leads, defensible outcomes follow.</p>
+      <div style="display:flex;gap:10px">
+        <a href="https://twitter.com/iDiscoveryInc" target="_blank" aria-label="X (Twitter)" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid rgba(255,255,255,.3);color:rgba(255,255,255,.82);font-size:13px;font-weight:bold">X</a>
+        <a href="https://www.facebook.com/iDiscovery-Solutions-110210573904472" target="_blank" aria-label="Facebook" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid rgba(255,255,255,.3);color:rgba(255,255,255,.82);font-size:13px;font-weight:bold">f</a>
+        <a href="https://www.linkedin.com/company/idsinc" target="_blank" aria-label="LinkedIn" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid rgba(255,255,255,.3);color:rgba(255,255,255,.82);font-size:13px;font-weight:bold">in</a>
+        <a href="https://www.youtube.com/channel/UCarv7o1MeYfCp0eZ1IrufIw" target="_blank" aria-label="YouTube" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid rgba(255,255,255,.3);color:rgba(255,255,255,.82);font-size:13px;font-weight:bold">&#9654;</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:16px">Firm</div>
+      <div style="display:grid;gap:10px">
+        <a href="/about/" style="font-size:15px;color:rgba(255,255,255,.82)">About Us</a>
+        <a href="/capabilities/" style="font-size:15px;color:rgba(255,255,255,.82)">Capabilities</a>
+        <a href="/our-experts/" style="font-size:15px;color:rgba(255,255,255,.82)">Our Experts</a>
+        <a href="/can-you/" style="font-size:15px;color:rgba(255,255,255,.82)">Can You&hellip;?</a>
+        <a href="/careers/" style="font-size:15px;color:rgba(255,255,255,.82)">Join Our Team</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:16px">Thinking</div>
+      <div style="display:grid;gap:10px">
+        <a href="/ai-evidence/" style="font-size:15px;color:rgba(255,255,255,.82)">AI &amp; Evidence</a>
+        <a href="/insights/" style="font-size:15px;color:rgba(255,255,255,.82)">Insights</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:16px">Offices</div>
+      <div style="display:grid;gap:14px">
+        <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">Washington, DC</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">3000 K Street NW, Suite 425<br />Washington, DC 20007<br />+1.800.813.4832</div></div>
+        <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">Costa Mesa, CA</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">535 Anton Blvd., Suite 860<br />Costa Mesa, CA 92626<br />+1.714.581.4830</div></div>
+        <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">Alpharetta, GA</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">11720 Amber Park Drive, Suite 160<br />Alpharetta, GA 30009<br />+1.626.224.3864</div></div>
+        <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">London</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">71&ndash;73 Carter Lane<br />London EC4V 5EQ<br />+44 (0)20 8242 4130</div></div>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:16px">Contact</div>
+      <div style="display:grid;gap:10px">
+        <a href="mailto:info@idsinc.com" style="font-size:15px;color:rgba(255,255,255,.82)">info@idsinc.com</a>
+        <a href="/contact/" style="font-size:15px;color:rgba(255,255,255,.82)">Start building your narrative</a>
+      </div>
+    </div>
+  </div>
+  <div style="max-width:1200px;margin:0 auto;padding:22px 32px 40px;border-top:1px solid rgba(255,255,255,.16);display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between">
+    <p style="font-size:13px;color:rgba(255,255,255,.6);margin:0">Copyright &copy; 2026 iDiscovery Solutions, Inc. All Rights Reserved &nbsp;|&nbsp; <a href="https://idsinc.com/ids-privacy-policy/" target="_blank" style="color:rgba(255,255,255,.6)">Privacy Policy</a></p>
+    <div style="display:flex;gap:14px;font-size:13px;color:rgba(255,255,255,.6)">
+      <a href="#" style="color:#FFFFFF;font-weight:bold">EN</a>
+      <a href="#" style="color:rgba(255,255,255,.6)">EN-GB</a>
+      <a href="#" style="color:rgba(255,255,255,.6)">DE</a>
+      <a href="#" style="color:rgba(255,255,255,.6)">ES</a>
+      <a href="#" style="color:rgba(255,255,255,.6)">FR</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
