@@ -1857,7 +1857,15 @@ class Component extends DCLogic {
       });
       NI.on('login', (user) => this.setState({ editorLoggedIn: !!user }));
       NI.on('logout', () => this.setState({ editorLoggedIn: false }));
-      NI.init({ APIUrl: 'https://ids-website-editor.netlify.app/.netlify/identity' });
+      // The template runtime can mount this component more than once; only
+      // ever initialize the identity widget singleton a single time so it
+      // doesn't spin up duplicate modals that race each other.
+      if (!window.__niInited) {
+        window.__niInited = true;
+        NI.init({ APIUrl: 'https://ids-website-editor.netlify.app/.netlify/identity' });
+      } else if (NI.currentUser()) {
+        this.setState({ editorLoggedIn: true });
+      }
     }
     this._onScroll = () => {
       const s = (window.scrollY || document.documentElement.scrollTop) > 12;
