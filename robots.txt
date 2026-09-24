@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ids-staging-z4swi.kinsta.page/sitemap.xml
