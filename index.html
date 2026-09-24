@@ -11,6 +11,7 @@
     location.replace('/admin/' + location.hash);
   }
 </script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script src="./support.js"></script>
 </head>
 <body>
@@ -1482,8 +1483,8 @@
   </div>
   </div>
 
-  <!-- edit-this-page shortcut -->
-  <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+  <!-- edit-this-page shortcut: only ever shown to a signed-in editor, never to the public -->
+  <sc-if value="{{ canEdit }}" hint-placeholder-val="{{ false }}">
   <div style="position:fixed;right:22px;bottom:22px;z-index:80">
     <a href="https://ids-website-editor.netlify.app/admin/#/collections/pages/entries/home" target="_blank" style="display:flex;align-items:center;background:#003764;color:#FFFFFF;font-size:12px;font-weight:bold;letter-spacing:.04em;padding:12px 14px;box-shadow:0 8px 24px rgba(0,55,100,.18)" style-hover="background:#DB6015">Edit this page</a>
   </div>
@@ -1837,13 +1838,27 @@ class Component extends DCLogic {
     return 'wide';
   }
 
-  state = { page: 'home', scrolled: false, open: 1, filter: 'All', need: '', sent: false, menuOpen: false, bucket: 'wide', roster: 'experts', sel: null, fileName: '', dragging: false, cat: 'All', homeContent: HOME_DEFAULT };
+  state = { page: 'home', scrolled: false, open: 1, filter: 'All', need: '', sent: false, menuOpen: false, bucket: 'wide', roster: 'experts', sel: null, fileName: '', dragging: false, cat: 'All', homeContent: HOME_DEFAULT, editorLoggedIn: false };
 
   componentDidMount() {
     fetch('content/home.json', { cache: 'no-store' })
       .then((r) => (r.ok ? r.json() : null))
       .then((json) => { if (json) this.setState({ homeContent: json }); })
       .catch(() => {});
+    // "Edit this page" only ever shows to a signed-in editor. Netlify Identity
+    // sessions are per-origin, so this checks a session on THIS domain, separate
+    // from the one used to log into /admin/. Visit /#login once, signed in as an
+    // editor, to establish it here; after that it persists for that browser.
+    if (window.netlifyIdentity) {
+      const NI = window.netlifyIdentity;
+      NI.on('init', (user) => {
+        this.setState({ editorLoggedIn: !!user });
+        if (!user && location.hash === '#login') NI.open('login');
+      });
+      NI.on('login', (user) => this.setState({ editorLoggedIn: !!user }));
+      NI.on('logout', () => this.setState({ editorLoggedIn: false }));
+      NI.init({ APIUrl: 'https://ids-website-editor.netlify.app/.netlify/identity' });
+    }
     this._onScroll = () => {
       const s = (window.scrollY || document.documentElement.scrollTop) > 12;
       if (s !== this.state.scrolled) this.setState({ scrolled: s });
@@ -1987,6 +2002,7 @@ class Component extends DCLogic {
       isCases: p === 'cases', isAI: p === 'ai', isInsights: p === 'insights',
       showClose: p !== 'contact',
       isAbout: p === 'about', isCareers: p === 'careers', isContact: p === 'contact',
+      canEdit: p === 'home' && this.state.editorLoggedIn,
       goHome: this.nav('home'), goServices: this.nav('services'), goExperts: this.nav('experts'),
       goCases: this.nav('cases'), goAI: this.nav('ai'), goInsights: this.nav('insights'),
       goAbout: this.nav('about'), goCareers: this.nav('careers'), goContact: this.nav('contact'),
