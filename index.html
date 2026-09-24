@@ -13,12 +13,24 @@
 <meta property="og:image" content="https://ids-staging-z4swi.kinsta.page/assets/ids-logo-navy.png">
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="/assets/ids-logo-navy.png">
-<style>html, body { margin:0; padding:0; }
-body { font-family: Arial, Helvetica, sans-serif; color:#595959; background:#FFFFFF; -webkit-font-smoothing:antialiased; }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>:root {
+  --navy:#003764; --navy-deep:#0A2440; --orange:#DB6015; --orange-deep:#B94E0E;
+  --ink:#16212C; --text:#45515E; --muted:#6F7B88; --rule:#D5DBE1; --band:#F2F4F6; --paper:#FFFFFF;
+  --sticker:#F3D65A; --noise:#B7C0CA; --on-navy:#D3DEEA; --on-navy-muted:#9FC0DF;
+  --display:"Jost","Futura","Century Gothic","Avenir Next",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+html, body { margin:0; padding:0; }
+body { font-family: var(--display); color:#595959; background:#FFFFFF; -webkit-font-smoothing:antialiased; }
 * { box-sizing: border-box; }
 a { text-decoration:none; }
 ::selection { background:#FFF1E6; color:#003764; }
 img { max-width:100%; }
+.mono-label { font:500 12px var(--mono); letter-spacing:.1em; text-transform:uppercase; color:var(--orange); }
+.textlink { font:500 15px var(--display); color:var(--navy); text-decoration:none; border-bottom:1.5px solid currentColor; padding-bottom:2px; }
+.textlink:hover { color: var(--orange); }
 @keyframes idsDrift { 0%{transform:translateY(0)} 50%{transform:translateY(-10px)} 100%{transform:translateY(0)} }
 @keyframes idsFloat { from { transform: scale(1.02) translate3d(0,0,0); } to { transform: scale(1.07) translate3d(-1.2%,-1%,0); } }
 @keyframes idsGlow { from { opacity: .5; } to { opacity: 1; } }
@@ -33,11 +45,38 @@ img { max-width:100%; }
 }
 #nav-toggle:checked ~ .nav-mobile-menu { display: grid !important; }
 
+/* About Us mega-menu (desktop only) */
+.nav-item { position: static; display: flex; align-items: center; }
+.nav-item > button { font: 700 14px var(--display); letter-spacing:.04em; text-transform:uppercase; color: #003764; background: none; border: 0; padding: 6px 0; cursor: pointer; display: flex; align-items: center; gap: 6px; white-space: nowrap; }
+.nav-item > button::after { content:""; width:6px; height:6px; border-right:1.5px solid currentColor; border-bottom:1.5px solid currentColor; transform: translateY(-2px) rotate(45deg); transition: transform .15s; }
+.nav-item > button[aria-expanded="true"] { color: var(--orange); }
+.nav-item > button[aria-expanded="true"]::after { transform: translateY(2px) rotate(-135deg); }
+.mega { position:absolute; left:0; right:0; top:100%; background:#FFFFFF; border-top:1px solid #E6E9ED; border-bottom:1px solid #E6E9ED; box-shadow:0 24px 40px -28px rgba(0,30,60,.45); }
+.mega .mega-wrap { max-width:1200px; margin:0 auto; padding:36px 24px 40px; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)) minmax(0,1.15fr); gap:36px; align-items:start; }
+.mega h4 { margin:0 0 6px; font:500 12px var(--mono); letter-spacing:.1em; text-transform:uppercase; color:var(--orange); }
+.mega ul { list-style:none; margin:0; padding:0; display:grid; }
+.mega li a { display:block; padding:12px 0; border-bottom:1px solid #E6E9ED; }
+.mega li:last-child a { border-bottom:0; }
+.mega li b { display:block; font:500 16px/1.25 var(--display); color:#003764; }
+.mega li span { display:block; margin-top:4px; font:14px/1.45 var(--display); color:#595959; }
+.mega li a:hover b { color: var(--orange); }
+.mega-feature { background:var(--navy-deep); color:var(--on-navy); padding:28px 28px 26px; display:flex; flex-direction:column; gap:14px; }
+.mega-feature svg { width:56px; height:56px; }
+.mega-feature p { font:15px/1.5 var(--display); margin:0; }
+.mega-feature dl { margin:0; display:grid; grid-template-columns:1fr 1fr; gap:14px 18px; border-top:1px solid #23415F; padding-top:14px; }
+.mega-feature dt { font:500 26px/1 var(--display); color:#fff; margin:0; }
+.mega-feature dd { margin:4px 0 0; font:13px/1.35 var(--display); color:var(--on-navy-muted); }
+.mega-feature a { font:500 15px var(--display); color:#fff; border-bottom:1.5px solid var(--orange); align-self:flex-start; padding:0 0 2px; }
+@media (max-width:1119px) { .mega { display:none !important; } }
+
 /* Hero heading: scales down below 760px (matches old "tight" bucket) */
 @media (max-width: 759px) {
   .hero-h1 { font-size: 38px !important; }
   .sub-h1 { font-size: 34px !important; }
   .hero-pad { padding: 52px 24px 56px !important; }
+}
+@media (max-width: 960px) {
+  .hero-pad { grid-template-columns: 1fr !important; gap: 40px !important; }
 }
 
 details.disc > summary { list-style: none; cursor: pointer; }
@@ -46,11 +85,143 @@ details.disc .plus::after { content: "+"; }
 details.disc[open] .plus::after { content: "\2013"; }
 
 .filter-chip.is-off { display: none; }
+
+/* Masthead: "Truth Through Data", led by the iDS puck */
+.masthead { position:relative; background:var(--navy-deep); overflow:hidden; }
+.masthead .mh-wrap { position:relative; max-width:1200px; margin:0 auto; padding-inline:32px; display:flex; align-items:center; min-height:clamp(150px,15vw,210px); padding-block:36px; }
+.mast-art { position:absolute; left:32px; top:50%; height:clamp(96px,9vw,132px); width:auto; transform:translateY(-50%); overflow:visible; }
+.mast-art .trace { stroke:rgba(255,255,255,.16); stroke-width:4; fill:none; stroke-dasharray:2400; stroke-dashoffset:0; }
+.mast-art .node { fill:var(--orange); }
+.mast-art .end { fill:rgba(255,255,255,.28); }
+.masthead.play .trace { animation: mastTrace 1.6s ease-out both; }
+.masthead.play .trace:nth-of-type(2){animation-delay:.08s}.masthead.play .trace:nth-of-type(3){animation-delay:.16s}
+.masthead.play .trace:nth-of-type(4){animation-delay:.24s}.masthead.play .trace:nth-of-type(5){animation-delay:.32s}
+@keyframes mastTrace { from{stroke-dashoffset:2400} to{stroke-dashoffset:0} }
+.mast-text { position:relative; margin-left:calc(clamp(96px,9vw,132px) + clamp(28px,3vw,44px) - 18px); padding:10px 18px; background:var(--navy-deep); }
+.mast-text h2 { font:500 clamp(30px,3.8vw,52px)/1 var(--display); letter-spacing:.01em; color:#fff; margin:0; }
+.mast-text h2 span { color: var(--orange); }
+.mast-tag { margin-top:12px; font:400 clamp(14px,1.35vw,18px)/1.4 var(--display); letter-spacing:.02em; color:var(--on-navy); }
+@media (max-width:640px) { .mast-art { left:18px; } }
+
+/* Pillars strip */
+.pillars-strip { border-block:1px solid #E6E9ED; }
+.pillars-strip .pw { max-width:1200px; margin:0 auto; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); }
+.pillars-strip .pw > div { padding:20px 22px; font:500 14px var(--display); letter-spacing:.1em; text-transform:uppercase; color:#003764; border-left:1px solid #E6E9ED; }
+.pillars-strip .pw > div:first-child { border-left:0; padding-left:32px; }
+.pillars-strip .pw > div.hi { color: var(--orange); }
+@media (max-width:760px) { .pillars-strip .pw { grid-template-columns:1fr; } .pillars-strip .pw > div { border-left:0; border-top:1px solid #E6E9ED; padding-left:32px !important; } .pillars-strip .pw > div:first-child { border-top:0; } }
+
+/* Exhibit card (hero) */
+.exhibit { position:relative; margin:0; background:#FFFFFF; border:1px solid #C4CCD4; box-shadow:0 1px 0 #E6EAEE, 0 18px 40px -24px rgba(0,40,80,.35); }
+.ex-head { display:flex; justify-content:space-between; align-items:flex-start; gap:16px; padding:22px 24px 0; }
+.ex-head h3 { font-size:20px; line-height:1.25; max-width:20em; margin:6px 0 0; color:#16212C; }
+.ex-sticker { flex:0 0 auto; width:44px; height:30px; background:var(--sticker); transform:rotate(-2.5deg); box-shadow:0 1px 2px rgba(0,0,0,.18); }
+.ex-body { padding:6px 12px 0; overflow-x:auto; }
+.ex-body svg { display:block; width:100%; min-width:480px; height:auto; }
+.lane-label { font:500 12.5px var(--display); fill:#16212C; }
+.ex-grid { stroke:#E4E8EC; stroke-width:1; }
+.ex-lane { stroke:#CBD2D9; stroke-width:1; }
+.ex-noise { fill:var(--noise); }
+.ex-key { fill:var(--navy); transition:fill .5s ease .2s; }
+.ex-chain { fill:none; stroke:var(--orange); stroke-width:2; stroke-linejoin:round; stroke-dasharray:900; stroke-dashoffset:0; }
+.exhibit.play .ex-chain { animation: exDraw 2.4s ease .5s both; }
+.exhibit.done .ex-key { fill: var(--orange); }
+@keyframes exDraw { from{stroke-dashoffset:900} to{stroke-dashoffset:0} }
+.ex-result { display:grid; grid-template-columns:auto 1fr; gap:6px 16px; align-items:baseline; margin:6px 24px 0; padding:14px 0 16px; border-top:1px dashed #D5DBE1; }
+.ex-result .mono-label { grid-row:1/3; }
+.ex-result p { font:500 17px/1.35 var(--display); color:#16212C; margin:0; }
+
+/* Problem / stake / outcome */
+.pso-wrap { max-width:1200px; margin:0 auto; padding:64px 32px; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:0; }
+.pso-col { position:relative; padding:0 36px 0 0; }
+.pso-col + .pso-col { padding-left:36px; border-left:1px solid #E6E9ED; }
+.pso-col::after { content:""; position:absolute; right:-9px; top:6px; width:16px; height:16px; background:var(--band); border-top:1.5px solid var(--orange); border-right:1.5px solid var(--orange); transform:rotate(45deg); }
+.pso-col:last-child::after { display:none; }
+.pso-col p.pso-body { margin-top:14px; font:400 19px/1.5 var(--display); color:#16212C; }
+.pso-col:last-child p.pso-body { font:500 21px/1.4 var(--display); color:#003764; }
+@media (max-width:900px) { .pso-wrap { grid-template-columns:1fr; gap:34px; } .pso-col, .pso-col + .pso-col { padding:0; border-left:0; } .pso-col + .pso-col { padding-top:34px; border-top:1px solid #E6E9ED; } .pso-col::after { display:none; } }
+
+/* Why clients call us */
+.why-wrap { max-width:1200px; margin:0 auto; padding:92px 32px; display:grid; grid-template-columns:minmax(0,5fr) minmax(0,6fr); gap:64px; align-items:start; }
+.why-statement { margin-top:16px; font:500 clamp(28px,3vw,38px)/1.18 var(--display); color:#16212C; letter-spacing:-.01em; }
+.why-body { margin-top:18px; font-size:16px; line-height:1.65; color:#45515E; max-width:34em; }
+.diffs { border-top:1px solid #16212C; }
+.diff { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:4px 24px; padding:24px 0; border-bottom:1px solid #E6E9ED; }
+.diff h3 { font-size:22px; margin:0; color:#003764; }
+.diff p { grid-column:1; max-width:34em; margin:8px 0 0; font-size:15px; line-height:1.6; color:#595959; }
+.diff::after { content:"\2192"; grid-column:2; grid-row:1; color:var(--orange); font:20px var(--display); }
+@media (max-width:900px) { .why-wrap { grid-template-columns:1fr; gap:32px; } }
+
+/* Bench of people */
+.bench-wrap { max-width:1200px; margin:0 auto; padding:92px 32px; }
+.bench-head { display:flex; justify-content:space-between; align-items:flex-end; gap:24px; flex-wrap:wrap; margin-bottom:36px; }
+.bench-head h2 { font-size:clamp(30px,3vw,42px); line-height:1.1; letter-spacing:-.01em; margin:0; color:#16212C; }
+.bench-head p { margin-top:12px; max-width:36em; color:#45515E; font-size:16px; line-height:1.6; }
+.bench { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:20px; }
+.person { display:flex; flex-direction:column; gap:12px; }
+.person img { width:100%; aspect-ratio:4/5; object-fit:cover; object-position:50% 22%; display:block; background:#DDE2E7; }
+.person b { font:500 18px/1.2 var(--display); color:#16212C; }
+.person span { font:14px/1.35 var(--display); color:#6F7B88; }
+.person:hover b { color: var(--orange); }
+@media (max-width:900px) { .bench { grid-template-columns:repeat(3,minmax(0,1fr)); } }
+@media (max-width:560px) { .bench { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+
+/* Where we fit: phases on a foundation */
+.phases-wrap { max-width:1200px; margin:0 auto; padding:92px 32px 0; }
+.phases { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:0; margin-top:36px; }
+.phase { padding:28px 28px 32px; border-left:1px solid #E6E9ED; }
+.phase:first-child { border-left:0; padding-left:0; }
+.phase h3 { font-size:26px; margin:10px 0 10px; color:#003764; }
+.phase p { margin:0; font-size:15px; line-height:1.6; color:#595959; }
+@media (max-width:860px) { .phases { grid-template-columns:1fr; } .phase { border-left:0; border-top:1px solid #E6E9ED; padding-left:0; } .phase:first-child { border-top:0; } }
+.foundation-wrap { max-width:1200px; margin:36px auto 0; padding:0 32px 92px; }
+.foundation { background:var(--navy); color:var(--on-navy); display:grid; grid-template-columns:minmax(0,4fr) minmax(0,6fr); gap:40px; padding:30px 34px; position:relative; }
+.foundation h3 { color:#fff; font-size:30px; margin:6px 0 0; }
+.foundation p { margin:0; color:rgba(255,255,255,.84); font-size:16px; line-height:1.65; }
+@media (max-width:860px) { .foundation { grid-template-columns:1fr; gap:12px; } }
+
+/* Digital Evidence, Understood (point of view) */
+.pov-band { background:var(--navy-deep); color:var(--on-navy); overflow:hidden; }
+.pov-wrap { max-width:1200px; margin:0 auto; padding:96px 32px; display:grid; grid-template-columns:minmax(0,6fr) minmax(0,5fr); gap:56px; align-items:center; }
+.pov-wrap h2 { margin-top:18px; color:#fff; font:400 clamp(34px,4vw,54px)/1.08 var(--display); letter-spacing:-.015em; }
+.pov-wrap > div > p { margin-top:22px; font-size:19px; line-height:1.6; max-width:30em; color:var(--on-navy); }
+.pov-points { margin-top:28px; display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:20px; }
+.pov-points div div:first-child { height:2px; background:rgba(255,255,255,.3); margin-bottom:10px; }
+.pov-points div div:last-child { font-size:14px; color:var(--on-navy); line-height:1.5; }
+.pov-wrap .textlink { margin-top:28px; display:inline-block; color:#fff; font:500 15px var(--display); border-bottom:1.5px solid var(--orange); padding-bottom:2px; }
+.pov-wrap canvas { width:100%; height:auto; aspect-ratio:5/4; display:block; }
+@media (max-width:900px) { .pov-wrap { grid-template-columns:1fr; } }
+
+/* Can You...? rows */
+.qs-wrap { max-width:1200px; margin:0 auto; padding:92px 32px; }
+.qs { border-top:1px solid #16212C; margin-top:36px; }
+.qrow { display:grid; grid-template-columns:22px minmax(0,1fr) auto; gap:24px; align-items:baseline; padding:26px 0; border-bottom:1px solid #E6E9ED; }
+.qrow .q-no { width:22px; height:22px; background:var(--sticker); align-self:center; transform:rotate(-2.5deg); box-shadow:0 1px 2px rgba(0,0,0,.18); }
+.qrow h3 { font:400 clamp(21px,2.2vw,28px)/1.25 var(--display); color:#16212C; margin:0; }
+.qrow .go { font:500 15px var(--display); color:var(--orange); white-space:nowrap; }
+@media (max-width:640px) { .qrow { grid-template-columns:22px minmax(0,1fr); } .qrow .go { grid-column:2; } }
+
+/* Engagement steps */
+.steps-wrap { max-width:1200px; margin:0 auto; padding:92px 32px; }
+.steps { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:36px; position:relative; margin-top:36px; }
+.steps::before { content:""; position:absolute; left:0; right:0; top:22px; border-top:2px solid var(--orange); }
+.st { position:relative; padding-top:58px; }
+.st .n { position:absolute; top:0; left:0; width:46px; height:46px; border-radius:50%; background:#FFFFFF; border:2px solid var(--orange); display:flex; align-items:center; justify-content:center; font:500 16px var(--display); color:var(--orange); }
+.st h3 { font-size:22px; line-height:1.25; margin:0 0 10px; color:#003764; }
+.st p { margin:0; font-size:15px; line-height:1.6; color:#595959; }
+@media (max-width:860px) { .steps { grid-template-columns:1fr; gap:28px; } .steps::before { left:22px; right:auto; top:0; bottom:0; border-top:0; border-left:2px solid var(--orange); } .st { padding:0 0 0 72px; } }
+
+/* Closing CTA box (shared across pages) */
+.close-cta { border:1px solid #E6E9ED; display:flex; flex-direction:column; }
+.close-cta .primary { background:var(--band); padding:30px 30px 28px; }
+.close-cta .primary h3 { color:#003764; font-size:22px; margin:0 0 10px; }
+.close-cta .secondary { background:#FFFFFF; padding:26px 30px; border-top:1px solid #E6E9ED; }
+.close-cta .secondary h3 { font-size:19px; color:#003764; margin:0 0 8px; }
 </style>
 </head>
 <body>
 <div class="site-nav" style="position:sticky;top:0;z-index:50;background:#FFFFFF;border-bottom:1px solid #E6E9ED">
-  <div style="max-width:1200px;margin:0 auto;padding:0 24px;height:76px;display:flex;align-items:center;gap:20px">
+  <div style="max-width:1200px;margin:0 auto;padding:0 24px;height:76px;display:flex;align-items:center;gap:26px">
     <a href="/" style="display:flex;align-items:center;flex:0 0 auto"><img src="/assets/ids-logo-navy.png" alt="iDiscovery Solutions" class="nav-logo" style="height:44px;width:auto;display:block" /></a>
     <div class="nav-mobile" style="flex:1 1 auto;display:flex;align-items:center;justify-content:flex-end;gap:10px">
       <a href="/contact/" style="background:#DB6015;color:#FFFFFF;font-size:12px;font-weight:bold;letter-spacing:.06em;text-transform:uppercase;padding:12px 14px;white-space:nowrap">Contact</a>
@@ -61,207 +232,290 @@ details.disc[open] .plus::after { content: "\2013"; }
       </label>
     </div>
     <div class="nav-links" style="flex:1 1 auto;display:flex;align-items:center;justify-content:flex-end;gap:24px;flex-wrap:nowrap">
-      <a href="/about/" style="font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764;white-space:nowrap">About Us</a>
-        <a href="/capabilities/" style="font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764;white-space:nowrap">Capabilities</a>
+      <div class="nav-item">
+        <button type="button" id="about-btn" aria-expanded="false" aria-controls="about-menu">About Us</button>
+      </div>
+      <a href="/capabilities/" style="font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764;white-space:nowrap">Capabilities</a>
         <a href="/our-experts/" style="font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764;white-space:nowrap">Our Experts</a>
         <a href="/can-you/" style="font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764;white-space:nowrap">Can You&hellip;?</a>
         <a href="/ai-evidence/" style="font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764;white-space:nowrap">AI &amp; Evidence</a>
         <a href="/insights/" style="font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764;white-space:nowrap">Insights</a>
+      <a href="/careers/" style="font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764;white-space:nowrap">Join Our Team</a>
       <a href="/contact/" style="background:#DB6015;color:#FFFFFF;font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;padding:12px 20px;white-space:nowrap" onmouseover="this.style.background='#003764'" onmouseout="this.style.background='#DB6015'">Start Building Your Narrative</a>
+    </div>
+  </div>
+  <div class="mega" id="about-menu" hidden>
+    <div class="mega-wrap">
+      <div>
+        <h4>Who we are</h4>
+        <ul>
+          <li><a href="/about/"><b>About iDS</b><span>Founded in 2008, a professional services consulting firm specializing in Digital Forensics, eDiscovery &amp; eDisclosure, Structured Data, Cybersecurity, Data Privacy, and Information Governance.</span></a></li>
+          <li><a href="/about/#mission"><b>Our Mission</b><span>A consultative experience that follows a structured process in order to provide customized solutions.</span></a></li>
+          <li><a href="/about/#history"><b>History</b><span>Founded in Washington, DC by industry veterans with more than 50 years of litigation and consulting experience combined.</span></a></li>
+          <li><a href="/our-experts/"><b>Our Team</b><span>Leadership, testifying experts, and the teams who work alongside them.</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>How we work</h4>
+        <ul>
+          <li><a href="/about/#the-ids-way"><b>The iDS Way</b><span>An established path for optimal outcomes: Consultative Experts, Structured Process, and Customized Solutions.</span></a></li>
+          <li><a href="/about/#the-ids-way"><b>Core Fundamentals</b><span>Behaviors that transform words into actions and bring our culture to life.</span></a></li>
+          <li><a href="/about/#recognition"><b>Recognition</b><span>Honored as a Band One and Band Two consulting firm by Chambers and Partners.</span></a></li>
+          <li><a href="/about/#recognition"><b>Industry Leadership</b><span>The Sedona Conference, the Electronic Discovery Institute, and the Georgetown Global Advanced Electronic Discovery Institute.</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Community &amp; offices</h4>
+        <ul>
+          <li><a href="/about/#community"><b>Pro Bono Program</b><span>Every person with a viable case deserves to have equal justice under the law.</span></a></li>
+          <li><a href="/about/#community"><b>Diversity, Equity &amp; Inclusion</b><span>Diverse talent means diverse skills, which yields better outcomes for clients.</span></a></li>
+          <li><a href="/about/#uk-eu"><b>iDS UK &amp; EU</b><span>Tim LaTulippe and Dominic Tucker head up the iDS offices in London.</span></a></li>
+          <li><a href="/contact/"><b>Locations</b><span>Washington, DC &middot; Alpharetta, GA &middot; Costa Mesa, CA &middot; London</span></a></li>
+        </ul>
+      </div>
+      <div class="mega-feature">
+        <svg viewBox="0 0 270 270" aria-hidden="true"><circle cx="135" cy="135" r="135" fill="#DB6015" mask="url(#puck-cut)"/></svg>
+        <p>A global provider of consultative data solutions, under the leadership of founder and CEO Dan Regard.</p>
+        <dl>
+          <div><dt>3,000+</dt><dd>Matters since 2008</dd></div>
+          <div><dt>60+</dt><dd>Full-time employees</dd></div>
+          <div><dt>4</dt><dd>Offices in the US and UK</dd></div>
+          <div><dt>Band 1</dt><dd>Chambers and Partners</dd></div>
+        </dl>
+        <a href="/about/">About iDS &rarr;</a>
+      </div>
     </div>
   </div>
   <input type="checkbox" id="nav-toggle" class="nav-toggle-input" style="display:none" />
   <div class="nav-mobile-menu" style="border-top:1px solid #E6E9ED;background:#FFFFFF;display:none">
       <a href="/about/" style="padding:18px 24px;border-bottom:1px solid #E6E9ED;font-size:15px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764">About Us</a>
-        <a href="/capabilities/" style="padding:18px 24px;border-bottom:1px solid #E6E9ED;font-size:15px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764">Capabilities</a>
+      <a href="/capabilities/" style="padding:18px 24px;border-bottom:1px solid #E6E9ED;font-size:15px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764">Capabilities</a>
         <a href="/our-experts/" style="padding:18px 24px;border-bottom:1px solid #E6E9ED;font-size:15px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764">Our Experts</a>
         <a href="/can-you/" style="padding:18px 24px;border-bottom:1px solid #E6E9ED;font-size:15px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764">Can You&hellip;?</a>
         <a href="/ai-evidence/" style="padding:18px 24px;border-bottom:1px solid #E6E9ED;font-size:15px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764">AI &amp; Evidence</a>
         <a href="/insights/" style="padding:18px 24px;border-bottom:1px solid #E6E9ED;font-size:15px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764">Insights</a>
+      <a href="/careers/" style="padding:18px 24px;border-bottom:1px solid #E6E9ED;font-size:15px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;color:#003764">Join Our Team</a>
   </div>
 </div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><mask id="puck-cut" maskUnits="userSpaceOnUse" x="0" y="0" width="270" height="270">
+  <rect x="0" y="0" width="270" height="270" fill="#fff"/>
+  <g fill="#000">
+    <rect x="-10" y="41" width="195" height="10"/><rect x="-10" y="88" width="217" height="10"/>
+    <rect x="-10" y="127" width="187" height="10"/><rect x="-10" y="175" width="97" height="10"/>
+    <rect x="-10" y="213" width="129" height="10"/>
+    <circle cx="185" cy="46" r="14"/><circle cx="207" cy="93" r="14"/><circle cx="177" cy="132" r="14"/>
+    <circle cx="87" cy="180" r="14"/><circle cx="119" cy="218" r="14"/>
+  </g>
+</mask></defs></svg>
+<script>
+(function(){
+  var ab=document.getElementById('about-btn'), am=document.getElementById('about-menu');
+  if(!ab||!am) return;
+  var item=ab.closest('.nav-item'), hideT;
+  function setAbout(open){am.hidden=!open;ab.setAttribute('aria-expanded',open);}
+  ab.addEventListener('click',function(){setAbout(am.hidden);});
+  item.addEventListener('mouseenter',function(){clearTimeout(hideT);setAbout(true);});
+  item.addEventListener('mouseleave',function(){hideT=setTimeout(function(){setAbout(false);},180);});
+  am.addEventListener('mouseenter',function(){clearTimeout(hideT);});
+  am.addEventListener('mouseleave',function(){hideT=setTimeout(function(){setAbout(false);},180);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!am.hidden){setAbout(false);ab.focus();}});
+  document.addEventListener('click',function(e){if(!item.contains(e.target)&&!am.contains(e.target))setAbout(false);});
+})();
+</script>
 
-<div style="position:relative;background:#FFFFFF;overflow:hidden;border-bottom:1px solid #E6E9ED">
-  <img src="/assets/gfx-network-light.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.9;animation:idsFloat 38s ease-in-out infinite alternate" />
-  <div style="position:absolute;inset:0;background:linear-gradient(100deg,rgba(255,255,255,.97) 0%,rgba(255,255,255,.9) 44%,rgba(255,255,255,.62) 100%)"></div>
-  <div class="hero-pad" style="position:relative;max-width:1200px;margin:0 auto;padding:96px 32px 104px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:44px;align-items:center">
-    <div>
-      <div data-key="hero.eyebrow" style="border-left:3px solid #DB6015;padding-left:14px;color:#DB6015;font-size:13px;font-weight:bold;letter-spacing:.16em;text-transform:uppercase;margin-bottom:26px">Truth Through Data</div>
-      <h1 data-key="hero.headline" class="hero-h1" style="font-weight:bold;font-size:56px;line-height:1.04;letter-spacing:-.025em;color:#003764;margin:0 0 24px;text-wrap:pretty">Know what your evidence shows before the other side does.</h1>
-      <p data-key="hero.body" style="font-size:19px;line-height:1.6;color:#404040;margin:0 0 36px;max-width:560px">The story is rarely in one system. It is in the email, plus the text message, plus the GPS record, connected and tested and explained by an expert who will defend the conclusion. That is Truth Through Data.</p>
-      <div style="display:flex;gap:14px;flex-wrap:wrap">
-        <a href="/contact/" data-key="hero.ctaPrimary" style="background:#DB6015;color:#FFFFFF;font-size:15px;font-weight:bold;padding:16px 28px">Start building your narrative</a>
-        <a href="/capabilities/" data-key="hero.ctaSecondary" style="border:1px solid #003764;color:#003764;font-size:15px;font-weight:bold;padding:16px 28px">See how we work</a>
-      </div>
-    </div>
-    <div style="background:#FFFFFF;box-shadow:0 0 0 1px #E6E9ED;padding:32px 30px 28px">
-      <div data-key="reassembly.eyebrow" style="font-size:13px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;color:#666666;margin-bottom:6px">What reassembly looks like</div>
-      <div data-key="reassembly.headline" style="font-size:22px;font-weight:bold;letter-spacing:-.01em;line-height:1.2;color:#003764;margin-bottom:24px">No single source told the story. Together they did.</div>
-      <div style="display:grid;grid-template-columns:1fr 44px 1fr;align-items:center">
-        <div data-list="reassembly.sources" style="display:grid;gap:8px">
-          <div style="background:#F6F7F9;box-shadow:0 0 0 1px #E6E9ED;padding:11px 14px;font-size:14px;font-weight:bold;color:#003764">Email</div><div style="background:#F6F7F9;box-shadow:0 0 0 1px #E6E9ED;padding:11px 14px;font-size:14px;font-weight:bold;color:#003764">Text messages</div><div style="background:#F6F7F9;box-shadow:0 0 0 1px #E6E9ED;padding:11px 14px;font-size:14px;font-weight:bold;color:#003764">GPS & travel</div><div style="background:#F6F7F9;box-shadow:0 0 0 1px #E6E9ED;padding:11px 14px;font-size:14px;font-weight:bold;color:#003764">Badge access</div><div style="background:#F6F7F9;box-shadow:0 0 0 1px #E6E9ED;padding:11px 14px;font-size:14px;font-weight:bold;color:#003764">Cloud file activity</div>
-        </div>
-        <div style="position:relative;align-self:stretch">
-          <div style="position:absolute;left:0;right:50%;top:10%;height:1px;background:#DB6015"></div>
-          <div style="position:absolute;left:0;right:50%;top:30%;height:1px;background:#DB6015"></div>
-          <div style="position:absolute;left:0;right:50%;top:50%;height:1px;background:#DB6015"></div>
-          <div style="position:absolute;left:0;right:50%;top:70%;height:1px;background:#DB6015"></div>
-          <div style="position:absolute;left:0;right:50%;top:90%;height:1px;background:#DB6015"></div>
-          <div style="position:absolute;left:50%;top:10%;bottom:10%;width:1px;background:#DB6015"></div>
-          <div style="position:absolute;left:50%;right:0;top:50%;height:1px;background:#DB6015"></div>
-        </div>
-        <div style="background:#003764;padding:22px 18px">
-          <div data-key="reassembly.resultLabel" style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:8px">Reassembled</div>
-          <div data-key="reassembly.resultText" style="font-size:18px;font-weight:bold;line-height:1.25;color:#FFFFFF">One sequence of events, on one clock, that held up on cross</div>
-        </div>
-      </div>
-      <p data-key="reassembly.footnote" style="font-size:14px;line-height:1.6;color:#595959;margin:22px 0 0;padding-top:18px;border-top:1px solid #E6E9ED">The order of events was never in any one system. It existed across five, in five formats, on five different clocks. Reassembling it, and explaining why that reassembly is sound, is the work.</p>
-    </div>
+<section class="masthead" id="masthead" aria-label="Truth Through Data"><div class="mh-wrap">
+  <svg class="mast-art" viewBox="0 0 2600 270" aria-hidden="true">
+    <path class="trace" d="M212 46 H1120"/><path class="trace" d="M234 93 H1780"/>
+    <path class="trace" d="M204 132 H880"/><path class="trace" d="M114 180 H1460"/>
+    <path class="trace" d="M146 218 H2120"/>
+    <circle class="end" cx="1120" cy="46" r="10"/><circle class="node" cx="1780" cy="93" r="12"/>
+    <circle class="end" cx="880" cy="132" r="10"/><circle class="end" cx="1460" cy="180" r="10"/>
+    <circle class="node" cx="2120" cy="218" r="12"/>
+    <circle cx="135" cy="135" r="135" fill="#DB6015" mask="url(#puck-cut)"/>
+  </svg>
+  <div class="mast-text">
+    <h2 data-key="hero.eyebrow">Truth Through <span>Data</span></h2>
+    <p class="mast-tag">Where expertise leads, defensible outcomes follow.</p>
   </div>
-  <div style="position:relative;border-top:1px solid #E6E9ED;background:#F6F7F9">
-    <div style="max-width:1200px;margin:0 auto;padding:22px 32px;display:flex;gap:40px;flex-wrap:wrap;color:#666666;font-size:13px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase">
-      <span>Experts Led by Experts</span>
-      <span style="color:#DB6015">Tech Enabled, Not Tech Dependent</span>
-      <span>Resolution Focused</span>
-    </div>
-  </div>
-</div>
+</div></section>
 
-<div style="background:#FFFFFF">
-  <div style="max-width:1200px;margin:0 auto;padding:88px 32px 24px">
-    <div style="max-width:760px">
-      <h2 data-key="storyBrand.eyebrow" style="font-size:15px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;color:#666666;margin:0 0 18px">Your matter. Your client. Your outcome.</h2>
-      <p data-key="storyBrand.headline" style="font-family:Arial,Helvetica,sans-serif;font-size:40px;font-weight:bold;line-height:1.14;color:#003764;margin:0 0 20px;text-wrap:pretty">You are the one who has to stand up and explain what happened. We make sure the evidence is ready when you do.</p>
-      <div style="width:56px;height:3px;background:#DB6015;margin:0 0 22px"></div>
-      <p data-key="storyBrand.body" style="font-size:17px;line-height:1.6;color:#404040;margin:0;max-width:680px">Counsel carries the narrative. Their client carries the risk. Our role is the one in between: determine what the evidence shows, what it does not, and what it means for strategy. Then we stand in front of those conclusions when they are challenged. We stand behind our work, and we stand in front of our opinions.</p>
+<section class="hero" style="padding-block:60px 0"><div style="max-width:1200px;margin:0 auto;padding-inline:32px;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px;align-items:center" class="hero-pad">
+  <div>
+    <h1 data-key="hero.headline" class="hero-h1" style="margin:0;font-weight:500;font-size:clamp(38px,4.6vw,60px);line-height:1.04;letter-spacing:-.015em;color:#16212C">Know what your evidence shows before the other side does.</h1>
+    <p data-key="hero.body" style="margin-top:22px;font-size:19px;line-height:1.6;color:#45515E;max-width:30em">The story is rarely in one system. It is in the email, plus the text message, plus the GPS record, connected and tested and explained by an expert who will defend the conclusion. That is Truth Through Data.</p>
+    <div style="margin-top:32px;display:flex;flex-wrap:wrap;gap:14px">
+      <a href="/contact/" data-key="hero.ctaPrimary" style="display:inline-flex;align-items:center;font-size:15px;font-weight:500;padding:13px 22px;background:#DB6015;color:#FFFFFF">Start building your narrative</a>
+      <a href="/capabilities/" data-key="hero.ctaSecondary" style="display:inline-flex;align-items:center;font-size:15px;font-weight:500;padding:13px 22px;background:transparent;color:#003764;box-shadow:inset 0 0 0 1.5px #003764">See how we work</a>
     </div>
   </div>
-  <div data-list="storyBrand.cards" style="max-width:1200px;margin:0 auto;padding:36px 32px 92px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2px">
-    <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:34px 30px"><div style="font-size:13px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:14px">The problem</div><p style="font-size:16px;line-height:1.6;margin:0;color:#595959">Emails, databases, cloud systems, mobile devices, transaction logs, AI-influenced environments. You have access to the data. Access is not clarity.</p></div><div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:34px 30px"><div style="font-size:13px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:14px">What is at stake</div><p style="font-size:16px;line-height:1.6;margin:0;color:#595959">Evidence lost before it is preserved. Assumptions documented as fact. A theory that reads well until an opposing expert takes it apart on cross.</p></div><div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:34px 30px"><div style="font-size:13px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:14px">The outcome</div><p style="font-size:16px;line-height:1.6;margin:0;color:#595959">A narrower range of bad outcomes. A clear view of what can be shown, where the risk sits, and conclusions built to withstand scrutiny.</p></div>
-  </div>
-</div>
 
-<div style="background:#FFFFFF;border-top:1px solid #E6E9ED">
-  <div style="max-width:1200px;margin:0 auto;padding:80px 32px 30px">
-    <h2 data-key="plan.eyebrow" style="font-size:15px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;color:#666666;margin:0 0 16px">How an engagement works</h2>
-    <p data-key="plan.headline" style="font-size:32px;font-weight:bold;letter-spacing:-.02em;line-height:1.14;color:#003764;margin:0 0 12px;max-width:700px">Three steps to an answer you can use.</p>
-    <div style="width:56px;height:3px;background:#DB6015;margin:0 0 8px"></div>
-  </div>
-  <div data-list="plan.steps" style="max-width:1200px;margin:0 auto;padding:24px 32px 40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2px">
-    <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:32px 30px"><div style="font-size:15px;letter-spacing:.14em;color:#DB6015;font-weight:bold;margin-bottom:14px">01</div><div style="font-size:19px;font-weight:bold;color:#003764;margin-bottom:10px">Call us with your question</div><p style="font-size:15px;line-height:1.6;margin:0">Not a scope document. The thing you need to establish, and the deadline you are working against. We will tell you on that call whether we are the right firm for it.</p></div><div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:32px 30px"><div style="font-size:15px;letter-spacing:.14em;color:#DB6015;font-weight:bold;margin-bottom:14px">02</div><div style="font-size:19px;font-weight:bold;color:#003764;margin-bottom:10px">Retain us and hand over the evidence</div><p style="font-size:15px;line-height:1.6;margin:0">Our engagement process is built to move at the pace of your matter. Once we are retained, your data comes to one team that manages it end to end.</p></div><div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:32px 30px"><div style="font-size:15px;letter-spacing:.14em;color:#DB6015;font-weight:bold;margin-bottom:14px">03</div><div style="font-size:19px;font-weight:bold;color:#003764;margin-bottom:10px">You get clarity you can act on</div><p style="font-size:15px;line-height:1.6;margin:0">What the evidence shows, what it does not, and what it means for strategy. Documented, and defended by the expert who reached it.</p></div>
-  </div>
-  <div style="max-width:1200px;margin:0 auto;padding:0 32px 84px;display:flex;gap:14px;flex-wrap:wrap;align-items:center">
-    <a href="/contact/" data-key="plan.ctaPrimary" style="background:#DB6015;color:#FFFFFF;font-size:15px;font-weight:bold;padding:16px 28px">Start building your narrative</a>
-    <a href="/can-you/" data-key="plan.ctaSecondary" style="border:1px solid #003764;color:#003764;font-size:15px;font-weight:bold;padding:16px 28px">Or start with the Can You…? questions</a>
-  </div>
-</div>
-
-<div style="position:relative;overflow:hidden;background:#F6F7F9;border-top:1px solid #E6E9ED">
-  <img src="/assets/gfx-records-light.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55;animation:idsFloat 38s ease-in-out infinite alternate" />
-  <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(246,247,249,.94) 0%,rgba(246,247,249,.97) 100%)"></div>
-  <div style="position:relative;max-width:1200px;margin:0 auto;padding:88px 32px 30px">
-    <h2 data-key="howWeHelp.headline" style="font-size:26px;font-weight:bold;color:#404040;margin:0 0 12px">How we help</h2>
-    <div style="width:56px;height:3px;background:#DB6015;margin:0 0 18px"></div>
-    <p data-key="howWeHelp.body" style="font-size:17px;line-height:1.6;color:#404040;margin:0;max-width:700px">Three phases of a dispute, each with its own expertise. All of it standing on one evidentiary foundation.</p>
-  </div>
-  <div data-list="howWeHelp.verticals" style="position:relative;max-width:1200px;margin:0 auto;padding:0 32px 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2px">
-    <a href="/capabilities/" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;border-top:3px solid #003764;padding:34px 30px 36px"><div style="font-size:26px;font-weight:bold;letter-spacing:-.01em;color:#003764;margin-bottom:6px">Discovery</div><div style="font-size:14px;font-style:italic;font-weight:bold;color:#DB6015;margin-bottom:14px">Getting to a complete, defensible record</div><p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Identification, preservation, forensic collection, processing, hosting, and review support, including Relativity. The phase that determines what every later phase is allowed to say.</p></a><a href="/capabilities/" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;border-top:3px solid #003764;padding:34px 30px 36px"><div style="font-size:26px;font-weight:bold;letter-spacing:-.01em;color:#003764;margin-bottom:6px">Merits</div><div style="font-size:14px;font-style:italic;font-weight:bold;color:#DB6015;margin-bottom:14px">What happened, and what the record supports</div><p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Digital forensics, structured data analysis, authenticity, and reconstruction. Competing accounts tested against the artifacts rather than against each other.</p></a><a href="/capabilities/" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;border-top:3px solid #003764;padding:34px 30px 36px"><div style="font-size:26px;font-weight:bold;letter-spacing:-.01em;color:#003764;margin-bottom:6px">Damages</div><div style="font-size:14px;font-style:italic;font-weight:bold;color:#DB6015;margin-bottom:14px">What the exposure is, and how firm the number is</div><p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Forensic accounting, economics, and valuation. Scenarios rather than a single figure, with every assumption named, sourced, and testable by the other side.</p></a>
-  </div>
-  <div style="position:relative;max-width:1200px;margin:0 auto;padding:0 32px 88px">
-    <div style="background:#003764;padding:34px 32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px;align-items:center">
+  <figure class="exhibit" id="exhibit">
+    <div class="ex-head">
       <div>
-        <div data-key="howWeHelp.foundationEyebrow" style="font-size:12px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;color:#DB6015;margin-bottom:10px">The foundation under all three</div>
-        <div data-key="howWeHelp.foundationTitle" style="font-size:28px;font-weight:bold;letter-spacing:-.01em;line-height:1.15;color:#FFFFFF">Evidence Intelligence</div>
+        <span class="mono-label" data-key="reassembly.eyebrow">What reassembly looks like</span>
+        <h3 data-key="reassembly.headline">No single source told the story. Together they did.</h3>
       </div>
-      <p data-key="howWeHelp.foundationText" style="font-size:16px;line-height:1.65;color:rgba(255,255,255,.84);margin:0">One team managing the evidence end to end: how it comes in, how custody is kept, how testing protocols are set, how the analysis is documented, and how the report is written. Vertical expertise is only as good as the foundation it stands on, so we own that foundation rather than renting it.</p>
+      <div class="ex-sticker" aria-hidden="true"></div>
     </div>
-  </div>
-</div>
-
-<div style="position:relative;overflow:hidden;background:#F6F7F9;border-top:1px solid #E6E9ED;border-bottom:1px solid #E6E9ED">
-  <img src="/assets/gfx-timeline-light.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.95;animation:idsFloat 40s ease-in-out infinite alternate" />
-  <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(246,247,249,.97) 0%,rgba(246,247,249,.86) 55%,rgba(246,247,249,.5) 100%)"></div>
-  <div style="position:relative;max-width:1200px;margin:0 auto;padding:96px 32px 100px">
-    <div style="max-width:640px">
-      <div data-key="statementBand.eyebrow" style="border-left:3px solid #DB6015;padding-left:14px;color:#DB6015;font-size:13px;font-weight:bold;letter-spacing:.16em;text-transform:uppercase;margin-bottom:24px">Digital Evidence, Understood</div>
-      <p data-key="statementBand.headline" style="font-family:Arial,Helvetica,sans-serif;font-size:40px;font-weight:bold;line-height:1.1;letter-spacing:-.02em;color:#003764;margin:0 0 20px">The timeline already exists. Someone has to reassemble it.</p>
-      <p data-key="statementBand.body" style="font-size:17px;line-height:1.65;color:#404040;margin:0 0 32px">Events unfolded along a timeline. They were never recorded on one. Devices, cloud services, applications, and transactional systems each hold a fragment of it, in a different format, on a different clock. Layer those fragments over one another and a shape appears that no single source could show you. That triangulation is both the challenge of digital evidence and its strength.</p>
-      <div data-list="statementBand.points" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:24px">
-        <div><div style="height:2px;background:#BFBFBF;margin-bottom:12px"></div><div style="font-size:15px;color:#595959;line-height:1.5">Triangulate across sources, not within one</div></div><div><div style="height:2px;background:#BFBFBF;margin-bottom:12px"></div><div style="font-size:15px;color:#595959;line-height:1.5">Name the gaps as gaps</div></div><div><div style="height:2px;background:#BFBFBF;margin-bottom:12px"></div><div style="font-size:15px;color:#595959;line-height:1.5">One expert who can explain the assembly</div></div>
-      </div>
+    <div class="ex-body">
+      <svg viewBox="0 0 640 290" role="img" aria-label="Five evidence sources, Email, Text messages, GPS and travel, Badge access and Cloud file activity, each on its own row. Scattered events across the rows connect into one orange sequence.">
+        <g>
+          <line class="ex-grid" x1="210" y1="18" x2="210" y2="272"/><line class="ex-grid" x1="310" y1="18" x2="310" y2="272"/>
+          <line class="ex-grid" x1="410" y1="18" x2="410" y2="272"/><line class="ex-grid" x1="510" y1="18" x2="510" y2="272"/>
+        </g>
+        <g>
+          <text class="lane-label" x="8" y="49">Email</text><line class="ex-lane" x1="150" y1="45" x2="626" y2="45"/>
+          <text class="lane-label" x="8" y="99">Text messages</text><line class="ex-lane" x1="150" y1="95" x2="626" y2="95"/>
+          <text class="lane-label" x="8" y="149">GPS &amp; travel</text><line class="ex-lane" x1="150" y1="145" x2="626" y2="145"/>
+          <text class="lane-label" x="8" y="199">Badge access</text><line class="ex-lane" x1="150" y1="195" x2="626" y2="195"/>
+          <text class="lane-label" x="8" y="249">Cloud file activity</text><line class="ex-lane" x1="150" y1="245" x2="626" y2="245"/>
+        </g>
+        <g>
+          <circle class="ex-noise" cx="172" cy="45" r="3.5"/><circle class="ex-noise" cx="248" cy="45" r="3.5"/><circle class="ex-noise" cx="330" cy="45" r="3.5"/><circle class="ex-noise" cx="452" cy="45" r="3.5"/><circle class="ex-noise" cx="540" cy="45" r="3.5"/><circle class="ex-noise" cx="606" cy="45" r="3.5"/>
+          <circle class="ex-noise" cx="196" cy="95" r="3.5"/><circle class="ex-noise" cx="382" cy="95" r="3.5"/><circle class="ex-noise" cx="566" cy="95" r="3.5"/>
+          <circle class="ex-noise" cx="160" cy="145" r="3.5"/><circle class="ex-noise" cx="290" cy="145" r="3.5"/><circle class="ex-noise" cx="430" cy="145" r="3.5"/>
+          <circle class="ex-noise" cx="352" cy="195" r="3.5"/><circle class="ex-noise" cx="372" cy="195" r="3.5"/><circle class="ex-noise" cx="590" cy="195" r="3.5"/>
+          <circle class="ex-noise" cx="186" cy="245" r="3.5"/><circle class="ex-noise" cx="398" cy="245" r="3.5"/><circle class="ex-noise" cx="474" cy="245" r="3.5"/><circle class="ex-noise" cx="520" cy="245" r="3.5"/>
+        </g>
+        <polyline class="ex-chain" points="178,195 232,245 284,245 300,45 306,95 488,195 500,145"/>
+        <g>
+          <circle class="ex-key" cx="178" cy="195" r="5.5"/><circle class="ex-key" cx="232" cy="245" r="5.5"/><circle class="ex-key" cx="284" cy="245" r="5.5"/>
+          <circle class="ex-key" cx="300" cy="45" r="5.5"/><circle class="ex-key" cx="306" cy="95" r="5.5"/><circle class="ex-key" cx="488" cy="195" r="5.5"/><circle class="ex-key" cx="500" cy="145" r="5.5"/>
+        </g>
+      </svg>
     </div>
-  </div>
-</div>
+    <figcaption class="ex-result">
+      <span class="mono-label" data-key="reassembly.resultLabel">Reassembled</span>
+      <p data-key="reassembly.resultText">One sequence of events, on one clock, that held up on cross</p>
+    </figcaption>
+    <p data-key="reassembly.footnote" style="font-size:14px;line-height:1.6;color:#595959;margin:0;padding:14px 24px 20px;border-top:1px dashed #D5DBE1">The order of events was never in any one system. It existed across five, in five formats, on five different clocks. Reassembling it, and explaining why that reassembly is sound, is the work.</p>
+  </figure>
+</div></section>
 
-<div style="background:#FFFFFF;position:relative;overflow:hidden;border-bottom:1px solid #E6E9ED">
-  <img src="/assets/gfx-signal-light.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.8;animation:idsFloat 38s ease-in-out infinite alternate" />
-  <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.95) 0%,rgba(255,255,255,.9) 55%,rgba(255,255,255,.96) 100%)"></div>
-  <div style="position:relative;max-width:1200px;margin:0 auto;padding:88px 32px 92px">
-    <div data-key="canYou.eyebrow" style="border-left:3px solid #DB6015;padding-left:14px;color:#DB6015;font-size:13px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;margin-bottom:22px">Can You…?</div>
-    <p data-key="canYou.headline" style="font-family:Arial,Helvetica,sans-serif;font-size:36px;font-weight:bold;line-height:1.12;letter-spacing:-.02em;color:#003764;margin:0 0 12px;max-width:780px">Questions clients bring us. Anonymized, but every one of them is real.</p>
-    <p data-key="canYou.body" style="font-size:16px;line-height:1.6;color:#595959;margin:0 0 40px;max-width:640px">Our answer is yes, because we have done each of these. Some of them several times over. Select one to see how it was approached.</p>
-    <div data-list="canYou.questions" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px">
-      <a href="/can-you/" style="display:flex;flex-direction:column;justify-content:space-between;gap:16px;border-left:3px solid #DB6015;background:#F6F7F9;padding:22px 24px;font-size:17px;line-height:1.5;color:#003764;font-weight:bold">Can you disprove commonality in a class action built on billions of records?<span style="font-size:13px;font-weight:bold;letter-spacing:.08em;text-transform:uppercase;color:#DB6015">Read how &rarr;</span></a><a href="/can-you/" style="display:flex;flex-direction:column;justify-content:space-between;gap:16px;border-left:3px solid #DB6015;background:#F6F7F9;padding:22px 24px;font-size:17px;line-height:1.5;color:#003764;font-weight:bold">Can you authenticate evidence that everyone else has assumed is valid?<span style="font-size:13px;font-weight:bold;letter-spacing:.08em;text-transform:uppercase;color:#DB6015">Read how &rarr;</span></a><a href="/can-you/" style="display:flex;flex-direction:column;justify-content:space-between;gap:16px;border-left:3px solid #DB6015;background:#F6F7F9;padding:22px 24px;font-size:17px;line-height:1.5;color:#003764;font-weight:bold">Can you locate decades-old policies buried in millions of archived documents?<span style="font-size:13px;font-weight:bold;letter-spacing:.08em;text-transform:uppercase;color:#DB6015">Read how &rarr;</span></a><a href="/can-you/" style="display:flex;flex-direction:column;justify-content:space-between;gap:16px;border-left:3px solid #DB6015;background:#F6F7F9;padding:22px 24px;font-size:17px;line-height:1.5;color:#003764;font-weight:bold">Can you correlate mobile, cloud, and application data to reconstruct a timeline no one else can see?<span style="font-size:13px;font-weight:bold;letter-spacing:.08em;text-transform:uppercase;color:#DB6015">Read how &rarr;</span></a><a href="/can-you/" style="display:flex;flex-direction:column;justify-content:space-between;gap:16px;border-left:3px solid #DB6015;background:#F6F7F9;padding:22px 24px;font-size:17px;line-height:1.5;color:#003764;font-weight:bold">Can you resolve a matter without relying on email as the primary evidence source?<span style="font-size:13px;font-weight:bold;letter-spacing:.08em;text-transform:uppercase;color:#DB6015">Read how &rarr;</span></a>
-      <a href="/can-you/" data-key="canYou.ctaFinal" style="border-left:3px solid #003764;background:#003764;padding:22px 24px;font-size:17px;line-height:1.5;color:#FFFFFF;font-weight:bold;display:flex;align-items:center">See how these questions get answered →</a>
-    </div>
-  </div>
-</div>
+<div class="pillars-strip"><div class="pw">
+  <div>Experts Led by Experts</div>
+  <div class="hi">Tech Enabled, Not Tech Dependent</div>
+  <div>Resolution Focused</div>
+</div></div>
 
-<div style="position:relative;overflow:hidden;background:#FFFFFF">
-  <img src="/assets/gfx-rings-light.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.5;animation:idsFloat 38s ease-in-out infinite alternate" />
-  <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.97) 0%,rgba(255,255,255,.93) 60%,rgba(255,255,255,.97) 100%)"></div>
-  <div style="position:relative;max-width:1200px;margin:0 auto;padding:88px 32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:56px;align-items:start">
+<section style="background:var(--band);border-bottom:1px solid #E6E9ED" aria-label="The problem, what is at stake, and the outcome">
+  <div class="pso-wrap" data-list="storyBrand.cards"><div class="pso-col"><h3 class="mono-label" style="">The problem</h3><p class="pso-body">Emails, databases, cloud systems, mobile devices, transaction logs, AI-influenced environments. You have access to the data. Access is not clarity.</p></div><div class="pso-col"><h3 class="mono-label" style="">What is at stake</h3><p class="pso-body">Evidence lost before it is preserved. Assumptions documented as fact. A theory that reads well until an opposing expert takes it apart on cross.</p></div><div class="pso-col"><h3 class="mono-label" style="color:#003764">The outcome</h3><p class="pso-body">A narrower range of bad outcomes. A clear view of what can be shown, where the risk sits, and conclusions built to withstand scrutiny.</p></div></div>
+</section>
+
+<section class="block why">
+  <div class="why-wrap">
     <div>
-      <h2 data-key="beyond.headline" style="font-size:26px;font-weight:bold;color:#404040;margin:0 0 12px">Beyond eDiscovery</h2>
-      <div style="width:56px;height:3px;background:#DB6015;margin:0 0 22px"></div>
-      <p data-key="beyond.body1" style="font-size:17px;line-height:1.65;color:#404040;margin:0 0 18px">We handle discovery, and we handle it well, in part because we rely on it ourselves. Our experts work on the evidence our own teams collect, process, and manage, which is exactly why the foundation has to be sound. But that is not why most clients call. They call because they need expert judgment on what the evidence means, and someone who will defend that judgment under oath.</p>
-      <p data-key="beyond.body2" style="font-size:16px;line-height:1.65;color:#595959;margin:0">Technology enables the work. Expert reasoning governs the conclusions.</p>
+      <span class="mono-label">Why clients call us</span>
+      <p class="why-statement" data-key="storyBrand.headline">You are the one who has to stand up and explain what happened. We make sure the evidence is ready when you do.</p>
+      <p class="why-body" data-key="storyBrand.body">Counsel carries the narrative. Their client carries the risk. Our role is the one in between: determine what the evidence shows, what it does not, and what it means for strategy. Then we stand in front of those conclusions when they are challenged. We stand behind our work, and we stand in front of our opinions.</p>
     </div>
-    <div data-list="beyond.notList" style="display:grid;gap:2px">
-      <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:22px 24px;display:flex;gap:16px;align-items:baseline"><span style="color:#DB6015;font-weight:bold;font-size:15px;flex:0 0 84px">Not</span><span style="font-size:16px;color:#404040">a processing vendor</span></div><div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:22px 24px;display:flex;gap:16px;align-items:baseline"><span style="color:#DB6015;font-weight:bold;font-size:15px;flex:0 0 84px">Not</span><span style="font-size:16px;color:#404040">a staffing firm</span></div><div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:22px 24px;display:flex;gap:16px;align-items:baseline"><span style="color:#DB6015;font-weight:bold;font-size:15px;flex:0 0 84px">Not</span><span style="font-size:16px;color:#404040">a software company</span></div>
-      <div style="background:#003764;padding:26px 24px;display:flex;gap:16px;align-items:baseline"><span data-key="beyond.weAreLabel" style="color:#DB6015;font-weight:bold;font-size:15px;flex:0 0 84px">We are</span><span data-key="beyond.weAreText" style="font-size:17px;color:#FFFFFF;font-weight:bold">a firm of experts who stand behind our work, and in front of our opinions</span></div>
+    <div class="diffs">
+      <a class="diff" href="/about/#the-ids-way"><h3>Consultative Experts</h3><p>Subject matter experts and data strategists who provide solutions to data problems, and testimony to support the findings when needed.</p></a>
+      <a class="diff" href="/about/#the-ids-way"><h3>Structured Process</h3><p>The STEPS&trade; framework converts vast amounts of data into strategic legal assets, with timely and consistent execution.</p></a>
+      <a class="diff" href="/about/#the-ids-way"><h3>Customized Solutions</h3><p>Tailored to each client and matter. We avoid cookie-cutter answers that rarely address what makes your data problem unique.</p></a>
     </div>
   </div>
-</div>
+</section>
+
+<section class="block" style="background:var(--band)" id="people">
+  <div class="bench-wrap">
+    <div class="bench-head">
+      <div>
+        <h2>The people who will defend it</h2>
+        <p>Sixteen testifying experts, and the teams who work alongside them. You are not hiring one expert. You are getting the bench behind them.</p>
+      </div>
+      <a href="/our-experts/" style="display:inline-flex;align-items:center;font-size:15px;font-weight:500;padding:13px 22px;background:transparent;color:#003764;box-shadow:inset 0 0 0 1.5px #003764">Meet the experts</a>
+    </div>
+    <div class="bench"><a class="person" href="/our-experts/"><img src="https://idsinc.com/wp-content/uploads/2026/03/Dan-Regard-Headshot-B.jpg" alt="" loading="lazy"><b>Dan Regard</b><span>Chief Executive Officer</span></a><a class="person" href="/our-experts/"><img src="https://idsinc.com/wp-content/uploads/2021/01/Hunter-Mcmahon-KEEP.jpg" alt="" loading="lazy"><b>Hunter McMahon</b><span>President</span></a><a class="person" href="/our-experts/"><img src="https://idsinc.com/wp-content/uploads/2021/02/julian-ackert.jpg" alt="" loading="lazy"><b>Julian Ackert</b><span>Senior Managing Director</span></a><a class="person" href="/our-experts/"><img src="https://idsinc.com/wp-content/uploads/2023/06/iDS-HS-jimv-001.jpg" alt="" loading="lazy"><b>James Vaughn</b><span>Senior Managing Director</span></a><a class="person" href="/our-experts/"><img src="https://idsinc.com/wp-content/uploads/2005/10/iDS-HS-teddy-002.jpg" alt="" loading="lazy"><b>Theodore Brown</b><span>Managing Director, Damages & Forensic Accounting</span></a></div>
+  </div>
+</section>
+
+<section class="block" id="fit">
+  <div class="phases-wrap">
+    <div class="bench-head">
+      <div>
+        <h2 data-key="howWeHelp.headline">How we help</h2>
+        <p data-key="howWeHelp.body">Three phases of a dispute, each with its own expertise. All of it standing on one evidentiary foundation.</p>
+      </div>
+    </div>
+    <div class="phases" data-list="howWeHelp.verticals"><a class="phase" href="/capabilities/"><span class="mono-label">Getting to a complete, defensible record</span><h3>Discovery</h3><p>Identification, preservation, forensic collection, processing, hosting, and review support, including Relativity. The phase that determines what every later phase is allowed to say.</p></a><a class="phase" href="/capabilities/"><span class="mono-label">What happened, and what the record supports</span><h3>Merits</h3><p>Digital forensics, structured data analysis, authenticity, and reconstruction. Competing accounts tested against the artifacts rather than against each other.</p></a><a class="phase" href="/capabilities/"><span class="mono-label">What the exposure is, and how firm the number is</span><h3>Damages</h3><p>Forensic accounting, economics, and valuation. Scenarios rather than a single figure, with every assumption named, sourced, and testable by the other side.</p></a></div>
+  </div>
+  <div class="foundation-wrap">
+    <div class="foundation">
+      <div><span class="mono-label" data-key="howWeHelp.foundationEyebrow" style="color:var(--on-navy-muted)">The foundation under all three</span><h3 data-key="howWeHelp.foundationTitle">Evidence Intelligence</h3></div>
+      <p data-key="howWeHelp.foundationText">One team managing the evidence end to end: how it comes in, how custody is kept, how testing protocols are set, how the analysis is documented, and how the report is written. Vertical expertise is only as good as the foundation it stands on, so we own that foundation rather than renting it.</p>
+    </div>
+  </div>
+</section>
+
+<section class="pov-band"><div class="pov-wrap">
+  <div>
+    <span class="mono-label" data-key="statementBand.eyebrow" style="color:var(--sticker)">Digital Evidence, Understood</span>
+    <h2 data-key="statementBand.headline">The timeline already exists. Someone has to reassemble it.</h2>
+    <p data-key="statementBand.body">Events unfolded along a timeline. They were never recorded on one. Devices, cloud services, applications, and transactional systems each hold a fragment of it, in a different format, on a different clock. Layer those fragments over one another and a shape appears that no single source could show you. That triangulation is both the challenge of digital evidence and its strength.</p>
+    <div class="pov-points" data-list="statementBand.points"><div><div></div><div>Triangulate across sources, not within one</div></div><div><div></div><div>Name the gaps as gaps</div></div><div><div></div><div>One expert who can explain the assembly</div></div></div>
+    <a class="textlink" href="/capabilities/">How we do it &rarr;</a>
+  </div>
+  <canvas id="frag-home" width="900" height="720" aria-label="Fragments from several systems settling onto one shared timeline"></canvas>
+</div></section>
+
+<section class="block" id="canyou">
+  <div class="qs-wrap">
+    <div class="bench-head">
+      <div>
+        <h2 data-key="canYou.headline">Questions clients bring us. Anonymized, but every one of them is real.</h2>
+        <p data-key="canYou.body">Our answer is yes, because we have done each of these. Some of them several times over. Select one to see how it was approached.</p>
+      </div>
+    </div>
+    <div class="qs" data-list="canYou.questions"><a class="qrow" href="/can-you/"><span class="q-no" aria-hidden="true"></span><h3>Can you disprove commonality in a class action built on billions of records?</h3><span class="go">Read how &rarr;</span></a><a class="qrow" href="/can-you/"><span class="q-no" aria-hidden="true"></span><h3>Can you authenticate evidence that everyone else has assumed is valid?</h3><span class="go">Read how &rarr;</span></a><a class="qrow" href="/can-you/"><span class="q-no" aria-hidden="true"></span><h3>Can you locate decades-old policies buried in millions of archived documents?</h3><span class="go">Read how &rarr;</span></a><a class="qrow" href="/can-you/"><span class="q-no" aria-hidden="true"></span><h3>Can you correlate mobile, cloud, and application data to reconstruct a timeline no one else can see?</h3><span class="go">Read how &rarr;</span></a><a class="qrow" href="/can-you/"><span class="q-no" aria-hidden="true"></span><h3>Can you resolve a matter without relying on email as the primary evidence source?</h3><span class="go">Read how &rarr;</span></a></div>
+    <div style="margin-top:26px"><a class="textlink" href="/can-you/" data-key="canYou.ctaFinal">See how these questions get answered →</a></div>
+  </div>
+</section>
+
+<section class="block" style="background:var(--band)">
+  <div class="steps-wrap">
+    <div class="bench-head">
+      <div>
+        <h2 data-key="plan.headline">Three steps to an answer you can use.</h2>
+      </div>
+    </div>
+    <div class="steps" data-list="plan.steps"><div class="st"><span class="n">01</span><h3>Call us with your question</h3><p>Not a scope document. The thing you need to establish, and the deadline you are working against. We will tell you on that call whether we are the right firm for it.</p></div><div class="st"><span class="n">02</span><h3>Retain us and hand over the evidence</h3><p>Our engagement process is built to move at the pace of your matter. Once we are retained, your data comes to one team that manages it end to end.</p></div><div class="st"><span class="n">03</span><h3>You get clarity you can act on</h3><p>What the evidence shows, what it does not, and what it means for strategy. Documented, and defended by the expert who reached it.</p></div></div>
+    <div style="margin-top:40px;display:flex;gap:14px;flex-wrap:wrap">
+      <a href="/contact/" data-key="plan.ctaPrimary" style="display:inline-flex;align-items:center;font-size:15px;font-weight:500;padding:13px 22px;background:#DB6015;color:#FFFFFF">Start building your narrative</a>
+      <a href="/can-you/" data-key="plan.ctaSecondary" style="display:inline-flex;align-items:center;font-size:15px;font-weight:500;padding:13px 22px;background:transparent;color:#003764;box-shadow:inset 0 0 0 1.5px #003764">Or start with the Can You…? questions</a>
+    </div>
+  </div>
+</section>
 <script>
 (function () {
   function get(obj, path) {
     return path.split('.').reduce(function (o, k) { return (o && o[k] !== undefined) ? o[k] : undefined; }, obj);
   }
   var LIST_RENDERERS = {
-    'reassembly.sources': function (arr) {
-      return arr.map(function (s) {
-        return '<div style="background:#F6F7F9;box-shadow:0 0 0 1px #E6E9ED;padding:11px 14px;font-size:14px;font-weight:bold;color:#003764">' + s + '</div>';
-      }).join('');
-    },
     'storyBrand.cards': function (arr) {
-      return arr.map(function (c) {
-        return '<div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:34px 30px"><div style="font-size:13px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:14px">' + c.label + '</div><p style="font-size:16px;line-height:1.6;margin:0;color:#595959">' + c.text + '</p></div>';
+      return arr.map(function (c, i) {
+        var cls = 'pso-col' + (i > 0 ? ' pso-col-line' : '');
+        return '<div class="' + cls + '"><h3 class="mono-label" style="' + (i === arr.length - 1 ? 'color:#003764' : '') + '">' + c.label + '</h3><p class="pso-body">' + c.text + '</p></div>';
       }).join('');
     },
     'plan.steps': function (arr) {
       return arr.map(function (s) {
-        return '<div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:32px 30px"><div style="font-size:15px;letter-spacing:.14em;color:#DB6015;font-weight:bold;margin-bottom:14px">' + s.num + '</div><div style="font-size:19px;font-weight:bold;color:#003764;margin-bottom:10px">' + s.title + '</div><p style="font-size:15px;line-height:1.6;margin:0">' + s.text + '</p></div>';
+        return '<div class="st"><span class="n">' + s.num + '</span><h3>' + s.title + '</h3><p>' + s.text + '</p></div>';
       }).join('');
     },
     'howWeHelp.verticals': function (arr) {
       return arr.map(function (v) {
-        return '<a href="/capabilities/" style="display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;border-top:3px solid #003764;padding:34px 30px 36px"><div style="font-size:26px;font-weight:bold;letter-spacing:-.01em;color:#003764;margin-bottom:6px">' + v.title + '</div><div style="font-size:14px;font-style:italic;font-weight:bold;color:#DB6015;margin-bottom:14px">' + v.subtitle + '</div><p style="font-size:15px;line-height:1.6;color:#595959;margin:0">' + v.text + '</p></a>';
+        return '<a class="phase" href="/capabilities/"><span class="mono-label">' + v.subtitle + '</span><h3>' + v.title + '</h3><p>' + v.text + '</p></a>';
       }).join('');
     },
     'statementBand.points': function (arr) {
       return arr.map(function (p) {
-        return '<div><div style="height:2px;background:#BFBFBF;margin-bottom:12px"></div><div style="font-size:15px;color:#595959;line-height:1.5">' + p + '</div></div>';
+        return '<div><div></div><div>' + p + '</div></div>';
       }).join('');
     },
     'canYou.questions': function (arr) {
-      return arr.map(function (q) {
-        return '<a href="/can-you/" style="display:flex;flex-direction:column;justify-content:space-between;gap:16px;border-left:3px solid #DB6015;background:#F6F7F9;padding:22px 24px;font-size:17px;line-height:1.5;color:#003764;font-weight:bold">' + q + '<span style="font-size:13px;font-weight:bold;letter-spacing:.08em;text-transform:uppercase;color:#DB6015">Read how &rarr;</span></a>';
-      }).join('');
-    },
-    'beyond.notList': function (arr) {
-      return arr.map(function (item) {
-        return '<div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:22px 24px;display:flex;gap:16px;align-items:baseline"><span style="color:#DB6015;font-weight:bold;font-size:15px;flex:0 0 84px">Not</span><span style="font-size:16px;color:#404040">' + item + '</span></div>';
+      return arr.map(function (q, i) {
+        return '<a class="qrow" href="/can-you/"><span class="q-no" aria-hidden="true"></span><h3>' + q + '</h3><span class="go">Read how &rarr;</span></a>';
       }).join('');
     }
   };
@@ -280,31 +534,83 @@ details.disc[open] .plus::after { content: "\2013"; }
 })();
 </script>
 
+<script>
+(function(){
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  var mh = document.getElementById('masthead');
+  if (mh && !reduce) mh.classList.add('play');
+
+  var ex = document.getElementById('exhibit');
+  if (ex) {
+    if (reduce) { ex.classList.add('done'); }
+    else { ex.classList.add('play'); setTimeout(function () { ex.classList.add('done'); }, 2600); }
+  }
+
+  var cv = document.getElementById('frag-home');
+  if (cv) {
+    var g = cv.getContext('2d'), W = cv.width, H = cv.height;
+    var rows = 6, frags = [], seed = 7;
+    function rnd () { seed = (seed * 9301 + 49297) % 233280; return seed / 233280; }
+    for (var i = 0; i < 46; i++) {
+      var r = Math.floor(rnd() * rows), x = 60 + rnd() * (W - 120);
+      frags.push({ x: x, y0: 90 + r * 95, y1: H - 110, w: 14 + rnd() * 46, key: rnd() < .34, d: rnd() * .35 });
+    }
+    function draw (t) {
+      g.clearRect(0, 0, W, H);
+      g.strokeStyle = 'rgba(159,192,223,.18)'; g.lineWidth = 1;
+      for (var r = 0; r < rows; r++) { g.beginPath(); g.moveTo(40, 90 + r * 95); g.lineTo(W - 40, 90 + r * 95); g.stroke(); }
+      g.strokeStyle = 'rgba(243,214,90,.9)'; g.lineWidth = 2; g.beginPath(); g.moveTo(40, H - 110); g.lineTo(W - 40, H - 110); g.stroke();
+      frags.forEach(function (f) {
+        if (!f.key) { g.fillStyle = 'rgba(159,192,223,.45)'; g.fillRect(f.x, f.y0 - 4, f.w, 8); return; }
+        var p = Math.max(0, Math.min(1, (t - f.d) / (1 - f.d))); p = p < .5 ? 2 * p * p : 1 - Math.pow(-2 * p + 2, 2) / 2;
+        var y = f.y0 + (f.y1 - f.y0) * p;
+        g.fillStyle = p >= 1 ? '#DB6015' : 'rgba(219,96,21,' + (0.55 + 0.45 * p) + ')';
+        g.fillRect(f.x, y - 5, f.w, 10);
+      });
+    }
+    if (reduce) { draw(1); }
+    else {
+      draw(0);
+      var started = false;
+      var io = ('IntersectionObserver' in window) ? new IntersectionObserver(function (es) {
+        es.forEach(function (e) {
+          if (e.isIntersecting && !started) {
+            started = true; var s = performance.now();
+            (function step (n) { var t = Math.min(1, (n - s) / 2400); draw(t); if (t < 1) requestAnimationFrame(step); })(s);
+          }
+        });
+      }, { threshold: .35 }) : null;
+      if (io) io.observe(cv); else draw(1);
+    }
+  }
+})();
+</script>
 
 <div style="background:#FFFFFF;border-top:1px solid #E6E9ED">
-  <div style="max-width:1200px;margin:0 auto;padding:76px 32px 84px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:52px;align-items:start">
+  <div style="max-width:1200px;margin:0 auto;padding:88px 32px;display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:56px;align-items:start">
     <div>
-      <div style="border-left:3px solid #DB6015;padding-left:14px;color:#DB6015;font-size:13px;font-weight:bold;letter-spacing:.16em;text-transform:uppercase;margin-bottom:22px">What is at risk</div>
-      <p style="font-size:30px;font-weight:bold;letter-spacing:-.02em;line-height:1.16;color:#003764;margin:0 0 18px;text-wrap:pretty">Without a foundation of evidence, a legal team can only argue the law.</p>
-      <p style="font-size:16px;line-height:1.65;color:#404040;margin:0 0 16px">A talented team without the raw material is reasoning from assumption. The theory gets built, the position hardens, and the fact that would have changed it surfaces at the eleventh hour. Get your team standing on the actual record early and you are building on a foundation instead of a house of cards.</p>
-      <p style="font-size:16px;line-height:1.65;color:#595959;margin:0">Our engagement process is built to move at the pace of a live matter, so starting is rarely the thing that slows you down.</p>
+      <div class="mono-label" style="margin-bottom:22px;display:block">What is at risk</div>
+      <p style="font-size:clamp(28px,3vw,40px);font-weight:500;font-family:var(--display);letter-spacing:-.02em;line-height:1.16;color:#003764;margin:14px 0 18px;text-wrap:pretty">Without a foundation of evidence, a legal team can only argue the law.</p>
+      <p style="font-size:16px;line-height:1.65;color:#404040;margin:0 0 16px;max-width:34em">A talented team without the raw material is reasoning from assumption. The theory gets built, the position hardens, and the fact that would have changed it surfaces at the eleventh hour. Get your team standing on the actual record early and you are building on a foundation instead of a house of cards.</p>
+      <p style="font-size:16px;line-height:1.65;color:#595959;margin:0;max-width:34em">Our engagement process is built to move at the pace of a live matter, so starting is rarely the thing that slows you down.</p>
     </div>
-    <div style="display:grid;gap:2px;background:transparent;align-content:start">
-      <div style="box-shadow:0 0 0 1px #E6E9ED;background:#F6F7F9;padding:26px 28px">
-        <div style="font-size:18px;font-weight:bold;color:#003764;margin-bottom:8px">Start building your narrative</div>
-        <p style="font-size:15px;line-height:1.6;margin:0 0 16px">Tell us what you are trying to establish. We will tell you whether the evidence can get you there, and how quickly we can be working on it.</p>
+    <div class="close-cta">
+      <div class="primary">
+        <h3>Start building your narrative</h3>
+        <p style="font-size:15px;line-height:1.6;margin:0 0 20px;color:#45515E">Tell us what you are trying to establish. We will tell you whether the evidence can get you there, and how quickly we can be working on it.</p>
         <a href="/contact/" style="display:inline-block;background:#DB6015;color:#FFFFFF;font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;padding:14px 22px">Contact iDS</a>
       </div>
-      <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:26px 28px">
-        <div style="font-size:18px;font-weight:bold;color:#003764;margin-bottom:8px">Not ready for that yet</div>
-        <p style="font-size:15px;line-height:1.6;margin:0 0 14px">Read how we approached matters that started as unanswerable questions. No client details, no case statistics.</p>
+      <div class="secondary">
+        <h3>Not ready for that yet</h3>
+        <p style="font-size:15.5px;line-height:1.6;margin:0 0 14px;color:#45515E">Read how we approached matters that started as unanswerable questions. No client details, no case statistics.</p>
         <a href="/can-you/" style="font-size:14px;font-weight:bold;letter-spacing:.06em;text-transform:uppercase;color:#DB6015">See the Can You&hellip;? questions &rarr;</a>
       </div>
     </div>
   </div>
 </div>
 
-<div style="background:#003764">
+<div style="background:#0A2440">
   <div style="max-width:1200px;margin:0 auto;padding:64px 32px 26px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:40px">
     <div>
       <img src="/assets/ids-logo-reversed.png" alt="iDiscovery Solutions" style="height:52px;width:auto;display:block;margin-bottom:20px" />
