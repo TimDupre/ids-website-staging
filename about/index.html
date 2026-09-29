@@ -47,7 +47,7 @@ img { max-width:100%; }
 
 /* About Us mega-menu (desktop only) */
 .nav-item { position: static; display: flex; align-items: center; }
-.nav-item > button { font: 700 15px var(--display); color: #003764; background: none; border: 0; padding: 6px 0; cursor: pointer; display: flex; align-items: center; gap: 6px; white-space: nowrap; }
+.nav-item > button { font: 700 14px var(--display); letter-spacing:.04em; text-transform:uppercase; color: #003764; background: none; border: 0; padding: 6px 0; cursor: pointer; display: flex; align-items: center; gap: 6px; white-space: nowrap; }
 .nav-item > button::after { content:""; width:6px; height:6px; border-right:1.5px solid currentColor; border-bottom:1.5px solid currentColor; transform: translateY(-2px) rotate(45deg); transition: transform .15s; }
 .nav-item > button[aria-expanded="true"] { color: var(--orange); }
 .nav-item > button[aria-expanded="true"]::after { transform: translateY(2px) rotate(-135deg); }
@@ -211,6 +211,23 @@ details.disc[open] .plus::after { content: "\2013"; }
 .st p { margin:0; font-size:15px; line-height:1.6; color:#595959; }
 @media (max-width:860px) { .steps { grid-template-columns:1fr; gap:28px; } .steps::before { left:22px; right:auto; top:0; bottom:0; border-top:0; border-left:2px solid var(--orange); } .st { padding:0 0 0 72px; } }
 
+/* Insights post body (migrated article content) */
+.post-body { font-size:17px; line-height:1.75; color:#404040; }
+.post-body p { margin:0 0 22px; }
+.post-body h2 { font-size:28px; font-weight:bold; color:#003764; margin:44px 0 16px; line-height:1.22; }
+.post-body h3 { font-size:22px; font-weight:bold; color:#003764; margin:36px 0 14px; line-height:1.28; }
+.post-body h4 { font-size:18px; font-weight:bold; color:#003764; margin:28px 0 12px; }
+.post-body ul, .post-body ol { margin:0 0 22px; padding-left:24px; }
+.post-body li { margin-bottom:10px; }
+.post-body a { color:#DB6015; }
+.post-body a:hover { color:#003764; }
+.post-body strong { color:#16212C; }
+.post-body img { display:block; max-width:100%; height:auto; margin:28px 0; }
+.post-body hr { border:0; border-top:1px solid #E6E9ED; margin:36px 0; }
+.post-body .wp-block-buttons { margin:28px 0; list-style:none; padding:0; }
+.post-body .wp-block-button__link { display:inline-block; background:#DB6015 !important; color:#FFFFFF !important; padding:13px 22px; font-weight:bold; text-decoration:none !important; }
+.post-body .wp-block-button__link:hover { background:#003764 !important; }
+
 /* Closing CTA box (shared across pages) */
 .close-cta { border:1px solid #E6E9ED; display:flex; flex-direction:column; }
 .close-cta .primary { background:var(--band); padding:30px 30px 28px; }
@@ -253,7 +270,6 @@ details.disc[open] .plus::after { content: "\2013"; }
           <li><a href="/about/#mission"><b>Our Mission</b><span>A consultative experience that follows a structured process in order to provide customized solutions.</span></a></li>
           <li><a href="/about/#history"><b>History</b><span>Founded in Washington, DC by industry veterans with more than 50 years of litigation and consulting experience combined.</span></a></li>
           <li><a href="/our-experts/"><b>Our Team</b><span>Leadership, testifying experts, and the teams who work alongside them.</span></a></li>
-          <li><a href="/our-experts/speakers/"><b>Speakers</b><span>Book an iDS expert for your conference, retreat, or training event.</span></a></li>
         </ul>
       </div>
       <div>
@@ -355,15 +371,12 @@ details.disc[open] .plus::after { content: "\2013"; }
 <div id="the-ids-way" style="position:relative;overflow:hidden;background:#F6F7F9;border-top:1px solid #E6E9ED;border-bottom:1px solid #E6E9ED;scroll-margin-top:76px">
   <img src="/assets/gfx-signal-light.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.6;animation:idsFloat 38s ease-in-out infinite alternate" />
   <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(246,247,249,.94) 0%,rgba(246,247,249,.97) 100%)"></div>
-  <div style="position:relative;max-width:1200px;margin:0 auto;padding:80px 32px 24px;display:flex;flex-wrap:wrap;align-items:center;gap:32px 48px">
-    <img src="/assets/ids-way/ids-way-badge.png" alt="The iDS Way: an internal guide for external excellence" width="365" height="365" style="width:180px;height:auto;flex:0 0 auto" />
-    <div style="flex:1 1 420px;max-width:760px">
-      <h2 style="font-size:26px;font-weight:bold;color:#404040;margin:0 0 12px">The iDS Way</h2>
-      <div style="width:56px;height:3px;background:#DB6015;margin:0 0 18px"></div>
-      <p style="font-size:17px;line-height:1.6;color:#404040;margin:0">The iDS Way is more than a philosophy &mdash; it is the program behind how we work. Since 2008, iDS has pursued one vision: bringing world-class expertise to the intersection of law and technology, and helping parties resolve their disputes in a fair and just way. The iDS Way turns that vision into practice through our five core values, our 26 Core Fundamentals, and a simple commitment to every client: make them feel like our number one priority, and give them the best solution for their budget.</p>
-    </div>
+  <div style="position:relative;max-width:1200px;margin:0 auto;padding:80px 32px 24px">
+    <h2 style="font-size:26px;font-weight:bold;color:#404040;margin:0 0 12px">The iDS Way</h2>
+    <div style="width:56px;height:3px;background:#DB6015;margin:0 0 18px"></div>
+    <p style="font-size:17px;line-height:1.6;color:#404040;margin:0;max-width:760px">Our STEPS&trade; framework was built to maximize efficiency, minimize disruption, and drive success on every engagement &mdash; covering conflicts, privacy, security, budget, and execution. It is integrated into the fabric of how we work: our systems, our training, our ethos.</p>
   </div>
-  <div style="position:relative;max-width:1200px;margin:0 auto;padding:24px 32px 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2px">
+  <div style="position:relative;max-width:1200px;margin:0 auto;padding:24px 32px 88px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2px">
     <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:32px 30px">
       <div style="font-size:26px;font-weight:bold;letter-spacing:-.01em;color:#003764;margin-bottom:10px">Consultative Experts</div>
       <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Subject matter experts and data strategists who provide solutions to data problems, and testimony to support the findings when needed.</p>
@@ -375,24 +388,6 @@ details.disc[open] .plus::after { content: "\2013"; }
     <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:32px 30px">
       <div style="font-size:26px;font-weight:bold;letter-spacing:-.01em;color:#003764;margin-bottom:10px">Customized Solutions</div>
       <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Tailored to each client and matter. We avoid cookie-cutter answers that rarely address what makes your data problem unique.</p>
-    </div>
-  </div>
-  <div style="position:relative;max-width:1200px;margin:0 auto;padding:0 32px 2px">
-    <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:32px 30px;display:flex;flex-wrap:wrap;align-items:center;gap:24px 48px">
-      <img src="/assets/ids-way/core-values.png" alt="iDS core values: Integrity, Respect, Teamwork, Excellence, Innovation" width="345" height="239" style="width:300px;max-width:100%;height:auto;flex:0 0 auto" />
-      <div style="flex:1 1 360px">
-        <div style="font-size:13px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Core Values &amp; Fundamentals</div>
-        <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Integrity, teamwork, respect, excellence, and innovation have remained consistent as iDS has grown. Our 26 Core Fundamentals turn those values into everyday behaviors, for client-facing and operational teams alike &mdash; the most notable being <b style="color:#003764">Be Consultative</b>: a solution without understanding is a guess.</p>
-      </div>
-    </div>
-  </div>
-  <div style="position:relative;max-width:1200px;margin:0 auto;padding:0 32px 88px">
-    <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:32px 30px">
-      <div style="font-size:13px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:12px">Structured Process &middot; STEPS&trade;</div>
-      <p style="font-size:15px;line-height:1.6;color:#595959;margin:0 0 24px;max-width:760px">Our STEPS&trade; framework was built to maximize efficiency, minimize disruption, and drive success on every engagement &mdash; covering conflicts, privacy, security, budget, and execution. It is integrated into the fabric of how we work: our systems, our training, our ethos.</p>
-      <a href="/assets/ids-way/steps-framework.webp" target="_blank" rel="noopener" title="Open STEPS framework full size" style="display:block">
-        <img src="/assets/ids-way/steps-framework.webp" alt="STEPS: Structured Team Engagement Performance System. Step 1 Listen &amp; Learn, Step 2 Define &amp; Plan, Step 3 Intake &amp; Strategize, Step 4 Execute &amp; Deliver, Step 5 Manage &amp; Document, Step 6 Close &amp; Debrief, with Steps 3 to 5 repeating." width="2000" height="716" loading="lazy" style="display:block;width:100%;height:auto" />
-      </a>
     </div>
   </div>
 </div>
@@ -489,7 +484,7 @@ details.disc[open] .plus::after { content: "\2013"; }
 </div>
 
 <div style="background:#0A2440">
-  <div style="max-width:1200px;margin:0 auto;padding:64px 32px 26px;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:40px">
+  <div style="max-width:1200px;margin:0 auto;padding:64px 32px 26px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:40px">
     <div>
       <img src="/assets/ids-logo-reversed.png" alt="iDiscovery Solutions" style="height:52px;width:auto;display:block;margin-bottom:20px" />
       <p style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:bold;color:#FFFFFF;margin:0 0 6px">Truth Through Data</p>
@@ -507,7 +502,6 @@ details.disc[open] .plus::after { content: "\2013"; }
         <a href="/about/" style="font-size:15px;color:rgba(255,255,255,.82)">About Us</a>
         <a href="/capabilities/" style="font-size:15px;color:rgba(255,255,255,.82)">Capabilities</a>
         <a href="/our-experts/" style="font-size:15px;color:rgba(255,255,255,.82)">Our Experts</a>
-        <a href="/our-experts/speakers/" style="font-size:15px;color:rgba(255,255,255,.82)">Speakers</a>
         <a href="/can-you/" style="font-size:15px;color:rgba(255,255,255,.82)">Can You&hellip;?</a>
         <a href="/careers/" style="font-size:15px;color:rgba(255,255,255,.82)">Join Our Team</a>
       </div>
@@ -522,31 +516,22 @@ details.disc[open] .plus::after { content: "\2013"; }
     <div>
       <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:16px">Offices</div>
       <div style="display:grid;gap:14px">
-        <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">Washington, DC</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">3000 K Street NW, Suite 425<br />Washington, DC 20007</div></div>
-        <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">Costa Mesa, CA</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">535 Anton Blvd., Suite 860<br />Costa Mesa, CA 92626</div></div>
-        <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">Alpharetta, GA</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">11720 Amber Park Drive, Suite 160<br />Alpharetta, GA 30009</div></div>
-        <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">London</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">71&ndash;73 Carter Lane<br />London EC4V 5EQ</div></div>
+        <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">Washington, DC</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">3000 K Street NW, Suite 425<br />Washington, DC 20007<br />+1.800.813.4832</div></div>
+        <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">Costa Mesa, CA</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">535 Anton Blvd., Suite 860<br />Costa Mesa, CA 92626<br />+1.714.581.4830</div></div>
+        <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">Alpharetta, GA</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">11720 Amber Park Drive, Suite 160<br />Alpharetta, GA 30009<br />+1.626.224.3864</div></div>
+        <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">London</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">71&ndash;73 Carter Lane<br />London EC4V 5EQ<br />+44 (0)20 8242 4130</div></div>
       </div>
     </div>
     <div>
       <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:16px">Contact</div>
       <div style="display:grid;gap:10px">
         <a href="mailto:info@idsinc.com" style="font-size:15px;color:rgba(255,255,255,.82)">info@idsinc.com</a>
-        <a href="tel:+18008134832" style="font-size:15px;color:rgba(255,255,255,.82)">US: <span style="white-space:nowrap">+1.800.813.4832</span></a>
-        <a href="tel:+442082424130" style="font-size:15px;color:rgba(255,255,255,.82)">UK/EEA: <span style="white-space:nowrap">+44 (0)20 8242 4130</span></a>
         <a href="/contact/" style="font-size:15px;color:rgba(255,255,255,.82)">Start building your narrative</a>
       </div>
     </div>
   </div>
   <div style="max-width:1200px;margin:0 auto;padding:22px 32px 40px;border-top:1px solid rgba(255,255,255,.16);display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between">
-    <p style="font-size:13px;color:rgba(255,255,255,.6);margin:0">Copyright &copy; 2026 iDiscovery Solutions, Inc. All Rights Reserved &nbsp;|&nbsp; <a href="https://idsinc.com/ids-privacy-policy/" target="_blank" style="color:rgba(255,255,255,.6)">Privacy Policy</a></p>
-    <div style="display:flex;gap:14px;font-size:13px;color:rgba(255,255,255,.6)">
-      <a href="#" style="color:#FFFFFF;font-weight:bold">EN</a>
-      <a href="#" style="color:rgba(255,255,255,.6)">EN-GB</a>
-      <a href="#" style="color:rgba(255,255,255,.6)">DE</a>
-      <a href="#" style="color:rgba(255,255,255,.6)">ES</a>
-      <a href="#" style="color:rgba(255,255,255,.6)">FR</a>
-    </div>
+    <p style="font-size:13px;color:rgba(255,255,255,.6);margin:0">Copyright &copy; 2026 iDiscovery Solutions, Inc. All Rights Reserved &nbsp;|&nbsp; <a href="/privacy-policy/" style="color:rgba(255,255,255,.6)">Privacy Policy</a></p>
   </div>
 </div>
 
