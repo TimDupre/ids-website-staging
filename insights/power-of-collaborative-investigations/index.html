@@ -47,7 +47,7 @@ img { max-width:100%; }
 
 /* About Us mega-menu (desktop only) */
 .nav-item { position: static; display: flex; align-items: center; }
-.nav-item > button { font: 700 15px var(--display); color: #003764; background: none; border: 0; padding: 6px 0; cursor: pointer; display: flex; align-items: center; gap: 6px; white-space: nowrap; }
+.nav-item > button { font: 700 14px var(--display); letter-spacing:.04em; text-transform:uppercase; color: #003764; background: none; border: 0; padding: 6px 0; cursor: pointer; display: flex; align-items: center; gap: 6px; white-space: nowrap; }
 .nav-item > button::after { content:""; width:6px; height:6px; border-right:1.5px solid currentColor; border-bottom:1.5px solid currentColor; transform: translateY(-2px) rotate(45deg); transition: transform .15s; }
 .nav-item > button[aria-expanded="true"] { color: var(--orange); }
 .nav-item > button[aria-expanded="true"]::after { transform: translateY(2px) rotate(-135deg); }
@@ -270,7 +270,6 @@ details.disc[open] .plus::after { content: "\2013"; }
           <li><a href="/about/#mission"><b>Our Mission</b><span>A consultative experience that follows a structured process in order to provide customized solutions.</span></a></li>
           <li><a href="/about/#history"><b>History</b><span>Founded in Washington, DC by industry veterans with more than 50 years of litigation and consulting experience combined.</span></a></li>
           <li><a href="/our-experts/"><b>Our Team</b><span>Leadership, testifying experts, and the teams who work alongside them.</span></a></li>
-          <li><a href="/our-experts/speakers/"><b>Speakers</b><span>Book an iDS expert for your conference, retreat, or training event.</span></a></li>
         </ul>
       </div>
       <div>
@@ -494,7 +493,7 @@ details.disc[open] .plus::after { content: "\2013"; }
 </div>
 
 <div style="background:#0A2440">
-  <div style="max-width:1200px;margin:0 auto;padding:64px 32px 26px;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:40px">
+  <div style="max-width:1200px;margin:0 auto;padding:64px 32px 26px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:40px">
     <div>
       <img src="/assets/ids-logo-reversed.png" alt="iDiscovery Solutions" style="height:52px;width:auto;display:block;margin-bottom:20px" />
       <p style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:bold;color:#FFFFFF;margin:0 0 6px">Truth Through Data</p>
@@ -512,7 +511,6 @@ details.disc[open] .plus::after { content: "\2013"; }
         <a href="/about/" style="font-size:15px;color:rgba(255,255,255,.82)">About Us</a>
         <a href="/capabilities/" style="font-size:15px;color:rgba(255,255,255,.82)">Capabilities</a>
         <a href="/our-experts/" style="font-size:15px;color:rgba(255,255,255,.82)">Our Experts</a>
-        <a href="/our-experts/speakers/" style="font-size:15px;color:rgba(255,255,255,.82)">Speakers</a>
         <a href="/can-you/" style="font-size:15px;color:rgba(255,255,255,.82)">Can You&hellip;?</a>
         <a href="/careers/" style="font-size:15px;color:rgba(255,255,255,.82)">Join Our Team</a>
       </div>
@@ -527,31 +525,22 @@ details.disc[open] .plus::after { content: "\2013"; }
     <div>
       <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:16px">Offices</div>
       <div style="display:grid;gap:14px">
-        <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">Washington, DC</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">3000 K Street NW, Suite 425<br />Washington, DC 20007</div></div>
-        <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">Costa Mesa, CA</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">535 Anton Blvd., Suite 860<br />Costa Mesa, CA 92626</div></div>
-        <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">Alpharetta, GA</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">11720 Amber Park Drive, Suite 160<br />Alpharetta, GA 30009</div></div>
-        <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">London</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">71&ndash;73 Carter Lane<br />London EC4V 5EQ</div></div>
+        <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">Washington, DC</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">3000 K Street NW, Suite 425<br />Washington, DC 20007<br />+1.800.813.4832</div></div>
+        <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">Costa Mesa, CA</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">535 Anton Blvd., Suite 860<br />Costa Mesa, CA 92626<br />+1.714.581.4830</div></div>
+        <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">Alpharetta, GA</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">11720 Amber Park Drive, Suite 160<br />Alpharetta, GA 30009<br />+1.626.224.3864</div></div>
+        <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">London</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">71&ndash;73 Carter Lane<br />London EC4V 5EQ<br />+44 (0)20 8242 4130</div></div>
       </div>
     </div>
     <div>
       <div style="font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:16px">Contact</div>
       <div style="display:grid;gap:10px">
         <a href="mailto:info@idsinc.com" style="font-size:15px;color:rgba(255,255,255,.82)">info@idsinc.com</a>
-        <a href="tel:+18008134832" style="font-size:15px;color:rgba(255,255,255,.82)">US: <span style="white-space:nowrap">+1.800.813.4832</span></a>
-        <a href="tel:+442082424130" style="font-size:15px;color:rgba(255,255,255,.82)">UK/EEA: <span style="white-space:nowrap">+44 (0)20 8242 4130</span></a>
         <a href="/contact/" style="font-size:15px;color:rgba(255,255,255,.82)">Start building your narrative</a>
       </div>
     </div>
   </div>
   <div style="max-width:1200px;margin:0 auto;padding:22px 32px 40px;border-top:1px solid rgba(255,255,255,.16);display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between">
-    <p style="font-size:13px;color:rgba(255,255,255,.6);margin:0">Copyright &copy; 2026 iDiscovery Solutions, Inc. All Rights Reserved &nbsp;|&nbsp; <a href="https://idsinc.com/ids-privacy-policy/" target="_blank" style="color:rgba(255,255,255,.6)">Privacy Policy</a></p>
-    <div style="display:flex;gap:14px;font-size:13px;color:rgba(255,255,255,.6)">
-      <a href="#" style="color:#FFFFFF;font-weight:bold">EN</a>
-      <a href="#" style="color:rgba(255,255,255,.6)">EN-GB</a>
-      <a href="#" style="color:rgba(255,255,255,.6)">DE</a>
-      <a href="#" style="color:rgba(255,255,255,.6)">ES</a>
-      <a href="#" style="color:rgba(255,255,255,.6)">FR</a>
-    </div>
+    <p style="font-size:13px;color:rgba(255,255,255,.6);margin:0">Copyright &copy; 2026 iDiscovery Solutions, Inc. All Rights Reserved &nbsp;|&nbsp; <a href="/privacy-policy/" style="color:rgba(255,255,255,.6)">Privacy Policy</a></p>
   </div>
 </div>
 
