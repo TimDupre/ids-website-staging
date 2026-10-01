@@ -80,6 +80,7 @@ img { max-width:100%; }
 }
 
 details.disc > summary { list-style: none; cursor: pointer; }
+@media (max-width: 640px) { details.disc > summary img { width:44px !important; height:44px !important; flex-basis:44px !important; } details.disc > summary { gap:14px !important; } details.disc > div { padding-left:4px !important; } details.disc > summary span[style*="font-size:30px"] { font-size:22px !important; } }
 details.disc > summary::-webkit-details-marker { display: none; }
 details.disc .plus::after { content: "+"; }
 details.disc[open] .plus::after { content: "\2013"; }
@@ -395,135 +396,144 @@ details.disc[open] .plus::after { content: "\2013"; }
   </div>
   <div style="max-width:1200px;margin:0 auto;padding:24px 32px 84px;border-top:1px solid #E6E9ED">
     <details class="disc" id="digital-forensics" style="border-bottom:1px solid #E6E9ED">
-  <summary style="display:flex;gap:24px;align-items:baseline;padding:30px 4px;color:#003764">
+  <summary style="display:flex;gap:24px;align-items:center;padding:30px 4px;color:#003764">
     <span style="font-size:14px;letter-spacing:.14em;color:#DB6015;font-weight:bold;flex:0 0 34px">01</span>
+    <img src="/assets/capabilities/icon-digital-forensics.jpg" alt="Digital Forensics icon" title="Digital Forensics" width="64" height="64" style="flex:0 0 64px;width:64px;height:64px;display:block;border-radius:2px" />
     <span style="flex:1 1 auto;min-width:0">
       <span style="display:block;font-size:30px;font-weight:bold;letter-spacing:-.015em;line-height:1.14">Digital Forensics</span>
       <span style="display:block;font-size:15px;font-weight:bold;font-style:italic;color:#DB6015;margin-top:6px">Your data tells a story: who created it, how, and when</span>
     </span>
     <span class="plus" style="font-size:26px;color:#DB6015;flex:0 0 auto"></span>
   </summary>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:32px;padding:4px 4px 42px 62px">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:32px;padding:4px 4px 42px 150px">
     <div><div style="font-size:13px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#666666;margin-bottom:10px">The question</div><p style="font-size:15px;line-height:1.6;margin:0">What happened on this device, when, and by whom? Was data deleted, moved, or altered? Does the artifact record support the account being given?</p></div>
     <div><div style="font-size:13px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#666666;margin-bottom:10px">How we work it</div><p style="font-size:15px;line-height:1.6;margin:0">Forensically sound methods that are repeatable and defensible. Preserve first, analyse second, document throughout. Findings are stated in terms of what the artifacts support, and where the record is silent.</p></div>
     <div><div style="font-size:13px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#666666;margin-bottom:10px">What you receive</div><p style="font-size:15px;line-height:1.6;margin:0">Defensible collections, artifact-level analysis, reconstructed timelines, and an expert prepared to explain all of it under examination.</p></div>
   </div>
 </details>
 <details class="disc" id="structured-data" style="border-bottom:1px solid #E6E9ED">
-  <summary style="display:flex;gap:24px;align-items:baseline;padding:30px 4px;color:#003764">
+  <summary style="display:flex;gap:24px;align-items:center;padding:30px 4px;color:#003764">
     <span style="font-size:14px;letter-spacing:.14em;color:#DB6015;font-weight:bold;flex:0 0 34px">02</span>
+    <img src="/assets/capabilities/icon-structured-data.jpg" alt="Structured Data &amp; Analytics icon" title="Structured Data &amp; Analytics" width="64" height="64" style="flex:0 0 64px;width:64px;height:64px;display:block;border-radius:2px" />
     <span style="flex:1 1 auto;min-width:0">
       <span style="display:block;font-size:30px;font-weight:bold;letter-spacing:-.015em;line-height:1.14">Structured Data &amp; Analytics</span>
       <span style="display:block;font-size:15px;font-weight:bold;font-style:italic;color:#DB6015;margin-top:6px">Databases are evidence, and they behave differently</span>
     </span>
     <span class="plus" style="font-size:26px;color:#DB6015;flex:0 0 auto"></span>
   </summary>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:32px;padding:4px 4px 42px 62px">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:32px;padding:4px 4px 42px 150px">
     <div><div style="font-size:13px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#666666;margin-bottom:10px">The question</div><p style="font-size:15px;line-height:1.6;margin:0">Does the claimed pattern hold at population scale? What do the transactional records actually establish about conduct, hours, pricing, or class composition?</p></div>
     <div><div style="font-size:13px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#666666;margin-bottom:10px">How we work it</div><p style="font-size:15px;line-height:1.6;margin:0">Identification, acquisition, analysis, and production of enterprise systems including SQL Server, Oracle, and DB2. We read the system before we read the data, then use visualisations and statistical models to make the volume comprehensible.</p></div>
     <div><div style="font-size:13px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#666666;margin-bottom:10px">What you receive</div><p style="font-size:15px;line-height:1.6;margin:0">Population-level analysis rather than sample anecdote, visual exhibits a jury can follow, and testimony on method as well as result.</p></div>
   </div>
 </details>
 <details class="disc" id="ediscovery" style="border-bottom:1px solid #E6E9ED">
-  <summary style="display:flex;gap:24px;align-items:baseline;padding:30px 4px;color:#003764">
+  <summary style="display:flex;gap:24px;align-items:center;padding:30px 4px;color:#003764">
     <span style="font-size:14px;letter-spacing:.14em;color:#DB6015;font-weight:bold;flex:0 0 34px">03</span>
+    <img src="/assets/capabilities/icon-ediscovery.jpg" alt="eDiscovery &amp; Disclosure icon" title="eDiscovery &amp; Disclosure" width="64" height="64" style="flex:0 0 64px;width:64px;height:64px;display:block;border-radius:2px" />
     <span style="flex:1 1 auto;min-width:0">
       <span style="display:block;font-size:30px;font-weight:bold;letter-spacing:-.015em;line-height:1.14">eDiscovery &amp; Disclosure</span>
       <span style="display:block;font-size:15px;font-weight:bold;font-style:italic;color:#DB6015;margin-top:6px">A complete, defensible record, at a cost that is defensible too</span>
     </span>
     <span class="plus" style="font-size:26px;color:#DB6015;flex:0 0 auto"></span>
   </summary>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:32px;padding:4px 4px 42px 62px">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:32px;padding:4px 4px 42px 150px">
     <div><div style="font-size:13px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#666666;margin-bottom:10px">The question</div><p style="font-size:15px;line-height:1.6;margin:0">How do we access, locate, collect, and preserve this at volume without losing the context that makes it meaningful?</p></div>
     <div><div style="font-size:13px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#666666;margin-bottom:10px">How we work it</div><p style="font-size:15px;line-height:1.6;margin:0">Identification through production, including Relativity processing, hosting, and review support. Because our own experts work on what these teams collect, the foundation has to be sound, so we own it rather than renting it.</p></div>
     <div><div style="font-size:13px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#666666;margin-bottom:10px">What you receive</div><p style="font-size:15px;line-height:1.6;margin:0">A reviewable record, documented decisions on scope and method, and a witness who can explain why the search was reasonable.</p></div>
   </div>
 </details>
 <details class="disc" id="damages-forensic-accounting" style="border-bottom:1px solid #E6E9ED">
-  <summary style="display:flex;gap:24px;align-items:baseline;padding:30px 4px;color:#003764">
+  <summary style="display:flex;gap:24px;align-items:center;padding:30px 4px;color:#003764">
     <span style="font-size:14px;letter-spacing:.14em;color:#DB6015;font-weight:bold;flex:0 0 34px">04</span>
+    <img src="/assets/capabilities/icon-damages-forensic-accounting.jpg" alt="Damages &amp; Forensic Accounting icon" title="Damages &amp; Forensic Accounting" width="64" height="64" style="flex:0 0 64px;width:64px;height:64px;display:block;border-radius:2px" />
     <span style="flex:1 1 auto;min-width:0">
       <span style="display:block;font-size:30px;font-weight:bold;letter-spacing:-.015em;line-height:1.14">Damages &amp; Forensic Accounting</span>
       <span style="display:block;font-size:15px;font-weight:bold;font-style:italic;color:#DB6015;margin-top:6px">Financial exposure, stated as a range with named assumptions</span>
     </span>
     <span class="plus" style="font-size:26px;color:#DB6015;flex:0 0 auto"></span>
   </summary>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:32px;padding:4px 4px 42px 62px">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:32px;padding:4px 4px 42px 150px">
     <div><div style="font-size:13px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#666666;margin-bottom:10px">The question</div><p style="font-size:15px;line-height:1.6;margin:0">What is the economic effect? What would have happened absent the conduct? How sensitive is the number to each assumption behind it?</p></div>
     <div><div style="font-size:13px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#666666;margin-bottom:10px">How we work it</div><p style="font-size:15px;line-height:1.6;margin:0">Build the counterfactual explicitly. Where the damages rest on transactional data, the same firm that analysed the data supports the model, so the two do not contradict each other on cross.</p></div>
     <div><div style="font-size:13px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#666666;margin-bottom:10px">What you receive</div><p style="font-size:15px;line-height:1.6;margin:0">Damages and valuation analysis, sensitivity testing, rebuttal of opposing financial opinions, and testimony.</p></div>
   </div>
 </details>
 <details class="disc" id="special-investigations-unit" style="border-bottom:1px solid #E6E9ED">
-  <summary style="display:flex;gap:24px;align-items:baseline;padding:30px 4px;color:#003764">
+  <summary style="display:flex;gap:24px;align-items:center;padding:30px 4px;color:#003764">
     <span style="font-size:14px;letter-spacing:.14em;color:#DB6015;font-weight:bold;flex:0 0 34px">05</span>
+    <img src="/assets/capabilities/icon-special-investigations-unit.jpg" alt="Investigations icon" title="Investigations" width="64" height="64" style="flex:0 0 64px;width:64px;height:64px;display:block;border-radius:2px" />
     <span style="flex:1 1 auto;min-width:0">
       <span style="display:block;font-size:30px;font-weight:bold;letter-spacing:-.015em;line-height:1.14">Investigations</span>
       <span style="display:block;font-size:15px;font-weight:bold;font-style:italic;color:#DB6015;margin-top:6px">Rapid response when the incident carries legal risk</span>
     </span>
     <span class="plus" style="font-size:26px;color:#DB6015;flex:0 0 auto"></span>
   </summary>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:32px;padding:4px 4px 42px 62px">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:32px;padding:4px 4px 42px 150px">
     <div><div style="font-size:13px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#666666;margin-bottom:10px">The question</div><p style="font-size:15px;line-height:1.6;margin:0">What happened, who was involved, and how much of it can be established rather than inferred?</p></div>
     <div><div style="font-size:13px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#666666;margin-bottom:10px">How we work it</div><p style="font-size:15px;line-height:1.6;margin:0">Our Special Investigations Unit responds to criminal acts, government investigations, employee misconduct, and urgent internal matters. Investigative instinct paired with the evidentiary discipline that keeps findings usable later.</p></div>
     <div><div style="font-size:13px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#666666;margin-bottom:10px">What you receive</div><p style="font-size:15px;line-height:1.6;margin:0">Findings, a documented investigative record, and privilege-aware reporting built to survive later scrutiny.</p></div>
   </div>
 </details>
 <details class="disc" id="cybersecurity" style="border-bottom:1px solid #E6E9ED">
-  <summary style="display:flex;gap:24px;align-items:baseline;padding:30px 4px;color:#003764">
+  <summary style="display:flex;gap:24px;align-items:center;padding:30px 4px;color:#003764">
     <span style="font-size:14px;letter-spacing:.14em;color:#DB6015;font-weight:bold;flex:0 0 34px">06</span>
+    <img src="/assets/capabilities/icon-cybersecurity.jpg" alt="Cybersecurity icon" title="Cybersecurity" width="64" height="64" style="flex:0 0 64px;width:64px;height:64px;display:block;border-radius:2px" />
     <span style="flex:1 1 auto;min-width:0">
       <span style="display:block;font-size:30px;font-weight:bold;letter-spacing:-.015em;line-height:1.14">Cybersecurity</span>
       <span style="display:block;font-size:15px;font-weight:bold;font-style:italic;color:#DB6015;margin-top:6px">A single incident can cause lasting organisational harm</span>
     </span>
     <span class="plus" style="font-size:26px;color:#DB6015;flex:0 0 auto"></span>
   </summary>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:32px;padding:4px 4px 42px 62px">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:32px;padding:4px 4px 42px 150px">
     <div><div style="font-size:13px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#666666;margin-bottom:10px">The question</div><p style="font-size:15px;line-height:1.6;margin:0">How did they get in, what did they reach, what can we demonstrate about it, and what is our notification exposure?</p></div>
     <div><div style="font-size:13px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#666666;margin-bottom:10px">How we work it</div><p style="font-size:15px;line-height:1.6;margin:0">Expert-driven risk mitigation and incident response, tailored rather than templated. Because the same people testify, the response is documented as though it will be examined, because it often is.</p></div>
     <div><div style="font-size:13px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#666666;margin-bottom:10px">What you receive</div><p style="font-size:15px;line-height:1.6;margin:0">Incident findings, security posture assessment, remediation priorities, and expert support if it becomes a dispute.</p></div>
   </div>
 </details>
 <details class="disc" id="privacy" style="border-bottom:1px solid #E6E9ED">
-  <summary style="display:flex;gap:24px;align-items:baseline;padding:30px 4px;color:#003764">
+  <summary style="display:flex;gap:24px;align-items:center;padding:30px 4px;color:#003764">
     <span style="font-size:14px;letter-spacing:.14em;color:#DB6015;font-weight:bold;flex:0 0 34px">07</span>
+    <img src="/assets/capabilities/icon-privacy.jpg" alt="Privacy icon" title="Privacy" width="64" height="64" style="flex:0 0 64px;width:64px;height:64px;display:block;border-radius:2px" />
     <span style="flex:1 1 auto;min-width:0">
       <span style="display:block;font-size:30px;font-weight:bold;letter-spacing:-.015em;line-height:1.14">Privacy</span>
       <span style="display:block;font-size:15px;font-weight:bold;font-style:italic;color:#DB6015;margin-top:6px">Rights requests are an evidence problem before they are a legal one</span>
     </span>
     <span class="plus" style="font-size:26px;color:#DB6015;flex:0 0 auto"></span>
   </summary>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:32px;padding:4px 4px 42px 62px">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:32px;padding:4px 4px 42px 150px">
     <div><div style="font-size:13px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#666666;margin-bottom:10px">The question</div><p style="font-size:15px;line-height:1.6;margin:0">Where does the personal data live, and how do we respond to a DSAR within the window without over-disclosing?</p></div>
     <div><div style="font-size:13px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#666666;margin-bottom:10px">How we work it</div><p style="font-size:15px;line-height:1.6;margin:0">Map the data, then design a review and production workflow that controls cost. The hard part is rarely locating the data; it is reviewing and turning it over efficiently.</p></div>
     <div><div style="font-size:13px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#666666;margin-bottom:10px">What you receive</div><p style="font-size:15px;line-height:1.6;margin:0">A defensible response workflow, cross-border handling that respects GDPR and equivalents, and a repeatable process for the next request.</p></div>
   </div>
 </details>
 <details class="disc" id="information-governance" style="border-bottom:1px solid #E6E9ED">
-  <summary style="display:flex;gap:24px;align-items:baseline;padding:30px 4px;color:#003764">
+  <summary style="display:flex;gap:24px;align-items:center;padding:30px 4px;color:#003764">
     <span style="font-size:14px;letter-spacing:.14em;color:#DB6015;font-weight:bold;flex:0 0 34px">08</span>
+    <img src="/assets/capabilities/icon-information-governance.jpg" alt="Information Governance &amp; Compliance icon" title="Information Governance &amp; Compliance" width="64" height="64" style="flex:0 0 64px;width:64px;height:64px;display:block;border-radius:2px" />
     <span style="flex:1 1 auto;min-width:0">
       <span style="display:block;font-size:30px;font-weight:bold;letter-spacing:-.015em;line-height:1.14">Information Governance &amp; Compliance</span>
       <span style="display:block;font-size:15px;font-weight:bold;font-style:italic;color:#DB6015;margin-top:6px">Reduce the risk before it becomes a matter</span>
     </span>
     <span class="plus" style="font-size:26px;color:#DB6015;flex:0 0 auto"></span>
   </summary>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:32px;padding:4px 4px 42px 62px">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:32px;padding:4px 4px 42px 150px">
     <div><div style="font-size:13px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#666666;margin-bottom:10px">The question</div><p style="font-size:15px;line-height:1.6;margin:0">What data do we hold, why, and what would we be able to show about how our systems were run?</p></div>
     <div><div style="font-size:13px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#666666;margin-bottom:10px">How we work it</div><p style="font-size:15px;line-height:1.6;margin:0">Data maps, retention policy, and Data Footprint reduction, plus audit and compliance readiness across the US and EU. Designed by people who have seen which gaps get exploited in litigation.</p></div>
     <div><div style="font-size:13px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#666666;margin-bottom:10px">What you receive</div><p style="font-size:15px;line-height:1.6;margin:0">A governance strategy that lowers cost and risk at once, and controls you can actually evidence.</p></div>
   </div>
 </details>
 <details class="disc" id="testimony" style="border-bottom:1px solid #E6E9ED">
-  <summary style="display:flex;gap:24px;align-items:baseline;padding:30px 4px;color:#003764">
+  <summary style="display:flex;gap:24px;align-items:center;padding:30px 4px;color:#003764">
     <span style="font-size:14px;letter-spacing:.14em;color:#DB6015;font-weight:bold;flex:0 0 34px">09</span>
+    <img src="/assets/capabilities/icon-testimony.jpg" alt="Expert Testimony icon" title="Expert Testimony" width="64" height="64" style="flex:0 0 64px;width:64px;height:64px;display:block;border-radius:2px" />
     <span style="flex:1 1 auto;min-width:0">
       <span style="display:block;font-size:30px;font-weight:bold;letter-spacing:-.015em;line-height:1.14">Expert Testimony</span>
       <span style="display:block;font-size:15px;font-weight:bold;font-style:italic;color:#DB6015;margin-top:6px">The discipline every other discipline reports into</span>
     </span>
     <span class="plus" style="font-size:26px;color:#DB6015;flex:0 0 auto"></span>
   </summary>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:32px;padding:4px 4px 42px 62px">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:32px;padding:4px 4px 42px 150px">
     <div><div style="font-size:13px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#666666;margin-bottom:10px">The question</div><p style="font-size:15px;line-height:1.6;margin:0">Who will stand behind this opinion when it is challenged, and will the method survive the challenge?</p></div>
     <div><div style="font-size:13px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#666666;margin-bottom:10px">How we work it</div><p style="font-size:15px;line-height:1.6;margin:0">Expert opinions, fact witness, PMK, 30(b)(6), and data neutral engagements. Our case portfolio includes both defence and plaintiff matters, and our CEO has served as special master on multiple occasions.</p></div>
     <div><div style="font-size:13px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#666666;margin-bottom:10px">What you receive</div><p style="font-size:15px;line-height:1.6;margin:0">A report written to be attacked, and an expert who will defend it on paper, in deposition, and at trial.</p></div>
