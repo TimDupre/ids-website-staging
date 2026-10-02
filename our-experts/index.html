@@ -246,6 +246,18 @@ details.disc[open] .plus::after { content: "\2013"; }
 .profile-more::after{content:"View profile +"}
 @media (max-width:640px){.expert-card[open]>summary,.team-card[open]>summary{float:none;width:auto;margin-right:0}.expert-card[open]>.profile-panel,.team-card[open]>.profile-panel{padding:0 18px 22px !important}}
 </style>
+<style id="photo-hover-css">
+/* Headshots: navy tint by default, true colour on hover / when a profile is open */
+div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
+.expert-card > summary:hover div[style*="mix-blend-mode:color"],
+.team-card > summary:hover div[style*="mix-blend-mode:color"],
+.expert-card > summary:focus-visible div[style*="mix-blend-mode:color"],
+.team-card > summary:focus-visible div[style*="mix-blend-mode:color"],
+.expert-card[open] div[style*="mix-blend-mode:color"],
+.team-card[open] div[style*="mix-blend-mode:color"],
+.spk-card:hover div[style*="mix-blend-mode:color"]{opacity:0 !important}
+@media (prefers-reduced-motion:reduce){div[style*="mix-blend-mode:color"]{transition:none}}
+</style>
 </head>
 <body>
 <div class="site-nav" style="position:sticky;top:0;z-index:50;background:#FFFFFF;border-bottom:1px solid #E6E9ED">
