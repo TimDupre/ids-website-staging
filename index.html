@@ -122,11 +122,13 @@ details.disc[open] .plus::after { content: "\2013"; }
 .ex-grid { stroke:#E4E8EC; stroke-width:1; }
 .ex-lane { stroke:#CBD2D9; stroke-width:1; }
 .ex-noise { fill:var(--noise); }
-.ex-key { fill:var(--navy); transition:fill .5s ease .2s; }
-.ex-chain { fill:none; stroke:var(--orange); stroke-width:2; stroke-linejoin:round; stroke-dasharray:900; stroke-dashoffset:0; }
-.exhibit.play .ex-chain { animation: exDraw 2.4s ease .5s both; }
+.ex-key { fill:var(--orange); transform-box:fill-box; transform-origin:center; }
+.ex-pulse { fill:none; stroke:var(--orange); stroke-width:2; vector-effect:non-scaling-stroke; opacity:0; transform-box:fill-box; transform-origin:center; }
+.exhibit.play .ex-key { animation: exPop .9s cubic-bezier(.2,.9,.25,1) var(--d,0s) both; }
+.exhibit.play .ex-pulse { animation: exRing 1.1s ease-out var(--d,0s) both; }
+@keyframes exPop { 0%{opacity:0;transform:scale(.2)} 35%{opacity:1;transform:scale(2.3)} 60%{transform:scale(.85)} 80%{transform:scale(1.12)} 100%{opacity:1;transform:scale(1)} }
+@keyframes exRing { 0%{opacity:0;transform:scale(1)} 15%{opacity:.85} 100%{opacity:0;transform:scale(5)} }
 .exhibit.done .ex-key { fill: var(--orange); }
-@keyframes exDraw { from{stroke-dashoffset:900} to{stroke-dashoffset:0} }
 .ex-result { display:grid; grid-template-columns:auto 1fr; gap:6px 16px; align-items:baseline; margin:6px 24px 0; padding:14px 0 16px; border-top:1px dashed #D5DBE1; }
 .ex-result .mono-label { grid-row:1/3; }
 .ex-result p { font:500 17px/1.35 var(--display); color:#16212C; margin:0; }
@@ -437,10 +439,8 @@ details.disc[open] .plus::after { content: "\2013"; }
           <circle class="ex-noise" cx="352" cy="195" r="3.5"/><circle class="ex-noise" cx="372" cy="195" r="3.5"/><circle class="ex-noise" cx="590" cy="195" r="3.5"/>
           <circle class="ex-noise" cx="186" cy="245" r="3.5"/><circle class="ex-noise" cx="398" cy="245" r="3.5"/><circle class="ex-noise" cx="474" cy="245" r="3.5"/><circle class="ex-noise" cx="520" cy="245" r="3.5"/>
         </g>
-        <polyline class="ex-chain" points="178,195 232,245 284,245 300,45 306,95 488,195 500,145"/>
         <g>
-          <circle class="ex-key" cx="178" cy="195" r="5.5"/><circle class="ex-key" cx="232" cy="245" r="5.5"/><circle class="ex-key" cx="284" cy="245" r="5.5"/>
-          <circle class="ex-key" cx="300" cy="45" r="5.5"/><circle class="ex-key" cx="306" cy="95" r="5.5"/><circle class="ex-key" cx="488" cy="195" r="5.5"/><circle class="ex-key" cx="500" cy="145" r="5.5"/>
+          <g class="ex-evt" style="--d:0.84s"><circle class="ex-pulse" cx="178" cy="195" r="5.5"/><circle class="ex-key" cx="178" cy="195" r="5.5"/></g><g class="ex-evt" style="--d:2.20s"><circle class="ex-pulse" cx="232" cy="245" r="5.5"/><circle class="ex-key" cx="232" cy="245" r="5.5"/></g><g class="ex-evt" style="--d:1.52s"><circle class="ex-pulse" cx="284" cy="245" r="5.5"/><circle class="ex-key" cx="284" cy="245" r="5.5"/></g><g class="ex-evt" style="--d:0.50s"><circle class="ex-pulse" cx="300" cy="45" r="5.5"/><circle class="ex-key" cx="300" cy="45" r="5.5"/></g><g class="ex-evt" style="--d:2.54s"><circle class="ex-pulse" cx="306" cy="95" r="5.5"/><circle class="ex-key" cx="306" cy="95" r="5.5"/></g><g class="ex-evt" style="--d:1.18s"><circle class="ex-pulse" cx="488" cy="195" r="5.5"/><circle class="ex-key" cx="488" cy="195" r="5.5"/></g><g class="ex-evt" style="--d:1.86s"><circle class="ex-pulse" cx="500" cy="145" r="5.5"/><circle class="ex-key" cx="500" cy="145" r="5.5"/></g>
         </g>
       </svg>
     </div>
