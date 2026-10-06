@@ -254,6 +254,10 @@ details.disc[open] .plus::after { content: "\2013"; }
 .person .ph{display:block;overflow:hidden;aspect-ratio:4/5;background:#DDE2E7}
 .person .ph img{aspect-ratio:auto !important;height:100%}
 </style>
+<style id="phases-align-css">
+/* Keep the three How-we-help titles on one line across, whatever the lead-in length */
+@media (min-width:861px){ .phases{grid-template-rows:auto auto 1fr} .phases .phase{display:grid;grid-row:span 3;grid-template-rows:subgrid;align-content:start} .phases .phase h3{align-self:end} }
+</style>
 </head>
 <body>
 <div class="site-nav" style="position:sticky;top:0;z-index:50;background:#FFFFFF;border-bottom:1px solid #E6E9ED">
@@ -501,7 +505,7 @@ details.disc[open] .plus::after { content: "\2013"; }
         <p data-key="howWeHelp.body">Three phases of a dispute, each with its own expertise. All of it standing on one evidentiary foundation.</p>
       </div>
     </div>
-    <div class="phases" data-list="howWeHelp.verticals"><a class="phase" href="/capabilities/"><span class="mono-label">Getting to a complete, defensible record</span><h3>Discovery</h3><p>Identification, preservation, forensic collection, processing, hosting, and review support, including Relativity. The phase that determines what every later phase is allowed to say.</p></a><a class="phase" href="/capabilities/"><span class="mono-label">What happened, and what the record supports</span><h3>Merits</h3><p>Digital forensics, structured data analysis, authenticity, and reconstruction. Competing accounts tested against the artifacts rather than against each other.</p></a><a class="phase" href="/capabilities/"><span class="mono-label">What the exposure is, and how firm the number is</span><h3>Damages</h3><p>Forensic accounting, economics, and valuation. Scenarios rather than a single figure, with every assumption named, sourced, and testable by the other side.</p></a></div>
+    <div class="phases" data-list="howWeHelp.verticals"><a class="phase" href="/capabilities/"><span class="mono-label">Getting to a complete, defensible record</span><h3>Discovery</h3><p>Identification, preservation, forensic collection, processing, hosting, and review support, including Relativity. The phase that determines what every later phase is allowed to say.</p></a><a class="phase" href="/capabilities/"><span class="mono-label">What happened, and what holds up</span><h3>Merits</h3><p>Digital forensics, structured data analysis, authenticity, and reconstruction. Competing accounts tested against the artifacts rather than against each other.</p></a><a class="phase" href="/capabilities/"><span class="mono-label">The exposure, and how firm it is</span><h3>Damages</h3><p>Forensic accounting, economics, and valuation. Scenarios rather than a single figure, with every assumption named, sourced, and testable by the other side.</p></a></div>
   </div>
   <div class="foundation-wrap">
     <div class="foundation">

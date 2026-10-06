@@ -40,8 +40,8 @@
     "body": "Three phases of a dispute, each with its own expertise. All of it standing on one evidentiary foundation.",
     "verticals": [
       { "title": "Discovery", "subtitle": "Getting to a complete, defensible record", "text": "Identification, preservation, forensic collection, processing, hosting, and review support, including Relativity. The phase that determines what every later phase is allowed to say." },
-      { "title": "Merits", "subtitle": "What happened, and what the record supports", "text": "Digital forensics, structured data analysis, authenticity, and reconstruction. Competing accounts tested against the artifacts rather than against each other." },
-      { "title": "Damages", "subtitle": "What the exposure is, and how firm the number is", "text": "Forensic accounting, economics, and valuation. Scenarios rather than a single figure, with every assumption named, sourced, and testable by the other side." }
+      { "title": "Merits", "subtitle": "What happened, and what holds up", "text": "Digital forensics, structured data analysis, authenticity, and reconstruction. Competing accounts tested against the artifacts rather than against each other." },
+      { "title": "Damages", "subtitle": "The exposure, and how firm it is", "text": "Forensic accounting, economics, and valuation. Scenarios rather than a single figure, with every assumption named, sourced, and testable by the other side." }
     ],
     "foundationEyebrow": "The foundation under all three",
     "foundationTitle": "Evidence Intelligence",
