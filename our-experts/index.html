@@ -276,9 +276,8 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
 .cap-mega .mega-feature a + a{margin-top:-4px}
 </style>
 <style id="headshot-crop-css">
-/* Even out headshot framing: gentle zoom toward the face; Hunter's new photo is already framed tightly */
-.expert-card summary img, .team-card summary img, .spk-card img, .person .ph img{transform:scale(var(--hs-zoom,1.08));transform-origin:50% 22%;transition:transform .4s ease}
-img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
+/* Headshots are pre-cropped (assets/uploads/hs) to identical face size and position */
+.expert-card summary img, .team-card summary img, .spk-card img, .person .ph img{object-position:50% 0 !important}
 .person .ph{display:block;overflow:hidden;aspect-ratio:4/5;background:#DDE2E7}
 .person .ph img{aspect-ratio:auto !important;height:100%}
 </style>
@@ -443,7 +442,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
     <details id="dan-regard" class="expert-card" data-tags="Digital Forensics|Structured Data|AI & Emerging Tech" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-      <img src="/assets/uploads/Dan-Regard-Headshot-B.jpg" alt="Dan Regard" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+      <img src="/assets/uploads/hs/Dan-Regard-Headshot-B.jpg" alt="Dan Regard" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
       <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
       <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#DB6015"></div>
     </div>
@@ -475,7 +474,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="hunter-mcmahon" class="expert-card" data-tags="Structured Data|Discovery Services|AI & Emerging Tech" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-      <img src="/assets/uploads/Hunter-McMahon-2026.jpg" alt="Hunter McMahon" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+      <img src="/assets/uploads/hs/Hunter-McMahon-2026-portrait.jpg" alt="Hunter McMahon" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
       <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
       <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#DB6015"></div>
     </div>
@@ -513,7 +512,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="julian-ackert" class="expert-card" data-tags="Digital Forensics|Structured Data" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-      <img src="/assets/uploads/julian-ackert.jpg" alt="Julian Ackert" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+      <img src="/assets/uploads/hs/julian-ackert.jpg" alt="Julian Ackert" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
       <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
       <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#DB6015"></div>
     </div>
@@ -540,7 +539,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="james-vaughn" class="expert-card" data-tags="Digital Forensics" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-      <img src="/assets/uploads/iDS-HS-jimv-001.jpg" alt="James Vaughn" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+      <img src="/assets/uploads/hs/iDS-HS-jimv-001.jpg" alt="James Vaughn" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
       <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
       <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#DB6015"></div>
     </div>
@@ -572,7 +571,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="warren-kruse" class="expert-card" data-tags="Digital Forensics|Cybersecurity" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-      <img src="/assets/uploads/warren-head-1-e1765895523857.jpeg" alt="Warren Kruse" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+      <img src="/assets/uploads/hs/warren-head-1-e1765895523857.jpg" alt="Warren Kruse" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
       <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
       <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#DB6015"></div>
     </div>
@@ -620,7 +619,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="mark-clews" class="expert-card" data-tags="Digital Forensics|Discovery Services|AI & Emerging Tech" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-      <img src="/assets/uploads/Mark-Clews-KEEP.jpg" alt="Mark Clews" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+      <img src="/assets/uploads/hs/Mark-Clews-KEEP.jpg" alt="Mark Clews" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
       <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
       <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#DB6015"></div>
     </div>
@@ -650,7 +649,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="theodore-brown" class="expert-card" data-tags="Damages & Economics" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-      <img src="/assets/uploads/iDS-HS-teddy-002.jpg" alt="Theodore Brown" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+      <img src="/assets/uploads/hs/iDS-HS-teddy-002.jpg" alt="Theodore Brown" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
       <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
       <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#DB6015"></div>
     </div>
@@ -675,7 +674,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="kenneth-gustafson" class="expert-card" data-tags="Damages & Economics" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-      <img src="/assets/uploads/1692306968306-e1782932395355.jpeg" alt="Kenneth Gustafson, CFA" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+      <img src="/assets/uploads/hs/1692306968306-e1782932395355.jpg" alt="Kenneth Gustafson, CFA" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
       <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
       <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#DB6015"></div>
     </div>
@@ -710,7 +709,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="bobby-r-williams" class="expert-card" data-tags="Digital Forensics|Investigations" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-      <img src="/assets/uploads/iDS-HS-bobbyw-004-scaled-e1784040851613.jpg" alt="Bobby R. Williams, Jr." loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+      <img src="/assets/uploads/hs/iDS-HS-bobbyw-004-scaled-e1784040851613.jpg" alt="Bobby R. Williams, Jr." loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
       <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
       <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#DB6015"></div>
     </div>
@@ -750,7 +749,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="drew-gaibler" class="expert-card" data-tags="Discovery Services" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-      <img src="/assets/uploads/iDS-HS-drewg-001.jpg" alt="Drew Gaibler" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+      <img src="/assets/uploads/hs/iDS-HS-drewg-001.jpg" alt="Drew Gaibler" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
       <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
       <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#DB6015"></div>
     </div>
@@ -794,7 +793,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="azzit-hussain" class="expert-card" data-tags="Structured Data|Discovery Services" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-      <img src="/assets/uploads/iDS-HS-Azzit-001.jpg" alt="Azzit Hussain" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+      <img src="/assets/uploads/hs/iDS-HS-Azzit-001.jpg" alt="Azzit Hussain" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
       <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
       <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#DB6015"></div>
     </div>
@@ -822,7 +821,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="bill-taylor" class="expert-card" data-tags="Investigations" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-      <img src="/assets/uploads/iDS-HS-billt-001.jpg" alt="Bill Taylor" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+      <img src="/assets/uploads/hs/iDS-HS-billt-001.jpg" alt="Bill Taylor" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
       <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
       <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#DB6015"></div>
     </div>
@@ -849,7 +848,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="mike-perelman" class="expert-card" data-tags="Investigations|Digital Forensics" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-      <img src="/assets/uploads/iDS-HS-mikep-001.jpg" alt="Mike Perelman" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+      <img src="/assets/uploads/hs/iDS-HS-mikep-001.jpg" alt="Mike Perelman" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
       <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
       <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#DB6015"></div>
     </div>
@@ -884,7 +883,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="tim-latulippe" class="expert-card" data-tags="Digital Forensics|Investigations|Cybersecurity" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-      <img src="/assets/uploads/Tim_Paris_2022-scaled-e1669672761451.jpg" alt="Tim LaTulippe, MSc" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+      <img src="/assets/uploads/hs/Tim_Paris_2022-scaled-e1669672761451.jpg" alt="Tim LaTulippe, MSc" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
       <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
       <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#DB6015"></div>
     </div>
@@ -919,7 +918,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="jonathan-karchmer" class="expert-card" data-tags="Digital Forensics" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-      <img src="/assets/uploads/iDS-HS-jonathank-001.jpg" alt="Jonathan Karchmer" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+      <img src="/assets/uploads/hs/iDS-HS-jonathank-001.jpg" alt="Jonathan Karchmer" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
       <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
       <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#DB6015"></div>
     </div>
@@ -947,7 +946,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="amanda-whiting" class="expert-card" data-tags="Structured Data" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-      <img src="/assets/uploads/iDS-HS-amandaw-002.jpg" alt="Amanda Whiting" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+      <img src="/assets/uploads/hs/iDS-HS-amandaw-002.jpg" alt="Amanda Whiting" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
       <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
       <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#DB6015"></div>
     </div>
@@ -973,7 +972,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="drew-oshaughnessy" class="expert-card" data-tags="Structured Data|Investigations" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-      <img src="/assets/uploads/iDS-HS-drewo-001-WEB.jpg" alt="Drew O’Shaughnessy" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+      <img src="/assets/uploads/hs/iDS-HS-drewo-001-WEB.jpg" alt="Drew O’Shaughnessy" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
       <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
       <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#DB6015"></div>
     </div>
@@ -1005,7 +1004,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="robert-kirtley" class="expert-card" data-tags="Cybersecurity" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-      <img src="/assets/uploads/iDS-HS-rkirtley-001-WEB.jpg" alt="Robert Kirtley" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+      <img src="/assets/uploads/hs/iDS-HS-rkirtley-001-WEB.jpg" alt="Robert Kirtley" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
       <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
       <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#DB6015"></div>
     </div>
@@ -1035,7 +1034,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="mark-gianturco" class="expert-card" data-tags="AI & Emerging Tech|Digital Forensics|Discovery Services" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-      <img src="/assets/uploads/iDS-HS-markg-001.jpg" alt="Dr. Mark Gianturco" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+      <img src="/assets/uploads/hs/iDS-HS-markg-001.jpg" alt="Dr. Mark Gianturco" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
       <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
       <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#DB6015"></div>
     </div>
@@ -1074,7 +1073,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
     <details id="shameka-glover" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-    <img src="/assets/uploads/Shameka-002-WEB.jpg" alt="Shameka Glover" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+    <img src="/assets/uploads/hs/Shameka-002-WEB.jpg" alt="Shameka Glover" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
     <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#BFBFBF"></div>
   </div>
@@ -1095,7 +1094,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="chris-conway" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-    <img src="/assets/uploads/iDS-HS-chrisc-002.jpg" alt="Chris Conway" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+    <img src="/assets/uploads/hs/iDS-HS-chrisc-002.jpg" alt="Chris Conway" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
     <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#BFBFBF"></div>
   </div>
@@ -1122,7 +1121,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="jennifer-a-brennan" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-    <img src="/assets/uploads/Jen-BrennanKEEP.jpg" alt="Jennifer A. Brennan" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+    <img src="/assets/uploads/hs/Jen-BrennanKEEP.jpg" alt="Jennifer A. Brennan" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
     <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#BFBFBF"></div>
   </div>
@@ -1148,7 +1147,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="melissa-shillinglaw" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-    <img src="/assets/uploads/iDS-HS-melissas-001.jpg" alt="Melissa Shillinglaw" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+    <img src="/assets/uploads/hs/iDS-HS-melissas-001.jpg" alt="Melissa Shillinglaw" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
     <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#BFBFBF"></div>
   </div>
@@ -1174,7 +1173,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="pam-keller" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-    <img src="/assets/uploads/iDS-HS-pamk-004-scaled-e1781104889611.jpg" alt="Pam Keller" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+    <img src="/assets/uploads/hs/iDS-HS-pamk-004-scaled-e1781104889611.jpg" alt="Pam Keller" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
     <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#BFBFBF"></div>
   </div>
@@ -1200,7 +1199,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="jon-hurwitz" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-    <img src="/assets/uploads/iDS-HS-jon-001-WEB.jpg" alt="Jon Hurwitz" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+    <img src="/assets/uploads/hs/iDS-HS-jon-001-WEB.jpg" alt="Jon Hurwitz" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
     <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#BFBFBF"></div>
   </div>
@@ -1230,7 +1229,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="arnold-garcia" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-    <img src="/assets/uploads/iDS-HS-arnoldg-001.jpg" alt="Arnold Garcia" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+    <img src="/assets/uploads/hs/iDS-HS-arnoldg-001.jpg" alt="Arnold Garcia" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
     <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#BFBFBF"></div>
   </div>
@@ -1263,7 +1262,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="bruce-gillis" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-    <img src="/assets/uploads/iDS-HS-brucegillis-001-WEB.jpg" alt="Bruce Gillis Jr." loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+    <img src="/assets/uploads/hs/iDS-HS-brucegillis-001-WEB.jpg" alt="Bruce Gillis Jr." loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
     <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#BFBFBF"></div>
   </div>
@@ -1284,7 +1283,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="dominic-tucker" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-    <img src="/assets/uploads/Dom-Tucker-KEEP.jpg" alt="Dominic Tucker" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+    <img src="/assets/uploads/hs/Dom-Tucker-KEEP.jpg" alt="Dominic Tucker" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
     <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#BFBFBF"></div>
   </div>
@@ -1309,7 +1308,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="mark-araujo" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-    <img src="/assets/uploads/Mark-Araujo-Headshot-2KEEP.jpg" alt="Mark Araujo" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+    <img src="/assets/uploads/hs/Mark-Araujo-Headshot-2KEEP.jpg" alt="Mark Araujo" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
     <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#BFBFBF"></div>
   </div>
@@ -1338,7 +1337,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="mark-emil" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-    <img src="/assets/uploads/22_2146-scaled-e1692897848155.jpg" alt="Mark Emil" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+    <img src="/assets/uploads/hs/22_2146-scaled-e1692897848155.jpg" alt="Mark Emil" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
     <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#BFBFBF"></div>
   </div>
@@ -1361,7 +1360,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="matt-thompson" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-    <img src="/assets/uploads/MattThompson-KEEP.jpg" alt="Matt Thompson" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+    <img src="/assets/uploads/hs/MattThompson-KEEP.jpg" alt="Matt Thompson" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
     <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#BFBFBF"></div>
   </div>
@@ -1386,7 +1385,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="phil-ogan" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-    <img src="/assets/uploads/PhilipOgan-KEEP.jpg" alt="Phil Ogan" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+    <img src="/assets/uploads/hs/PhilipOgan-KEEP.jpg" alt="Phil Ogan" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
     <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#BFBFBF"></div>
   </div>
@@ -1417,7 +1416,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="hung-han" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-    <img src="/assets/uploads/Hung_Han_headshot_cropped_20210110KEEP.jpg" alt="Hung Han" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+    <img src="/assets/uploads/hs/Hung_Han_headshot_cropped_20210110KEEP.jpg" alt="Hung Han" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
     <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#BFBFBF"></div>
   </div>
@@ -1449,7 +1448,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="chris-luciano" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-    <img src="/assets/uploads/iDS-HS-chrisl-001.jpg" alt="Chris Luciano" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+    <img src="/assets/uploads/hs/iDS-HS-chrisl-001.jpg" alt="Chris Luciano" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
     <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#BFBFBF"></div>
   </div>
@@ -1475,7 +1474,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="greg-kaminski" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-    <img src="/assets/uploads/iDS-HS-gregk-003.jpg" alt="Greg Kaminski" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+    <img src="/assets/uploads/hs/iDS-HS-gregk-003.jpg" alt="Greg Kaminski" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
     <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#BFBFBF"></div>
   </div>
@@ -1503,7 +1502,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="robert-hofer" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-    <img src="/assets/uploads/iDS-HS-robh-002-WEB.jpg" alt="Robert Hofer" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+    <img src="/assets/uploads/hs/iDS-HS-robh-002-WEB.jpg" alt="Robert Hofer" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
     <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#BFBFBF"></div>
   </div>
@@ -1528,7 +1527,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="kendall-tober" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-    <img src="/assets/uploads/iDS-HS-kendalltober-002.jpg" alt="Kendall Tober" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+    <img src="/assets/uploads/hs/iDS-HS-kendalltober-002.jpg" alt="Kendall Tober" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
     <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#BFBFBF"></div>
   </div>
@@ -1554,7 +1553,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="gina-johnson" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-    <img src="/assets/uploads/iDS-HS-ginaj-002-WEB.jpg" alt="Gina Johnson" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+    <img src="/assets/uploads/hs/iDS-HS-ginaj-002-WEB.jpg" alt="Gina Johnson" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
     <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#BFBFBF"></div>
   </div>
@@ -1579,7 +1578,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="kelsey-lopez" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-    <img src="/assets/uploads/iDS-HS-kelsiel-001-WEB.jpg" alt="Kelsey Lopez" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+    <img src="/assets/uploads/hs/iDS-HS-kelsiel-001-WEB.jpg" alt="Kelsey Lopez" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
     <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#BFBFBF"></div>
   </div>
@@ -1606,7 +1605,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="rami-burbar" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-    <img src="/assets/uploads/Rami-Burbar.jpg" alt="Rami Burbar" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+    <img src="/assets/uploads/hs/Rami-Burbar.jpg" alt="Rami Burbar" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
     <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#BFBFBF"></div>
   </div>
@@ -1631,7 +1630,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="brett-chatterton" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-    <img src="/assets/uploads/iDS-HS-brettc-001.jpg" alt="Brett Chatterton" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+    <img src="/assets/uploads/hs/iDS-HS-brettc-001.jpg" alt="Brett Chatterton" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
     <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#BFBFBF"></div>
   </div>
@@ -1654,7 +1653,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="thienthi-le" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-    <img src="/assets/uploads/iDS-HS-thil-002-Web-e1781104917883.jpg" alt="Thienthi Le" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+    <img src="/assets/uploads/hs/iDS-HS-thil-002-Web-e1781104917883.jpg" alt="Thienthi Le" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
     <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#BFBFBF"></div>
   </div>
@@ -1679,7 +1678,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="milton-hooper" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-    <img src="/assets/uploads/IMG_6866-scaled-e1692899568783.jpg" alt="Milton Hooper" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+    <img src="/assets/uploads/hs/IMG_6866-scaled-e1692899568783.jpg" alt="Milton Hooper" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
     <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#BFBFBF"></div>
   </div>
@@ -1704,7 +1703,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="daniel-watson" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-    <img src="/assets/uploads/head-shot-scaled-e1739488707221.jpg" alt="Daniel Watson" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+    <img src="/assets/uploads/hs/head-shot-scaled-e1739488707221.jpg" alt="Daniel Watson" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
     <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#BFBFBF"></div>
   </div>
@@ -1731,7 +1730,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="nitin-khanna" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-    <img src="/assets/uploads/iDS-HS-nitink-002.jpg" alt="Nitin Khanna" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+    <img src="/assets/uploads/hs/iDS-HS-nitink-002.jpg" alt="Nitin Khanna" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
     <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#BFBFBF"></div>
   </div>
@@ -1756,7 +1755,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="elizabeth-rivers" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-    <img src="/assets/uploads/iDS-HS-elizabethr-001.jpg" alt="Elizabeth Rivers" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+    <img src="/assets/uploads/hs/iDS-HS-elizabethr-001.jpg" alt="Elizabeth Rivers" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
     <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#BFBFBF"></div>
   </div>
@@ -1781,7 +1780,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="jim-dallas" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-    <img src="/assets/uploads/iDS-HS-jimd-001.jpg" alt="Jim Dallas" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+    <img src="/assets/uploads/hs/iDS-HS-jimd-001.jpg" alt="Jim Dallas" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
     <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#BFBFBF"></div>
   </div>
@@ -1806,7 +1805,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="fabrice-likosso" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-    <img src="/assets/uploads/Fabrice-Likosso-KEEP.jpg" alt="Fabrice Likosso" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+    <img src="/assets/uploads/hs/Fabrice-Likosso-KEEP.jpg" alt="Fabrice Likosso" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
     <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#BFBFBF"></div>
   </div>
@@ -1835,7 +1834,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="jonah-kang" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-    <img src="/assets/uploads/iDS-HS-jonahk-001.jpg" alt="Jonah Kang" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+    <img src="/assets/uploads/hs/iDS-HS-jonahk-001.jpg" alt="Jonah Kang" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
     <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#BFBFBF"></div>
   </div>
@@ -1861,7 +1860,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
 <details id="ryan-trinh" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
-    <img src="/assets/uploads/Image-22-e1768834712419.jpg" alt="Ryan Trinh" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+    <img src="/assets/uploads/hs/Image-22-e1768834712419.jpg" alt="Ryan Trinh" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
     <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#BFBFBF"></div>
   </div>

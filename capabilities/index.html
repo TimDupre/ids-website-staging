@@ -80,7 +80,7 @@ img { max-width:100%; }
 }
 
 details.disc > summary { list-style: none; cursor: pointer; }
-@media (max-width: 640px) { details.disc > summary img { width:44px !important; height:44px !important; flex-basis:44px !important; } details.disc > summary { gap:14px !important; } details.disc > div { padding-left:4px !important; } .era-box { margin-left:4px !important; grid-template-columns:1fr !important; } details.disc > summary span[style*="font-size:30px"] { font-size:22px !important; } }
+@media (max-width: 640px) { details.disc > summary img { width:44px !important; height:44px !important; flex-basis:44px !important; } details.disc > summary { gap:14px !important; } details.disc > div:not(.era-box) { padding-left:4px !important; } .era-box { margin-left:4px !important; grid-template-columns:1fr !important; } details.disc > summary span[style*="font-size:30px"] { font-size:22px !important; } }
 details.disc > summary::-webkit-details-marker { display: none; }
 details.disc .plus::after { content: "+"; }
 details.disc[open] .plus::after { content: "\2013"; }
@@ -268,7 +268,7 @@ details.disc[open] .plus::after { content: "\2013"; }
   .cap-main details.disc.is-active{display:block;animation:capIn .3s ease both}
   .cap-main details.disc.is-active > summary{cursor:default;padding-top:18px !important}
   .cap-main details.disc.is-active > summary .plus{display:none}
-  .cap-main details.disc > div{padding-left:4px !important}
+  .cap-main details.disc > div:not(.era-box){padding-left:4px !important}
   .cap-main .era-box{margin-left:4px !important}
 }
 @keyframes capIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
@@ -486,7 +486,7 @@ details.disc[open] .plus::after { content: "\2013"; }
     <div><div style="font-size:13px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#666666;margin-bottom:10px">How we work it</div><p style="font-size:15px;line-height:1.6;margin:0">Forensically sound methods that are repeatable and defensible. Preserve first, analyse second, document throughout. Findings are stated in terms of what the artifacts support, and where the record is silent.</p></div>
     <div><div style="font-size:13px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#666666;margin-bottom:10px">What you receive</div><p style="font-size:15px;line-height:1.6;margin:0">Defensible collections, artifact-level analysis, reconstructed timelines, and an expert prepared to explain all of it under examination.</p></div>
   </div>
-  <div id="era" style="margin:0 4px 40px 92px;background:#003764;padding:26px 28px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px 32px;align-items:center" class="era-box">
+  <div id="era" style="margin:0 4px 40px 92px;background:#003764;padding:30px 34px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px 36px;align-items:center" class="era-box">
     <div>
       <div style="font-size:12px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;color:#DB6015;margin-bottom:8px">Featured service</div>
       <div style="font-size:22px;font-weight:bold;line-height:1.2;color:#FFFFFF;margin-bottom:8px">Employee Risk Assessment (ERA&trade;)</div>

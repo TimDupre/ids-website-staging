@@ -248,9 +248,8 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
 .cap-mega .mega-feature a + a{margin-top:-4px}
 </style>
 <style id="headshot-crop-css">
-/* Even out headshot framing: gentle zoom toward the face; Hunter's new photo is already framed tightly */
-.expert-card summary img, .team-card summary img, .spk-card img, .person .ph img{transform:scale(var(--hs-zoom,1.08));transform-origin:50% 22%;transition:transform .4s ease}
-img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
+/* Headshots are pre-cropped (assets/uploads/hs) to identical face size and position */
+.expert-card summary img, .team-card summary img, .spk-card img, .person .ph img{object-position:50% 0 !important}
 .person .ph{display:block;overflow:hidden;aspect-ratio:4/5;background:#DDE2E7}
 .person .ph img{aspect-ratio:auto !important;height:100%}
 </style>
@@ -416,7 +415,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
   <div style="max-width:1200px;margin:0 auto;padding:28px 32px 88px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,500px),1fr));gap:18px">
     <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;display:grid;grid-template-columns:minmax(120px,190px) 1fr;align-items:stretch" class="spk-card">
       <div style="position:relative;background:#EDF0F4;overflow:hidden;min-height:190px">
-        <img src="/assets/uploads/Dan-Regard-Headshot-B.jpg" alt="Dan Regard" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+        <img src="/assets/uploads/hs/Dan-Regard-Headshot-B.jpg" alt="Dan Regard" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
         <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
         <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#DB6015"></div>
       </div>
@@ -432,7 +431,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
     </div>
     <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;display:grid;grid-template-columns:minmax(120px,190px) 1fr;align-items:stretch" class="spk-card">
       <div style="position:relative;background:#EDF0F4;overflow:hidden;min-height:190px">
-        <img src="/assets/uploads/Hunter-McMahon-2026.jpg" alt="Hunter McMahon" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+        <img src="/assets/uploads/hs/Hunter-McMahon-2026-portrait.jpg" alt="Hunter McMahon" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
         <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
         <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#DB6015"></div>
       </div>
@@ -448,7 +447,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
     </div>
     <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;display:grid;grid-template-columns:minmax(120px,190px) 1fr;align-items:stretch" class="spk-card">
       <div style="position:relative;background:#EDF0F4;overflow:hidden;min-height:190px">
-        <img src="/assets/uploads/iDS-HS-bobbyw-004-web.jpg" alt="Bobby Williams" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+        <img src="/assets/uploads/hs/iDS-HS-bobbyw-004-web.jpg" alt="Bobby Williams" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
         <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
         <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#DB6015"></div>
       </div>
@@ -464,7 +463,7 @@ img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
     </div>
     <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;display:grid;grid-template-columns:minmax(120px,190px) 1fr;align-items:stretch" class="spk-card">
       <div style="position:relative;background:#EDF0F4;overflow:hidden;min-height:190px">
-        <img src="/assets/uploads/20220105_205043595_iOS-EDIT-scaled-e1730996129992.jpg" alt="Mike Perelman" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+        <img src="/assets/uploads/hs/20220105_205043595_iOS-EDIT-scaled-e1730996129992.jpg" alt="Mike Perelman" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
         <div style="position:absolute;inset:0;background:#003764;mix-blend-mode:color;opacity:.55"></div>
         <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#DB6015"></div>
       </div>
