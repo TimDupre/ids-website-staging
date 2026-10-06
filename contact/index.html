@@ -14,19 +14,19 @@
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="/assets/ids-logo-navy.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;1,400&display=swap">
 <style>:root {
 --navy:#003764; --navy-deep:#0A2440; --orange:#DB6015; --orange-deep:#B94E0E;
 --ink:#16212C; --text:#45515E; --muted:#6F7B88; --rule:#D5DBE1; --band:#F2F4F6; --paper:#FFFFFF;
---sticker:#F3D65A; --noise:#B7C0CA; --on-navy:#D3DEEA; --on-navy-muted:#9FC0DF;
+--sticker:#DB6015; --noise:#B7C0CA; --on-navy:#D3DEEA; --on-navy-muted:#9FC0DF;
 --display:"Jost","Futura","Century Gothic","Avenir Next",Arial,sans-serif;
---mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+--mono:"Jost","Futura","Century Gothic","Avenir Next",Arial,sans-serif;
 }
 html, body { margin:0; padding:0; }
 body { font-family: var(--display); color:#595959; background:#FFFFFF; -webkit-font-smoothing:antialiased; }
 * { box-sizing: border-box; }
 a { text-decoration:none; }
-::selection { background:#FFF1E6; color:#003764; }
+::selection { background:#DB6015; color:#FFFFFF; }
 img { max-width:100%; }
 .mono-label { font:500 12px var(--mono); letter-spacing:.1em; text-transform:uppercase; color:var(--orange); }
 .textlink { font:500 15px var(--display); color:var(--navy); text-decoration:none; border-bottom:1.5px solid currentColor; padding-bottom:2px; }
@@ -115,7 +115,7 @@ details.disc[open] .plus::after { content: "\2013"; }
 .exhibit { position:relative; margin:0; background:#FFFFFF; border:1px solid #C4CCD4; box-shadow:0 1px 0 #E6EAEE, 0 18px 40px -24px rgba(0,40,80,.35); }
 .ex-head { display:flex; justify-content:space-between; align-items:flex-start; gap:16px; padding:22px 24px 0; }
 .ex-head h3 { font-size:20px; line-height:1.25; max-width:20em; margin:6px 0 0; color:#16212C; }
-.ex-sticker { flex:0 0 auto; width:44px; height:30px; background:var(--sticker); transform:rotate(-2.5deg); box-shadow:0 1px 2px rgba(0,0,0,.18); }
+.ex-sticker { flex:0 0 auto; width:44px; height:30px; background:var(--sticker); }
 .ex-body { padding:6px 12px 0; overflow-x:auto; }
 .ex-body svg { display:block; width:100%; min-width:480px; height:auto; }
 .lane-label { font:500 12.5px var(--display); fill:#16212C; }
@@ -196,7 +196,7 @@ details.disc[open] .plus::after { content: "\2013"; }
 .qs-wrap { max-width:1200px; margin:0 auto; padding:92px 32px; }
 .qs { border-top:1px solid #16212C; margin-top:36px; }
 .qrow { display:grid; grid-template-columns:22px minmax(0,1fr) auto; gap:24px; align-items:baseline; padding:26px 0; border-bottom:1px solid #E6E9ED; }
-.qrow .q-no { width:22px; height:22px; background:var(--sticker); align-self:center; transform:rotate(-2.5deg); box-shadow:0 1px 2px rgba(0,0,0,.18); }
+.qrow .q-no { width:22px; height:22px; background:var(--sticker); align-self:center; }
 .qrow h3 { font:400 clamp(21px,2.2vw,28px)/1.25 var(--display); color:#16212C; margin:0; }
 .qrow .go { font:500 15px var(--display); color:var(--orange); white-space:nowrap; }
 @media (max-width:640px) { .qrow { grid-template-columns:22px minmax(0,1fr); } .qrow .go { grid-column:2; } }
@@ -235,6 +235,18 @@ details.disc[open] .plus::after { content: "\2013"; }
 .close-cta .secondary { background:#FFFFFF; padding:26px 30px; border-top:1px solid #E6E9ED; }
 .close-cta .secondary h3 { font-size:19px; color:#003764; margin:0 0 8px; }
 </style>
+<style id="help-css">
+.help-opts{display:flex;flex-wrap:wrap;gap:8px}
+.help-opt{position:relative;cursor:pointer}
+.help-opt input{position:absolute;opacity:0;width:1px;height:1px}
+.help-opt span{display:inline-block;padding:10px 14px;border:1px solid #BFBFBF;font-size:14px;font-weight:500;color:#003764;background:#FFFFFF;transition:background .15s,border-color .15s,color .15s}
+.help-opt:hover span{border-color:#DB6015}
+.help-opt input:checked + span{background:#DB6015;border-color:#DB6015;color:#FFFFFF}
+.help-opt input:focus-visible + span{outline:2px solid #003764;outline-offset:2px}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded',function(){var t=new URLSearchParams(location.search).get('topic');if(!t)return;var map={speaker:'A speaker for an event',expert:'An expert witness',ediscovery:'eDiscovery or data support',matter:'A matter in dispute or under investigation'};var v=map[t];if(!v)return;var r=document.querySelector('input[name="How can we help"][value="'+v+'"]');if(r)r.checked=true;});
+</script>
 </head>
 <body>
 <div class="site-nav" style="position:sticky;top:0;z-index:50;background:#FFFFFF;border-bottom:1px solid #E6E9ED">
@@ -342,12 +354,14 @@ document.addEventListener('click',function(e){if(!item.contains(e.target)&&!am.c
 </script>
 
 <div style="background:#FFFFFF;position:relative;overflow:hidden;border-bottom:1px solid #E6E9ED">
-<img src="/assets/gfx-records-light.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.85;animation:idsFloat 32s ease-in-out infinite alternate" />
+<img src="/assets/gfx-scatter-light.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.85;animation:idsFloat 32s ease-in-out infinite alternate" />
 <div style="position:absolute;inset:0;background:linear-gradient(95deg,rgba(255,255,255,.97) 0%,rgba(255,255,255,.9) 46%,rgba(255,255,255,.62) 100%)"></div>
-<div class="hero-pad" style="position:relative;max-width:900px;margin:0 auto;padding:76px 32px 80px">
-<div style="border-left:3px solid #DB6015;padding-left:14px;color:#DB6015;font-size:13px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;margin-bottom:22px">Start building your narrative</div>
-<h1 class="sub-h1" style="font-size:50px;font-weight:bold;line-height:1.06;letter-spacing:-.02em;color:#003764;margin:0 0 20px;text-wrap:pretty">Bring us the question you have not been able to answer.</h1>
-<p style="font-size:18px;line-height:1.6;color:#595959;margin:0;max-width:660px">Tell us what you are trying to accomplish. We will tell you whether the evidence can get you there, and what it would take.</p>
+<div class="hero-pad" style="position:relative;max-width:1200px;margin:0 auto;padding:76px 32px 80px">
+<div style="max-width:820px">
+<div style="border-left:3px solid #DB6015;padding-left:14px;color:#DB6015;font-size:13px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;margin-bottom:22px">Contact</div>
+<h1 class="sub-h1" style="font-size:50px;font-weight:bold;line-height:1.06;letter-spacing:-.02em;color:#003764;margin:0 0 20px;text-wrap:pretty">How can we help you start building your narrative?</h1>
+<p style="font-size:18px;line-height:1.6;color:#595959;margin:0;max-width:660px">Tell us where you are and what you are trying to establish. We will tell you whether the evidence can get you there, what it would take, and who on our team should be in the room.</p>
+</div>
 </div>
 </div>
 
@@ -357,26 +371,30 @@ document.addEventListener('click',function(e){if(!item.contains(e.target)&&!am.c
 <form id="contact-form" action="https://formspree.io/f/xoevzboa" method="POST">
 <div style="display:grid;gap:18px">
 <div>
+<label style="display:block;font-size:13px;font-weight:bold;letter-spacing:.08em;text-transform:uppercase;color:#666666;margin-bottom:10px">How can we help?</label>
+<div class="help-opts" role="radiogroup" aria-label="How can we help?"><label class="help-opt"><input type="radio" name="How can we help" value="A matter in dispute or under investigation" required /><span>A matter in dispute or under investigation</span></label><label class="help-opt"><input type="radio" name="How can we help" value="An expert witness" /><span>An expert witness</span></label><label class="help-opt"><input type="radio" name="How can we help" value="eDiscovery or data support" /><span>eDiscovery or data support</span></label><label class="help-opt"><input type="radio" name="How can we help" value="A speaker for an event" /><span>A speaker for an event</span></label><label class="help-opt"><input type="radio" name="How can we help" value="Something else" /><span>Something else</span></label></div>
+</div>
+<div>
 <label style="display:block;font-size:13px;font-weight:bold;letter-spacing:.08em;text-transform:uppercase;color:#666666;margin-bottom:8px">Name</label>
-<input type="text" name="name" placeholder="Your name" required style="width:100%;padding:14px 16px;border:1px solid #BFBFBF;font-family:Arial;font-size:16px;color:#404040;background:#FFFFFF" />
+<input type="text" name="name" placeholder="Your name" required style="width:100%;padding:14px 16px;border:1px solid #BFBFBF;font-family:inherit;font-size:16px;color:#404040;background:#FFFFFF" />
 </div>
 <div>
 <label style="display:block;font-size:13px;font-weight:bold;letter-spacing:.08em;text-transform:uppercase;color:#666666;margin-bottom:8px">Firm or organization</label>
-<input type="text" name="Firm" placeholder="Where you sit" style="width:100%;padding:14px 16px;border:1px solid #BFBFBF;font-family:Arial;font-size:16px;color:#404040;background:#FFFFFF" />
+<input type="text" name="Firm" placeholder="Where you sit" style="width:100%;padding:14px 16px;border:1px solid #BFBFBF;font-family:inherit;font-size:16px;color:#404040;background:#FFFFFF" />
 </div>
 <div>
 <label style="display:block;font-size:13px;font-weight:bold;letter-spacing:.08em;text-transform:uppercase;color:#666666;margin-bottom:8px">Email</label>
-<input type="email" name="email" placeholder="name@firm.com" required style="width:100%;padding:14px 16px;border:1px solid #BFBFBF;font-family:Arial;font-size:16px;color:#404040;background:#FFFFFF" />
+<input type="email" name="email" placeholder="name@firm.com" required style="width:100%;padding:14px 16px;border:1px solid #BFBFBF;font-family:inherit;font-size:16px;color:#404040;background:#FFFFFF" />
 </div>
 <div>
 <label style="display:block;font-size:13px;font-weight:bold;letter-spacing:.08em;text-transform:uppercase;color:#666666;margin-bottom:8px">What is the matter about?</label>
-<textarea name="Comments" placeholder="Let us know who your client is, and what you are trying to establish. A few sentences is plenty." rows="5" required style="width:100%;padding:14px 16px;border:1px solid #BFBFBF;font-family:Arial;font-size:16px;color:#404040;background:#FFFFFF;resize:vertical"></textarea>
+<textarea name="Comments" placeholder="Let us know who your client is, and what you are trying to establish. A few sentences is plenty." rows="5" required style="width:100%;padding:14px 16px;border:1px solid #BFBFBF;font-family:inherit;font-size:16px;color:#404040;background:#FFFFFF;resize:vertical"></textarea>
 </div>
 <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
 <input type="hidden" name="_subject" value="New inquiry from iDS website contact form" />
-<div id="contact-form-error" style="display:none;font-size:14px;line-height:1.5;color:#B94E0E;background:#FFF1E6;border:1px solid #F0C9A8;padding:12px 14px"></div>
+<div id="contact-form-error" style="display:none;font-size:14px;line-height:1.5;color:#FFFFFF;background:#DB6015;border:0;padding:12px 14px"></div>
 <div>
-<button type="submit" id="contact-form-submit" style="display:inline-block;background:#DB6015;color:#FFFFFF;font-size:15px;font-weight:bold;padding:16px 30px;border:none;cursor:pointer;font-family:Arial">Send to our team</button>
+<button type="submit" id="contact-form-submit" style="display:inline-block;background:#DB6015;color:#FFFFFF;font-size:15px;font-weight:bold;padding:16px 30px;border:none;cursor:pointer;font-family:inherit">Send to our team</button>
 </div>
 </div>
 </form>
@@ -448,7 +466,7 @@ submitBtn.textContent = 'Send to our team';
 <div style="max-width:1200px;margin:0 auto;padding:64px 32px 26px;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:40px">
 <div>
 <img src="/assets/ids-logo-reversed.png" alt="iDiscovery Solutions" style="height:52px;width:auto;display:block;margin-bottom:20px" />
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:bold;color:#FFFFFF;margin:0 0 6px">Truth Through Data</p>
+<p style="font-size:22px;font-weight:bold;color:#FFFFFF;margin:0 0 6px">Truth Through Data</p>
 <p style="font-size:14px;line-height:1.6;color:rgba(255,255,255,.7);margin:0 0 20px">Where expertise leads, defensible outcomes follow.</p>
 <div style="display:flex;gap:10px">
 <a href="https://twitter.com/iDiscoveryInc" target="_blank" aria-label="X (Twitter)" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid rgba(255,255,255,.3);color:rgba(255,255,255,.82);font-size:13px;font-weight:bold">X</a>

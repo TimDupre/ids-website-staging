@@ -14,19 +14,19 @@
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="/assets/ids-logo-navy.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;1,400&display=swap">
 <style>:root {
   --navy:#003764; --navy-deep:#0A2440; --orange:#DB6015; --orange-deep:#B94E0E;
   --ink:#16212C; --text:#45515E; --muted:#6F7B88; --rule:#D5DBE1; --band:#F2F4F6; --paper:#FFFFFF;
-  --sticker:#F3D65A; --noise:#B7C0CA; --on-navy:#D3DEEA; --on-navy-muted:#9FC0DF;
+  --sticker:#DB6015; --noise:#B7C0CA; --on-navy:#D3DEEA; --on-navy-muted:#9FC0DF;
   --display:"Jost","Futura","Century Gothic","Avenir Next",Arial,sans-serif;
-  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --mono:"Jost","Futura","Century Gothic","Avenir Next",Arial,sans-serif;
 }
 html, body { margin:0; padding:0; }
 body { font-family: var(--display); color:#595959; background:#FFFFFF; -webkit-font-smoothing:antialiased; }
 * { box-sizing: border-box; }
 a { text-decoration:none; }
-::selection { background:#FFF1E6; color:#003764; }
+::selection { background:#DB6015; color:#FFFFFF; }
 img { max-width:100%; }
 .mono-label { font:500 12px var(--mono); letter-spacing:.1em; text-transform:uppercase; color:var(--orange); }
 .textlink { font:500 15px var(--display); color:var(--navy); text-decoration:none; border-bottom:1.5px solid currentColor; padding-bottom:2px; }
@@ -115,7 +115,7 @@ details.disc[open] .plus::after { content: "\2013"; }
 .exhibit { position:relative; margin:0; background:#FFFFFF; border:1px solid #C4CCD4; box-shadow:0 1px 0 #E6EAEE, 0 18px 40px -24px rgba(0,40,80,.35); }
 .ex-head { display:flex; justify-content:space-between; align-items:flex-start; gap:16px; padding:22px 24px 0; }
 .ex-head h3 { font-size:20px; line-height:1.25; max-width:20em; margin:6px 0 0; color:#16212C; }
-.ex-sticker { flex:0 0 auto; width:44px; height:30px; background:var(--sticker); transform:rotate(-2.5deg); box-shadow:0 1px 2px rgba(0,0,0,.18); }
+.ex-sticker { flex:0 0 auto; width:44px; height:30px; background:var(--sticker); }
 .ex-body { padding:6px 12px 0; overflow-x:auto; }
 .ex-body svg { display:block; width:100%; min-width:480px; height:auto; }
 .lane-label { font:500 12.5px var(--display); fill:#16212C; }
@@ -196,7 +196,7 @@ details.disc[open] .plus::after { content: "\2013"; }
 .qs-wrap { max-width:1200px; margin:0 auto; padding:92px 32px; }
 .qs { border-top:1px solid #16212C; margin-top:36px; }
 .qrow { display:grid; grid-template-columns:22px minmax(0,1fr) auto; gap:24px; align-items:baseline; padding:26px 0; border-bottom:1px solid #E6E9ED; }
-.qrow .q-no { width:22px; height:22px; background:var(--sticker); align-self:center; transform:rotate(-2.5deg); box-shadow:0 1px 2px rgba(0,0,0,.18); }
+.qrow .q-no { width:22px; height:22px; background:var(--sticker); align-self:center; }
 .qrow h3 { font:400 clamp(21px,2.2vw,28px)/1.25 var(--display); color:#16212C; margin:0; }
 .qrow .go { font:500 15px var(--display); color:var(--orange); white-space:nowrap; }
 @media (max-width:640px) { .qrow { grid-template-columns:22px minmax(0,1fr); } .qrow .go { grid-column:2; } }
@@ -390,7 +390,7 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
 
   <h2 style="max-width:1200px;margin:44px auto 0;padding:0 32px;font-size:22px;font-weight:bold;color:#404040">Testifying Experts</h2>
   <div style="max-width:1200px;margin:0 auto;padding:20px 32px 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px">
-    <details class="expert-card" data-tags="Digital Forensics|Structured Data|AI & Emerging Tech" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+    <details id="dan-regard" class="expert-card" data-tags="Digital Forensics|Structured Data|AI & Emerging Tech" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
       <img src="/assets/uploads/Dan-Regard-Headshot-B.jpg" alt="Dan Regard" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -419,9 +419,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:dregard@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">dregard@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/danregard/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a><a href="/assets/uploads/docs/iDS-DH-CV-DanRegard-2026.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a><a href="/assets/uploads/docs/iDS-speaker-sheet-dan-regard-v11.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">Speaker sheet</a><a href="/our-experts/speakers/" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">Speaker profile</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="expert-card" data-tags="Structured Data|Discovery Services|AI & Emerging Tech" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="hunter-mcmahon" class="expert-card" data-tags="Structured Data|Discovery Services|AI & Emerging Tech" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
       <img src="/assets/uploads/Hunter-Mcmahon-KEEP.jpg" alt="Hunter McMahon" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -456,9 +457,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:hmcmahon@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">hmcmahon@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/hunterwmcmahon" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a><a href="/assets/uploads/docs/iDS-DH-CV-HunterMcMahon-2025b.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a><a href="/assets/uploads/docs/iDS-speaker-sheet-hunter-mcmahon-v5.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">Speaker sheet</a><a href="/our-experts/speakers/" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">Speaker profile</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="expert-card" data-tags="Digital Forensics|Structured Data" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="julian-ackert" class="expert-card" data-tags="Digital Forensics|Structured Data" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
       <img src="/assets/uploads/julian-ackert.jpg" alt="Julian Ackert" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -482,9 +484,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:jackert@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">jackert@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/julianackert/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a><a href="/assets/uploads/docs/iDS-DH-CV-JulianAckert-2026.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="expert-card" data-tags="Digital Forensics" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="james-vaughn" class="expert-card" data-tags="Digital Forensics" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
       <img src="/assets/uploads/iDS-HS-jimv-001.jpg" alt="James Vaughn" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -513,9 +516,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:jvaughn@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">jvaughn@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/jim-vaughn-583a031/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a><a href="/assets/uploads/docs/iDS-DH-CV-JamesVaughn-2026.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="expert-card" data-tags="Digital Forensics|Cybersecurity" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="warren-kruse" class="expert-card" data-tags="Digital Forensics|Cybersecurity" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
       <img src="/assets/uploads/warren-head-1-e1765895523857.jpeg" alt="Warren Kruse" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -560,9 +564,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:wkruse@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">wkruse@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/warrenkruse/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a><a href="/assets/uploads/docs/iDS-DH-CV-WarrenKruse-2025.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="expert-card" data-tags="Digital Forensics|Discovery Services|AI & Emerging Tech" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="mark-clews" class="expert-card" data-tags="Digital Forensics|Discovery Services|AI & Emerging Tech" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
       <img src="/assets/uploads/Mark-Clews-KEEP.jpg" alt="Mark Clews" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -589,9 +594,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:mclews@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">mclews@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/mark-clews-ids/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a><a href="/assets/uploads/docs/iDS-DH-CV-MarkClews-2026.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="expert-card" data-tags="Damages & Economics" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="theodore-brown" class="expert-card" data-tags="Damages & Economics" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
       <img src="/assets/uploads/iDS-HS-teddy-002.jpg" alt="Theodore Brown" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -613,9 +619,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:tbrown@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">tbrown@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/teddyhbrown/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a><a href="/assets/uploads/docs/iDS-DH-CV-TheodoreBrown-2025.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="expert-card" data-tags="Damages & Economics" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="kenneth-gustafson" class="expert-card" data-tags="Damages & Economics" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
       <img src="/assets/uploads/1692306968306-e1782932395355.jpeg" alt="Kenneth Gustafson, CFA" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -647,9 +654,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:kgustafson@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">kgustafson@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/kennethgustafsoncfa/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a><a href="/assets/uploads/docs/iDS-DH-CV-KenG-2026.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="expert-card" data-tags="Digital Forensics|Investigations" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="bobby-r-williams" class="expert-card" data-tags="Digital Forensics|Investigations" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
       <img src="/assets/uploads/iDS-HS-bobbyw-004-scaled-e1784040851613.jpg" alt="Bobby R. Williams, Jr." loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -686,9 +694,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:bwilliams@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">bwilliams@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/bobbyrwilliams/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a><a href="/assets/uploads/docs/iDS-DH-CV-BobbyWilliams-2026.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a><a href="/assets/uploads/docs/iDS-speaker-sheet-bobby-williams-080824.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">Speaker sheet</a><a href="/our-experts/speakers/" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">Speaker profile</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="expert-card" data-tags="Discovery Services" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="drew-gaibler" class="expert-card" data-tags="Discovery Services" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
       <img src="/assets/uploads/iDS-HS-drewg-001.jpg" alt="Drew Gaibler" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -729,9 +738,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:dgaibler@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">dgaibler@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/drew-gaibler/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a><a href="/assets/uploads/docs/iDS-DH-CV-DrewGaibler-2026.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="expert-card" data-tags="Structured Data|Discovery Services" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="azzit-hussain" class="expert-card" data-tags="Structured Data|Discovery Services" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
       <img src="/assets/uploads/iDS-HS-Azzit-001.jpg" alt="Azzit Hussain" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -756,9 +766,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:ahussain@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">ahussain@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/azzithussain/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a><a href="/assets/uploads/docs/iDS-DH-CV-AzzitHussain-2026.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="expert-card" data-tags="Investigations" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="bill-taylor" class="expert-card" data-tags="Investigations" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
       <img src="/assets/uploads/iDS-HS-billt-001.jpg" alt="Bill Taylor" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -782,9 +793,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:btaylor@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">btaylor@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/william-taylor-323066155/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a><a href="/assets/uploads/docs/iDS-DH-CV-BillTaylor-2026.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="expert-card" data-tags="Investigations|Digital Forensics" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="mike-perelman" class="expert-card" data-tags="Investigations|Digital Forensics" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
       <img src="/assets/uploads/iDS-HS-mikep-001.jpg" alt="Mike Perelman" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -816,9 +828,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:mperelman@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">mperelman@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/mike-perelman/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a><a href="/assets/uploads/docs/iDS-DH-CV-MikePerelman-2026.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a><a href="/assets/uploads/docs/iDS-speaker-sheet-mike-perelman-v1.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">Speaker sheet</a><a href="/our-experts/speakers/" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">Speaker profile</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="expert-card" data-tags="Digital Forensics|Investigations|Cybersecurity" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="tim-latulippe" class="expert-card" data-tags="Digital Forensics|Investigations|Cybersecurity" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
       <img src="/assets/uploads/Tim_Paris_2022-scaled-e1669672761451.jpg" alt="Tim LaTulippe, MSc" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -850,9 +863,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:tlatulippe@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">tlatulippe@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/tldata4n6/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a><a href="/assets/uploads/docs/iDS-DH-CV-TimLaTulippe-2026.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="expert-card" data-tags="Digital Forensics" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="jonathan-karchmer" class="expert-card" data-tags="Digital Forensics" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
       <img src="/assets/uploads/iDS-HS-jonathank-001.jpg" alt="Jonathan Karchmer" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -877,9 +891,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:jkarchmer@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">jkarchmer@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/jonathankarchmer/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a><a href="/assets/uploads/docs/iDS-DH-CV-JonathanKarchmer-2026.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="expert-card" data-tags="Structured Data" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="amanda-whiting" class="expert-card" data-tags="Structured Data" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
       <img src="/assets/uploads/iDS-HS-amandaw-002.jpg" alt="Amanda Whiting" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -902,9 +917,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="tel:+17327252454" style="font-size:14px;color:#FFFFFF;font-weight:bold">+1.732.725.2454</a>
       <a href="mailto:awhiting@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">awhiting@idsinc.com</a>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="expert-card" data-tags="Structured Data|Investigations" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="drew-oshaughnessy" class="expert-card" data-tags="Structured Data|Investigations" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
       <img src="/assets/uploads/iDS-HS-drewo-001-WEB.jpg" alt="Drew O’Shaughnessy" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -933,9 +949,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:doshaughnessy@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">doshaughnessy@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/oshaughnessyandrewj/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a><a href="/assets/uploads/docs/iDS-DH-CV-DrewOShaughnessy-2026.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="expert-card" data-tags="Cybersecurity" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="robert-kirtley" class="expert-card" data-tags="Cybersecurity" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
       <img src="/assets/uploads/iDS-HS-rkirtley-001-WEB.jpg" alt="Robert Kirtley" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -962,9 +979,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:robert@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">robert@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/robertkirtley/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a><a href="/assets/uploads/docs/iDS-DH-CV-RobertKirtley-2026-1.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="expert-card" data-tags="AI & Emerging Tech|Digital Forensics|Discovery Services" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="mark-gianturco" class="expert-card" data-tags="AI & Emerging Tech|Digital Forensics|Discovery Services" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
     <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
       <img src="/assets/uploads/iDS-HS-markg-001.jpg" alt="Dr. Mark Gianturco" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -989,6 +1007,7 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:mgianturco@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">mgianturco@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/gianturco/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a><a href="/assets/uploads/docs/iDS-DH-CV-MarkGianturco-2026.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
 
@@ -1002,7 +1021,7 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
   </div>
   <h2 style="max-width:1200px;margin:64px auto 0;padding:0 32px;font-size:22px;font-weight:bold;color:#404040">The Rest of the Team</h2>
   <div style="max-width:1200px;margin:0 auto;padding:20px 32px 88px;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:18px">
-    <details class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+    <details id="shameka-glover" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
     <img src="/assets/uploads/Shameka-002-WEB.jpg" alt="Shameka Glover" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -1020,9 +1039,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="tel:2022497864" style="font-size:14px;color:#FFFFFF;font-weight:bold">202.249.7864</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/shameka-glover-0422996/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="chris-conway" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
     <img src="/assets/uploads/iDS-HS-chrisc-002.jpg" alt="Chris Conway" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -1046,9 +1066,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:cconway@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">cconway@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/cjconway1/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a><a href="/assets/uploads/docs/iDS-DH-CV-ChrisConway-2026.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="jennifer-a-brennan" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
     <img src="/assets/uploads/Jen-BrennanKEEP.jpg" alt="Jennifer A. Brennan" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -1071,9 +1092,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:jbrennan@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">jbrennan@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/jennifer-brennan-1246034/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a><a href="/assets/uploads/docs/iDS-DH-CV-JenniferBrennan-2026.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="melissa-shillinglaw" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
     <img src="/assets/uploads/iDS-HS-melissas-001.jpg" alt="Melissa Shillinglaw" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -1096,9 +1118,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:mshillinglaw@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">mshillinglaw@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/melissa-shillinglaw-2a59b95/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a><a href="/assets/uploads/docs/iDS-DH-CV-MelissaShillinglaw-2026.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="pam-keller" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
     <img src="/assets/uploads/iDS-HS-pamk-004-scaled-e1781104889611.jpg" alt="Pam Keller" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -1121,9 +1144,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:pkeller@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">pkeller@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/pamela-keller-05bb8b9/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a><a href="/assets/uploads/docs/iDS-DH-CV-PamKeller-2026.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="jon-hurwitz" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
     <img src="/assets/uploads/iDS-HS-jon-001-WEB.jpg" alt="Jon Hurwitz" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -1150,9 +1174,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:jhurwitz@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">jhurwitz@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/jonathan-hurwitz-cfe-pmp-9637552/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a><a href="/assets/uploads/docs/iDS-DH-CV-JonHurwitz-2026.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="arnold-garcia" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
     <img src="/assets/uploads/iDS-HS-arnoldg-001.jpg" alt="Arnold Garcia" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -1182,9 +1207,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:agarcia@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">agarcia@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="/assets/uploads/docs/iDS-DH-CV-ArnoldGarcia-2026.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="bruce-gillis" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
     <img src="/assets/uploads/iDS-HS-brucegillis-001-WEB.jpg" alt="Bruce Gillis Jr." loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -1202,9 +1228,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
     <p style="font-size:14px;line-height:1.6;color:#595959;margin:0 0 10px">Before joining iDS, Bruce supported sensitive U.S. government and Department of Defense investigations, including Inspector General related forensic work, as well as high-stakes collections in complex litigation and matters involving expert witness testimony. Across every engagement, he has earned a reputation for methodical work, rigorous documentation, and clear communication with both technical and non-technical stakeholders.</p>
     <p style="font-size:14px;line-height:1.6;color:#595959;margin:0 0 10px">Bruce studied at Hagerstown Community College and authored the 2018 white paper Introduction to Solid State Architecture. Outside of client work, he focuses on continuous professional development, building efficient workflows, and mentoring teams.</p>
     <p style="font-size:14px;line-height:1.6;color:#595959;margin:0 0 10px">His approach aligns closely with how iDS shows up for its clients. Do the work with integrity. Communicate with humility. Protect the trust placed in us, every step of the way.</p>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="dominic-tucker" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
     <img src="/assets/uploads/Dom-Tucker-KEEP.jpg" alt="Dominic Tucker" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -1226,9 +1253,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:dtucker@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">dtucker@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/dominic-tucker-634109a1/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a><a href="/assets/uploads/docs/iDS-DH-CV-DominicTucker-2026.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="mark-araujo" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
     <img src="/assets/uploads/Mark-Araujo-Headshot-2KEEP.jpg" alt="Mark Araujo" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -1254,9 +1282,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:maraujo@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">maraujo@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/araujomark/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a><a href="/assets/uploads/docs/iDS-DH-CV-MarkAraujo-2026.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="mark-emil" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
     <img src="/assets/uploads/22_2146-scaled-e1692897848155.jpg" alt="Mark Emil" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -1276,9 +1305,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:memil@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">memil@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/markemil/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="matt-thompson" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
     <img src="/assets/uploads/MattThompson-KEEP.jpg" alt="Matt Thompson" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -1300,9 +1330,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:mthompson@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">mthompson@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="/assets/uploads/docs/iDS-DH-CV-MatthewThompson-2026.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="phil-ogan" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
     <img src="/assets/uploads/PhilipOgan-KEEP.jpg" alt="Phil Ogan" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -1330,9 +1361,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:philipogan@gmail.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">philipogan@gmail.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/phil-o-56a05b240/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a><a href="/assets/uploads/docs/iDS-DH-CV-PhilipOgan-2026.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="hung-han" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
     <img src="/assets/uploads/Hung_Han_headshot_cropped_20210110KEEP.jpg" alt="Hung Han" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -1361,9 +1393,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:hhan@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">hhan@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/hung-han-627b675/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a><a href="/assets/uploads/docs/iDS-DH-CV-HungHan-2026.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="chris-luciano" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
     <img src="/assets/uploads/iDS-HS-chrisl-001.jpg" alt="Chris Luciano" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -1386,9 +1419,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:cluciano@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">cluciano@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="/assets/uploads/docs/iDS-DH-CV-ChrisLuciano-2026-1.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="greg-kaminski" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
     <img src="/assets/uploads/iDS-HS-gregk-003.jpg" alt="Greg Kaminski" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -1413,9 +1447,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:gkaminski@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">gkaminski@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/greg-kaminski-iot01/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="robert-hofer" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
     <img src="/assets/uploads/iDS-HS-robh-002-WEB.jpg" alt="Robert Hofer" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -1437,9 +1472,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:rhofer@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">rhofer@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/robert-hofer-54115141/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="kendall-tober" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
     <img src="/assets/uploads/iDS-HS-kendalltober-002.jpg" alt="Kendall Tober" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -1462,9 +1498,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:ktober@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">ktober@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/kendalltober/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a><a href="/assets/uploads/docs/iDS-DH-CV-KendallTober-2026.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="gina-johnson" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
     <img src="/assets/uploads/iDS-HS-ginaj-002-WEB.jpg" alt="Gina Johnson" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -1486,9 +1523,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:gjohnson@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">gjohnson@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/gina-johnson-3a7092166/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="kelsey-lopez" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
     <img src="/assets/uploads/iDS-HS-kelsiel-001-WEB.jpg" alt="Kelsey Lopez" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -1512,9 +1550,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="tel:16199552218" style="font-size:14px;color:#FFFFFF;font-weight:bold">1.619.955.2218 </a>
       <a href="mailto:klopez@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">klopez@idsinc.com</a>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="rami-burbar" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
     <img src="/assets/uploads/Rami-Burbar.jpg" alt="Rami Burbar" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -1536,9 +1575,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:rburbar@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">rburbar@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/rami-burbar-25864759/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="brett-chatterton" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
     <img src="/assets/uploads/iDS-HS-brettc-001.jpg" alt="Brett Chatterton" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -1558,9 +1598,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="tel:+15085070878" style="font-size:14px;color:#FFFFFF;font-weight:bold">+1(508)507-0878</a>
       <a href="mailto:bchatterton@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">bchatterton@idsinc.com</a>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="thienthi-le" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
     <img src="/assets/uploads/iDS-HS-thil-002-Web-e1781104917883.jpg" alt="Thienthi Le" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -1582,9 +1623,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:tle@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">tle@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/thienthi-le-06a8b198/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="milton-hooper" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
     <img src="/assets/uploads/IMG_6866-scaled-e1692899568783.jpg" alt="Milton Hooper" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -1606,9 +1648,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:mhooper@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">mhooper@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/milton-hooper-097a2b206/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a><a href="/assets/uploads/docs/iDS-DH-CV-MiltonHooper-2026.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="daniel-watson" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
     <img src="/assets/uploads/head-shot-scaled-e1739488707221.jpg" alt="Daniel Watson" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -1632,9 +1675,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:dwatson@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">dwatson@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/daniel-watson-22491974/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a><a href="/assets/uploads/docs/iDS-DH-CV-DanielWatson-2026.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="nitin-khanna" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
     <img src="/assets/uploads/iDS-HS-nitink-002.jpg" alt="Nitin Khanna" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -1656,9 +1700,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:nkhanna@idsinc.com%20" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">nkhanna@idsinc.com%20</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/nkhanna912/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a><a href="/assets/uploads/docs/iDS-DH-CV-NitinKhanna-2026.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="elizabeth-rivers" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
     <img src="/assets/uploads/iDS-HS-elizabethr-001.jpg" alt="Elizabeth Rivers" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -1680,9 +1725,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="tel:9517519727" style="font-size:14px;color:#FFFFFF;font-weight:bold">(951)751-9727</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/elizabeth-m-5a57448/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="jim-dallas" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
     <img src="/assets/uploads/iDS-HS-jimd-001.jpg" alt="Jim Dallas" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -1704,9 +1750,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:jdallas@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">jdallas@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/james-r-dallas-9b296110/%20" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="fabrice-likosso" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
     <img src="/assets/uploads/Fabrice-Likosso-KEEP.jpg" alt="Fabrice Likosso" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -1732,9 +1779,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:flikosso@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">flikosso@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/fabricelikosso/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="jonah-kang" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
     <img src="/assets/uploads/iDS-HS-jonahk-001.jpg" alt="Jonah Kang" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -1757,9 +1805,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:jkang@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">jkang@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/jonah-kang-304271302/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="ryan-trinh" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
     <img src="/assets/uploads/Image-22-e1768834712419.jpg" alt="Ryan Trinh" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -1777,9 +1826,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
     <p style="font-size:14px;line-height:1.6;color:#595959;margin:0 0 10px">Ryan joined iDS in 2024 after an internship that turned a longtime interest in technology and law into a career. He holds a B.S. in Computer Science with a Cybersecurity concentration from Cal State Fullerton, graduating Cum Laude, and earned his CompTIA Security+ certification.</p>
     <p style="font-size:14px;line-height:1.6;color:#595959;margin:0 0 10px">Born and raised in the Bay Area, Ryan moved to Orange County for his education. Outside of work, he enjoys programming tools that simplify tasks, showing that coding skills are as practical on the job as they are in everyday life.</p>
     <p style="font-size:14px;line-height:1.6;color:#595959;margin:0 0 10px">Ryan lives by a timeless Leonardo da Vinci philosophy: “Details make perfection, and perfection is not a detail.” He pairs that attention to detail with persistence and focus, delivering work clients can rely on and reflecting the high standards that define our organization.</p>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="michael-sayegh" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
     <img src="/assets/uploads/iDS-bio-HS-placeholder-b.jpg" alt="Michael Sayegh" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -1801,9 +1851,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:msayegh@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">msayegh@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/michael-sayegh-a20368157/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a><a href="/assets/uploads/docs/iDS-DH-CV-MICHAEL-SAYEGH-2026.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="jada-chapman" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
     <img src="/assets/uploads/iDS-bio-HS-placeholder-b.jpg" alt="Jada Chapman" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -1825,9 +1876,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <div style="font-size:11px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">Direct</div>
       <a href="mailto:jchapman@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">jchapman@idsinc.com</a>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="sara-smith" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
     <img src="/assets/uploads/iDS-bio-HS-placeholder-b.jpg" alt="Sara Smith" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -1851,9 +1903,10 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
       <a href="mailto:ssmith@idsinc.com" style="font-size:13px;color:rgba(255,255,255,.85);word-break:break-all">ssmith@idsinc.com</a>
       <div style="display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:2px"><a href="https://www.linkedin.com/in/sara-smith-8633b050/" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">LinkedIn</a><a href="/assets/uploads/docs/iDS-DH-CV-SaraSmith-2026.pdf" target="_blank" rel="noopener" style="font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015">CV</a></div>
     </div>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
-<details class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
+<details id="jason-tonks" class="team-card" style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF">
   <summary style="cursor:pointer;padding:0">
   <div style="position:relative;width:100%;aspect-ratio:1/1;background:#EDF0F4;overflow:hidden">
     <img src="/assets/uploads/iDS-bio-HS-placeholder-b.jpg" alt="Jason Tonks" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
@@ -1873,6 +1926,7 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
     <div style="font-size:11px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#DB6015;margin:18px 0 8px">Certifications:</div>
     <ul style="margin:0 0 12px;padding-left:18px;font-size:14px;line-height:1.55;color:#595959"><li style="margin:0 0 4px">EnCase Certified Examiner (EnCE)</li><li style="margin:0 0 4px">Cellebrite Certified Operator (CCO)</li><li style="margin:0 0 4px">Cellebrite Certified Physical Analyst (CCPA)</li><li style="margin:0 0 4px">Oxygen Forensic Bootcamp Graduate</li><li style="margin:0 0 4px">Bond Solon Courtroom Training and Report Writing</li><li style="margin:0 0 4px">SC Security Cleared</li></ul>
     <p style="font-size:14px;line-height:1.6;color:#595959;margin:0 0 10px">Born in Germany and raised in the UK, Jason combines his international experience with deep forensic expertise, making him a trusted advisor in even the most complex cases.</p>
+    <button type="button" class="copy-profile" style="margin-top:14px;font:bold 12px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#003764;background:none;border:0;border-bottom:1.5px solid #DB6015;padding:0 0 3px;cursor:pointer">Copy link to this profile</button>
   </div>
 </details>
 
@@ -1933,11 +1987,31 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
   </div>
 </div>
 
+<script id="profile-links-js">
+(function(){
+  function openFromHash(){
+    var id=decodeURIComponent(location.hash.slice(1)); if(!id) return;
+    var d=document.getElementById(id); if(!d||d.tagName!=='DETAILS') return;
+    d.open=true; setTimeout(function(){ var y=d.getBoundingClientRect().top+window.pageYOffset-96; window.scrollTo({top:y,behavior:'smooth'}); },60);
+  }
+  document.querySelectorAll('.copy-profile').forEach(function(b){
+    b.addEventListener('click',function(e){
+      e.preventDefault(); var d=b.closest('details'); var url=location.origin+location.pathname+'#'+d.id;
+      var done=function(){ var t=b.textContent; b.textContent='Link copied'; setTimeout(function(){b.textContent=t;},1800); };
+      if(navigator.clipboard){ navigator.clipboard.writeText(url).then(done,function(){prompt('Copy this link:',url);}); } else { prompt('Copy this link:',url); }
+    });
+  });
+  document.querySelectorAll('details.expert-card,details.team-card').forEach(function(d){
+    d.addEventListener('toggle',function(){ if(d.open && d.id && location.hash!=='#'+d.id){ history.replaceState(null,'','#'+d.id); } });
+  });
+  window.addEventListener('hashchange',openFromHash); openFromHash();
+})();
+</script>
 <div style="background:#0A2440">
   <div style="max-width:1200px;margin:0 auto;padding:64px 32px 26px;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:40px">
     <div>
       <img src="/assets/ids-logo-reversed.png" alt="iDiscovery Solutions" style="height:52px;width:auto;display:block;margin-bottom:20px" />
-      <p style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:bold;color:#FFFFFF;margin:0 0 6px">Truth Through Data</p>
+      <p style="font-size:22px;font-weight:bold;color:#FFFFFF;margin:0 0 6px">Truth Through Data</p>
       <p style="font-size:14px;line-height:1.6;color:rgba(255,255,255,.7);margin:0 0 20px">Where expertise leads, defensible outcomes follow.</p>
       <div style="display:flex;gap:10px">
         <a href="https://twitter.com/iDiscoveryInc" target="_blank" aria-label="X (Twitter)" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid rgba(255,255,255,.3);color:rgba(255,255,255,.82);font-size:13px;font-weight:bold">X</a>

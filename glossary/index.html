@@ -14,19 +14,19 @@
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="/assets/ids-logo-navy.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;1,400&display=swap">
 <style>:root {
   --navy:#003764; --navy-deep:#0A2440; --orange:#DB6015; --orange-deep:#B94E0E;
   --ink:#16212C; --text:#45515E; --muted:#6F7B88; --rule:#D5DBE1; --band:#F2F4F6; --paper:#FFFFFF;
-  --sticker:#F3D65A; --noise:#B7C0CA; --on-navy:#D3DEEA; --on-navy-muted:#9FC0DF;
+  --sticker:#DB6015; --noise:#B7C0CA; --on-navy:#D3DEEA; --on-navy-muted:#9FC0DF;
   --display:"Jost","Futura","Century Gothic","Avenir Next",Arial,sans-serif;
-  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --mono:"Jost","Futura","Century Gothic","Avenir Next",Arial,sans-serif;
 }
 html, body { margin:0; padding:0; }
 body { font-family: var(--display); color:#595959; background:#FFFFFF; -webkit-font-smoothing:antialiased; }
 * { box-sizing: border-box; }
 a { text-decoration:none; }
-::selection { background:#FFF1E6; color:#003764; }
+::selection { background:#DB6015; color:#FFFFFF; }
 img { max-width:100%; }
 .mono-label { font:500 12px var(--mono); letter-spacing:.1em; text-transform:uppercase; color:var(--orange); }
 .textlink { font:500 15px var(--display); color:var(--navy); text-decoration:none; border-bottom:1.5px solid currentColor; padding-bottom:2px; }
@@ -115,7 +115,7 @@ details.disc[open] .plus::after { content: "\2013"; }
 .exhibit { position:relative; margin:0; background:#FFFFFF; border:1px solid #C4CCD4; box-shadow:0 1px 0 #E6EAEE, 0 18px 40px -24px rgba(0,40,80,.35); }
 .ex-head { display:flex; justify-content:space-between; align-items:flex-start; gap:16px; padding:22px 24px 0; }
 .ex-head h3 { font-size:20px; line-height:1.25; max-width:20em; margin:6px 0 0; color:#16212C; }
-.ex-sticker { flex:0 0 auto; width:44px; height:30px; background:var(--sticker); transform:rotate(-2.5deg); box-shadow:0 1px 2px rgba(0,0,0,.18); }
+.ex-sticker { flex:0 0 auto; width:44px; height:30px; background:var(--sticker); }
 .ex-body { padding:6px 12px 0; overflow-x:auto; }
 .ex-body svg { display:block; width:100%; min-width:480px; height:auto; }
 .lane-label { font:500 12.5px var(--display); fill:#16212C; }
@@ -196,7 +196,7 @@ details.disc[open] .plus::after { content: "\2013"; }
 .qs-wrap { max-width:1200px; margin:0 auto; padding:92px 32px; }
 .qs { border-top:1px solid #16212C; margin-top:36px; }
 .qrow { display:grid; grid-template-columns:22px minmax(0,1fr) auto; gap:24px; align-items:baseline; padding:26px 0; border-bottom:1px solid #E6E9ED; }
-.qrow .q-no { width:22px; height:22px; background:var(--sticker); align-self:center; transform:rotate(-2.5deg); box-shadow:0 1px 2px rgba(0,0,0,.18); }
+.qrow .q-no { width:22px; height:22px; background:var(--sticker); align-self:center; }
 .qrow h3 { font:400 clamp(21px,2.2vw,28px)/1.25 var(--display); color:#16212C; margin:0; }
 .qrow .go { font:500 15px var(--display); color:var(--orange); white-space:nowrap; }
 @media (max-width:640px) { .qrow { grid-template-columns:22px minmax(0,1fr); } .qrow .go { grid-column:2; } }
@@ -354,175 +354,175 @@ details.disc[open] .plus::after { content: "\2013"; }
     <div style="padding:22px 0;border-bottom:1px solid #E6E9ED">
     <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:8px">
       <h3 style="font-size:19px;font-weight:bold;color:#003764;margin:0">Artefact</h3>
-      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;background:#FFF1E6;padding:3px 9px">Forensics</span>
+      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#FFFFFF;background:#DB6015;padding:3px 9px">Forensics</span>
     </div>
     <p style="font-size:16px;line-height:1.6;color:#404040;margin:0">A digital “breadcrumb” left by the OS or an app (e.g., a shortcut file or a registry key) that proves user activity.</p>
   </div>
 <div style="padding:22px 0;border-bottom:1px solid #E6E9ED">
     <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:8px">
       <h3 style="font-size:19px;font-weight:bold;color:#003764;margin:0">Chain of Custody</h3>
-      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;background:#FFF1E6;padding:3px 9px">Legal</span>
+      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#FFFFFF;background:#DB6015;padding:3px 9px">Legal</span>
     </div>
     <p style="font-size:16px;line-height:1.6;color:#404040;margin:0">The chronological record of who handled the evidence, ensuring it hasn’t been altered from collection to court.</p>
   </div>
 <div style="padding:22px 0;border-bottom:1px solid #E6E9ED">
     <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:8px">
       <h3 style="font-size:19px;font-weight:bold;color:#003764;margin:0">Culling</h3>
-      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;background:#FFF1E6;padding:3px 9px">Processing</span>
+      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#FFFFFF;background:#DB6015;padding:3px 9px">Processing</span>
     </div>
     <p style="font-size:16px;line-height:1.6;color:#404040;margin:0">Using search terms or date ranges to reduce the volume of data before legal review begins.</p>
   </div>
 <div style="padding:22px 0;border-bottom:1px solid #E6E9ED">
     <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:8px">
       <h3 style="font-size:19px;font-weight:bold;color:#003764;margin:0">Custodian</h3>
-      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;background:#FFF1E6;padding:3px 9px">Legal</span>
+      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#FFFFFF;background:#DB6015;padding:3px 9px">Legal</span>
     </div>
     <p style="font-size:16px;line-height:1.6;color:#404040;margin:0">The individual who had physical or logical control over the data (e.g., the departing employee).</p>
   </div>
 <div style="padding:22px 0;border-bottom:1px solid #E6E9ED">
     <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:8px">
       <h3 style="font-size:19px;font-weight:bold;color:#003764;margin:0">Data Mapping</h3>
-      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;background:#FFF1E6;padding:3px 9px">Strategy</span>
+      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#FFFFFF;background:#DB6015;padding:3px 9px">Strategy</span>
     </div>
     <p style="font-size:16px;line-height:1.6;color:#404040;margin:0">Identifying where all an employee’s data lives (Laptop, Phone, Cloud, CRM) before starting a collection.</p>
   </div>
 <div style="padding:22px 0;border-bottom:1px solid #E6E9ED">
     <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:8px">
       <h3 style="font-size:19px;font-weight:bold;color:#003764;margin:0">De-duplication</h3>
-      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;background:#FFF1E6;padding:3px 9px">Processing</span>
+      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#FFFFFF;background:#DB6015;padding:3px 9px">Processing</span>
     </div>
     <p style="font-size:16px;line-height:1.6;color:#404040;margin:0">Removing exact copies of the same email or file from a dataset to reduce review time and costs.</p>
   </div>
 <div style="padding:22px 0;border-bottom:1px solid #E6E9ED">
     <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:8px">
       <h3 style="font-size:19px;font-weight:bold;color:#003764;margin:0">Ephemeral Data</h3>
-      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;background:#FFF1E6;padding:3px 9px">Forensics</span>
+      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#FFFFFF;background:#DB6015;padding:3px 9px">Forensics</span>
     </div>
     <p style="font-size:16px;line-height:1.6;color:#404040;margin:0">Short-lived data like RAM or self-destructing messages (Signal/WhatsApp) that requires immediate preservation.</p>
   </div>
 <div style="padding:22px 0;border-bottom:1px solid #E6E9ED">
     <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:8px">
       <h3 style="font-size:19px;font-weight:bold;color:#003764;margin:0">ESI</h3>
-      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;background:#FFF1E6;padding:3px 9px">eDisclosure</span>
+      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#FFFFFF;background:#DB6015;padding:3px 9px">eDisclosure</span>
     </div>
     <p style="font-size:16px;line-height:1.6;color:#404040;margin:0">The broad term for all digital evidence (emails, Slack, PDFs, etc.).</p>
   </div>
 <div style="padding:22px 0;border-bottom:1px solid #E6E9ED">
     <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:8px">
       <h3 style="font-size:19px;font-weight:bold;color:#003764;margin:0">Exfiltration</h3>
-      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;background:#FFF1E6;padding:3px 9px">Security</span>
+      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#FFFFFF;background:#DB6015;padding:3px 9px">Security</span>
     </div>
     <p style="font-size:16px;line-height:1.6;color:#404040;margin:0">The unauthorized transfer of data from a company network to an external location.</p>
   </div>
 <div style="padding:22px 0;border-bottom:1px solid #E6E9ED">
     <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:8px">
       <h3 style="font-size:19px;font-weight:bold;color:#003764;margin:0">Forensic Image</h3>
-      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;background:#FFF1E6;padding:3px 9px">Collection</span>
+      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#FFFFFF;background:#DB6015;padding:3px 9px">Collection</span>
     </div>
     <p style="font-size:16px;line-height:1.6;color:#404040;margin:0">A bit-for-bit, read-only copy of a hard drive that captures “deleted” data that a standard “Copy-Paste” would miss.</p>
   </div>
 <div style="padding:22px 0;border-bottom:1px solid #E6E9ED">
     <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:8px">
       <h3 style="font-size:19px;font-weight:bold;color:#003764;margin:0">Hash Value</h3>
-      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;background:#FFF1E6;padding:3px 9px">Integrity</span>
+      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#FFFFFF;background:#DB6015;padding:3px 9px">Integrity</span>
     </div>
     <p style="font-size:16px;line-height:1.6;color:#404040;margin:0">A digital fingerprint (MD5/SHA1). If a single byte in a file changes, the hash changes, proving tampering.</p>
   </div>
 <div style="padding:22px 0;border-bottom:1px solid #E6E9ED">
     <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:8px">
       <h3 style="font-size:19px;font-weight:bold;color:#003764;margin:0">Jump Lists</h3>
-      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;background:#FFF1E6;padding:3px 9px">Forensics</span>
+      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#FFFFFF;background:#DB6015;padding:3px 9px">Forensics</span>
     </div>
     <p style="font-size:16px;line-height:1.6;color:#404040;margin:0">Windows features that show “Recently Opened” files per application—proving intent and recent access.</p>
   </div>
 <div style="padding:22px 0;border-bottom:1px solid #E6E9ED">
     <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:8px">
       <h3 style="font-size:19px;font-weight:bold;color:#003764;margin:0">LNK Files</h3>
-      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;background:#FFF1E6;padding:3px 9px">Forensics</span>
+      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#FFFFFF;background:#DB6015;padding:3px 9px">Forensics</span>
     </div>
     <p style="font-size:16px;line-height:1.6;color:#404040;margin:0">Windows “Shortcut” files that prove a file was opened, even if the file itself has since been deleted or moved.</p>
   </div>
 <div style="padding:22px 0;border-bottom:1px solid #E6E9ED">
     <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:8px">
       <h3 style="font-size:19px;font-weight:bold;color:#003764;margin:0">Load File</h3>
-      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;background:#FFF1E6;padding:3px 9px">eDisclosure</span>
+      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#FFFFFF;background:#DB6015;padding:3px 9px">eDisclosure</span>
     </div>
     <p style="font-size:16px;line-height:1.6;color:#404040;margin:0">A file used to import data into a review platform, linking the text, images, and metadata together.</p>
   </div>
 <div style="padding:22px 0;border-bottom:1px solid #E6E9ED">
     <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:8px">
       <h3 style="font-size:19px;font-weight:bold;color:#003764;margin:0">Metadata</h3>
-      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;background:#FFF1E6;padding:3px 9px">eDisclosure</span>
+      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#FFFFFF;background:#DB6015;padding:3px 9px">eDisclosure</span>
     </div>
     <p style="font-size:16px;line-height:1.6;color:#404040;margin:0">“Data about data.” Includes hidden info like who created a file, when it was last modified, and total editing time.</p>
   </div>
 <div style="padding:22px 0;border-bottom:1px solid #E6E9ED">
     <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:8px">
       <h3 style="font-size:19px;font-weight:bold;color:#003764;margin:0">Native Format</h3>
-      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;background:#FFF1E6;padding:3px 9px">eDisclosure</span>
+      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#FFFFFF;background:#DB6015;padding:3px 9px">eDisclosure</span>
     </div>
     <p style="font-size:16px;line-height:1.6;color:#404040;margin:0">The original file type (e.g., .XLSX). Reviewing in native format is often required to see hidden formulas or metadata.</p>
   </div>
 <div style="padding:22px 0;border-bottom:1px solid #E6E9ED">
     <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:8px">
       <h3 style="font-size:19px;font-weight:bold;color:#003764;margin:0">OCR</h3>
-      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;background:#FFF1E6;padding:3px 9px">Processing</span>
+      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#FFFFFF;background:#DB6015;padding:3px 9px">Processing</span>
     </div>
     <p style="font-size:16px;line-height:1.6;color:#404040;margin:0">Optical Character Recognition. Turning pictures of text (scans/screenshots) into searchable data.</p>
   </div>
 <div style="padding:22px 0;border-bottom:1px solid #E6E9ED">
     <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:8px">
       <h3 style="font-size:19px;font-weight:bold;color:#003764;margin:0">Preservation Letter</h3>
-      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;background:#FFF1E6;padding:3px 9px">Legal</span>
+      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#FFFFFF;background:#DB6015;padding:3px 9px">Legal</span>
     </div>
     <p style="font-size:16px;line-height:1.6;color:#404040;margin:0">A formal notice to an employee or third party to stop all data deletion/rotation because of pending litigation.</p>
   </div>
 <div style="padding:22px 0;border-bottom:1px solid #E6E9ED">
     <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:8px">
       <h3 style="font-size:19px;font-weight:bold;color:#003764;margin:0">Processing</h3>
-      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;background:#FFF1E6;padding:3px 9px">eDisclosure</span>
+      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#FFFFFF;background:#DB6015;padding:3px 9px">eDisclosure</span>
     </div>
     <p style="font-size:16px;line-height:1.6;color:#404040;margin:0">The stage where raw ESI is converted into a structured format for legal review.</p>
   </div>
 <div style="padding:22px 0;border-bottom:1px solid #E6E9ED">
     <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:8px">
       <h3 style="font-size:19px;font-weight:bold;color:#003764;margin:0">Registry Analysis</h3>
-      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;background:#FFF1E6;padding:3px 9px">Forensics</span>
+      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#FFFFFF;background:#DB6015;padding:3px 9px">Forensics</span>
     </div>
     <p style="font-size:16px;line-height:1.6;color:#404040;margin:0">Examining the “brain” of the Windows OS to see what software was installed or what USBs were plugged in.</p>
   </div>
 <div style="padding:22px 0;border-bottom:1px solid #E6E9ED">
     <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:8px">
       <h3 style="font-size:19px;font-weight:bold;color:#003764;margin:0">Shellbags</h3>
-      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;background:#FFF1E6;padding:3px 9px">Forensics</span>
+      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#FFFFFF;background:#DB6015;padding:3px 9px">Forensics</span>
     </div>
     <p style="font-size:16px;line-height:1.6;color:#404040;margin:0">Data that tracks which folders a user viewed—essential for proving an employee was “browsing” sensitive directories.</p>
   </div>
 <div style="padding:22px 0;border-bottom:1px solid #E6E9ED">
     <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:8px">
       <h3 style="font-size:19px;font-weight:bold;color:#003764;margin:0">Slack Space</h3>
-      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;background:#FFF1E6;padding:3px 9px">Forensics</span>
+      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#FFFFFF;background:#DB6015;padding:3px 9px">Forensics</span>
     </div>
     <p style="font-size:16px;line-height:1.6;color:#404040;margin:0">The unused space in a file cluster that often contains fragments of old, deleted data.</p>
   </div>
 <div style="padding:22px 0;border-bottom:1px solid #E6E9ED">
     <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:8px">
       <h3 style="font-size:19px;font-weight:bold;color:#003764;margin:0">TAR</h3>
-      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;background:#FFF1E6;padding:3px 9px">eDisclosure</span>
+      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#FFFFFF;background:#DB6015;padding:3px 9px">eDisclosure</span>
     </div>
     <p style="font-size:16px;line-height:1.6;color:#404040;margin:0">Using AI/Machine Learning to code documents for relevance in massive datasets.</p>
   </div>
 <div style="padding:22px 0;border-bottom:1px solid #E6E9ED">
     <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:8px">
       <h3 style="font-size:19px;font-weight:bold;color:#003764;margin:0">Unallocated Space</h3>
-      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;background:#FFF1E6;padding:3px 9px">Forensics</span>
+      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#FFFFFF;background:#DB6015;padding:3px 9px">Forensics</span>
     </div>
     <p style="font-size:16px;line-height:1.6;color:#404040;margin:0">The “hidden” area of a disk where deleted files live before they are overwritten. High-value for recovering “erased” logs.</p>
   </div>
 <div style="padding:22px 0;border-bottom:1px solid #E6E9ED">
     <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:8px">
       <h3 style="font-size:19px;font-weight:bold;color:#003764;margin:0">Write Blocker</h3>
-      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;background:#FFF1E6;padding:3px 9px">Collection</span>
+      <span style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#FFFFFF;background:#DB6015;padding:3px 9px">Collection</span>
     </div>
     <p style="font-size:16px;line-height:1.6;color:#404040;margin:0">Hardware that prevents any data from being written to a device during investigation, ensuring the evidence remains pristine.</p>
   </div>
@@ -556,7 +556,7 @@ details.disc[open] .plus::after { content: "\2013"; }
   <div style="max-width:1200px;margin:0 auto;padding:64px 32px 26px;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:40px">
     <div>
       <img src="/assets/ids-logo-reversed.png" alt="iDiscovery Solutions" style="height:52px;width:auto;display:block;margin-bottom:20px" />
-      <p style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:bold;color:#FFFFFF;margin:0 0 6px">Truth Through Data</p>
+      <p style="font-size:22px;font-weight:bold;color:#FFFFFF;margin:0 0 6px">Truth Through Data</p>
       <p style="font-size:14px;line-height:1.6;color:rgba(255,255,255,.7);margin:0 0 20px">Where expertise leads, defensible outcomes follow.</p>
       <div style="display:flex;gap:10px">
         <a href="https://twitter.com/iDiscoveryInc" target="_blank" aria-label="X (Twitter)" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid rgba(255,255,255,.3);color:rgba(255,255,255,.82);font-size:13px;font-weight:bold">X</a>
