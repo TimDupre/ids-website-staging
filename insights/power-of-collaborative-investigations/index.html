@@ -235,6 +235,17 @@ details.disc[open] .plus::after { content: "\2013"; }
 .close-cta .secondary { background:#FFFFFF; padding:26px 30px; border-top:1px solid #E6E9ED; }
 .close-cta .secondary h3 { font-size:19px; color:#003764; margin:0 0 8px; }
 </style>
+<style id="cap-mega-css">
+.cap-wrap{grid-template-columns:minmax(0,3fr) minmax(0,1.05fr) !important}
+.cap-grid{grid-template-columns:repeat(3,minmax(0,1fr));column-gap:28px}
+.cap-grid li a{display:flex !important;gap:12px;align-items:flex-start}
+.cap-grid li:nth-last-child(-n+3) a{border-bottom:0}
+.cap-grid img{flex:0 0 40px;width:40px;height:40px;border-radius:8px;display:block;margin-top:2px}
+.cap-txt{display:block !important;margin:0 !important}
+.cap-txt b{font-size:15px !important}
+.cap-txt span{font-size:13px !important;margin-top:3px !important}
+.cap-mega .mega-feature a + a{margin-top:-4px}
+</style>
 </head>
 <body>
 <div class="site-nav" style="position:sticky;top:0;z-index:50;background:#FFFFFF;border-bottom:1px solid #E6E9ED">
@@ -252,7 +263,9 @@ details.disc[open] .plus::after { content: "\2013"; }
       <div class="nav-item">
         <button type="button" id="about-btn" aria-expanded="false" aria-controls="about-menu">About Us</button>
       </div>
-      <a href="/capabilities/" style="font-size:15px;font-weight:bold;color:#003764;white-space:nowrap">Capabilities</a>
+      <div class="nav-item">
+        <button type="button" id="cap-btn" aria-expanded="false" aria-controls="cap-menu">Capabilities</button>
+      </div>
         <a href="/our-experts/" style="font-size:15px;font-weight:bold;color:#003764;white-space:nowrap">Our Experts</a>
         <a href="/can-you/" style="font-size:15px;font-weight:bold;color:#003764;white-space:nowrap">Can You&hellip;?</a>
         <a href="/ai-evidence/" style="font-size:15px;font-weight:bold;color:#003764;white-space:nowrap">AI &amp; Evidence</a>
@@ -304,6 +317,30 @@ details.disc[open] .plus::after { content: "\2013"; }
       </div>
     </div>
   </div>
+  <div class="mega cap-mega" id="cap-menu" hidden>
+    <div class="mega-wrap cap-wrap">
+      <div class="cap-col">
+        <h4>Nine disciplines, one evidentiary foundation</h4>
+        <ul class="cap-grid">
+          <li><a href="/capabilities/#digital-forensics"><img src="/assets/capabilities/icon-digital-forensics.jpg" alt="" width="40" height="40" /><span class="cap-txt"><b>Digital Forensics</b><span>Your data tells a story: who created it, how, and when</span></span></a></li>
+          <li><a href="/capabilities/#structured-data"><img src="/assets/capabilities/icon-structured-data.jpg" alt="" width="40" height="40" /><span class="cap-txt"><b>Structured Data &amp; Analytics</b><span>Databases are evidence, and they behave differently</span></span></a></li>
+          <li><a href="/capabilities/#ediscovery"><img src="/assets/capabilities/icon-ediscovery.jpg" alt="" width="40" height="40" /><span class="cap-txt"><b>eDiscovery &amp; Disclosure</b><span>A complete, defensible record, at a cost that is defensible too</span></span></a></li>
+          <li><a href="/capabilities/#damages-forensic-accounting"><img src="/assets/capabilities/icon-damages-forensic-accounting.jpg" alt="" width="40" height="40" /><span class="cap-txt"><b>Damages &amp; Forensic Accounting</b><span>Financial exposure, stated as a range with named assumptions</span></span></a></li>
+          <li><a href="/capabilities/#special-investigations-unit"><img src="/assets/capabilities/icon-special-investigations-unit.jpg" alt="" width="40" height="40" /><span class="cap-txt"><b>Investigations</b><span>Rapid response when the incident carries legal risk</span></span></a></li>
+          <li><a href="/capabilities/#cybersecurity"><img src="/assets/capabilities/icon-cybersecurity.jpg" alt="" width="40" height="40" /><span class="cap-txt"><b>Cybersecurity</b><span>A single incident can cause lasting organisational harm</span></span></a></li>
+          <li><a href="/capabilities/#privacy"><img src="/assets/capabilities/icon-privacy.jpg" alt="" width="40" height="40" /><span class="cap-txt"><b>Privacy</b><span>Rights requests are an evidence problem before they are a legal one</span></span></a></li>
+          <li><a href="/capabilities/#information-governance"><img src="/assets/capabilities/icon-information-governance.jpg" alt="" width="40" height="40" /><span class="cap-txt"><b>Information Governance &amp; Compliance</b><span>Reduce the risk before it becomes a matter</span></span></a></li>
+          <li><a href="/capabilities/#testimony"><img src="/assets/capabilities/icon-testimony.jpg" alt="" width="40" height="40" /><span class="cap-txt"><b>Expert Testimony</b><span>The discipline every other discipline reports into</span></span></a></li>
+        </ul>
+      </div>
+      <div class="mega-feature">
+        <svg viewBox="0 0 270 270" aria-hidden="true"><circle cx="135" cy="135" r="135" fill="#DB6015" mask="url(#puck-cut)"/></svg>
+        <p><strong style="color:#fff">Featured: Employee Risk Assessment (ERA&trade;)</strong><br />When an employee departs or is suspected of misconduct, we find and preserve the artifacts that matter before they change.</p>
+        <a href="/capabilities/#era">About ERA &rarr;</a>
+        <a href="/capabilities/">All capabilities &rarr;</a>
+      </div>
+    </div>
+  </div>
   <input type="checkbox" id="nav-toggle" class="nav-toggle-input" style="display:none" />
   <div class="nav-mobile-menu" style="border-top:1px solid #E6E9ED;background:#FFFFFF;display:none">
       <a href="/about/" style="padding:18px 24px;border-bottom:1px solid #E6E9ED;font-size:16px;font-weight:bold;color:#003764">About Us</a>
@@ -330,8 +367,8 @@ details.disc[open] .plus::after { content: "\2013"; }
   var ab=document.getElementById('about-btn'), am=document.getElementById('about-menu');
   if(!ab||!am) return;
   var item=ab.closest('.nav-item'), hideT;
-  function setAbout(open){am.hidden=!open;ab.setAttribute('aria-expanded',open);}
-  ab.addEventListener('click',function(){setAbout(am.hidden);});
+  var abOpened=0; function setAbout(open){if(open&&am.hidden)abOpened=Date.now();am.hidden=!open;ab.setAttribute('aria-expanded',open);}
+  ab.addEventListener('click',function(){if(!am.hidden&&Date.now()-abOpened<500)return;setAbout(am.hidden);});
   item.addEventListener('mouseenter',function(){clearTimeout(hideT);setAbout(true);});
   item.addEventListener('mouseleave',function(){hideT=setTimeout(function(){setAbout(false);},180);});
   am.addEventListener('mouseenter',function(){clearTimeout(hideT);});
@@ -548,5 +585,22 @@ details.disc[open] .plus::after { content: "\2013"; }
   </div>
 </div>
 
+<script id="cap-mega-js">
+(function(){
+  var b=document.getElementById('cap-btn'), m=document.getElementById('cap-menu'), am=document.getElementById('about-menu'), ab=document.getElementById('about-btn');
+  if(!b||!m) return;
+  var item=b.closest('.nav-item'), t;
+  var opened=0; function set(o){ if(o&&m.hidden) opened=Date.now(); m.hidden=!o; b.setAttribute('aria-expanded',o); if(o&&am){am.hidden=true; if(ab)ab.setAttribute('aria-expanded',false);} }
+  b.addEventListener('click',function(){ if(!m.hidden && Date.now()-opened<500) return; set(m.hidden); });
+  item.addEventListener('mouseenter',function(){ clearTimeout(t); set(true); });
+  item.addEventListener('mouseleave',function(){ t=setTimeout(function(){set(false);},180); });
+  m.addEventListener('mouseenter',function(){ clearTimeout(t); });
+  m.addEventListener('mouseleave',function(){ t=setTimeout(function(){set(false);},180); });
+  if(ab) ab.closest('.nav-item').addEventListener('mouseenter',function(){ set(false); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&!m.hidden){ set(false); b.focus(); } });
+  document.addEventListener('click',function(e){ if(!item.contains(e.target)&&!m.contains(e.target)) set(false); });
+  m.addEventListener('click',function(e){ if(e.target.closest('a')) set(false); });
+})();
+</script>
 </body>
 </html>

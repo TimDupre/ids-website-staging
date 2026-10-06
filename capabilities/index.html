@@ -236,6 +236,38 @@ details.disc[open] .plus::after { content: "\2013"; }
 .close-cta .secondary { background:#FFFFFF; padding:26px 30px; border-top:1px solid #E6E9ED; }
 .close-cta .secondary h3 { font-size:19px; color:#003764; margin:0 0 8px; }
 </style>
+<style id="cap-mega-css">
+.cap-wrap{grid-template-columns:minmax(0,3fr) minmax(0,1.05fr) !important}
+.cap-grid{grid-template-columns:repeat(3,minmax(0,1fr));column-gap:28px}
+.cap-grid li a{display:flex !important;gap:12px;align-items:flex-start}
+.cap-grid li:nth-last-child(-n+3) a{border-bottom:0}
+.cap-grid img{flex:0 0 40px;width:40px;height:40px;border-radius:8px;display:block;margin-top:2px}
+.cap-txt{display:block !important;margin:0 !important}
+.cap-txt b{font-size:15px !important}
+.cap-txt span{font-size:13px !important;margin-top:3px !important}
+.cap-mega .mega-feature a + a{margin-top:-4px}
+</style>
+<style id="cap-split-css">
+.cap-side{display:none}
+@media (min-width:1000px){
+  .cap-split{display:grid;grid-template-columns:290px minmax(0,1fr);gap:40px;align-items:start;border-top:0 !important;padding-top:8px !important}
+  .cap-side{display:block;position:sticky;top:96px;border:1px solid #E6E9ED;background:#FFFFFF;padding:10px}
+  .cap-side-label{font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;padding:10px 12px 8px}
+  .cap-link{display:flex;align-items:center;gap:12px;padding:9px 12px;color:#003764;border-left:3px solid transparent;transition:background .15s}
+  .cap-link img{width:36px;height:36px;border-radius:8px;flex:0 0 36px}
+  .cap-link b{font-size:15px;line-height:1.25;font-weight:600}
+  .cap-link:hover{background:#F6F7F9}
+  .cap-link.is-active{background:#003764;color:#FFFFFF;border-left-color:#DB6015}
+  .cap-main details.disc{display:none;border-bottom:0 !important}
+  .cap-main details.disc.is-active{display:block;animation:capIn .3s ease both}
+  .cap-main details.disc.is-active > summary{cursor:default;padding-top:18px !important}
+  .cap-main details.disc.is-active > summary .plus{display:none}
+  .cap-main details.disc > div{padding-left:4px !important}
+  .cap-main .era-box{margin-left:4px !important}
+}
+@keyframes capIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.cap-main details.disc.is-active{animation:none}}
+</style>
 </head>
 <body>
 <div class="site-nav" style="position:sticky;top:0;z-index:50;background:#FFFFFF;border-bottom:1px solid #E6E9ED">
@@ -253,7 +285,9 @@ details.disc[open] .plus::after { content: "\2013"; }
       <div class="nav-item">
         <button type="button" id="about-btn" aria-expanded="false" aria-controls="about-menu">About Us</button>
       </div>
-      <a href="/capabilities/" style="font-size:15px;font-weight:bold;color:#DB6015;white-space:nowrap">Capabilities</a>
+      <div class="nav-item">
+        <button type="button" id="cap-btn" aria-expanded="false" aria-controls="cap-menu" style="color:#DB6015">Capabilities</button>
+      </div>
         <a href="/our-experts/" style="font-size:15px;font-weight:bold;color:#003764;white-space:nowrap">Our Experts</a>
         <a href="/can-you/" style="font-size:15px;font-weight:bold;color:#003764;white-space:nowrap">Can You&hellip;?</a>
         <a href="/ai-evidence/" style="font-size:15px;font-weight:bold;color:#003764;white-space:nowrap">AI &amp; Evidence</a>
@@ -305,6 +339,30 @@ details.disc[open] .plus::after { content: "\2013"; }
       </div>
     </div>
   </div>
+  <div class="mega cap-mega" id="cap-menu" hidden>
+    <div class="mega-wrap cap-wrap">
+      <div class="cap-col">
+        <h4>Nine disciplines, one evidentiary foundation</h4>
+        <ul class="cap-grid">
+          <li><a href="/capabilities/#digital-forensics"><img src="/assets/capabilities/icon-digital-forensics.jpg" alt="" width="40" height="40" /><span class="cap-txt"><b>Digital Forensics</b><span>Your data tells a story: who created it, how, and when</span></span></a></li>
+          <li><a href="/capabilities/#structured-data"><img src="/assets/capabilities/icon-structured-data.jpg" alt="" width="40" height="40" /><span class="cap-txt"><b>Structured Data &amp; Analytics</b><span>Databases are evidence, and they behave differently</span></span></a></li>
+          <li><a href="/capabilities/#ediscovery"><img src="/assets/capabilities/icon-ediscovery.jpg" alt="" width="40" height="40" /><span class="cap-txt"><b>eDiscovery &amp; Disclosure</b><span>A complete, defensible record, at a cost that is defensible too</span></span></a></li>
+          <li><a href="/capabilities/#damages-forensic-accounting"><img src="/assets/capabilities/icon-damages-forensic-accounting.jpg" alt="" width="40" height="40" /><span class="cap-txt"><b>Damages &amp; Forensic Accounting</b><span>Financial exposure, stated as a range with named assumptions</span></span></a></li>
+          <li><a href="/capabilities/#special-investigations-unit"><img src="/assets/capabilities/icon-special-investigations-unit.jpg" alt="" width="40" height="40" /><span class="cap-txt"><b>Investigations</b><span>Rapid response when the incident carries legal risk</span></span></a></li>
+          <li><a href="/capabilities/#cybersecurity"><img src="/assets/capabilities/icon-cybersecurity.jpg" alt="" width="40" height="40" /><span class="cap-txt"><b>Cybersecurity</b><span>A single incident can cause lasting organisational harm</span></span></a></li>
+          <li><a href="/capabilities/#privacy"><img src="/assets/capabilities/icon-privacy.jpg" alt="" width="40" height="40" /><span class="cap-txt"><b>Privacy</b><span>Rights requests are an evidence problem before they are a legal one</span></span></a></li>
+          <li><a href="/capabilities/#information-governance"><img src="/assets/capabilities/icon-information-governance.jpg" alt="" width="40" height="40" /><span class="cap-txt"><b>Information Governance &amp; Compliance</b><span>Reduce the risk before it becomes a matter</span></span></a></li>
+          <li><a href="/capabilities/#testimony"><img src="/assets/capabilities/icon-testimony.jpg" alt="" width="40" height="40" /><span class="cap-txt"><b>Expert Testimony</b><span>The discipline every other discipline reports into</span></span></a></li>
+        </ul>
+      </div>
+      <div class="mega-feature">
+        <svg viewBox="0 0 270 270" aria-hidden="true"><circle cx="135" cy="135" r="135" fill="#DB6015" mask="url(#puck-cut)"/></svg>
+        <p><strong style="color:#fff">Featured: Employee Risk Assessment (ERA&trade;)</strong><br />When an employee departs or is suspected of misconduct, we find and preserve the artifacts that matter before they change.</p>
+        <a href="/capabilities/#era">About ERA &rarr;</a>
+        <a href="/capabilities/">All capabilities &rarr;</a>
+      </div>
+    </div>
+  </div>
   <input type="checkbox" id="nav-toggle" class="nav-toggle-input" style="display:none" />
   <div class="nav-mobile-menu" style="border-top:1px solid #E6E9ED;background:#FFFFFF;display:none">
       <a href="/about/" style="padding:18px 24px;border-bottom:1px solid #E6E9ED;font-size:16px;font-weight:bold;color:#003764">About Us</a>
@@ -331,8 +389,8 @@ details.disc[open] .plus::after { content: "\2013"; }
   var ab=document.getElementById('about-btn'), am=document.getElementById('about-menu');
   if(!ab||!am) return;
   var item=ab.closest('.nav-item'), hideT;
-  function setAbout(open){am.hidden=!open;ab.setAttribute('aria-expanded',open);}
-  ab.addEventListener('click',function(){setAbout(am.hidden);});
+  var abOpened=0; function setAbout(open){if(open&&am.hidden)abOpened=Date.now();am.hidden=!open;ab.setAttribute('aria-expanded',open);}
+  ab.addEventListener('click',function(){if(!am.hidden&&Date.now()-abOpened<500)return;setAbout(am.hidden);});
   item.addEventListener('mouseenter',function(){clearTimeout(hideT);setAbout(true);});
   item.addEventListener('mouseleave',function(){hideT=setTimeout(function(){setAbout(false);},180);});
   am.addEventListener('mouseenter',function(){clearTimeout(hideT);});
@@ -394,7 +452,20 @@ details.disc[open] .plus::after { content: "\2013"; }
     <div style="width:56px;height:3px;background:#DB6015;margin:0 0 18px"></div>
     <p style="font-size:17px;line-height:1.65;color:#404040;margin:0;max-width:700px">Every one of these has a named expert behind it who will sit for the deposition. Open any discipline to see the questions it answers.</p>
   </div>
-  <div style="max-width:1200px;margin:0 auto;padding:24px 32px 84px;border-top:1px solid #E6E9ED">
+  <div class="cap-split" style="max-width:1200px;margin:0 auto;padding:24px 32px 84px;border-top:1px solid #E6E9ED">
+    <nav class="cap-side" aria-label="Disciplines">
+      <div class="cap-side-label">Disciplines</div>
+      <a href="#digital-forensics" class="cap-link" data-target="digital-forensics"><img src="/assets/capabilities/icon-digital-forensics.jpg" alt="" width="36" height="36" /><span><b>Digital Forensics</b></span></a>
+      <a href="#structured-data" class="cap-link" data-target="structured-data"><img src="/assets/capabilities/icon-structured-data.jpg" alt="" width="36" height="36" /><span><b>Structured Data &amp; Analytics</b></span></a>
+      <a href="#ediscovery" class="cap-link" data-target="ediscovery"><img src="/assets/capabilities/icon-ediscovery.jpg" alt="" width="36" height="36" /><span><b>eDiscovery &amp; Disclosure</b></span></a>
+      <a href="#damages-forensic-accounting" class="cap-link" data-target="damages-forensic-accounting"><img src="/assets/capabilities/icon-damages-forensic-accounting.jpg" alt="" width="36" height="36" /><span><b>Damages &amp; Forensic Accounting</b></span></a>
+      <a href="#special-investigations-unit" class="cap-link" data-target="special-investigations-unit"><img src="/assets/capabilities/icon-special-investigations-unit.jpg" alt="" width="36" height="36" /><span><b>Investigations</b></span></a>
+      <a href="#cybersecurity" class="cap-link" data-target="cybersecurity"><img src="/assets/capabilities/icon-cybersecurity.jpg" alt="" width="36" height="36" /><span><b>Cybersecurity</b></span></a>
+      <a href="#privacy" class="cap-link" data-target="privacy"><img src="/assets/capabilities/icon-privacy.jpg" alt="" width="36" height="36" /><span><b>Privacy</b></span></a>
+      <a href="#information-governance" class="cap-link" data-target="information-governance"><img src="/assets/capabilities/icon-information-governance.jpg" alt="" width="36" height="36" /><span><b>Information Governance &amp; Compliance</b></span></a>
+      <a href="#testimony" class="cap-link" data-target="testimony"><img src="/assets/capabilities/icon-testimony.jpg" alt="" width="36" height="36" /><span><b>Expert Testimony</b></span></a>
+    </nav>
+    <div class="cap-main">
     <details class="disc" id="digital-forensics" style="border-bottom:1px solid #E6E9ED">
   <summary style="display:flex;gap:24px;align-items:center;padding:30px 4px;color:#003764">
     <span style="font-size:14px;letter-spacing:.14em;color:#DB6015;font-weight:bold;flex:0 0 34px">01</span>
@@ -552,6 +623,7 @@ details.disc[open] .plus::after { content: "\2013"; }
 </details>
 
   </div>
+  </div>
 </div>
 <script>
 (function () {
@@ -678,5 +750,40 @@ details.disc[open] .plus::after { content: "\2013"; }
   </div>
 </div>
 
+<script id="cap-mega-js">
+(function(){
+  var b=document.getElementById('cap-btn'), m=document.getElementById('cap-menu'), am=document.getElementById('about-menu'), ab=document.getElementById('about-btn');
+  if(!b||!m) return;
+  var item=b.closest('.nav-item'), t;
+  var opened=0; function set(o){ if(o&&m.hidden) opened=Date.now(); m.hidden=!o; b.setAttribute('aria-expanded',o); if(o&&am){am.hidden=true; if(ab)ab.setAttribute('aria-expanded',false);} }
+  b.addEventListener('click',function(){ if(!m.hidden && Date.now()-opened<500) return; set(m.hidden); });
+  item.addEventListener('mouseenter',function(){ clearTimeout(t); set(true); });
+  item.addEventListener('mouseleave',function(){ t=setTimeout(function(){set(false);},180); });
+  m.addEventListener('mouseenter',function(){ clearTimeout(t); });
+  m.addEventListener('mouseleave',function(){ t=setTimeout(function(){set(false);},180); });
+  if(ab) ab.closest('.nav-item').addEventListener('mouseenter',function(){ set(false); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&!m.hidden){ set(false); b.focus(); } });
+  document.addEventListener('click',function(e){ if(!item.contains(e.target)&&!m.contains(e.target)) set(false); });
+  m.addEventListener('click',function(e){ if(e.target.closest('a')) set(false); });
+})();
+</script>
+<script id="cap-split-js">
+(function(){
+  if(location.hash && 'scrollRestoration' in history) history.scrollRestoration='manual';
+  var mq=window.matchMedia('(min-width:1000px)');
+  var ds=[].slice.call(document.querySelectorAll('.cap-main details.disc')), ls=[].slice.call(document.querySelectorAll('.cap-link'));
+  if(!ds.length) return;
+  function idFromHash(){ var h=decodeURIComponent(location.hash.slice(1)); if(h==='era') return 'digital-forensics'; return ds.some(function(d){return d.id===h;})?h:null; }
+  function show(id,scroll){
+    ds.forEach(function(d){ var on=d.id===id; d.classList.toggle('is-active',on); if(mq.matches) d.open=on; });
+    ls.forEach(function(l){ l.classList.toggle('is-active',l.dataset.target===id); });
+    if(scroll){ var el=document.querySelector('.cap-split'); var y=el.getBoundingClientRect().top+window.pageYOffset-90; if(window.pageYOffset>y||scroll==='force') window.scrollTo({top:y,behavior:'smooth'}); }
+  }
+  ls.forEach(function(l){ l.addEventListener('click',function(e){ if(!mq.matches) return; e.preventDefault(); history.replaceState(null,'','#'+l.dataset.target); show(l.dataset.target,true); }); });
+  ds.forEach(function(d){ d.querySelector('summary').addEventListener('click',function(e){ if(mq.matches) e.preventDefault(); }); });
+  function init(){ var id=idFromHash(); if(mq.matches){ show(id||ds[0].id, false); if(id){ setTimeout(function(){ show(id,'force'); },120); } if(location.hash==='#era'){ setTimeout(function(){ document.getElementById('era').scrollIntoView({behavior:'smooth',block:'center'}); },350); } } else { ds.forEach(function(d){ d.classList.remove('is-active'); }); if(id){ var d=document.getElementById(id); d.open=true; setTimeout(function(){ (location.hash==='#era'?document.getElementById('era'):d).scrollIntoView({behavior:'smooth',block:'start'}); },60); } } }
+  window.addEventListener('hashchange',init); mq.addEventListener('change',init); init();
+})();
+</script>
 </body>
 </html>
