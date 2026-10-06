@@ -235,6 +235,27 @@ details.disc[open] .plus::after { content: "\2013"; }
 .close-cta .secondary { background:#FFFFFF; padding:26px 30px; border-top:1px solid #E6E9ED; }
 .close-cta .secondary h3 { font-size:19px; color:#003764; margin:0 0 8px; }
 </style>
+<style id="cv-css">
+.cv-wrap{display:grid;grid-template-columns:260px 220px minmax(0,1fr);gap:28px 36px;align-items:start}
+.cv-graphic{width:100%;height:auto;align-self:center}
+.cv-tabs{display:grid;gap:6px}
+.cv-tab{display:flex;justify-content:space-between;align-items:center;width:100%;text-align:left;font:bold 17px var(--display);color:#003764;background:#F6F7F9;border:0;border-left:3px solid transparent;padding:14px 16px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+.cv-tab:hover{background:#EDF0F4}
+.cv-tab[aria-selected="true"]{background:#003764;color:#FFFFFF;border-left-color:#DB6015}
+.cv-tab:focus-visible{outline:2px solid #DB6015;outline-offset:2px}
+.cv-arrow{color:#DB6015;transition:transform .2s}
+.cv-tab[aria-selected="true"] .cv-arrow{transform:translateX(3px)}
+.cv-panel{animation:cvIn .35s ease both}
+.cv-panel-label{font-size:12px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;color:#DB6015;margin-bottom:8px}
+.cv-statement{font-size:22px;line-height:1.35;color:#003764;margin:0 0 20px}
+.cv-statement strong{color:#003764}
+.cv-behaviors-label{font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#666666;margin-bottom:10px}
+.cv-behaviors{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px}
+.cv-behaviors li{font-size:15px;color:#404040;padding:10px 12px 10px 14px;border-left:3px solid #DB6015;background:#F6F7F9}
+@keyframes cvIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+@media (max-width:980px){.cv-wrap{grid-template-columns:1fr}.cv-graphic{max-width:300px}.cv-tabs{grid-template-columns:repeat(auto-fit,minmax(130px,1fr))}}
+@media (prefers-reduced-motion:reduce){.cv-panel{animation:none}}
+</style>
 </head>
 <body>
 <div class="site-nav" style="position:sticky;top:0;z-index:50;background:#FFFFFF;border-bottom:1px solid #E6E9ED">
@@ -276,8 +297,8 @@ details.disc[open] .plus::after { content: "\2013"; }
       <div>
         <h4>How we work</h4>
         <ul>
-          <li><a href="/about/#the-ids-way"><b>The iDS Way</b><span>An established path for optimal outcomes: Consultative Experts, Structured Process, and Customized Solutions.</span></a></li>
-          <li><a href="/about/#the-ids-way"><b>Core Fundamentals</b><span>Behaviors that transform words into actions and bring our culture to life.</span></a></li>
+          <li><a href="/careers/#the-ids-way"><b>The iDS Way</b><span>An established path for optimal outcomes: Consultative Experts, Structured Process, and Customized Solutions.</span></a></li>
+          <li><a href="/careers/#core-values"><b>Core Fundamentals</b><span>Behaviors that transform words into actions and bring our culture to life.</span></a></li>
           <li><a href="/about/#recognition"><b>Recognition</b><span>Honored as a Band One and Band Two consulting firm by Chambers and Partners.</span></a></li>
           <li><a href="/about/#recognition"><b>Industry Leadership</b><span>The Sedona Conference, the Electronic Discovery Institute, and the Georgetown Global Advanced Electronic Discovery Institute.</span></a></li>
         </ul>
@@ -381,13 +402,72 @@ details.disc[open] .plus::after { content: "\2013"; }
     </div>
   </div>
 
-  <div style="max-width:1200px;margin:0 auto;padding:72px 32px 20px">
-    <h2 style="font-size:26px;font-weight:bold;color:#404040;margin:0 0 12px">Our Values</h2>
-    <div style="width:56px;height:3px;background:#DB6015;margin:0 0 24px"></div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:2px">
-      <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:26px 22px;font-size:16px;font-weight:bold;color:#003764">Respect</div><div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:26px 22px;font-size:16px;font-weight:bold;color:#003764">Innovation</div><div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:26px 22px;font-size:16px;font-weight:bold;color:#003764">Teamwork</div><div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:26px 22px;font-size:16px;font-weight:bold;color:#003764">Excellence</div><div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:26px 22px;font-size:16px;font-weight:bold;color:#003764">Integrity</div>
+  <div id="the-ids-way" style="position:relative;overflow:hidden;background:#F6F7F9;border-top:1px solid #E6E9ED;border-bottom:1px solid #E6E9ED;scroll-margin-top:76px">
+    <div style="position:relative;max-width:1200px;margin:0 auto;padding:80px 32px 24px;display:flex;flex-wrap:wrap;align-items:center;gap:32px 48px">
+      <img src="/assets/ids-way/ids-way-badge.png" alt="The iDS Way: an internal guide for external excellence" width="365" height="365" style="width:180px;height:auto;flex:0 0 auto" />
+      <div style="flex:1 1 420px;max-width:760px">
+        <h2 style="font-size:26px;font-weight:bold;color:#404040;margin:0 0 12px">The iDS Way</h2>
+        <div style="width:56px;height:3px;background:#DB6015;margin:0 0 18px"></div>
+        <p style="font-size:17px;line-height:1.6;color:#404040;margin:0">The iDS Way is more than a philosophy &mdash; it is the program behind how we work. Since 2008, iDS has pursued one vision: bringing world-class expertise to the intersection of law and technology, and helping parties resolve their disputes in a fair and just way. The iDS Way turns that vision into practice through our five core values, our 26 Core Fundamentals, and a simple commitment to every client: make them feel like our number one priority, and give them the best solution for their budget.</p>
+      </div>
     </div>
-    <p style="font-size:16px;line-height:1.6;color:#595959;margin:20px 0 0">We Are iDS. We Grow iDS. Be Curious, Not Judgmental.</p>
+<div style="position:relative;max-width:1200px;margin:0 auto;padding:24px 32px 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2px">
+    <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:32px 30px">
+      <div style="font-size:26px;font-weight:bold;letter-spacing:-.01em;color:#003764;margin-bottom:10px">Consultative Experts</div>
+      <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Subject matter experts and data strategists who provide solutions to data problems, and testimony to support the findings when needed.</p>
+    </div>
+    <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:32px 30px">
+      <div style="font-size:26px;font-weight:bold;letter-spacing:-.01em;color:#003764;margin-bottom:10px">Structured Process</div>
+      <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">The STEPS&trade; framework converts vast amounts of data into strategic legal assets, with timely and consistent execution.</p>
+    </div>
+    <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:32px 30px">
+      <div style="font-size:26px;font-weight:bold;letter-spacing:-.01em;color:#003764;margin-bottom:10px">Customized Solutions</div>
+      <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Tailored to each client and matter. We avoid cookie-cutter answers that rarely address what makes your data problem unique.</p>
+    </div>
+  </div>
+    <div id="core-values" style="position:relative;max-width:1200px;margin:0 auto;padding:24px 32px 88px;scroll-margin-top:96px">
+      <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:36px 34px">
+        <div style="font-size:13px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#DB6015;margin-bottom:8px">Our Core Values</div>
+        <p style="font-size:15px;line-height:1.6;color:#595959;margin:0 0 26px;max-width:720px">Five values, each brought to life through the behaviors we expect of everyone at iDS. Select a value to see what it means in practice.</p>
+        <div class="cv-wrap">
+          <img src="/assets/ids-way/core-values.png" alt="iDS core values: Integrity, Respect, Teamwork, Excellence, Innovation" width="345" height="239" class="cv-graphic" />
+          <div class="cv-tabs" role="tablist" aria-label="iDS core values"><button type="button" class="cv-tab" role="tab" id="cv-tab-integrity" aria-controls="cv-panel-integrity" aria-selected="true"><span>Integrity</span><span class="cv-arrow" aria-hidden="true">&rarr;</span></button><button type="button" class="cv-tab" role="tab" id="cv-tab-teamwork" aria-controls="cv-panel-teamwork" aria-selected="false"><span>Teamwork</span><span class="cv-arrow" aria-hidden="true">&rarr;</span></button><button type="button" class="cv-tab" role="tab" id="cv-tab-innovation" aria-controls="cv-panel-innovation" aria-selected="false"><span>Innovation</span><span class="cv-arrow" aria-hidden="true">&rarr;</span></button><button type="button" class="cv-tab" role="tab" id="cv-tab-respect" aria-controls="cv-panel-respect" aria-selected="false"><span>Respect</span><span class="cv-arrow" aria-hidden="true">&rarr;</span></button><button type="button" class="cv-tab" role="tab" id="cv-tab-excellence" aria-controls="cv-panel-excellence" aria-selected="false"><span>Excellence</span><span class="cv-arrow" aria-hidden="true">&rarr;</span></button></div>
+          <div class="cv-panels">
+          <div class="cv-panel" role="tabpanel" id="cv-panel-integrity" aria-labelledby="cv-tab-integrity">
+            <div class="cv-panel-label">Integrity</div>
+            <p class="cv-statement">We <strong>Do the Right Thing</strong> by acting with honesty, fairness, and accountability in everything we do.</p>
+            <div class="cv-behaviors-label">Core behaviors</div>
+            <ul class="cv-behaviors"><li>Do What&rsquo;s Best for the Client</li><li>Make Quality Personal</li><li>Honor Commitments</li><li>Practice Blameless Problem-Solving</li><li>Speak Directly</li></ul>
+          </div>
+          <div class="cv-panel" role="tabpanel" id="cv-panel-teamwork" aria-labelledby="cv-tab-teamwork" hidden>
+            <div class="cv-panel-label">Teamwork</div>
+            <p class="cv-statement">We <strong>Collaborate as ONE Team</strong> by supporting one another and succeeding together as one unified team.</p>
+            <div class="cv-behaviors-label">Core behaviors</div>
+            <ul class="cv-behaviors"><li>Be Consultative</li><li>Get Clear on Expectations</li><li>Be a Teacher</li><li>Invest in Relationships</li><li>Celebrate Success</li></ul>
+          </div>
+          <div class="cv-panel" role="tabpanel" id="cv-panel-innovation" aria-labelledby="cv-tab-innovation" hidden>
+            <div class="cv-panel-label">Innovation</div>
+            <p class="cv-statement">We <strong>Solve Creatively</strong> by embracing curiosity, creativity, and continuous improvement to solve problems and drive success.</p>
+            <div class="cv-behaviors-label">Core behaviors</div>
+            <ul class="cv-behaviors"><li>Follow the Data</li><li>Be Relentless About Improvement</li><li>Look Ahead and Anticipate</li><li>Be Curious</li><li>Find a Way</li></ul>
+          </div>
+          <div class="cv-panel" role="tabpanel" id="cv-panel-respect" aria-labelledby="cv-tab-respect" hidden>
+            <div class="cv-panel-label">Respect</div>
+            <p class="cv-statement">We <strong>Value Everyone</strong> by treating others with dignity, empathy, and appreciation for their unique contributions.</p>
+            <div class="cv-behaviors-label">Core behaviors</div>
+            <ul class="cv-behaviors"><li>Listen Generously</li><li>Pay Attention to the Details</li><li>Practice the &ldquo;Human Touch&rdquo;</li><li>Be Grateful</li><li>Keep Things Fun</li></ul>
+          </div>
+          <div class="cv-panel" role="tabpanel" id="cv-panel-excellence" aria-labelledby="cv-tab-excellence" hidden>
+            <div class="cv-panel-label">Excellence</div>
+            <p class="cv-statement">We <strong>Raise the Bar</strong> by committing to the highest standards of quality, accountability, and results in every effort.</p>
+            <div class="cv-behaviors-label">Core behaviors</div>
+            <ul class="cv-behaviors"><li>Do Your Homework</li><li>Be Process-Oriented</li><li>Deliver Results</li><li>Be a Lifelong Learner</li><li>Be an Ambassador</li></ul>
+          </div>
+          </div>
+        </div>
+        <p style="font-size:16px;line-height:1.6;color:#595959;margin:26px 0 0">We Are iDS. We Grow iDS. Be Curious, Not Judgmental.</p>
+      </div>
+    </div>
   </div>
 
   <div style="max-width:1200px;margin:0 auto;padding:56px 32px 88px">
@@ -426,6 +506,12 @@ details.disc[open] .plus::after { content: "\2013"; }
   </div>
 </div>
 
+<script id="cv-js">
+(function(){var tabs=[].slice.call(document.querySelectorAll('.cv-tab'));if(!tabs.length)return;
+function sel(t){tabs.forEach(function(x){var on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;document.getElementById(x.getAttribute('aria-controls')).hidden=!on;});}
+tabs.forEach(function(t,i){t.tabIndex=i?-1:0;t.addEventListener('click',function(){sel(t);});t.addEventListener('keydown',function(e){var d=e.key==='ArrowDown'||e.key==='ArrowRight'?1:e.key==='ArrowUp'||e.key==='ArrowLeft'?-1:0;if(!d)return;e.preventDefault();var n=tabs[(i+d+tabs.length)%tabs.length];n.focus();sel(n);});});
+var h=location.hash.replace('#','');var m=tabs.filter(function(t){return t.id==='cv-tab-'+h;})[0];if(m)sel(m);})();
+</script>
 <div style="background:#0A2440">
   <div style="max-width:1200px;margin:0 auto;padding:64px 32px 26px;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:40px">
     <div>
