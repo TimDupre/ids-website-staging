@@ -241,6 +241,13 @@ div[style*="mix-blend-mode:color"]{transition:opacity .35s ease}
 .cap-txt span{font-size:13px !important;margin-top:3px !important}
 .cap-mega .mega-feature a + a{margin-top:-4px}
 </style>
+<style id="headshot-crop-css">
+/* Even out headshot framing: gentle zoom toward the face; Hunter's new photo is already framed tightly */
+.expert-card summary img, .team-card summary img, .spk-card img, .person .ph img{transform:scale(var(--hs-zoom,1.08));transform-origin:50% 22%;transition:transform .4s ease}
+img[src*="Hunter-McMahon-2026"]{--hs-zoom:1.04}
+.person .ph{display:block;overflow:hidden;aspect-ratio:4/5;background:#DDE2E7}
+.person .ph img{aspect-ratio:auto !important;height:100%}
+</style>
 </head>
 <body>
 <div class="site-nav" style="position:sticky;top:0;z-index:50;background:#FFFFFF;border-bottom:1px solid #E6E9ED">
