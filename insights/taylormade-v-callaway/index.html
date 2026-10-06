@@ -235,6 +235,12 @@ details.disc[open] .plus::after { content: "\2013"; }
 .close-cta .secondary { background:#FFFFFF; padding:26px 30px; border-top:1px solid #E6E9ED; }
 .close-cta .secondary h3 { font-size:19px; color:#003764; margin:0 0 8px; }
 </style>
+<style id="nav-drop-css">
+.nav-item > a.nav-drop { font: 700 15px var(--display); color: #003764; padding: 6px 0; display: flex; align-items: center; gap: 6px; white-space: nowrap; }
+.nav-item > a.nav-drop::after { content:""; width:6px; height:6px; border-right:1.5px solid currentColor; border-bottom:1.5px solid currentColor; transform: translateY(-2px) rotate(45deg); transition: transform .15s; }
+.nav-item > a.nav-drop[aria-expanded="true"], .nav-item > a.nav-drop:hover { color: var(--orange); }
+.nav-item > a.nav-drop[aria-expanded="true"]::after { transform: translateY(2px) rotate(-135deg); }
+</style>
 <style id="cap-mega-css">
 .cap-wrap{grid-template-columns:minmax(0,3fr) minmax(0,1.05fr) !important}
 .cap-grid{grid-template-columns:repeat(3,minmax(0,1fr));column-gap:28px}
@@ -264,7 +270,7 @@ details.disc[open] .plus::after { content: "\2013"; }
         <button type="button" id="about-btn" aria-expanded="false" aria-controls="about-menu">About Us</button>
       </div>
       <div class="nav-item">
-        <button type="button" id="cap-btn" aria-expanded="false" aria-controls="cap-menu">Capabilities</button>
+        <a href="/capabilities/" id="cap-btn" class="nav-drop" aria-expanded="false" aria-controls="cap-menu" aria-haspopup="true">Capabilities</a>
       </div>
         <a href="/our-experts/" style="font-size:15px;font-weight:bold;color:#003764;white-space:nowrap">Our Experts</a>
         <a href="/can-you/" style="font-size:15px;font-weight:bold;color:#003764;white-space:nowrap">Can You&hellip;?</a>
@@ -571,7 +577,8 @@ details.disc[open] .plus::after { content: "\2013"; }
   if(!b||!m) return;
   var item=b.closest('.nav-item'), t;
   var opened=0; function set(o){ if(o&&m.hidden) opened=Date.now(); m.hidden=!o; b.setAttribute('aria-expanded',o); if(o&&am){am.hidden=true; if(ab)ab.setAttribute('aria-expanded',false);} }
-  b.addEventListener('click',function(){ if(!m.hidden && Date.now()-opened<500) return; set(m.hidden); });
+  b.addEventListener('click',function(e){ if(window.matchMedia('(hover: none)').matches && m.hidden){ e.preventDefault(); set(true); } });
+  b.addEventListener('keydown',function(e){ if(e.key==='ArrowDown'){ e.preventDefault(); set(true); var a=m.querySelector('a'); if(a) a.focus(); } });
   item.addEventListener('mouseenter',function(){ clearTimeout(t); set(true); });
   item.addEventListener('mouseleave',function(){ t=setTimeout(function(){set(false);},180); });
   m.addEventListener('mouseenter',function(){ clearTimeout(t); });
