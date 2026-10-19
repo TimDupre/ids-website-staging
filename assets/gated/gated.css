@@ -1,0 +1,34 @@
+/* Gated downloads: branded covers, Download tag, email gate (preview) */
+.gd-cover{position:relative;overflow:hidden;background:#003764;color:#FFFFFF;display:flex;flex-direction:column;justify-content:space-between;padding:18px 20px}
+.gd-cover::before{content:"";position:absolute;inset:0;background:url(/assets/gfx-scatter.png) center/cover;opacity:.28}
+.gd-cover > *{position:relative}
+.gd-cover .gd-type{font-size:11px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;color:#DB6015}
+.gd-cover .gd-title{font-size:21px;font-weight:bold;line-height:1.15;letter-spacing:-.01em;max-width:13em}
+.gd-cover svg{width:30px;height:30px}
+.gd-tag{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#FFFFFF;background:#DB6015;padding:3px 9px;margin-bottom:12px}
+.gd-tag::before{content:"";width:9px;height:11px;background:linear-gradient(#fff,#fff) 50% 0/2px 7px no-repeat,linear-gradient(135deg,transparent 45%,#fff 45% 55%,transparent 55%) 0 100%/5px 5px no-repeat,linear-gradient(225deg,transparent 45%,#fff 45% 55%,transparent 55%) 100% 100%/5px 5px no-repeat}
+[data-gate]{cursor:pointer}
+.gd-mini{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.gd-mini .gd-cover{height:150px}
+.gd-mini a{display:block;box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF}
+.gd-mini .gd-foot{padding:12px 16px 14px;font-size:13px;font-weight:bold;letter-spacing:.06em;text-transform:uppercase;color:#003764}
+.gd-mini a:hover .gd-foot{color:#DB6015}
+/* modal */
+.gd-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(10,36,64,.62)}
+.gd-modal.open{display:flex}
+.gd-box{position:relative;width:100%;max-width:720px;background:#FFFFFF;display:grid;grid-template-columns:240px minmax(0,1fr);box-shadow:0 30px 60px -20px rgba(0,0,0,.45);animation:gdIn .25s ease both}
+.gd-box .gd-cover{min-height:100%}
+.gd-form{padding:28px 30px 26px}
+.gd-form h3{font-size:22px;line-height:1.2;color:#003764;margin:0 0 6px}
+.gd-form p{font-size:14px;line-height:1.55;color:#595959;margin:0 0 18px}
+.gd-form label{display:block;font-size:12px;font-weight:bold;letter-spacing:.08em;text-transform:uppercase;color:#666666;margin:0 0 6px}
+.gd-form input{width:100%;padding:12px 14px;border:1px solid #BFBFBF;font:16px var(--display);color:#404040;margin:0 0 14px;box-sizing:border-box}
+.gd-form input:focus{outline:2px solid #003764;outline-offset:1px}
+.gd-btn{display:inline-block;background:#DB6015;color:#FFFFFF;border:0;font:bold 14px var(--display);letter-spacing:.06em;text-transform:uppercase;padding:14px 22px;cursor:pointer}
+.gd-btn:hover{background:#003764}
+.gd-close{position:absolute;top:10px;right:12px;background:none;border:0;font-size:26px;line-height:1;color:#FFFFFF;cursor:pointer;z-index:2}
+.gd-done{display:none}
+.gd-box.sent .gd-ask{display:none}.gd-box.sent .gd-done{display:block}
+.gd-note{font-size:12px;color:#888888;margin-top:14px}
+@keyframes gdIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (max-width:640px){.gd-box{grid-template-columns:1fr}.gd-box .gd-cover{min-height:120px}}
