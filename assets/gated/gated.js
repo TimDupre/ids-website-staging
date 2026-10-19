@@ -9,6 +9,7 @@
     'es-in-the-shadows':{title:'In the Shadows',type:'Executive Summary',files:[['Download PDF',G+'ids-executive-summary-in-the-shadows.pdf']]},
     'es-employees-rogue':{title:'Employees Going Rogue',type:'Executive Summary',files:[['Download PDF',G+'ids-executive-summary-employees-going-rogue.pdf']]},
     'es-ai-investigations':{title:'AI in Investigations',type:'Executive Summary',files:[['Download PDF',G+'ids-executive-summary-ai-in-investigations.pdf']]},
+    'es-economics-contract':{title:'The Economics Hidden in the Contract',type:'Executive Summary',files:[['Download PDF',G+'ids-executive-summary-economics-hidden-in-the-contract.pdf']]},
     'future-of-evidence':{title:'The Future of Evidence',type:'Report',files:[['Download PDF',G+'ids-report-future-of-evidence.pdf']]},
     'testifying-expert-checklist':{title:'Testifying Expert Checklist',type:'Checklist',files:[['Download PDF',G+'ids-checklist-testifying-experts-ai.pdf']]},
     'data-source-checklist':{title:'Data Source Evaluation Checklist',type:'Checklist',files:[['Download PDF',G+'ids-checklist-data-source-evaluation.pdf']]},
