@@ -35,3 +35,5 @@
 .gd-dl{display:flex;flex-wrap:wrap;gap:10px}
 .gd-btn-alt{background:#003764}
 .gd-btn-alt:hover{background:#DB6015}
+.gd-tag-link{background:#003764}
+.gd-tag-link::before{content:none}
