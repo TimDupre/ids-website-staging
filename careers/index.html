@@ -13,8 +13,9 @@
 <meta property="og:image" content="https://ids-staging-z4swi.kinsta.page/assets/ids-logo-navy.png">
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="/assets/ids-logo-navy.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<link rel="stylesheet" href="/assets/fonts/jost.css">
+<link rel="stylesheet" href="/assets/consent/consent.css">
+<script src="/assets/consent/consent.js" defer></script>
 <style>:root {
   --navy:#003764; --navy-deep:#0A2440; --orange:#DB6015; --orange-deep:#B94E0E;
   --ink:#16212C; --text:#45515E; --muted:#6F7B88; --rule:#D5DBE1; --band:#F2F4F6; --paper:#FFFFFF;
@@ -298,7 +299,7 @@ details.disc[open] .plus::after { content: "\2013"; }
         <a href="/ai-evidence/" style="font-size:15px;font-weight:bold;color:#003764;white-space:nowrap">AI &amp; Evidence</a>
         <a href="/insights/" style="font-size:15px;font-weight:bold;color:#003764;white-space:nowrap">Insights</a>
       <a href="/careers/" style="font-size:15px;font-weight:bold;color:#DB6015;white-space:nowrap">Join Our Team</a>
-      <a href="/contact/" style="background:#DB6015;color:#FFFFFF;font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;padding:12px 20px;white-space:nowrap" onmouseover="this.style.background='#003764'" onmouseout="this.style.background='#DB6015'">Start Building Your Narrative</a>
+      <a href="/contact/" style="background:#DB6015;color:#FFFFFF;font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;padding:12px 20px;white-space:nowrap" onmouseover="this.style.background='#003764'" onmouseout="this.style.background='#DB6015'">Bring Us Your Question</a>
     </div>
   </div>
   <div class="mega" id="about-menu" hidden>
@@ -310,13 +311,13 @@ details.disc[open] .plus::after { content: "\2013"; }
           <li><a href="/about/#mission"><b>Our Mission</b><span>A consultative experience that follows a structured process in order to provide customized solutions.</span></a></li>
           <li><a href="/about/#history"><b>History</b><span>Founded in Washington, DC by industry veterans with more than 50 years of litigation and consulting experience combined.</span></a></li>
           <li><a href="/our-experts/"><b>Our Team</b><span>Leadership, testifying experts, and the teams who work alongside them.</span></a></li>
-          <li><a href="/our-experts/speakers/"><b>Speakers</b><span>Book an iDS expert for your conference, retreat, or training event.</span></a></li>
+          <li><a href="/our-experts/speakers/"><b>Speakers</b><span>Book an iDS educator for your conference, retreat, or training event.</span></a></li>
         </ul>
       </div>
       <div>
         <h4>How we work</h4>
         <ul>
-          <li><a href="/careers/#the-ids-way"><b>The iDS Way</b><span>An established path for optimal outcomes: Consultative Experts, Structured Process, and Customized Solutions.</span></a></li>
+          <li><a href="/careers/#the-ids-way"><b>The iDS Way</b><span>An established path for optimal outcomes: Consultative Experts, Structured Process, and Bespoke Answers.</span></a></li>
           <li><a href="/careers/#core-values"><b>Core Fundamentals</b><span>Behaviors that transform words into actions and bring our culture to life.</span></a></li>
           <li><a href="/about/#recognition"><b>Recognition</b><span>Honored as a Band One and Band Two consulting firm by Chambers and Partners.</span></a></li>
           <li><a href="/about/#recognition"><b>Industry Leadership</b><span>The Sedona Conference, the Electronic Discovery Institute, and the Georgetown Global Advanced Electronic Discovery Institute.</span></a></li>
@@ -328,7 +329,7 @@ details.disc[open] .plus::after { content: "\2013"; }
           <li><a href="/about/#community"><b>Pro Bono Program</b><span>Every person with a viable case deserves to have equal justice under the law.</span></a></li>
           <li><a href="/about/#community"><b>Diversity, Equity &amp; Inclusion</b><span>Diverse talent means diverse skills, which yields better outcomes for clients.</span></a></li>
           <li><a href="/about/#uk-eu"><b>iDS UK &amp; EU</b><span>Tim LaTulippe and Dominic Tucker head up the iDS offices in London.</span></a></li>
-          <li><a href="/contact/"><b>Locations</b><span>Washington, DC &middot; Alpharetta, GA &middot; Costa Mesa, CA &middot; London</span></a></li>
+          <li><a href="/contact/"><b>Locations</b><span>Washington, DC &middot; Alpharetta, GA &middot; Costa Mesa, CA &middot; London, UK</span></a></li>
         </ul>
       </div>
       <div class="mega-feature">
@@ -411,48 +412,70 @@ details.disc[open] .plus::after { content: "\2013"; }
   <div class="hero-pad" style="position:relative;max-width:1200px;margin:0 auto;padding:76px 32px 80px">
     <div style="max-width:820px">
     <div style="border-left:3px solid #DB6015;padding-left:14px;color:#DB6015;font-size:13px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;margin-bottom:22px">Join our team</div>
-    <h1 class="sub-h1" style="font-size:50px;font-weight:bold;line-height:1.06;letter-spacing:-.02em;color:#003764;margin:0 0 20px;text-wrap:pretty">A firm built by experts, for experts.</h1>
-    <p style="font-size:18px;line-height:1.6;color:#595959;margin:0;max-width:680px">Truth Through Data begins with the people who interpret it. Here, expertise compounds, because the infrastructure exists to let you be an expert.</p>
+    <h1 class="sub-h1" style="font-size:50px;font-weight:bold;line-height:1.06;letter-spacing:-.02em;color:#003764;margin:0 0 20px;text-wrap:pretty">Your Expertise. Our Platform.</h1>
+    <p style="font-size:18px;line-height:1.6;color:#595959;margin:0;max-width:680px">A firm built by experts, for experts. Truth Through Data begins with the people who interpret it, so we build everything around the expertise only you can provide.</p>
     </div>
   </div>
 </div>
 
+<style id="bfe-css">
+.bfe-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:2px;margin-top:28px}
+.bfe-card{box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:24px 26px}
+.bfe-title{font-size:17px;font-weight:bold;color:#003764;margin-bottom:8px}
+.bfe-card p{font-size:14.5px;line-height:1.6;color:#595959;margin:0}
+.bfe-close{background:#003764;color:#FFFFFF;padding:24px 26px;font-size:19px;line-height:1.35;font-weight:bold;letter-spacing:-.005em;display:flex;align-items:flex-end}
+.plat-amp{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:28px;margin:30px 0 0}
+.plat-amp div{border-top:3px solid #DB6015;padding-top:14px}
+.plat-amp b{display:block;font-size:18px;color:#003764;margin-bottom:6px}
+.plat-amp p{font-size:15px;line-height:1.6;color:#404040;margin:0}
+</style>
 <div style="background:#FFFFFF">
-  <div style="max-width:1200px;margin:0 auto;padding:76px 32px 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:48px">
-    <div>
-      <h2 style="font-size:26px;font-weight:bold;color:#404040;margin:0 0 12px">What is different here</h2>
-      <div style="width:56px;height:3px;background:#DB6015;margin:0 0 20px"></div>
-      <p style="font-size:17px;line-height:1.65;color:#404040;margin:0 0 16px">Our professionals work inside a collaborative bench model with real institutional support: structured development, a 90-day launch program for new experts, and meaningfully less administrative drag than most firms.</p>
-      <p style="font-size:16px;line-height:1.65;color:#595959;margin:0">Curiosity is valued. Judgment matters. And when our experts stand in front of their work, they do it with a team behind them.</p>
-      <a href="#open-roles" style="display:inline-block;margin-top:28px;background:#DB6015;color:#FFFFFF;font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;padding:14px 22px">Check for open positions</a>
+  <div style="max-width:1200px;margin:0 auto;padding:76px 32px 24px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px 56px;align-items:start">
+      <div>
+        <div style="border-left:3px solid #DB6015;padding-left:14px;color:#DB6015;font-size:13px;font-weight:bold;letter-spacing:.16em;text-transform:uppercase;margin-bottom:22px">What is different here</div>
+        <h2 style="font-size:34px;font-weight:bold;line-height:1.12;letter-spacing:-.02em;color:#003764;margin:0 0 10px">Built for experts.</h2>
+        <p style="font-size:20px;font-weight:bold;color:#404040;margin:0 0 20px">Expert-led. Not investor-led.</p>
+        <div style="width:56px;height:3px;background:#DB6015;margin:0 0 20px"></div>
+        <a href="#open-roles" style="display:inline-block;margin-top:4px;background:#DB6015;color:#FFFFFF;font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;padding:14px 22px">Check for open positions</a>
+      </div>
+      <div>
+        <p style="font-size:17px;line-height:1.65;color:#404040;margin:0 0 16px">At iDS, you join a community of experts among peers, and a platform designed to help you build your practice.</p>
+        <p style="font-size:17px;line-height:1.65;color:#404040;margin:0 0 16px">You bring the expertise, judgment, reputation, and relationships. We surround you with the people, technology, tools, coaching, and institutional support to help you do more with them.</p>
+        <p style="font-size:16px;line-height:1.65;color:#595959;margin:0">You will find the benefits you expect from a leading professional-services firm, plus professional-development budgets, dedicated coaching, peer support, proprietary business-development tools, and a team that takes much of the administrative burden off your shoulders.</p>
+      </div>
     </div>
-    <div style="display:grid;gap:2px;align-content:start">
-      <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:22px 24px"><div style="font-size:16px;font-weight:bold;color:#003764;margin-bottom:4px">90-day expert launch</div><p style="font-size:14px;line-height:1.55;margin:0">A structured first quarter, not a desk and a login.</p></div>
-      <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:22px 24px"><div style="font-size:16px;font-weight:bold;color:#003764;margin-bottom:4px">Growth coaching</div><p style="font-size:14px;line-height:1.55;margin:0">A dedicated coach supporting new revenue producers.</p></div>
-      <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:22px 24px"><div style="font-size:16px;font-weight:bold;color:#003764;margin-bottom:4px">Back-office support</div><p style="font-size:14px;line-height:1.55;margin:0">Engagement paperwork, conflicts, and systems: handled.</p></div>
-      <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:22px 24px"><div style="font-size:16px;font-weight:bold;color:#003764;margin-bottom:4px">Independent ownership</div><p style="font-size:14px;line-height:1.55;margin:0">Built by experts, not by investors. Decisions follow the work.</p></div>
-    </div>
+    <h3 style="font-size:22px;font-weight:bold;color:#404040;margin:56px 0 0">Your Expertise. Our Platform.</h3>
+    <div class="bfe-grid"><div class="bfe-card"><div class="bfe-title">90-Day Expert Launch</div><p>A structured first quarter designed to integrate you into the firm, activate your network, and begin building your practice.</p></div><div class="bfe-card"><div class="bfe-title">Professional Development</div><p>Dedicated resources and budget to continue developing your expertise, skills, visibility, and professional reputation.</p></div><div class="bfe-card"><div class="bfe-title">Coaching</div><p>Individual coaching to help you develop relationships, create opportunities, and grow your practice.</p></div><div class="bfe-card"><div class="bfe-title">Expert Among Peers</div><p>Work alongside accomplished experts who can challenge your thinking, complement your expertise, and support you when a matter crosses disciplines.</p></div><div class="bfe-card"><div class="bfe-title">Proprietary Growth Tools</div><p>Technology and tools designed to help you identify opportunities, strengthen relationships, and systematically build your practice.</p></div><div class="bfe-card"><div class="bfe-title">Institutional Support</div><p>Conflicts, engagement administration, billing, technology, marketing, and other infrastructure are handled by teams built to support your work.</p></div><div class="bfe-card"><div class="bfe-title">Expert-Led</div><p>iDS is independently owned and led by professionals who understand the work. We are building for our clients, our experts, and our shared growth strategy, not someone else&rsquo;s exit strategy.</p></div><div class="bfe-close">Expert-led. Independently owned. Growth-driven.</div></div>
   </div>
 
   <div style="position:relative;overflow:hidden;margin:52px 0 0;border-top:1px solid #E6E9ED;border-bottom:1px solid #E6E9ED">
     <img src="/assets/gfx-scatter-light.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.6" />
     <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.96) 0%,rgba(255,255,255,.86) 52%,rgba(255,255,255,.45) 100%)"></div>
     <div style="position:relative;max-width:1200px;margin:0 auto;padding:84px 32px 88px">
-      <div style="max-width:600px">
-        <div style="border-left:3px solid #DB6015;padding-left:14px;color:#DB6015;font-size:13px;font-weight:bold;letter-spacing:.16em;text-transform:uppercase;margin-bottom:22px">We are iDS</div>
-        <p style="font-size:34px;font-weight:bold;line-height:1.12;letter-spacing:-.02em;color:#003764;margin:0 0 18px">Independently owned, which means the work decides.</p>
-        <p style="font-size:17px;line-height:1.65;color:#404040;margin:0">No investor timetable pushing an opinion toward a preferred answer. The experts here own the firm, so the standard for what we will say is set by the people who have to defend it.</p>
+      <div style="max-width:820px">
+        <div style="border-left:3px solid #DB6015;padding-left:14px;color:#DB6015;font-size:13px;font-weight:bold;letter-spacing:.16em;text-transform:uppercase;margin-bottom:22px">Your Expertise. Our Platform.</div>
+        <p id="platform" style="font-size:34px;font-weight:bold;line-height:1.12;letter-spacing:-.02em;color:#003764;margin:0 0 18px;scroll-margin-top:96px">And when we say platform, we mean it.</p>
+        <p style="font-size:17px;line-height:1.65;color:#404040;margin:0 0 16px">At iDS, a platform isn&rsquo;t a private-equity term. It isn&rsquo;t just a place to work, a piece of technology, or another word for infrastructure.</p>
+        <p style="font-size:17px;line-height:1.65;color:#404040;margin:0 0 16px;font-weight:bold;color:#003764">It is the fabric we provide to our experts so they can excel.</p>
+        <p style="font-size:17px;line-height:1.65;color:#404040;margin:0 0 16px">Our platform integrates the people, technology, processes, data capabilities, professional development, coaching, business-development tools, peer expertise, and administrative support that exceptional experts need to perform at their best in a world increasingly defined by complex digital evidence.</p>
+        <p style="font-size:17px;line-height:1.65;color:#404040;margin:0 0 16px;margin:0">It is designed to amplify the things that matter most:</p>
+      </div>
+      <div class="plat-amp"><div><b>Your Expertise.</b><p>Give you the tools, data capabilities, analytical support, and complementary expertise to do exceptional work.</p></div><div><b>Your Reputation.</b><p>Help you develop your voice, demonstrate your expertise, build relationships, and become known for the work you do best.</p></div><div><b>Your Practice.</b><p>Provide the coaching, tools, opportunities, and institutional support to turn expertise and relationships into sustainable growth.</p></div><div><b>Your Clients.</b><p>Surround you with the capabilities and support to solve harder problems and deliver exceptional service.</p></div></div>
+      <div style="max-width:820px;margin-top:34px">
+        <p style="font-size:17px;line-height:1.65;color:#404040;margin:0 0 16px">You bring the judgment, experience, curiosity, and expertise that only you can provide.</p>
+        <p style="font-size:22px;font-weight:bold;line-height:1.35;color:#003764;margin:0">We build everything around it. That is what we mean by platform.</p>
       </div>
     </div>
   </div>
 
   <div id="core-values" style="max-width:1200px;margin:0 auto;padding:72px 32px 72px;scroll-margin-top:96px">
-    <h2 style="font-size:26px;font-weight:bold;color:#404040;margin:0 0 12px">Our Values</h2>
+    <h2 style="font-size:26px;font-weight:bold;color:#404040;margin:0 0 12px">Our Core Values</h2>
     <div style="width:56px;height:3px;background:#DB6015;margin:0 0 18px"></div>
-    <p style="font-size:16px;line-height:1.6;color:#595959;margin:0 0 28px;max-width:720px">Five values, each brought to life through the behaviors we expect of everyone at iDS. Select a value to see what it means in practice.</p>
+    <p style="font-size:16px;line-height:1.6;color:#595959;margin:0 0 28px;max-width:720px">Each of our Core Values is brought to life through the behaviors we expect of everyone at iDS. Select a Core Value to see what it means in practice.</p>
     <div class="cv-wrap">
-          <img src="/assets/ids-way/core-values.png" alt="iDS core values: Integrity, Respect, Teamwork, Excellence, Innovation" width="345" height="239" class="cv-graphic" />
-          <div class="cv-tabs" role="tablist" aria-label="iDS core values"><button type="button" class="cv-tab" role="tab" id="cv-tab-integrity" aria-controls="cv-panel-integrity" aria-selected="true"><span>Integrity</span><span class="cv-arrow" aria-hidden="true">&rarr;</span></button><button type="button" class="cv-tab" role="tab" id="cv-tab-teamwork" aria-controls="cv-panel-teamwork" aria-selected="false"><span>Teamwork</span><span class="cv-arrow" aria-hidden="true">&rarr;</span></button><button type="button" class="cv-tab" role="tab" id="cv-tab-innovation" aria-controls="cv-panel-innovation" aria-selected="false"><span>Innovation</span><span class="cv-arrow" aria-hidden="true">&rarr;</span></button><button type="button" class="cv-tab" role="tab" id="cv-tab-respect" aria-controls="cv-panel-respect" aria-selected="false"><span>Respect</span><span class="cv-arrow" aria-hidden="true">&rarr;</span></button><button type="button" class="cv-tab" role="tab" id="cv-tab-excellence" aria-controls="cv-panel-excellence" aria-selected="false"><span>Excellence</span><span class="cv-arrow" aria-hidden="true">&rarr;</span></button></div>
+          <img src="/assets/ids-way/core-values.png" alt="iDS Core Values: Integrity, Respect, Teamwork, Excellence, Innovation" width="345" height="239" class="cv-graphic" />
+          <div class="cv-tabs" role="tablist" aria-label="iDS Core Values"><button type="button" class="cv-tab" role="tab" id="cv-tab-integrity" aria-controls="cv-panel-integrity" aria-selected="true"><span>Integrity</span><span class="cv-arrow" aria-hidden="true">&rarr;</span></button><button type="button" class="cv-tab" role="tab" id="cv-tab-teamwork" aria-controls="cv-panel-teamwork" aria-selected="false"><span>Teamwork</span><span class="cv-arrow" aria-hidden="true">&rarr;</span></button><button type="button" class="cv-tab" role="tab" id="cv-tab-innovation" aria-controls="cv-panel-innovation" aria-selected="false"><span>Innovation</span><span class="cv-arrow" aria-hidden="true">&rarr;</span></button><button type="button" class="cv-tab" role="tab" id="cv-tab-respect" aria-controls="cv-panel-respect" aria-selected="false"><span>Respect</span><span class="cv-arrow" aria-hidden="true">&rarr;</span></button><button type="button" class="cv-tab" role="tab" id="cv-tab-excellence" aria-controls="cv-panel-excellence" aria-selected="false"><span>Excellence</span><span class="cv-arrow" aria-hidden="true">&rarr;</span></button></div>
           <div class="cv-panels">
           <div class="cv-panel" role="tabpanel" id="cv-panel-integrity" aria-labelledby="cv-tab-integrity">
             <div class="cv-panel-label">Integrity</div>
@@ -494,21 +517,22 @@ details.disc[open] .plus::after { content: "\2013"; }
       <div style="flex:1 1 420px;max-width:760px">
         <h2 style="font-size:26px;font-weight:bold;color:#404040;margin:0 0 12px">The iDS Way</h2>
         <div style="width:56px;height:3px;background:#DB6015;margin:0 0 18px"></div>
-        <p style="font-size:17px;line-height:1.6;color:#404040;margin:0">The iDS Way is more than a philosophy &mdash; it is the program behind how we work. Since 2008, iDS has pursued one vision: bringing world-class expertise to the intersection of law and technology, and helping parties resolve their disputes in a fair and just way. The iDS Way turns that vision into practice through our five core values, our 26 Core Fundamentals, and a simple commitment to every client: make them feel like our number one priority, and give them the best solution for their budget.</p>
+        <p style="font-size:17px;line-height:1.6;color:#404040;margin:0">The iDS Way is more than a philosophy &mdash; it is the program behind how we work. Since 2008, iDS has pursued one vision: bringing world-class expertise to the intersection of law and technology, and helping parties use digital evidence to resolve their disputes in a fair and just way. The iDS Way turns that vision into practice through our five Core Values, our 25 Core Fundamentals, and a simple commitment to every client: make them feel like our number one priority and give them the best solution for their budget.</p>
       </div>
     </div>
 <div style="position:relative;max-width:1200px;margin:0 auto;padding:24px 32px 88px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2px">
     <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:32px 30px">
       <div style="font-size:26px;font-weight:bold;letter-spacing:-.01em;color:#003764;margin-bottom:10px">Consultative Experts</div>
-      <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Subject matter experts and data strategists who provide solutions to data problems, and testimony to support the findings when needed.</p>
+      <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Subject-matter and data experts who help you understand what the evidence shows, what it means, and how to explain it credibly when testimony is required.</p>
     </div>
     <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:32px 30px">
       <div style="font-size:26px;font-weight:bold;letter-spacing:-.01em;color:#003764;margin-bottom:10px">Structured Process</div>
-      <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">The STEPS&trade; framework converts vast amounts of data into strategic legal assets, with timely and consistent execution.</p>
+      <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">STEPS&trade; applies proven project-management practices to legal matters involving data, evidence, and testimony, bringing structure, accountability, and consistent execution to complex engagements.</p>
     </div>
     <div style="box-shadow:0 0 0 1px #E6E9ED;background:#FFFFFF;padding:32px 30px">
-      <div style="font-size:26px;font-weight:bold;letter-spacing:-.01em;color:#003764;margin-bottom:10px">Customized Solutions</div>
-      <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">Tailored to each client and matter. We avoid cookie-cutter answers that rarely address what makes your data problem unique.</p>
+      <div style="font-size:26px;font-weight:bold;letter-spacing:-.01em;color:#003764;margin-bottom:10px">Bespoke Answers</div>
+      <p style="font-size:15px;line-height:1.5;font-weight:bold;color:#404040;margin:0 0 8px">Our process. Your facts. A solution built for the matter.</p>
+      <p style="font-size:15px;line-height:1.6;color:#595959;margin:0">We combine a repeatable process with expert judgment tailored to the questions, evidence, and circumstances of each matter, delivering bespoke solutions with off-the-rack efficiency.</p>
     </div>
   </div>
 
@@ -542,7 +566,7 @@ details.disc[open] .plus::after { content: "\2013"; }
         <p><strong>COMPANY INTRODUCTION</strong></p>
         <p>In a digital world, it has become essential for corporations and law firms to find new and effective ways to leverage data. At iDS, we help clients turn data from a liability to an asset &ndash; giving them the opportunity to control the narrative and make informed decisions for the client and case team.</p>
         <p>Over the course of 13 years, we have provided data centric solutions by leveraging process, tools, and experts in the areas of complex investigative and advisory services, domestic and international discovery issues, digital forensics, structured and unstructured data analytics, cyber, information governance, and expert testimony.</p>
-        <p>iDS has established a well-known footprint with offices in Washington, DC, Costa Mesa, CA, Alphretta, GA, and London, England. Additionally, we have employees who work remotely in cities across the country that will help lead you through the entire project, building in customization for your specific fact- scenario. While COVID forced many companies to pivot, iDS embraced remote work and was already accustomed to engaging, managing, and training team members from afar.</p>
+        <p>iDS has established a well-known footprint with offices in Washington, DC, Costa Mesa, CA, Alpharetta, GA, and London, UK. Additionally, we have employees who work remotely in cities across the country that will help lead you through the entire project, building in customization for your specific fact- scenario. While COVID forced many companies to pivot, iDS embraced remote work and was already accustomed to engaging, managing, and training team members from afar.</p>
         <p><strong>DIRECTOR JOB INTRODUCTION &amp; RESPONSIBILITIES</strong></p>
         <p>Directors at iDS have a doer/seller role with an expectation to develop and expand business as well as provide expertise and project leadership in the areas of Digital Forensics, Cyber Security &amp; Information Governance, Litigation Readiness, Structured Data Analytics, and Discovery Services. This role will work collaboratively with Business Development Managers (BDMs) to expand our footprint, driving growth and revenue in those areas.</p>
         <p><strong>Key Responsibilities</strong></p>
@@ -603,21 +627,23 @@ details.disc[open] .plus::after { content: "\2013"; }
 <div style="background:#FFFFFF;border-top:1px solid #E6E9ED">
   <div style="max-width:1200px;margin:0 auto;padding:88px 32px;display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:56px;align-items:start">
     <div>
-      <div class="mono-label" style="margin-bottom:22px;display:block">What is at risk</div>
-      <p style="font-size:clamp(28px,3vw,40px);font-weight:500;font-family:var(--display);letter-spacing:-.02em;line-height:1.16;color:#003764;margin:14px 0 18px;text-wrap:pretty">Without a foundation of evidence, a legal team can only argue the law.</p>
-      <p style="font-size:16px;line-height:1.65;color:#404040;margin:0 0 16px;max-width:34em">A talented team without the raw material is reasoning from assumption. The theory gets built, the position hardens, and the fact that would have changed it surfaces at the eleventh hour. Get your team standing on the actual record early and you are building on a foundation instead of a house of cards.</p>
-      <p style="font-size:16px;line-height:1.65;color:#595959;margin:0;max-width:34em">Our engagement process is built to move at the pace of a live matter, so starting is rarely the thing that slows you down.</p>
+      <div class="mono-label" style="margin-bottom:22px;display:block">What is the opportunity</div>
+      <p style="font-size:clamp(28px,3vw,40px);font-weight:500;font-family:var(--display);letter-spacing:-.02em;line-height:1.16;color:#003764;margin:14px 0 18px;text-wrap:pretty">Build the practice you have always wanted, without having to build a firm to do it.</p>
+      <p style="font-size:16px;line-height:1.65;color:#404040;margin:0 0 16px;max-width:34em">Most experts face a choice: work inside a large firm on someone else&rsquo;s terms, or go independent and carry the whole business alone. iDS offers a third path.</p>
+      <p style="font-size:16px;line-height:1.65;color:#404040;margin:0 0 16px;max-width:34em">You bring the expertise, judgment, reputation, and relationships. We bring the bench, the technology, the coaching, the growth tools, and the institutional support that turn them into a sustainable, growing practice.</p>
+      <p style="font-size:16px;line-height:1.65;color:#404040;margin:0;max-width:34em">And because iDS is independently owned and expert-led, the growth you create builds your practice and our shared future, not someone else&rsquo;s exit strategy.</p>
+      <p style="font-size:clamp(20px,2vw,24px);font-weight:500;font-family:var(--display);letter-spacing:-.01em;line-height:1.3;color:#003764;margin:26px 0 0;padding-top:20px;border-top:3px solid #DB6015;max-width:30em">You bring the expertise. We build the platform around it.</p>
     </div>
     <div class="close-cta">
       <div class="primary">
-        <h3>Start building your narrative</h3>
-        <p style="font-size:15px;line-height:1.6;margin:0 0 20px;color:#45515E">Tell us what your goal is. We will tell you what the evidence says, and how it can be used to support your case.</p>
-        <a href="/contact/" style="display:inline-block;background:#DB6015;color:#FFFFFF;font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;padding:14px 22px">Contact iDS</a>
+        <h3>Unleash your potential at iDS</h3>
+        <p style="font-size:15px;line-height:1.6;margin:0 0 20px;color:#45515E">Tell us about your expertise and where you want to take it. We will show you how the platform can help you get there.</p>
+        <a href="/contact/?topic=careers" style="display:inline-block;background:#DB6015;color:#FFFFFF;font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;padding:14px 22px">Talk to us about joining</a>
       </div>
       <div class="secondary">
         <h3>Not ready for that yet</h3>
-        <p style="font-size:15.5px;line-height:1.6;margin:0 0 14px;color:#45515E">Read how we approached matters that started as unanswerable questions. No client details, no case statistics.</p>
-        <a href="/can-you/" style="font-size:14px;font-weight:bold;letter-spacing:.06em;text-transform:uppercase;color:#DB6015">See the Can You&hellip;? questions &rarr;</a>
+        <p style="font-size:15.5px;line-height:1.6;margin:0 0 14px;color:#45515E">Meet the experts you would be working alongside.</p>
+        <a href="/our-experts/" style="font-size:14px;font-weight:bold;letter-spacing:.06em;text-transform:uppercase;color:#DB6015">Meet our experts &rarr;</a>
       </div>
     </div>
   </div>
@@ -666,7 +692,7 @@ var h=location.hash.replace('#','');var m=tabs.filter(function(t){return t.id===
         <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">Washington, DC</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">3000 K Street NW, Suite 425<br />Washington, DC 20007</div></div>
         <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">Costa Mesa, CA</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">535 Anton Blvd., Suite 860<br />Costa Mesa, CA 92626</div></div>
         <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">Alpharetta, GA</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">11720 Amber Park Drive, Suite 160<br />Alpharetta, GA 30009</div></div>
-        <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">London</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">71&ndash;73 Carter Lane<br />London EC4V 5EQ</div></div>
+        <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">London, UK</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">71&ndash;73 Carter Lane<br />London EC4V 5EQ</div></div>
       </div>
     </div>
     <div>
@@ -675,12 +701,12 @@ var h=location.hash.replace('#','');var m=tabs.filter(function(t){return t.id===
         <a href="mailto:info@idsinc.com" style="font-size:15px;color:rgba(255,255,255,.82)">info@idsinc.com</a>
         <a href="tel:+18008134832" style="font-size:15px;color:rgba(255,255,255,.82)">US: <span style="white-space:nowrap">+1.800.813.4832</span></a>
         <a href="tel:+442082424130" style="font-size:15px;color:rgba(255,255,255,.82)">UK/EEA: <span style="white-space:nowrap">+44 (0)20 8242 4130</span></a>
-        <a href="/contact/" style="font-size:15px;color:rgba(255,255,255,.82)">Start building your narrative</a>
+        <a href="/contact/" style="font-size:15px;color:rgba(255,255,255,.82)">Bring us your question</a>
       </div>
     </div>
   </div>
   <div style="max-width:1200px;margin:0 auto;padding:22px 32px 40px;border-top:1px solid rgba(255,255,255,.16);display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between">
-    <p style="font-size:13px;color:rgba(255,255,255,.6);margin:0">Copyright &copy; 2026 iDiscovery Solutions, Inc. All Rights Reserved &nbsp;|&nbsp; <a href="/privacy-policy/" style="color:rgba(255,255,255,.6)">Privacy Policy</a></p>
+    <p style="font-size:13px;color:rgba(255,255,255,.6);margin:0">Copyright &copy; 2026 iDiscovery Solutions, Inc. All Rights Reserved &nbsp;|&nbsp; <a href="/privacy-policy/" style="color:rgba(255,255,255,.6)">Privacy Policy</a> &nbsp;|&nbsp; <a href="/privacy-policy/#cookies" data-cookie-settings style="color:rgba(255,255,255,.6)">Cookie settings</a></p>
   </div>
 </div>
 

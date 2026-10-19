@@ -2,60 +2,112 @@
   "hero": {
     "eyebrow": "Truth Through Data",
     "headline": "Know what your evidence shows before the other side does.",
-    "body": "The story is rarely in one system. It is in the email, plus the text message, plus the GPS record, connected and tested and explained by an expert who will defend the conclusion. That is Truth Through Data.",
-    "ctaPrimary": "Start building your narrative",
-    "ctaSecondary": "See how we work"
+    "body": "The story is rarely in one system. It is in the email, plus the text message, plus the GPS record, connected, tested, and explained by an expert who will stand behind the conclusion. That is Truth Through Data.",
+    "ctaPrimary": "Bring us your question",
+    "ctaSecondary": "Meet our experts"
   },
   "reassembly": {
     "eyebrow": "What reassembly looks like",
     "headline": "No single source told the story. Together they did.",
-    "sources": ["Email", "Text messages", "GPS & travel", "Badge access", "Cloud file activity"],
+    "sources": [
+      "Email",
+      "Text messages",
+      "GPS & travel",
+      "Badge access",
+      "Cloud file activity"
+    ],
     "resultLabel": "Reassembled",
     "resultText": "One sequence of events, on one clock, that held up on cross-examination.",
     "footnote": "The order of events was never in any one system. It existed across five, in five formats, on five different clocks. Reassembling it, and explaining why that reassembly is sound, is the work."
   },
   "storyBrand": {
-    "eyebrow": "Your matter. Your client. Your outcome.",
+    "eyebrow": "What you get when you call",
     "headline": "You are the one who has to stand up and explain what happened. We make sure the evidence is ready when you do.",
-    "body": "Counsel carries the narrative. Their client carries the risk. Our role is the one in between: determine what the evidence shows, what it does not, and what it means for strategy. Then we stand in front of those conclusions when they are challenged. We stand behind our work, and we stand in front of our opinions.",
+    "body": "You carry the case, and your client carries the risk. When you call, we determine what the evidence shows, what it does not, and what it means for your strategy.",
     "cards": [
-      { "label": "The problem", "text": "Emails, databases, cloud systems, mobile devices, transaction logs, AI-influenced environments. You have access to the data. Access is not clarity." },
-      { "label": "What is at stake", "text": "Evidence lost before it is preserved. Assumptions documented as fact. A theory that reads well until an opposing expert takes it apart on cross." },
-      { "label": "The outcome", "text": "A narrower range of bad outcomes. A clear view of what can be shown, where the risk sits, and conclusions built to withstand scrutiny." }
+      {
+        "label": "The problem",
+        "head": "Access is not clarity.",
+        "text": "Having the data doesn’t mean you know what it shows."
+      },
+      {
+        "label": "What is at stake",
+        "head": "Evidence only matters if people can understand it.",
+        "text": "Complex evidence that cannot be explained clearly can be misunderstood, discounted, or never used at all."
+      },
+      {
+        "label": "The outcome",
+        "head": "Make the evidence clear, credible, and usable.",
+        "text": "From the first question through the final presentation, we help you understand what the evidence shows and communicate it with confidence."
+      }
     ]
   },
   "plan": {
     "eyebrow": "How an engagement works",
     "headline": "Three steps to an answer you can use.",
     "steps": [
-      { "num": "01", "title": "Call us with your question", "text": "Not a scope document. The thing you need to establish, and the deadline you are working against. We will tell you on that call whether we are the right firm for it." },
-      { "num": "02", "title": "Retain us and hand over the evidence", "text": "Our engagement process is built to move at the pace of your matter. Once we are retained, your data comes to one team that manages it end to end." },
-      { "num": "03", "title": "You get clarity you can act on", "text": "What the evidence shows, what it does not, and what it means for strategy. Documented, and defended by the expert who reached it." }
+      {
+        "num": "01",
+        "title": "Ask",
+        "text": "Bring us your question. Not a scope document: the thing you need to establish, and the deadline you are working against. On that first call, we will tell you whether we are the right firm for it."
+      },
+      {
+        "num": "02",
+        "title": "Know",
+        "text": "We find, preserve, and test the evidence, so you know what it shows, what it does not, and where uncertainty remains. One team manages it end to end."
+      },
+      {
+        "num": "03",
+        "title": "Act",
+        "text": "Build your strategy around what can actually be shown, and present it with confidence, with an expert ready to testify to the findings."
+      }
     ],
-    "ctaPrimary": "Start building your narrative",
-    "ctaSecondary": "Or start with the Can You…? questions"
+    "ctaPrimary": "Bring us your question",
+    "ctaSecondary": "Meet our experts"
   },
   "howWeHelp": {
-    "headline": "How we help",
-    "body": "Three phases of a dispute, each with its own expertise. All of it standing on one evidentiary foundation.",
+    "headline": "Three phases. Three questions.",
+    "body": "Every case has three phases. Every dispute begins with questions. The evidence helps answer them.",
+    "body2": "From discovery through damages, iDS brings together the people, technology, and expertise needed to find the evidence, understand what it shows, and explain what it means.",
     "verticals": [
-      { "title": "Discovery", "subtitle": "Getting to a complete, defensible record", "text": "Identification, preservation, forensic collection, processing, hosting, and review support, including Relativity. The phase that determines what every later phase is allowed to say." },
-      { "title": "Merits", "subtitle": "What happened, and what holds up", "text": "Digital forensics, structured data analysis, authenticity, and reconstruction. Competing accounts tested against the artifacts rather than against each other." },
-      { "title": "Damages", "subtitle": "The exposure, and how firm it is", "text": "Forensic accounting, economics, and valuation. Scenarios rather than a single figure, with every assumption named, sourced, and testable by the other side." }
+      {
+        "title": "Discovery",
+        "tag": "Secure the evidence. Find what’s missing. Fix it.",
+        "q": "You cannot make your case with evidence you cannot find, access, or use.",
+        "text": "We support forensic preservation, collection, processing, hosting, translation, and review across virtually every source and platform. We directly offer Relativity, RelAIR, and Nuix Discover. More importantly, this isn’t DIY: we can help you use them correctly and efficiently.",
+        "goal": "Get the evidence into a form your legal team and experts can actually use, and the technical support for those tools."
+      },
+      {
+        "title": "Merits",
+        "tag": "Establish what happened.",
+        "q": "Once you have the evidence, you need to know what it shows.",
+        "text": "Our experts use digital forensics, structured data analysis, reconstruction, authentication, and subject-matter expertise to test competing accounts against the evidence and establish defensible findings.",
+        "goal": "Establish the facts so the trier of fact can decide what they mean under the law."
+      },
+      {
+        "title": "Damages",
+        "tag": "Establish the consequences.",
+        "q": "Once you understand what happened, you need to show what it caused.",
+        "text": "Our forensic accountants, economists, valuation professionals, and other experts analyze the financial and economic consequences: testing assumptions, measuring exposure, and evaluating alternative scenarios.",
+        "goal": "Present a clear, supportable assessment of the consequences."
+      }
     ],
     "foundationEyebrow": "The foundation under all three",
     "foundationTitle": "Evidence Intelligence",
-    "foundationText": "One team managing the evidence end to end: how it comes in, how custody is kept, how testing protocols are set, how the analysis is documented, and how the report is written. Vertical expertise is only as good as the foundation it stands on, so we own that foundation rather than renting it."
+    "foundationSub": "Connecting evidence, analysis, and expertise.",
+    "foundationText": "You do not need to know which technology, service, or expert discipline will answer the question before you call us. Bring us the case. We’ll help you gather the evidence, find what the evidence says, then testify to those findings."
   },
   "statementBand": {
     "eyebrow": "Digital Evidence, Understood",
-    "headline": "The timeline already exists. Someone has to reassemble it.",
-    "body": "Events unfolded along a timeline. They were never recorded on one. Devices, cloud services, applications, and transactional systems each hold a fragment of it, in a different format, on a different clock. Layer those fragments over one another and a shape appears that no single source could show you. That triangulation is both the challenge of digital evidence and its strength.",
+    "headline": "The evidence is fragmented.",
+    "body": "Events unfolded in sequence, but the evidence of those events was scattered across devices, cloud services, applications, communications, and transactional systems, each capturing a different fragment, in a different format, and sometimes on a different clock. Bring those fragments together and a picture begins to emerge that no single source could reveal.",
     "points": [
       "Triangulate across sources, not within one",
       "Name the gaps as gaps",
       "One expert who can explain the assembly"
-    ]
+    ],
+    "lead": "The timeline already exists. But no single source recorded it.",
+    "body2": "That triangulation is both the challenge of digital evidence and its strength: the ability to test one source against another and reconstruct what actually happened."
   },
   "canYou": {
     "eyebrow": "Can You…?",
@@ -74,7 +126,11 @@
     "headline": "Beyond eDiscovery",
     "body1": "We handle discovery, and we handle it well, in part because we rely on it ourselves. Our experts work on the evidence our own teams collect, process, and manage, which is exactly why the foundation has to be sound. But that is not why most clients call. They call because they need expert judgment on what the evidence means, and someone who will defend that judgment under oath.",
     "body2": "Technology enables the work. Expert reasoning governs the conclusions.",
-    "notList": ["a processing vendor", "a staffing firm", "a software company"],
+    "notList": [
+      "a processing vendor",
+      "a staffing firm",
+      "a software company"
+    ],
     "weAreLabel": "We are",
     "weAreText": "a firm of experts who stand behind our work, and in front of our opinions"
   }

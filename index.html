@@ -13,8 +13,9 @@
 <meta property="og:image" content="https://ids-staging-z4swi.kinsta.page/assets/ids-logo-navy.png">
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="/assets/ids-logo-navy.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<link rel="stylesheet" href="/assets/fonts/jost.css">
+<link rel="stylesheet" href="/assets/consent/consent.css">
+<script src="/assets/consent/consent.js" defer></script>
 <style>:root {
   --navy:#003764; --navy-deep:#0A2440; --orange:#DB6015; --orange-deep:#B94E0E;
   --ink:#16212C; --text:#45515E; --muted:#6F7B88; --rule:#D5DBE1; --band:#F2F4F6; --paper:#FFFFFF;
@@ -100,6 +101,7 @@ details.disc[open] .plus::after { content: "\2013"; }
 .mast-text { position:relative; margin-left:calc(clamp(96px,9vw,132px) + clamp(28px,3vw,44px) - 18px); padding:10px 18px; background:var(--navy-deep); }
 .mast-text h2 { font:500 clamp(30px,3.8vw,52px)/1 var(--display); letter-spacing:.01em; color:#fff; margin:0; }
 .mast-text h2 span { color: var(--orange); }
+.mast-eyebrow { display:block; margin:0 0 10px; font:500 12px var(--mono); letter-spacing:.14em; text-transform:uppercase; color:var(--on-navy-muted); }
 .mast-tag { margin-top:12px; font:400 clamp(14px,1.35vw,18px)/1.4 var(--display); letter-spacing:.02em; color:var(--on-navy); }
 @media (max-width:640px) { .mast-art { left:18px; } }
 
@@ -139,14 +141,18 @@ details.disc[open] .plus::after { content: "\2013"; }
 .pso-col + .pso-col { padding-left:36px; border-left:1px solid #E6E9ED; }
 .pso-col::after { content:""; position:absolute; right:-9px; top:6px; width:16px; height:16px; background:var(--band); border-top:1.5px solid var(--orange); border-right:1.5px solid var(--orange); transform:rotate(45deg); }
 .pso-col:last-child::after { display:none; }
-.pso-col p.pso-body { margin-top:14px; font:400 19px/1.5 var(--display); color:#16212C; }
-.pso-col:last-child p.pso-body { font:500 21px/1.4 var(--display); color:#003764; }
+.pso-col p.pso-head { margin-top:14px; font:500 21px/1.3 var(--display); color:#16212C; }
+.pso-col:last-child p.pso-head { color:#003764; }
+.pso-col p.pso-body { margin-top:10px; font:400 16px/1.6 var(--display); color:#45515E; }
 @media (max-width:900px) { .pso-wrap { grid-template-columns:1fr; gap:34px; } .pso-col, .pso-col + .pso-col { padding:0; border-left:0; } .pso-col + .pso-col { padding-top:34px; border-top:1px solid #E6E9ED; } .pso-col::after { display:none; } }
 
 /* Why clients call us */
 .why-wrap { max-width:1200px; margin:0 auto; padding:92px 32px; display:grid; grid-template-columns:minmax(0,5fr) minmax(0,6fr); gap:64px; align-items:start; }
 .why-statement { margin-top:16px; font:500 clamp(28px,3vw,38px)/1.18 var(--display); color:#16212C; letter-spacing:-.01em; }
 .why-body { margin-top:18px; font-size:16px; line-height:1.65; color:#45515E; max-width:34em; }
+.why-promise { margin-top:14px; font:500 16px/1.6 var(--display); color:#003764; max-width:34em; }
+.diff .diff-tag { margin:6px 0 0; font:500 15px/1.5 var(--display); color:#16212C; }
+.diff .diff-tag + p { margin-top:6px; }
 .diffs { border-top:1px solid #16212C; }
 .diff { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:4px 24px; padding:24px 0; border-bottom:1px solid #E6E9ED; }
 .diff h3 { font-size:22px; margin:0; color:#003764; }
@@ -174,11 +180,19 @@ details.disc[open] .plus::after { content: "\2013"; }
 .phase { padding:28px 28px 32px; border-left:1px solid #E6E9ED; }
 .phase:first-child { border-left:0; padding-left:0; }
 .phase h3 { font-size:26px; margin:10px 0 10px; color:#003764; }
-.phase p { margin:0; font-size:15px; line-height:1.6; color:#595959; }
+.phase p { margin:0 0 12px; font-size:15px; line-height:1.6; color:#595959; }
+.phase p.ph-tag { font:500 17px/1.35 var(--display); color:#16212C; }
+.phase p.ph-q { font-style:italic; color:#45515E; }
+.phase p.ph-goal { margin:4px 0 0; padding-top:12px; border-top:1px solid #E6E9ED; color:#16212C; }
+.phase p.ph-goal b { color:#003764; }
+.phases-wrap .bench-head > div { flex:1 1 auto; }
+.phases-intro { margin-top:12px; max-width:44em; color:#45515E; font-size:16px; line-height:1.6; }
+.phases-intro + .phases-intro { margin-top:10px; }
 @media (max-width:860px) { .phases { grid-template-columns:1fr; } .phase { border-left:0; border-top:1px solid #E6E9ED; padding-left:0; } .phase:first-child { border-top:0; } }
 .foundation-wrap { max-width:1200px; margin:36px auto 0; padding:0 32px 92px; }
 .foundation { background:var(--navy); color:var(--on-navy); display:grid; grid-template-columns:minmax(0,4fr) minmax(0,6fr); gap:40px; padding:30px 34px; position:relative; }
 .foundation h3 { color:#fff; font-size:30px; margin:6px 0 0; }
+.foundation .fnd-sub { margin:10px 0 0; font:500 16px/1.45 var(--display); color:var(--on-navy); }
 .foundation p { margin:0; color:rgba(255,255,255,.84); font-size:16px; line-height:1.65; }
 @media (max-width:860px) { .foundation { grid-template-columns:1fr; gap:12px; } }
 
@@ -187,6 +201,8 @@ details.disc[open] .plus::after { content: "\2013"; }
 .pov-wrap { max-width:1200px; margin:0 auto; padding:96px 32px; display:grid; grid-template-columns:minmax(0,6fr) minmax(0,5fr); gap:56px; align-items:center; }
 .pov-wrap h2 { margin-top:18px; color:#fff; font:400 clamp(34px,4vw,54px)/1.08 var(--display); letter-spacing:-.015em; }
 .pov-wrap > div > p { margin-top:22px; font-size:19px; line-height:1.6; max-width:30em; color:var(--on-navy); }
+.pov-wrap > div > p.pov-lead { margin-top:16px; font:500 21px/1.4 var(--display); color:#fff; }
+.pov-wrap > div > p.pov-body2 { margin-top:14px; font-size:17px; }
 .pov-points { margin-top:28px; display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:20px; }
 .pov-points div div:first-child { height:2px; background:rgba(255,255,255,.3); margin-bottom:10px; }
 .pov-points div div:last-child { font-size:14px; color:var(--on-navy); line-height:1.5; }
@@ -255,8 +271,8 @@ details.disc[open] .plus::after { content: "\2013"; }
 .person .ph img{aspect-ratio:auto !important;height:100%}
 </style>
 <style id="phases-align-css">
-/* Keep the three How-we-help titles on one line across, whatever the lead-in length */
-@media (min-width:861px){ .phases{grid-template-rows:auto auto 1fr} .phases .phase{display:grid;grid-row:span 3;grid-template-rows:subgrid;align-content:start} .phases .phase h3{align-self:end} }
+/* Keep the phase taglines, lead questions and goals aligned across the three columns */
+@media (min-width:861px){ .phases{grid-template-rows:auto auto auto 1fr auto} .phases .phase{display:grid;grid-row:span 5;grid-template-rows:subgrid;align-content:start} }
 </style>
 </head>
 <body>
@@ -283,7 +299,7 @@ details.disc[open] .plus::after { content: "\2013"; }
         <a href="/ai-evidence/" style="font-size:15px;font-weight:bold;color:#003764;white-space:nowrap">AI &amp; Evidence</a>
         <a href="/insights/" style="font-size:15px;font-weight:bold;color:#003764;white-space:nowrap">Insights</a>
       <a href="/careers/" style="font-size:15px;font-weight:bold;color:#003764;white-space:nowrap">Join Our Team</a>
-      <a href="/contact/" style="background:#DB6015;color:#FFFFFF;font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;padding:12px 20px;white-space:nowrap" onmouseover="this.style.background='#003764'" onmouseout="this.style.background='#DB6015'">Start Building Your Narrative</a>
+      <a href="/contact/" style="background:#DB6015;color:#FFFFFF;font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;padding:12px 20px;white-space:nowrap" onmouseover="this.style.background='#003764'" onmouseout="this.style.background='#DB6015'">Bring Us Your Question</a>
     </div>
   </div>
   <div class="mega" id="about-menu" hidden>
@@ -295,13 +311,13 @@ details.disc[open] .plus::after { content: "\2013"; }
           <li><a href="/about/#mission"><b>Our Mission</b><span>A consultative experience that follows a structured process in order to provide customized solutions.</span></a></li>
           <li><a href="/about/#history"><b>History</b><span>Founded in Washington, DC by industry veterans with more than 50 years of litigation and consulting experience combined.</span></a></li>
           <li><a href="/our-experts/"><b>Our Team</b><span>Leadership, testifying experts, and the teams who work alongside them.</span></a></li>
-          <li><a href="/our-experts/speakers/"><b>Speakers</b><span>Book an iDS expert for your conference, retreat, or training event.</span></a></li>
+          <li><a href="/our-experts/speakers/"><b>Speakers</b><span>Book an iDS educator for your conference, retreat, or training event.</span></a></li>
         </ul>
       </div>
       <div>
         <h4>How we work</h4>
         <ul>
-          <li><a href="/careers/#the-ids-way"><b>The iDS Way</b><span>An established path for optimal outcomes: Consultative Experts, Structured Process, and Customized Solutions.</span></a></li>
+          <li><a href="/careers/#the-ids-way"><b>The iDS Way</b><span>An established path for optimal outcomes: Consultative Experts, Structured Process, and Bespoke Answers.</span></a></li>
           <li><a href="/careers/#core-values"><b>Core Fundamentals</b><span>Behaviors that transform words into actions and bring our culture to life.</span></a></li>
           <li><a href="/about/#recognition"><b>Recognition</b><span>Honored as a Band One and Band Two consulting firm by Chambers and Partners.</span></a></li>
           <li><a href="/about/#recognition"><b>Industry Leadership</b><span>The Sedona Conference, the Electronic Discovery Institute, and the Georgetown Global Advanced Electronic Discovery Institute.</span></a></li>
@@ -313,7 +329,7 @@ details.disc[open] .plus::after { content: "\2013"; }
           <li><a href="/about/#community"><b>Pro Bono Program</b><span>Every person with a viable case deserves to have equal justice under the law.</span></a></li>
           <li><a href="/about/#community"><b>Diversity, Equity &amp; Inclusion</b><span>Diverse talent means diverse skills, which yields better outcomes for clients.</span></a></li>
           <li><a href="/about/#uk-eu"><b>iDS UK &amp; EU</b><span>Tim LaTulippe and Dominic Tucker head up the iDS offices in London.</span></a></li>
-          <li><a href="/contact/"><b>Locations</b><span>Washington, DC &middot; Alpharetta, GA &middot; Costa Mesa, CA &middot; London</span></a></li>
+          <li><a href="/contact/"><b>Locations</b><span>Washington, DC &middot; Alpharetta, GA &middot; Costa Mesa, CA &middot; London, UK</span></a></li>
         </ul>
       </div>
       <div class="mega-feature">
@@ -401,18 +417,19 @@ details.disc[open] .plus::after { content: "\2013"; }
     <circle cx="135" cy="135" r="135" fill="#DB6015" mask="url(#puck-cut)"/>
   </svg>
   <div class="mast-text">
-    <h2 data-key="hero.eyebrow">Truth Through <span>Data</span></h2>
-    <p class="mast-tag">Where expertise leads, defensible outcomes follow.</p>
+    <span class="mast-eyebrow">Our mission</span>
+    <h2>Truth Through <span>Data</span></h2>
+    <p class="mast-tag">We speak for the data.</p>
   </div>
 </div></section>
 
 <section class="hero" style="padding-block:60px 0"><div style="max-width:1200px;margin:0 auto;padding-inline:32px;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px;align-items:center" class="hero-pad">
   <div>
     <h1 data-key="hero.headline" class="hero-h1" style="margin:0;font-weight:500;font-size:clamp(38px,4.6vw,60px);line-height:1.04;letter-spacing:-.015em;color:#16212C">Know what your evidence shows before the other side does.</h1>
-    <p data-key="hero.body" style="margin-top:22px;font-size:19px;line-height:1.6;color:#45515E;max-width:30em">The story is rarely in one system. It is in the email, plus the text message, plus the GPS record, connected and tested and explained by an expert who will defend the conclusion. That is Truth Through Data.</p>
+    <p data-key="hero.body" style="margin-top:22px;font-size:19px;line-height:1.6;color:#45515E;max-width:30em">The story is rarely in one system. It is in the email, plus the text message, plus the GPS record, connected, tested, and explained by an expert who will stand behind the conclusion. That is Truth Through Data.</p>
     <div style="margin-top:32px;display:flex;flex-wrap:wrap;gap:14px">
-      <a href="/contact/" data-key="hero.ctaPrimary" style="display:inline-flex;align-items:center;font-size:15px;font-weight:500;padding:13px 22px;background:#DB6015;color:#FFFFFF">Start building your narrative</a>
-      <a href="/capabilities/" data-key="hero.ctaSecondary" style="display:inline-flex;align-items:center;font-size:15px;font-weight:500;padding:13px 22px;background:transparent;color:#003764;box-shadow:inset 0 0 0 1.5px #003764">See how we work</a>
+      <a href="/contact/" data-key="hero.ctaPrimary" style="display:inline-flex;align-items:center;font-size:15px;font-weight:500;padding:13px 22px;background:#DB6015;color:#FFFFFF">Bring us your question</a>
+      <a href="/our-experts/" data-key="hero.ctaSecondary" style="display:inline-flex;align-items:center;font-size:15px;font-weight:500;padding:13px 22px;background:transparent;color:#003764;box-shadow:inset 0 0 0 1.5px #003764">Meet our experts</a>
     </div>
   </div>
 
@@ -463,20 +480,21 @@ details.disc[open] .plus::after { content: "\2013"; }
 </div></div>
 
 <section style="background:var(--band);border-bottom:1px solid #E6E9ED" aria-label="The problem, what is at stake, and the outcome">
-  <div class="pso-wrap" data-list="storyBrand.cards"><div class="pso-col"><h3 class="mono-label" style="">The problem</h3><p class="pso-body">Emails, databases, cloud systems, mobile devices, transaction logs, AI-influenced environments. You have access to the data. Access is not clarity.</p></div><div class="pso-col"><h3 class="mono-label" style="">What is at stake</h3><p class="pso-body">Evidence lost before it is preserved. Assumptions documented as fact. A theory that reads well until an opposing expert takes it apart on cross.</p></div><div class="pso-col"><h3 class="mono-label" style="color:#003764">The outcome</h3><p class="pso-body">A narrower range of bad outcomes. A clear view of what can be shown, where the risk sits, and conclusions built to withstand scrutiny.</p></div></div>
+  <div class="pso-wrap" data-list="storyBrand.cards"><div class="pso-col"><h3 class="mono-label" style="">The problem</h3><p class="pso-head">Access is not clarity.</p><p class="pso-body">Having the data doesn&rsquo;t mean you know what it shows.</p></div><div class="pso-col pso-col-line"><h3 class="mono-label" style="">What is at stake</h3><p class="pso-head">Evidence only matters if people can understand it.</p><p class="pso-body">Complex evidence that cannot be explained clearly can be misunderstood, discounted, or never used at all.</p></div><div class="pso-col pso-col-line"><h3 class="mono-label" style="color:#003764">The outcome</h3><p class="pso-head">Make the evidence clear, credible, and usable.</p><p class="pso-body">From the first question through the final presentation, we help you understand what the evidence shows and communicate it with confidence.</p></div></div>
 </section>
 
 <section class="block why">
   <div class="why-wrap">
     <div>
-      <span class="mono-label">Why clients call us</span>
+      <span class="mono-label">What you get when you call</span>
       <p class="why-statement" data-key="storyBrand.headline">You are the one who has to stand up and explain what happened. We make sure the evidence is ready when you do.</p>
-      <p class="why-body" data-key="storyBrand.body">Counsel carries the narrative. Their client carries the risk. Our role is the one in between: determine what the evidence shows, what it does not, and what it means for strategy. Then we stand in front of those conclusions when they are challenged. We stand behind our work, and we stand in front of our opinions.</p>
+      <p class="why-body" data-key="storyBrand.body">You carry the case, and your client carries the risk. When you call, we determine what the evidence shows, what it does not, and what it means for your strategy.</p>
+      <p class="why-promise">And when those conclusions are challenged, we stand behind our work, and we stand in front of our opinions.</p>
     </div>
     <div class="diffs">
-      <a class="diff" href="/our-experts/"><h3>Consultative Experts</h3><p>Subject matter experts and data strategists who provide solutions to data problems, and testimony to support the findings when needed.</p></a>
-      <a class="diff" href="/capabilities/"><h3>Structured Process</h3><p>The STEPS&trade; framework converts vast amounts of data into strategic legal assets, with timely and consistent execution.</p></a>
-      <a class="diff" href="/can-you/"><h3>Customized Solutions</h3><p>Tailored to each client and matter. We avoid cookie-cutter answers that rarely address what makes your data problem unique.</p></a>
+      <a class="diff" href="/our-experts/"><h3>Consultative Experts</h3><p>Subject-matter and data experts who help you understand what the evidence shows, what it means, and how to explain it credibly when testimony is required.</p></a>
+      <a class="diff" href="/careers/#the-ids-way"><h3>Structured Process</h3><p>STEPS&trade; applies proven project-management practices to legal matters involving data, evidence, and testimony, bringing structure, accountability, and consistent execution to complex engagements.</p></a>
+      <a class="diff" href="/can-you/"><h3>Bespoke Answers</h3><p class="diff-tag">Our process. Your facts. A solution built for the matter.</p><p>We combine a repeatable process with expert judgment tailored to the questions, evidence, and circumstances of each matter, delivering bespoke solutions with off-the-rack efficiency.</p></a>
     </div>
   </div>
 </section>
@@ -485,10 +503,10 @@ details.disc[open] .plus::after { content: "\2013"; }
   <div class="bench-wrap">
     <div class="bench-head">
       <div>
-        <h2>The people who will defend it</h2>
-        <p>Our testifying experts, and the teams who work alongside them. You are not hiring one expert. You are getting the bench behind them.</p>
+        <h2>The people who will present it</h2>
+        <p>Our testifying experts, and the teams working alongside them, turn complex evidence into clear, credible testimony. And with iDS, you are not hiring one expert. You are getting the bench behind them.</p>
       </div>
-      <a href="/our-experts/" style="display:inline-flex;align-items:center;font-size:15px;font-weight:500;padding:13px 22px;background:transparent;color:#003764;box-shadow:inset 0 0 0 1.5px #003764">Meet the experts</a>
+      <a href="/our-experts/" style="display:inline-flex;align-items:center;font-size:15px;font-weight:500;padding:13px 22px;background:transparent;color:#003764;box-shadow:inset 0 0 0 1.5px #003764">Meet our experts</a>
     </div>
     <div class="bench-carousel" aria-roledescription="carousel" aria-label="Our testifying experts">
       <div class="bench bench-track" tabindex="0"><a class="person" href="/our-experts/#dan-regard"><span class="ph"><img src="/assets/uploads/hs/Dan-Regard-Headshot-B.jpg" alt="Dan Regard" loading="lazy"></span><b>Dan Regard</b><span>Chief Executive Officer</span></a><a class="person" href="/our-experts/#hunter-mcmahon"><span class="ph"><img src="/assets/uploads/hs/Hunter-McMahon-2026-portrait.jpg" alt="Hunter McMahon" loading="lazy"></span><b>Hunter McMahon</b><span>President</span></a><a class="person" href="/our-experts/#julian-ackert"><span class="ph"><img src="/assets/uploads/hs/julian-ackert.jpg" alt="Julian Ackert" loading="lazy"></span><b>Julian Ackert</b><span>Senior Managing Director</span></a><a class="person" href="/our-experts/#james-vaughn"><span class="ph"><img src="/assets/uploads/hs/iDS-HS-jimv-001.jpg" alt="James Vaughn" loading="lazy"></span><b>James Vaughn</b><span>Senior Managing Director</span></a><a class="person" href="/our-experts/#warren-kruse"><span class="ph"><img src="/assets/uploads/hs/warren-head-1-e1765895523857.jpg" alt="Warren Kruse" loading="lazy"></span><b>Warren Kruse</b><span>Managing Director</span></a><a class="person" href="/our-experts/#mark-clews"><span class="ph"><img src="/assets/uploads/hs/Mark-Clews-KEEP.jpg" alt="Mark Clews" loading="lazy"></span><b>Mark Clews</b><span>Managing Director, Digital Forensics & eDiscovery</span></a><a class="person" href="/our-experts/#theodore-brown"><span class="ph"><img src="/assets/uploads/hs/iDS-HS-teddy-002.jpg" alt="Theodore Brown" loading="lazy"></span><b>Theodore Brown</b><span>Managing Director, Damages & Forensic Accounting</span></a><a class="person" href="/our-experts/#kenneth-gustafson"><span class="ph"><img src="/assets/uploads/hs/1692306968306-e1782932395355.jpg" alt="Kenneth Gustafson, CFA" loading="lazy"></span><b>Kenneth Gustafson, CFA</b><span>Managing Director, Economics</span></a><a class="person" href="/our-experts/#bobby-r-williams"><span class="ph"><img src="/assets/uploads/hs/iDS-HS-bobbyw-004-scaled-e1784040851613.jpg" alt="Bobby R. Williams, Jr." loading="lazy"></span><b>Bobby R. Williams, Jr.</b><span>Director</span></a><a class="person" href="/our-experts/#drew-gaibler"><span class="ph"><img src="/assets/uploads/hs/iDS-HS-drewg-001.jpg" alt="Drew Gaibler" loading="lazy"></span><b>Drew Gaibler</b><span>Director of Discovery Services</span></a><a class="person" href="/our-experts/#azzit-hussain"><span class="ph"><img src="/assets/uploads/hs/iDS-HS-Azzit-001.jpg" alt="Azzit Hussain" loading="lazy"></span><b>Azzit Hussain</b><span>Director, Structured Data Analytics</span></a><a class="person" href="/our-experts/#bill-taylor"><span class="ph"><img src="/assets/uploads/hs/iDS-HS-billt-001.jpg" alt="Bill Taylor" loading="lazy"></span><b>Bill Taylor</b><span>Director, Investigations</span></a><a class="person" href="/our-experts/#mike-perelman"><span class="ph"><img src="/assets/uploads/hs/iDS-HS-mikep-001.jpg" alt="Mike Perelman" loading="lazy"></span><b>Mike Perelman</b><span>Director</span></a><a class="person" href="/our-experts/#jonathan-karchmer"><span class="ph"><img src="/assets/uploads/hs/iDS-HS-jonathank-001.jpg" alt="Jonathan Karchmer" loading="lazy"></span><b>Jonathan Karchmer</b><span>Associate Director, Forensics</span></a><a class="person" href="/our-experts/#amanda-whiting"><span class="ph"><img src="/assets/uploads/hs/iDS-HS-amandaw-002.jpg" alt="Amanda Whiting" loading="lazy"></span><b>Amanda Whiting</b><span>Consultant, Analytics</span></a><a class="person" href="/our-experts/#drew-oshaughnessy"><span class="ph"><img src="/assets/uploads/hs/iDS-HS-drewo-001-WEB.jpg" alt="Drew O’Shaughnessy" loading="lazy"></span><b>Drew O’Shaughnessy</b><span>Consultant, Analytics</span></a><a class="person" href="/our-experts/#robert-kirtley"><span class="ph"><img src="/assets/uploads/hs/iDS-HS-rkirtley-001-WEB.jpg" alt="Robert Kirtley" loading="lazy"></span><b>Robert Kirtley</b><span>Affiliated Expert, Cybersecurity, Governance & Compliance</span></a><a class="person" href="/our-experts/#mark-gianturco"><span class="ph"><img src="/assets/uploads/hs/iDS-HS-markg-001.jpg" alt="Dr. Mark Gianturco" loading="lazy"></span><b>Dr. Mark Gianturco</b><span>Affiliated Expert</span></a></div>
@@ -501,16 +519,17 @@ details.disc[open] .plus::after { content: "\2013"; }
   <div class="phases-wrap">
     <div class="bench-head">
       <div>
-        <h2 data-key="howWeHelp.headline">How we help</h2>
-        <p data-key="howWeHelp.body">Three phases of a dispute, each with its own expertise. All of it standing on one evidentiary foundation.</p>
+        <h2 data-key="howWeHelp.headline">Three phases. Three questions.</h2>
+        <p class="phases-intro" data-key="howWeHelp.body">Every case has three phases. Every dispute begins with questions. The evidence helps answer them.</p>
+        <p class="phases-intro" data-key="howWeHelp.body2">From discovery through damages, iDS brings together the people, technology, and expertise needed to find the evidence, understand what it shows, and explain what it means.</p>
       </div>
     </div>
-    <div class="phases" data-list="howWeHelp.verticals"><a class="phase" href="/capabilities/"><span class="mono-label">Getting to a complete, defensible record</span><h3>Discovery</h3><p>Identification, preservation, forensic collection, processing, hosting, and review support, including Relativity. The phase that determines what every later phase is allowed to say.</p></a><a class="phase" href="/capabilities/"><span class="mono-label">What happened, and what holds up</span><h3>Merits</h3><p>Digital forensics, structured data analysis, authenticity, and reconstruction. Competing accounts tested against the artifacts rather than against each other.</p></a><a class="phase" href="/capabilities/"><span class="mono-label">The exposure, and how firm it is</span><h3>Damages</h3><p>Forensic accounting, economics, and valuation. Scenarios rather than a single figure, with every assumption named, sourced, and testable by the other side.</p></a></div>
+    <div class="phases" data-list="howWeHelp.verticals"><a class="phase" href="/capabilities/"><h3>Discovery</h3><p class="ph-tag">Secure the evidence. Find what&rsquo;s missing. Fix it.</p><p class="ph-q">You cannot make your case with evidence you cannot find, access, or use.</p><p>We support forensic preservation, collection, processing, hosting, translation, and review across virtually every source and platform. We directly offer Relativity, RelAIR, and Nuix Discover. More importantly, this isn&rsquo;t DIY: we can help you use them correctly and efficiently.</p><p class="ph-goal"><b>The goal:</b> Get the evidence into a form your legal team and experts can actually use, and the technical support for those tools.</p></a><a class="phase" href="/capabilities/"><h3>Merits</h3><p class="ph-tag">Establish what happened.</p><p class="ph-q">Once you have the evidence, you need to know what it shows.</p><p>Our experts use digital forensics, structured data analysis, reconstruction, authentication, and subject-matter expertise to test competing accounts against the evidence and establish defensible findings.</p><p class="ph-goal"><b>The goal:</b> Establish the facts so the trier of fact can decide what they mean under the law.</p></a><a class="phase" href="/capabilities/"><h3>Damages</h3><p class="ph-tag">Establish the consequences.</p><p class="ph-q">Once you understand what happened, you need to show what it caused.</p><p>Our forensic accountants, economists, valuation professionals, and other experts analyze the financial and economic consequences: testing assumptions, measuring exposure, and evaluating alternative scenarios.</p><p class="ph-goal"><b>The goal:</b> Present a clear, supportable assessment of the consequences.</p></a></div>
   </div>
   <div class="foundation-wrap">
     <div class="foundation">
-      <div><span class="mono-label" data-key="howWeHelp.foundationEyebrow" style="color:var(--on-navy-muted)">The foundation under all three</span><h3 data-key="howWeHelp.foundationTitle">Evidence Intelligence</h3></div>
-      <p data-key="howWeHelp.foundationText">One team managing the evidence end to end: how it comes in, how custody is kept, how testing protocols are set, how the analysis is documented, and how the report is written. Vertical expertise is only as good as the foundation it stands on, so we own that foundation rather than renting it.</p>
+      <div><span class="mono-label" data-key="howWeHelp.foundationEyebrow" style="color:var(--on-navy-muted)">The foundation under all three</span><h3 data-key="howWeHelp.foundationTitle">Evidence Intelligence</h3><p class="fnd-sub" data-key="howWeHelp.foundationSub">Connecting evidence, analysis, and expertise.</p></div>
+      <p data-key="howWeHelp.foundationText">You do not need to know which technology, service, or expert discipline will answer the question before you call us. Bring us the case. We&rsquo;ll help you gather the evidence, find what the evidence says, then testify to those findings.</p>
     </div>
   </div>
 </section>
@@ -518,8 +537,10 @@ details.disc[open] .plus::after { content: "\2013"; }
 <section class="pov-band"><div class="pov-wrap">
   <div>
     <span class="mono-label" data-key="statementBand.eyebrow" style="color:var(--sticker)">Digital Evidence, Understood</span>
-    <h2 data-key="statementBand.headline">The timeline already exists. Someone has to reassemble it.</h2>
-    <p data-key="statementBand.body">Events unfolded along a timeline. They were never recorded on one. Devices, cloud services, applications, and transactional systems each hold a fragment of it, in a different format, on a different clock. Layer those fragments over one another and a shape appears that no single source could show you. That triangulation is both the challenge of digital evidence and its strength.</p>
+    <h2 data-key="statementBand.headline">The evidence is fragmented.</h2>
+    <p class="pov-lead" data-key="statementBand.lead">The timeline already exists. But no single source recorded it.</p>
+    <p data-key="statementBand.body">Events unfolded in sequence, but the evidence of those events was scattered across devices, cloud services, applications, communications, and transactional systems, each capturing a different fragment, in a different format, and sometimes on a different clock. Bring those fragments together and a picture begins to emerge that no single source could reveal.</p>
+    <p class="pov-body2" data-key="statementBand.body2">That triangulation is both the challenge of digital evidence and its strength: the ability to test one source against another and reconstruct what actually happened.</p>
     <div class="pov-points" data-list="statementBand.points"><div><div></div><div>Triangulate across sources, not within one</div></div><div><div></div><div>Name the gaps as gaps</div></div><div><div></div><div>One expert who can explain the assembly</div></div></div>
     <a class="textlink" href="/capabilities/">How we do it &rarr;</a>
   </div>
@@ -546,10 +567,10 @@ details.disc[open] .plus::after { content: "\2013"; }
         <h2 data-key="plan.headline">Three steps to an answer you can use.</h2>
       </div>
     </div>
-    <div class="steps" data-list="plan.steps"><div class="st"><span class="n">01</span><h3>Call us with your question</h3><p>Not a scope document. The thing you need to establish, and the deadline you are working against. We will tell you on that call whether we are the right firm for it.</p></div><div class="st"><span class="n">02</span><h3>Retain us and hand over the evidence</h3><p>Our engagement process is built to move at the pace of your matter. Once we are retained, your data comes to one team that manages it end to end.</p></div><div class="st"><span class="n">03</span><h3>You get clarity you can act on</h3><p>What the evidence shows, what it does not, and what it means for strategy. Documented, and defended by the expert who reached it.</p></div></div>
+    <div class="steps" data-list="plan.steps"><div class="st"><span class="n">01</span><h3>Ask</h3><p>Bring us your question. Not a scope document: the thing you need to establish, and the deadline you are working against. On that first call, we will tell you whether we are the right firm for it.</p></div><div class="st"><span class="n">02</span><h3>Know</h3><p>We find, preserve, and test the evidence, so you know what it shows, what it does not, and where uncertainty remains. One team manages it end to end.</p></div><div class="st"><span class="n">03</span><h3>Act</h3><p>Build your strategy around what can actually be shown, and present it with confidence, with an expert ready to testify to the findings.</p></div></div>
     <div style="margin-top:40px;display:flex;gap:14px;flex-wrap:wrap">
-      <a href="/contact/" data-key="plan.ctaPrimary" style="display:inline-flex;align-items:center;font-size:15px;font-weight:500;padding:13px 22px;background:#DB6015;color:#FFFFFF">Start building your narrative</a>
-      <a href="/can-you/" data-key="plan.ctaSecondary" style="display:inline-flex;align-items:center;font-size:15px;font-weight:500;padding:13px 22px;background:transparent;color:#003764;box-shadow:inset 0 0 0 1.5px #003764">Or start with the Can You…? questions</a>
+      <a href="/contact/" data-key="plan.ctaPrimary" style="display:inline-flex;align-items:center;font-size:15px;font-weight:500;padding:13px 22px;background:#DB6015;color:#FFFFFF">Bring us your question</a>
+      <a href="/our-experts/" data-key="plan.ctaSecondary" style="display:inline-flex;align-items:center;font-size:15px;font-weight:500;padding:13px 22px;background:transparent;color:#003764;box-shadow:inset 0 0 0 1.5px #003764">Meet our experts</a>
     </div>
   </div>
 </section>
@@ -562,7 +583,7 @@ details.disc[open] .plus::after { content: "\2013"; }
     'storyBrand.cards': function (arr) {
       return arr.map(function (c, i) {
         var cls = 'pso-col' + (i > 0 ? ' pso-col-line' : '');
-        return '<div class="' + cls + '"><h3 class="mono-label" style="' + (i === arr.length - 1 ? 'color:#003764' : '') + '">' + c.label + '</h3><p class="pso-body">' + c.text + '</p></div>';
+        return '<div class="' + cls + '"><h3 class="mono-label" style="' + (i === arr.length - 1 ? 'color:#003764' : '') + '">' + c.label + '</h3>' + (c.head ? '<p class="pso-head">' + c.head + '</p>' : '') + '<p class="pso-body">' + c.text + '</p></div>';
       }).join('');
     },
     'plan.steps': function (arr) {
@@ -572,7 +593,7 @@ details.disc[open] .plus::after { content: "\2013"; }
     },
     'howWeHelp.verticals': function (arr) {
       return arr.map(function (v) {
-        return '<a class="phase" href="/capabilities/"><span class="mono-label">' + v.subtitle + '</span><h3>' + v.title + '</h3><p>' + v.text + '</p></a>';
+        return '<a class="phase" href="/capabilities/"><h3>' + v.title + '</h3><p class="ph-tag">' + v.tag + '</p><p class="ph-q">' + v.q + '</p><p>' + v.text + '</p><p class="ph-goal"><b>The goal:</b> ' + v.goal + '</p></a>';
       }).join('');
     },
     'statementBand.points': function (arr) {
@@ -657,15 +678,19 @@ details.disc[open] .plus::after { content: "\2013"; }
 <div style="background:#FFFFFF;border-top:1px solid #E6E9ED">
   <div style="max-width:1200px;margin:0 auto;padding:88px 32px;display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:56px;align-items:start">
     <div>
-      <div class="mono-label" style="margin-bottom:22px;display:block">What is at risk</div>
-      <p style="font-size:clamp(28px,3vw,40px);font-weight:500;font-family:var(--display);letter-spacing:-.02em;line-height:1.16;color:#003764;margin:14px 0 18px;text-wrap:pretty">Without a foundation of evidence, a legal team can only argue the law.</p>
-      <p style="font-size:16px;line-height:1.65;color:#404040;margin:0 0 16px;max-width:34em">A talented team without the raw material is reasoning from assumption. The theory gets built, the position hardens, and the fact that would have changed it surfaces at the eleventh hour. Get your team standing on the actual record early and you are building on a foundation instead of a house of cards.</p>
-      <p style="font-size:16px;line-height:1.65;color:#595959;margin:0;max-width:34em">Our engagement process is built to move at the pace of a live matter, so starting is rarely the thing that slows you down.</p>
+      <div class="mono-label" style="margin-bottom:22px;display:block">What is at stake</div>
+      <p style="font-size:clamp(28px,3vw,40px);font-weight:500;font-family:var(--display);letter-spacing:-.02em;line-height:1.16;color:#003764;margin:14px 0 18px;text-wrap:pretty">The earlier you understand the evidence, the better the decisions that follow.</p>
+      <p style="font-size:16px;line-height:1.65;color:#404040;margin:0 0 16px;max-width:34em">The evidence is abundant. But volume is not access. Access is not understanding. And understanding is not an expert opinion.</p>
+      <p style="font-size:16px;line-height:1.65;color:#404040;margin:0 0 16px;max-width:34em">Increasingly, evidence is buried across devices, applications, databases, cloud systems, transactions, and other complex sources. It must be found, preserved, made accessible, understood, and interpreted in the context of the matter. And when expert testimony is required, that understanding must support an independent, defensible opinion.</p>
+      <p style="font-size:16px;line-height:1.65;color:#404040;margin:0 0 16px;max-width:34em">When important evidence surfaces late, assumptions may already have become strategy. When it is identified, tested, and understood early, your team can build its strategy around what can actually be shown. This isn&rsquo;t just for trial. It is also for TROs, letters rogatory, discovery requests, subpoenas, depositions, summary judgment, mediation, and arbitration.</p>
+      <p style="font-size:18px;font-weight:500;font-family:var(--display);line-height:1.45;color:#003764;margin:24px 0 10px;max-width:34em">You bring the legal expertise. We bring the evidence expertise.</p>
+      <p style="font-size:16px;line-height:1.65;color:#404040;margin:0;max-width:34em">iDS combines technical, analytical, and subject-matter expertise to help you move from evidence to understanding, and, when necessary, from understanding to opinion and testimony.</p>
+      <p style="font-size:clamp(20px,2vw,24px);font-weight:500;font-family:var(--display);letter-spacing:-.01em;line-height:1.3;color:#003764;margin:26px 0 0;padding-top:20px;border-top:3px solid #DB6015;max-width:30em">You know the law. We help you know the evidence.</p>
     </div>
     <div class="close-cta">
       <div class="primary">
-        <h3>Start building your narrative</h3>
-        <p style="font-size:15px;line-height:1.6;margin:0 0 20px;color:#45515E">Tell us what your goal is. We will tell you what the evidence says, and how it can be used to support your case.</p>
+        <h3>Bring us your question</h3>
+        <p style="font-size:15px;line-height:1.6;margin:0 0 20px;color:#45515E">Tell us what you need to establish. We will tell you what the evidence shows, what it does not, and what it means for your case.</p>
         <a href="/contact/" style="display:inline-block;background:#DB6015;color:#FFFFFF;font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;padding:14px 22px">Contact iDS</a>
       </div>
       <div class="secondary">
@@ -714,7 +739,7 @@ details.disc[open] .plus::after { content: "\2013"; }
         <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">Washington, DC</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">3000 K Street NW, Suite 425<br />Washington, DC 20007</div></div>
         <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">Costa Mesa, CA</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">535 Anton Blvd., Suite 860<br />Costa Mesa, CA 92626</div></div>
         <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">Alpharetta, GA</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">11720 Amber Park Drive, Suite 160<br />Alpharetta, GA 30009</div></div>
-        <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">London</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">71&ndash;73 Carter Lane<br />London EC4V 5EQ</div></div>
+        <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">London, UK</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">71&ndash;73 Carter Lane<br />London EC4V 5EQ</div></div>
       </div>
     </div>
     <div>
@@ -723,12 +748,12 @@ details.disc[open] .plus::after { content: "\2013"; }
         <a href="mailto:info@idsinc.com" style="font-size:15px;color:rgba(255,255,255,.82)">info@idsinc.com</a>
         <a href="tel:+18008134832" style="font-size:15px;color:rgba(255,255,255,.82)">US: <span style="white-space:nowrap">+1.800.813.4832</span></a>
         <a href="tel:+442082424130" style="font-size:15px;color:rgba(255,255,255,.82)">UK/EEA: <span style="white-space:nowrap">+44 (0)20 8242 4130</span></a>
-        <a href="/contact/" style="font-size:15px;color:rgba(255,255,255,.82)">Start building your narrative</a>
+        <a href="/contact/" style="font-size:15px;color:rgba(255,255,255,.82)">Bring us your question</a>
       </div>
     </div>
   </div>
   <div style="max-width:1200px;margin:0 auto;padding:22px 32px 40px;border-top:1px solid rgba(255,255,255,.16);display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between">
-    <p style="font-size:13px;color:rgba(255,255,255,.6);margin:0">Copyright &copy; 2026 iDiscovery Solutions, Inc. All Rights Reserved &nbsp;|&nbsp; <a href="/privacy-policy/" style="color:rgba(255,255,255,.6)">Privacy Policy</a></p>
+    <p style="font-size:13px;color:rgba(255,255,255,.6);margin:0">Copyright &copy; 2026 iDiscovery Solutions, Inc. All Rights Reserved &nbsp;|&nbsp; <a href="/privacy-policy/" style="color:rgba(255,255,255,.6)">Privacy Policy</a> &nbsp;|&nbsp; <a href="/privacy-policy/#cookies" data-cookie-settings style="color:rgba(255,255,255,.6)">Cookie settings</a></p>
   </div>
 </div>
 

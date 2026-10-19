@@ -13,8 +13,9 @@
 <meta property="og:image" content="https://ids-staging-z4swi.kinsta.page/assets/ids-logo-navy.png">
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="/assets/ids-logo-navy.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<link rel="stylesheet" href="/assets/fonts/jost.css">
+<link rel="stylesheet" href="/assets/consent/consent.css">
+<script src="/assets/consent/consent.js" defer></script>
 <style>:root {
   --navy:#003764; --navy-deep:#0A2440; --orange:#DB6015; --orange-deep:#B94E0E;
   --ink:#16212C; --text:#45515E; --muted:#6F7B88; --rule:#D5DBE1; --band:#F2F4F6; --paper:#FFFFFF;
@@ -277,7 +278,7 @@ details.disc[open] .plus::after { content: "\2013"; }
         <a href="/ai-evidence/" style="font-size:15px;font-weight:bold;color:#003764;white-space:nowrap">AI &amp; Evidence</a>
         <a href="/insights/" style="font-size:15px;font-weight:bold;color:#DB6015;white-space:nowrap">Insights</a>
       <a href="/careers/" style="font-size:15px;font-weight:bold;color:#003764;white-space:nowrap">Join Our Team</a>
-      <a href="/contact/" style="background:#DB6015;color:#FFFFFF;font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;padding:12px 20px;white-space:nowrap" onmouseover="this.style.background='#003764'" onmouseout="this.style.background='#DB6015'">Start Building Your Narrative</a>
+      <a href="/contact/" style="background:#DB6015;color:#FFFFFF;font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;padding:12px 20px;white-space:nowrap" onmouseover="this.style.background='#003764'" onmouseout="this.style.background='#DB6015'">Bring Us Your Question</a>
     </div>
   </div>
   <div class="mega" id="about-menu" hidden>
@@ -289,13 +290,13 @@ details.disc[open] .plus::after { content: "\2013"; }
           <li><a href="/about/#mission"><b>Our Mission</b><span>A consultative experience that follows a structured process in order to provide customized solutions.</span></a></li>
           <li><a href="/about/#history"><b>History</b><span>Founded in Washington, DC by industry veterans with more than 50 years of litigation and consulting experience combined.</span></a></li>
           <li><a href="/our-experts/"><b>Our Team</b><span>Leadership, testifying experts, and the teams who work alongside them.</span></a></li>
-          <li><a href="/our-experts/speakers/"><b>Speakers</b><span>Book an iDS expert for your conference, retreat, or training event.</span></a></li>
+          <li><a href="/our-experts/speakers/"><b>Speakers</b><span>Book an iDS educator for your conference, retreat, or training event.</span></a></li>
         </ul>
       </div>
       <div>
         <h4>How we work</h4>
         <ul>
-          <li><a href="/careers/#the-ids-way"><b>The iDS Way</b><span>An established path for optimal outcomes: Consultative Experts, Structured Process, and Customized Solutions.</span></a></li>
+          <li><a href="/careers/#the-ids-way"><b>The iDS Way</b><span>An established path for optimal outcomes: Consultative Experts, Structured Process, and Bespoke Answers.</span></a></li>
           <li><a href="/careers/#core-values"><b>Core Fundamentals</b><span>Behaviors that transform words into actions and bring our culture to life.</span></a></li>
           <li><a href="/about/#recognition"><b>Recognition</b><span>Honored as a Band One and Band Two consulting firm by Chambers and Partners.</span></a></li>
           <li><a href="/about/#recognition"><b>Industry Leadership</b><span>The Sedona Conference, the Electronic Discovery Institute, and the Georgetown Global Advanced Electronic Discovery Institute.</span></a></li>
@@ -307,7 +308,7 @@ details.disc[open] .plus::after { content: "\2013"; }
           <li><a href="/about/#community"><b>Pro Bono Program</b><span>Every person with a viable case deserves to have equal justice under the law.</span></a></li>
           <li><a href="/about/#community"><b>Diversity, Equity &amp; Inclusion</b><span>Diverse talent means diverse skills, which yields better outcomes for clients.</span></a></li>
           <li><a href="/about/#uk-eu"><b>iDS UK &amp; EU</b><span>Tim LaTulippe and Dominic Tucker head up the iDS offices in London.</span></a></li>
-          <li><a href="/contact/"><b>Locations</b><span>Washington, DC &middot; Alpharetta, GA &middot; Costa Mesa, CA &middot; London</span></a></li>
+          <li><a href="/contact/"><b>Locations</b><span>Washington, DC &middot; Alpharetta, GA &middot; Costa Mesa, CA &middot; London, UK</span></a></li>
         </ul>
       </div>
       <div class="mega-feature">
@@ -436,7 +437,7 @@ details.disc[open] .plus::after { content: "\2013"; }
 
 <hr class="wp-block-separator has-text-color has-alpha-channel-opacity has-background" style="background-color:#e1e1e1;color:#e1e1e1"/>
 
-<p class="wp-block-paragraph"><em><strong>iDS provides consultative data solutions to corporations and law firms around the world, giving them a decisive advantage – both in and out of the courtroom. iDS’s subject matter experts and data strategists specialize in finding solutions to complex data problems, ensuring data can be leveraged as an asset, not a liability. To learn more, visit idsinc.com.</strong></em></p>
+<p class="wp-block-paragraph"><em><strong>iDS provides consultative data solutions to corporations and law firms around the world, giving them a decisive advantage – both in and out of the courtroom. iDS’s subject matter experts and data strategists specialize in finding solutions to complex evidence challenges, ensuring data can be leveraged as an asset, not a liability. To learn more, visit idsinc.com.</strong></em></p>
   </div>
   <div style="margin-top:48px;padding-top:28px;border-top:1px solid #E6E9ED">
     <a href="/insights/" class="textlink">&larr; Back to Insights</a>
@@ -446,15 +447,19 @@ details.disc[open] .plus::after { content: "\2013"; }
 <div style="background:#FFFFFF;border-top:1px solid #E6E9ED">
   <div style="max-width:1200px;margin:0 auto;padding:88px 32px;display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:56px;align-items:start">
     <div>
-      <div class="mono-label" style="margin-bottom:22px;display:block">What is at risk</div>
-      <p style="font-size:clamp(28px,3vw,40px);font-weight:500;font-family:var(--display);letter-spacing:-.02em;line-height:1.16;color:#003764;margin:14px 0 18px;text-wrap:pretty">Without a foundation of evidence, a legal team can only argue the law.</p>
-      <p style="font-size:16px;line-height:1.65;color:#404040;margin:0 0 16px;max-width:34em">A talented team without the raw material is reasoning from assumption. The theory gets built, the position hardens, and the fact that would have changed it surfaces at the eleventh hour. Get your team standing on the actual record early and you are building on a foundation instead of a house of cards.</p>
-      <p style="font-size:16px;line-height:1.65;color:#595959;margin:0;max-width:34em">Our engagement process is built to move at the pace of a live matter, so starting is rarely the thing that slows you down.</p>
+      <div class="mono-label" style="margin-bottom:22px;display:block">What is at stake</div>
+      <p style="font-size:clamp(28px,3vw,40px);font-weight:500;font-family:var(--display);letter-spacing:-.02em;line-height:1.16;color:#003764;margin:14px 0 18px;text-wrap:pretty">The earlier you understand the evidence, the better the decisions that follow.</p>
+      <p style="font-size:16px;line-height:1.65;color:#404040;margin:0 0 16px;max-width:34em">The evidence is abundant. But volume is not access. Access is not understanding. And understanding is not an expert opinion.</p>
+      <p style="font-size:16px;line-height:1.65;color:#404040;margin:0 0 16px;max-width:34em">Increasingly, evidence is buried across devices, applications, databases, cloud systems, transactions, and other complex sources. It must be found, preserved, made accessible, understood, and interpreted in the context of the matter. And when expert testimony is required, that understanding must support an independent, defensible opinion.</p>
+      <p style="font-size:16px;line-height:1.65;color:#404040;margin:0 0 16px;max-width:34em">When important evidence surfaces late, assumptions may already have become strategy. When it is identified, tested, and understood early, your team can build its strategy around what can actually be shown. This isn&rsquo;t just for trial. It is also for TROs, letters rogatory, discovery requests, subpoenas, depositions, summary judgment, mediation, and arbitration.</p>
+      <p style="font-size:18px;font-weight:500;font-family:var(--display);line-height:1.45;color:#003764;margin:24px 0 10px;max-width:34em">You bring the legal expertise. We bring the evidence expertise.</p>
+      <p style="font-size:16px;line-height:1.65;color:#404040;margin:0;max-width:34em">iDS combines technical, analytical, and subject-matter expertise to help you move from evidence to understanding, and, when necessary, from understanding to opinion and testimony.</p>
+      <p style="font-size:clamp(20px,2vw,24px);font-weight:500;font-family:var(--display);letter-spacing:-.01em;line-height:1.3;color:#003764;margin:26px 0 0;padding-top:20px;border-top:3px solid #DB6015;max-width:30em">You know the law. We help you know the evidence.</p>
     </div>
     <div class="close-cta">
       <div class="primary">
-        <h3>Start building your narrative</h3>
-        <p style="font-size:15px;line-height:1.6;margin:0 0 20px;color:#45515E">Tell us what your goal is. We will tell you what the evidence says, and how it can be used to support your case.</p>
+        <h3>Bring us your question</h3>
+        <p style="font-size:15px;line-height:1.6;margin:0 0 20px;color:#45515E">Tell us what you need to establish. We will tell you what the evidence shows, what it does not, and what it means for your case.</p>
         <a href="/contact/" style="display:inline-block;background:#DB6015;color:#FFFFFF;font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;padding:14px 22px">Contact iDS</a>
       </div>
       <div class="secondary">
@@ -503,7 +508,7 @@ details.disc[open] .plus::after { content: "\2013"; }
         <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">Washington, DC</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">3000 K Street NW, Suite 425<br />Washington, DC 20007</div></div>
         <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">Costa Mesa, CA</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">535 Anton Blvd., Suite 860<br />Costa Mesa, CA 92626</div></div>
         <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">Alpharetta, GA</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">11720 Amber Park Drive, Suite 160<br />Alpharetta, GA 30009</div></div>
-        <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">London</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">71&ndash;73 Carter Lane<br />London EC4V 5EQ</div></div>
+        <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">London, UK</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">71&ndash;73 Carter Lane<br />London EC4V 5EQ</div></div>
       </div>
     </div>
     <div>
@@ -512,12 +517,12 @@ details.disc[open] .plus::after { content: "\2013"; }
         <a href="mailto:info@idsinc.com" style="font-size:15px;color:rgba(255,255,255,.82)">info@idsinc.com</a>
         <a href="tel:+18008134832" style="font-size:15px;color:rgba(255,255,255,.82)">US: <span style="white-space:nowrap">+1.800.813.4832</span></a>
         <a href="tel:+442082424130" style="font-size:15px;color:rgba(255,255,255,.82)">UK/EEA: <span style="white-space:nowrap">+44 (0)20 8242 4130</span></a>
-        <a href="/contact/" style="font-size:15px;color:rgba(255,255,255,.82)">Start building your narrative</a>
+        <a href="/contact/" style="font-size:15px;color:rgba(255,255,255,.82)">Bring us your question</a>
       </div>
     </div>
   </div>
   <div style="max-width:1200px;margin:0 auto;padding:22px 32px 40px;border-top:1px solid rgba(255,255,255,.16);display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between">
-    <p style="font-size:13px;color:rgba(255,255,255,.6);margin:0">Copyright &copy; 2026 iDiscovery Solutions, Inc. All Rights Reserved &nbsp;|&nbsp; <a href="/privacy-policy/" style="color:rgba(255,255,255,.6)">Privacy Policy</a></p>
+    <p style="font-size:13px;color:rgba(255,255,255,.6);margin:0">Copyright &copy; 2026 iDiscovery Solutions, Inc. All Rights Reserved &nbsp;|&nbsp; <a href="/privacy-policy/" style="color:rgba(255,255,255,.6)">Privacy Policy</a> &nbsp;|&nbsp; <a href="/privacy-policy/#cookies" data-cookie-settings style="color:rgba(255,255,255,.6)">Cookie settings</a></p>
   </div>
 </div>
 

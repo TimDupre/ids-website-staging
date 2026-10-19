@@ -13,8 +13,9 @@
 <meta property="og:image" content="https://ids-staging-z4swi.kinsta.page/assets/ids-logo-navy.png">
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="/assets/ids-logo-navy.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<link rel="stylesheet" href="/assets/fonts/jost.css">
+<link rel="stylesheet" href="/assets/consent/consent.css">
+<script src="/assets/consent/consent.js" defer></script>
 <style>:root {
 --navy:#003764; --navy-deep:#0A2440; --orange:#DB6015; --orange-deep:#B94E0E;
 --ink:#16212C; --text:#45515E; --muted:#6F7B88; --rule:#D5DBE1; --band:#F2F4F6; --paper:#FFFFFF;
@@ -251,7 +252,7 @@ details.disc[open] .plus::after { content: "\2013"; }
 .help-opt input:focus-visible + span{outline:2px solid #003764;outline-offset:2px}
 </style>
 <script>
-document.addEventListener('DOMContentLoaded',function(){var t=new URLSearchParams(location.search).get('topic');if(!t)return;var map={speaker:'A speaker for an event',expert:'An expert witness',ediscovery:'eDiscovery or data support',matter:'A matter in dispute or under investigation'};var v=map[t];if(!v)return;var r=document.querySelector('input[name="How can we help"][value="'+v+'"]');if(r)r.checked=true;});
+document.addEventListener('DOMContentLoaded',function(){var t=new URLSearchParams(location.search).get('topic');if(!t)return;var map={speaker:'An educator or speaker for an event',careers:'A career at iDS',expert:'An expert witness',ediscovery:'eDiscovery or data support',matter:'A matter in dispute or under investigation'};var v=map[t];if(!v)return;var r=document.querySelector('input[name="How can we help"][value="'+v+'"]');if(r)r.checked=true;});
 </script>
 <style id="cap-mega-css">
 .cap-wrap{grid-template-columns:minmax(0,3fr) minmax(0,1.05fr) !important}
@@ -289,7 +290,7 @@ document.addEventListener('DOMContentLoaded',function(){var t=new URLSearchParam
 <a href="/ai-evidence/" style="font-size:15px;font-weight:bold;color:#003764;white-space:nowrap">AI &amp; Evidence</a>
 <a href="/insights/" style="font-size:15px;font-weight:bold;color:#003764;white-space:nowrap">Insights</a>
 <a href="/careers/" style="font-size:15px;font-weight:bold;color:#003764;white-space:nowrap">Join Our Team</a>
-<a href="/contact/" style="background:#DB6015;color:#FFFFFF;font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;padding:12px 20px;white-space:nowrap" onmouseover="this.style.background='#003764'" onmouseout="this.style.background='#DB6015'">Start Building Your Narrative</a>
+<a href="/contact/" style="background:#DB6015;color:#FFFFFF;font-size:14px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;padding:12px 20px;white-space:nowrap" onmouseover="this.style.background='#003764'" onmouseout="this.style.background='#DB6015'">Bring Us Your Question</a>
 </div>
 </div>
 <div class="mega" id="about-menu" hidden>
@@ -301,13 +302,13 @@ document.addEventListener('DOMContentLoaded',function(){var t=new URLSearchParam
 <li><a href="/about/#mission"><b>Our Mission</b><span>A consultative experience that follows a structured process in order to provide customized solutions.</span></a></li>
 <li><a href="/about/#history"><b>History</b><span>Founded in Washington, DC by industry veterans with more than 50 years of litigation and consulting experience combined.</span></a></li>
 <li><a href="/our-experts/"><b>Our Team</b><span>Leadership, testifying experts, and the teams who work alongside them.</span></a></li>
-<li><a href="/our-experts/speakers/"><b>Speakers</b><span>Book an iDS expert for your conference, retreat, or training event.</span></a></li>
+<li><a href="/our-experts/speakers/"><b>Speakers</b><span>Book an iDS educator for your conference, retreat, or training event.</span></a></li>
 </ul>
 </div>
 <div>
 <h4>How we work</h4>
 <ul>
-<li><a href="/careers/#the-ids-way"><b>The iDS Way</b><span>An established path for optimal outcomes: Consultative Experts, Structured Process, and Customized Solutions.</span></a></li>
+<li><a href="/careers/#the-ids-way"><b>The iDS Way</b><span>An established path for optimal outcomes: Consultative Experts, Structured Process, and Bespoke Answers.</span></a></li>
 <li><a href="/careers/#core-values"><b>Core Fundamentals</b><span>Behaviors that transform words into actions and bring our culture to life.</span></a></li>
 <li><a href="/about/#recognition"><b>Recognition</b><span>Honored as a Band One and Band Two consulting firm by Chambers and Partners.</span></a></li>
 <li><a href="/about/#recognition"><b>Industry Leadership</b><span>The Sedona Conference, the Electronic Discovery Institute, and the Georgetown Global Advanced Electronic Discovery Institute.</span></a></li>
@@ -319,7 +320,7 @@ document.addEventListener('DOMContentLoaded',function(){var t=new URLSearchParam
 <li><a href="/about/#community"><b>Pro Bono Program</b><span>Every person with a viable case deserves to have equal justice under the law.</span></a></li>
 <li><a href="/about/#community"><b>Diversity, Equity &amp; Inclusion</b><span>Diverse talent means diverse skills, which yields better outcomes for clients.</span></a></li>
 <li><a href="/about/#uk-eu"><b>iDS UK &amp; EU</b><span>Tim LaTulippe and Dominic Tucker head up the iDS offices in London.</span></a></li>
-<li><a href="/contact/"><b>Locations</b><span>Washington, DC &middot; Alpharetta, GA &middot; Costa Mesa, CA &middot; London</span></a></li>
+<li><a href="/contact/"><b>Locations</b><span>Washington, DC &middot; Alpharetta, GA &middot; Costa Mesa, CA &middot; London, UK</span></a></li>
 </ul>
 </div>
 <div class="mega-feature">
@@ -402,7 +403,7 @@ document.addEventListener('click',function(e){if(!item.contains(e.target)&&!am.c
 <div class="hero-pad" style="position:relative;max-width:1200px;margin:0 auto;padding:76px 32px 80px">
 <div style="max-width:820px">
 <div style="border-left:3px solid #DB6015;padding-left:14px;color:#DB6015;font-size:13px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;margin-bottom:22px">Contact</div>
-<h1 class="sub-h1" style="font-size:50px;font-weight:bold;line-height:1.06;letter-spacing:-.02em;color:#003764;margin:0 0 20px;text-wrap:pretty">How can we help you start building your narrative?</h1>
+<h1 class="sub-h1" style="font-size:50px;font-weight:bold;line-height:1.06;letter-spacing:-.02em;color:#003764;margin:0 0 20px;text-wrap:pretty">What question can we help you answer?</h1>
 <p style="font-size:18px;line-height:1.6;color:#595959;margin:0;max-width:660px">Tell us where you are and what you are trying to establish. We will tell you whether the evidence can get you there, what it would take, and who on our team should be in the room.</p>
 </div>
 </div>
@@ -415,7 +416,7 @@ document.addEventListener('click',function(e){if(!item.contains(e.target)&&!am.c
 <div style="display:grid;gap:18px">
 <div>
 <label style="display:block;font-size:13px;font-weight:bold;letter-spacing:.08em;text-transform:uppercase;color:#666666;margin-bottom:10px">How can we help?</label>
-<div class="help-opts" role="radiogroup" aria-label="How can we help?"><label class="help-opt"><input type="radio" name="How can we help" value="A matter in dispute or under investigation" required /><span>A matter in dispute or under investigation</span></label><label class="help-opt"><input type="radio" name="How can we help" value="An expert witness" /><span>An expert witness</span></label><label class="help-opt"><input type="radio" name="How can we help" value="eDiscovery or data support" /><span>eDiscovery or data support</span></label><label class="help-opt"><input type="radio" name="How can we help" value="A speaker for an event" /><span>A speaker for an event</span></label><label class="help-opt"><input type="radio" name="How can we help" value="Something else" /><span>Something else</span></label></div>
+<div class="help-opts" role="radiogroup" aria-label="How can we help?"><label class="help-opt"><input type="radio" name="How can we help" value="A matter in dispute or under investigation" required /><span>A matter in dispute or under investigation</span></label><label class="help-opt"><input type="radio" name="How can we help" value="An expert witness" /><span>An expert witness</span></label><label class="help-opt"><input type="radio" name="How can we help" value="eDiscovery or data support" /><span>eDiscovery or data support</span></label><label class="help-opt"><input type="radio" name="How can we help" value="An educator or speaker for an event" /><span>An educator or speaker for an event</span></label><label class="help-opt"><input type="radio" name="How can we help" value="A career at iDS" /><span>A career at iDS</span></label><label class="help-opt"><input type="radio" name="How can we help" value="Something else" /><span>Something else</span></label></div>
 </div>
 <div>
 <label style="display:block;font-size:13px;font-weight:bold;letter-spacing:.08em;text-transform:uppercase;color:#666666;margin-bottom:8px">Name</label>
@@ -542,7 +543,7 @@ submitBtn.textContent = 'Send to our team';
 <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">Washington, DC</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">3000 K Street NW, Suite 425<br />Washington, DC 20007</div></div>
 <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">Costa Mesa, CA</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">535 Anton Blvd., Suite 860<br />Costa Mesa, CA 92626</div></div>
 <div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">Alpharetta, GA</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">11720 Amber Park Drive, Suite 160<br />Alpharetta, GA 30009</div></div>
-<div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">London</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">71&ndash;73 Carter Lane<br />London EC4V 5EQ</div></div>
+<div><div style="font-size:14px;font-weight:bold;color:#FFFFFF;margin-bottom:2px">London, UK</div><div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,.68)">71&ndash;73 Carter Lane<br />London EC4V 5EQ</div></div>
 </div>
 </div>
 <div>
@@ -551,12 +552,12 @@ submitBtn.textContent = 'Send to our team';
 <a href="mailto:info@idsinc.com" style="font-size:15px;color:rgba(255,255,255,.82)">info@idsinc.com</a>
 <a href="tel:+18008134832" style="font-size:15px;color:rgba(255,255,255,.82)">US: <span style="white-space:nowrap">+1.800.813.4832</span></a>
 <a href="tel:+442082424130" style="font-size:15px;color:rgba(255,255,255,.82)">UK/EEA: <span style="white-space:nowrap">+44 (0)20 8242 4130</span></a>
-<a href="/contact/" style="font-size:15px;color:rgba(255,255,255,.82)">Start building your narrative</a>
+<a href="/contact/" style="font-size:15px;color:rgba(255,255,255,.82)">Bring us your question</a>
 </div>
 </div>
 </div>
 <div style="max-width:1200px;margin:0 auto;padding:22px 32px 40px;border-top:1px solid rgba(255,255,255,.16);display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between">
-<p style="font-size:13px;color:rgba(255,255,255,.6);margin:0">Copyright &copy; 2026 iDiscovery Solutions, Inc. All Rights Reserved &nbsp;|&nbsp; <a href="/privacy-policy/" style="color:rgba(255,255,255,.6)">Privacy Policy</a></p>
+<p style="font-size:13px;color:rgba(255,255,255,.6);margin:0">Copyright &copy; 2026 iDiscovery Solutions, Inc. All Rights Reserved &nbsp;|&nbsp; <a href="/privacy-policy/" style="color:rgba(255,255,255,.6)">Privacy Policy</a> &nbsp;|&nbsp; <a href="/privacy-policy/#cookies" data-cookie-settings style="color:rgba(255,255,255,.6)">Cookie settings</a></p>
 </div>
 </div>
 
