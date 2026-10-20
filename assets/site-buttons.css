@@ -1,0 +1,23 @@
+/* Orange buttons turn a lighter orange (#ff7033) when hovered or focused.
+   One rule for the whole site: it matches every button that is filled with the brand orange (#DB6015),
+   whether the colour is set on the button itself or by a page/plugin stylesheet.
+   Change the colour here (and bump ?v= in the <link>) to change it everywhere. */
+
+a[style*="background:#DB6015" i], a[style*="background: #DB6015" i], a[style*="background-color:#DB6015" i], a[style*="background-color: #DB6015" i],
+button[style*="background:#DB6015" i], button[style*="background: #DB6015" i], button[style*="background-color:#DB6015" i], button[style*="background-color: #DB6015" i],
+.post-body .wp-block-button__link, .ehc-btn, .gd-btn, .cc-btn.cc-primary {
+  transition: background-color .15s ease;
+}
+
+a[style*="background:#DB6015" i]:hover, a[style*="background: #DB6015" i]:hover, a[style*="background-color:#DB6015" i]:hover, a[style*="background-color: #DB6015" i]:hover,
+a[style*="background:#DB6015" i]:focus-visible, a[style*="background: #DB6015" i]:focus-visible,
+button[style*="background:#DB6015" i]:hover, button[style*="background: #DB6015" i]:hover, button[style*="background-color:#DB6015" i]:hover, button[style*="background-color: #DB6015" i]:hover,
+button[style*="background:#DB6015" i]:focus-visible, button[style*="background: #DB6015" i]:focus-visible,
+.post-body .wp-block-button__link:hover, .post-body .wp-block-button__link:focus-visible,
+.ehc-btn:hover, .ehc-btn:focus-visible,
+.gd-btn:hover, .gd-btn:focus-visible,
+.cc-btn.cc-primary:hover, .cc-btn.cc-primary:focus-visible,
+.cc-embed .cc-btn.cc-primary:hover {
+  background: #ff7033 !important;
+  background-color: #ff7033 !important;
+}
