@@ -20,5 +20,6 @@ export const metaCache = {
   get(sha) { return this.load()[sha]; },
   set(sha, value) { this.load()[sha] = value; },
   prune(keep) { const m = this.load(); for (const k of Object.keys(m)) if (!keep.has(k)) delete m[k]; },
+  clear() { memo = {}; safe(() => localStorage.removeItem(META_KEY)); },
   save() { safe(() => localStorage.setItem(META_KEY, JSON.stringify(memo || {}))); },
 };

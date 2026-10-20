@@ -109,7 +109,7 @@ function startShell() {
       nav,
       h('div', { class: 'side-foot' }, h('div', { class: 'who' }, app.user.name || app.user.login), h('div', { class: 'muted', style: { color: '#8fb0d0' } }, app.user.canPush ? 'Can edit and publish' : 'Read-only access'), h('button', { class: 'btn btn-sm', type: 'button', onClick: signOut }, 'Sign out'))),
     h('div', { class: 'main' },
-      h('div', { class: 'topbar', id: 'topbar' }, status, h('span', { class: 'grow' }), h('a', { class: 'btn btn-sm', href: app.site.siteBase(), target: '_blank', rel: 'noopener' }, 'View live site ↗')),
+      h('div', { class: 'topbar', id: 'topbar' }, status, h('span', { class: 'grow' }), h('a', { class: 'btn btn-sm', href: app.cfg.deploy.purgeUrl, target: '_blank', rel: 'noopener', title: 'Opens the hosting dashboard. Press “Purge cache” there so visitors see the latest version straight away.' }, 'Clear cache ↗'), h('a', { class: 'btn btn-sm', href: app.site.siteBase(), target: '_blank', rel: 'noopener' }, 'View live site ↗')),
       view)));
   if (!app.user.canPush) view.before(h('div', { class: 'banner banner-warn', style: { margin: '12px 24px 0' } }, 'This token can read the site but not change it. Create a token with "Contents: Read and write" to publish edits.'));
   window.removeEventListener('hashchange', onHash); window.addEventListener('hashchange', onHash);
@@ -168,8 +168,7 @@ function paintStatus(state) {
   const n = app.site.pendingCount();
   if (n === 0) { el.append(pill('Everything is live', 'ok')); return; }
   el.append(pill(`${n} ${n === 1 ? 'page' : 'pages'} changed, not live yet`, 'warn'), ' ',
-    h('a', { class: 'btn btn-sm btn-primary', href: app.cfg.deploy.manualDeployUrl, target: '_blank', rel: 'noopener', title: 'Opens the hosting dashboard. Click Deploy, then purge the cache.' }, 'Deploy ↗'), ' ',
-    h('a', { class: 'btn btn-sm', href: app.cfg.deploy.purgeUrl, target: '_blank', rel: 'noopener' }, 'Purge cache ↗'), ' ',
+    h('a', { class: 'btn btn-sm btn-primary', href: app.cfg.deploy.manualDeployUrl, target: '_blank', rel: 'noopener', title: 'Opens the hosting dashboard. Click Deploy, then use Clear cache.' }, 'Deploy ↗'), ' ',
     h('button', { class: 'btn btn-sm btn-quiet', type: 'button', onClick: () => refreshStatus({ force: true }) }, 'Re-check'));
 }
 
