@@ -1,0 +1,4166 @@
+{
+ "source": "https://idsinc.com/sitemap_index.xml",
+ "checked": "2026-10-20",
+ "urls": [
+  {
+   "url": "/aba-cross-border-institute-ep4-dan-regard-james-sherer/",
+   "type": "post",
+   "title": "ABA Cross-Border Institute Ep. 4",
+   "words": 94,
+   "published": "2021-05-17",
+   "action": "redirect",
+   "target": "/capabilities/#privacy",
+   "note": "Privacy / cross-border"
+  },
+  {
+   "url": "/navigating-electronic-discovery-and-digital-investigations-in-the-regulated-world/",
+   "type": "post",
+   "title": "Navigating Electronic Discovery and Digital Investigations",
+   "words": 1592,
+   "published": "2020-07-10",
+   "action": "recreate",
+   "target": "/insights/navigating-electronic-discovery-and-digital-investigations-in-the-regulated-world/",
+   "note": "Long-form article"
+  },
+  {
+   "url": "/finely-tuned-001-in-the-shadows/",
+   "type": "post",
+   "title": "Finely Tuned 001: In the Shadows",
+   "words": 405,
+   "published": "2020-07-22",
+   "action": "redirect",
+   "target": "/in-the-shadows/",
+   "note": "Same topic: volume shadow copies"
+  },
+  {
+   "url": "/information-governance-and-coronavirus/",
+   "type": "post",
+   "title": "Information Governance and Coronavirus",
+   "words": 552,
+   "published": "2020-07-27",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Short post / episode page"
+  },
+  {
+   "url": "/finely-tuned-002-puzzle-pieces/",
+   "type": "post",
+   "title": "Finely Tuned – 002 Puzzle Pieces …",
+   "words": 486,
+   "published": "2020-08-14",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Short post / episode page"
+  },
+  {
+   "url": "/finely-tuned-003-deploy-the-asset/",
+   "type": "post",
+   "title": "Finely Tuned – 003 Deploy the Asset …",
+   "words": 547,
+   "published": "2020-09-10",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Short post / episode page"
+  },
+  {
+   "url": "/retention-attention/",
+   "type": "post",
+   "title": "Finely Tuned – 004 Retention Attention",
+   "words": 613,
+   "published": "2020-10-12",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Short post / episode page"
+  },
+  {
+   "url": "/cross-border-esi-considerations-for-time-sensitive-data-handling/",
+   "type": "post",
+   "title": "Cross Border ESI: Time Sensitive Data Handling",
+   "words": 1335,
+   "published": "2020-10-18",
+   "action": "recreate",
+   "target": "/insights/cross-border-esi-considerations-for-time-sensitive-data-handling/",
+   "note": "Long-form article"
+  },
+  {
+   "url": "/cloud-computing/",
+   "type": "post",
+   "title": "Cloud Computing – More or Less Secure?",
+   "words": 675,
+   "published": "2020-11-02",
+   "action": "redirect",
+   "target": "/capabilities/#cybersecurity",
+   "note": "Cybersecurity"
+  },
+  {
+   "url": "/finely-tuned-006-the-main-event/",
+   "type": "post",
+   "title": "Finely Tuned – 006 The Main Event",
+   "words": 686,
+   "published": "2020-11-10",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Short post / episode page"
+  },
+  {
+   "url": "/cloud-based-solutions/",
+   "type": "post",
+   "title": "Cloud Based Solutions are Changing Discovery and Disclosure Obligations",
+   "words": 1698,
+   "published": "2020-11-16",
+   "action": "recreate",
+   "target": "/insights/cloud-based-solutions/",
+   "note": "Long-form article"
+  },
+  {
+   "url": "/security-in-the-age-of-a-pandemic/",
+   "type": "post",
+   "title": "Security in the age of the pandemic",
+   "words": 526,
+   "published": "2020-11-20",
+   "action": "redirect",
+   "target": "/capabilities/#cybersecurity",
+   "note": "Cybersecurity"
+  },
+  {
+   "url": "/protecting-the-corporate-jewels/",
+   "type": "post",
+   "title": "Protecting the Corporate Jewels -Trade Secret",
+   "words": 1549,
+   "published": "2019-02-25",
+   "action": "recreate",
+   "target": "/insights/protecting-the-corporate-jewels/",
+   "note": "Long-form article"
+  },
+  {
+   "url": "/thorough-digital-forensic-analysis/",
+   "type": "post",
+   "title": "Thorough Digital Forensic Analysis",
+   "words": 522,
+   "published": "2018-09-02",
+   "action": "redirect",
+   "target": "/capabilities/#digital-forensics",
+   "note": "Digital forensics"
+  },
+  {
+   "url": "/ids-talks-1-5-with-coss-marte/",
+   "type": "post",
+   "title": "iDS TALKS 1.5 with Coss Marte",
+   "words": 100,
+   "published": "2021-06-10",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Short post / episode page"
+  },
+  {
+   "url": "/ids-talks-1-4-with-john-harrity/",
+   "type": "post",
+   "title": "iDS TALKS 1.4 with John Harrity",
+   "words": 104,
+   "published": "2021-05-25",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Short post / episode page"
+  },
+  {
+   "url": "/ids-talks-1-3-with-laura-ford-dla-piper/",
+   "type": "post",
+   "title": "iDS TALKS 1.3 with Laura Ford (DLA Piper)",
+   "words": 100,
+   "published": "2021-03-12",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Short post / episode page"
+  },
+  {
+   "url": "/furlough-2-0-what-does-it-mean-for-uk-employers/",
+   "type": "post",
+   "title": "Furlough 2.0: What does it mean for employers?",
+   "words": 993,
+   "published": "2020-10-19",
+   "action": "redirect",
+   "target": "/capabilities/#privacy",
+   "note": "Privacy / cross-border"
+  },
+  {
+   "url": "/electronic-evidence/",
+   "type": "post",
+   "title": "Trust But Verify: How To Approach Electronic Evidence - iDS",
+   "words": 809,
+   "published": "2019-04-04",
+   "action": "redirect",
+   "target": "/capabilities/#digital-forensics",
+   "note": "Digital forensics"
+  },
+  {
+   "url": "/employees-best-defense/",
+   "type": "post",
+   "title": "Employees: Weakest Link Or Best Defense?",
+   "words": 927,
+   "published": "2019-06-07",
+   "action": "redirect",
+   "target": "/insights/departing-employee-risk-assessment/",
+   "note": "Employee risk"
+  },
+  {
+   "url": "/pro-bono-ambassador/",
+   "type": "post",
+   "title": "Avani Patel: Pro Bono Ambassador, Supporter, and Believer",
+   "words": 935,
+   "published": "2020-07-15",
+   "action": "redirect",
+   "target": "/about/#community",
+   "note": "Pro bono"
+  },
+  {
+   "url": "/fun-facts-and-artefacts2/",
+   "type": "post",
+   "title": "Fun Facts and Artefacts (Part II)",
+   "words": 637,
+   "published": "2020-08-04",
+   "action": "redirect",
+   "target": "/capabilities/#digital-forensics",
+   "note": "Digital forensics"
+  },
+  {
+   "url": "/ids-talks-1-2-with-dan-regard/",
+   "type": "post",
+   "title": "iDS TALKS 1.2 with Dan Regard",
+   "words": 85,
+   "published": "2021-02-09",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Short post / episode page"
+  },
+  {
+   "url": "/ids-talks-1-6-with-dan-regard/",
+   "type": "post",
+   "title": "iDS Talks 1.6 with Dan Regard",
+   "words": 89,
+   "published": "2022-01-11",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Short post / episode page"
+  },
+  {
+   "url": "/ids-talks-1-7-with-jaci-and-dan/",
+   "type": "post",
+   "title": "iDS Talks 1.7 with Jaci and Dan",
+   "words": 91,
+   "published": "2022-01-18",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Short post / episode page"
+  },
+  {
+   "url": "/ids-talks-1-8-data-privacy-day/",
+   "type": "post",
+   "title": "iDS Talks 1.8 - Data Privacy Day",
+   "words": 94,
+   "published": "2022-01-25",
+   "action": "redirect",
+   "target": "/insights/ids-talks-1-8-data-privacy-day/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/ids-talks-1-9-women-in-ediscovery/",
+   "type": "post",
+   "title": "iDS Talks 1.9 - Women in eDiscovery",
+   "words": 105,
+   "published": "2022-04-27",
+   "action": "redirect",
+   "target": "/capabilities/#ediscovery",
+   "note": "eDiscovery"
+  },
+  {
+   "url": "/ids-talks-2-0-aba-2022/",
+   "type": "post",
+   "title": "iDS Talks 2.0 – ABA-CBI 2022",
+   "words": 96,
+   "published": "2022-08-10",
+   "action": "redirect",
+   "target": "/insights/ids-talks-2-0-aba-2022/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/transatlantic-tea-time-episode-6-welcome-2022/",
+   "type": "post",
+   "title": "Transatlantic Tea Time: Episode 6: Welcome 2022 - iDS TALKS",
+   "words": 105,
+   "published": "2022-01-25",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Short post / episode page"
+  },
+  {
+   "url": "/the-virtual-cio/",
+   "type": "post",
+   "title": "The Virtual CIO: How Does It Work?",
+   "words": 1053,
+   "published": "2020-12-01",
+   "action": "recreate",
+   "target": "/insights/the-virtual-cio/",
+   "note": "Long-form article"
+  },
+  {
+   "url": "/ids-talks-atm-discovery-and-investigations-with-phil-ogan/",
+   "type": "post",
+   "title": "ATM Discovery and Investigations with Phil Ogan | iDS Talks",
+   "words": 145,
+   "published": "2023-01-17",
+   "action": "redirect",
+   "target": "/capabilities/#digital-forensics",
+   "note": "Digital forensics"
+  },
+  {
+   "url": "/ids-talks-time-date-stamp-authentication-with-dan-regard/",
+   "type": "post",
+   "title": "Time + Date Stamp Authentication | iDS Talks",
+   "words": 114,
+   "published": "2023-02-22",
+   "action": "redirect",
+   "target": "/capabilities/#digital-forensics",
+   "note": "Digital forensics"
+  },
+  {
+   "url": "/ids-talks-building-authentic-relationships-with-dan-plunkett/",
+   "type": "post",
+   "title": "Building Authentic Relationships with Dan Plunkett | iDS Talks",
+   "words": 120,
+   "published": "2023-03-28",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Short post / episode page"
+  },
+  {
+   "url": "/the-end-is-near/",
+   "type": "post",
+   "title": "The End is Near (For the U.K.'s Furlough Scheme)",
+   "words": 796,
+   "published": "2020-09-18",
+   "action": "redirect",
+   "target": "/capabilities/#privacy",
+   "note": "Privacy / cross-border"
+  },
+  {
+   "url": "/ids-talks-delightfully-digestible-data-4-0-hay-fever-edition-with-tim-latulippe/",
+   "type": "post",
+   "title": "Delightfully Digestible Data 4.0 – Hay Fever Edition | iDS Talks",
+   "words": 167,
+   "published": "2023-04-13",
+   "action": "redirect",
+   "target": "/insights/ids-talks-delightfully-digestible-data-4-0-hay-fever-edition-with-tim-latulippe/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/ids-talks-the-rail-ministers-stolen-laptop-with-tim-latulippe/",
+   "type": "post",
+   "title": "The Rail Minister’s Stolen Laptop | iDS Talks",
+   "words": 118,
+   "published": "2023-03-07",
+   "action": "redirect",
+   "target": "/insights/ids-talks-the-rail-ministers-stolen-laptop-with-tim-latulippe/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/transatlantic-tea-time-episode-3-checking-in-with-dan-and-tim/",
+   "type": "post",
+   "title": "Transatlantic Tea Time: Episode 3",
+   "words": 124,
+   "published": "2021-06-04",
+   "action": "redirect",
+   "target": "/insights/transatlantic-tea-time-episode-3-checking-in-with-dan-and-tim/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/transatlantic-tea-time-episode-7-tim-a-paris/",
+   "type": "post",
+   "title": "Transatlantic Tea Time: Episode 7: Tim À Paris - iDS TALKS",
+   "words": 105,
+   "published": "2022-03-31",
+   "action": "redirect",
+   "target": "/insights/transatlantic-tea-time-episode-7-tim-a-paris/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/transatlantic-tea-time-episode-2-checking-in-with-dan-and-tim/",
+   "type": "post",
+   "title": "Transatlantic Tea Time: Episode 2",
+   "words": 121,
+   "published": "2021-04-28",
+   "action": "redirect",
+   "target": "/insights/transatlantic-tea-time-episode-2-checking-in-with-dan-and-tim/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/ids-talks-lawyers-have-heart-with-bobby-williams/",
+   "type": "post",
+   "title": "iDS Talks Lawyers Have Heart with Bobby Williams",
+   "words": 127,
+   "published": "2023-06-05",
+   "action": "redirect",
+   "target": "/insights/ids-talks-lawyers-have-heart-with-bobby-williams/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/ids-talks-ftcs-proposed-noncompete-banwith-neal-weinrich/",
+   "type": "post",
+   "title": "FTC’s Proposed Noncompete Ban with Neal Weinrich",
+   "words": 152,
+   "published": "2023-04-10",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Short post / episode page"
+  },
+  {
+   "url": "/ids-talks-data-trends-for-2023-with-tim-latulippe/",
+   "type": "post",
+   "title": "iDS Talks Data Trends for 2023 with Tim LaTulippe",
+   "words": 121,
+   "published": "2023-01-25",
+   "action": "redirect",
+   "target": "/insights/ids-talks-data-trends-for-2023-with-tim-latulippe/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/transatlantic-tea-time-episode-10-dan-and-tim-speak-from-vienna/",
+   "type": "post",
+   "title": "Transatlantic Tea Time: Episode 10: Tim & Dan in Vienna",
+   "words": 122,
+   "published": "2022-10-20",
+   "action": "redirect",
+   "target": "/insights/transatlantic-tea-time-episode-10-dan-and-tim-speak-from-vienna/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/transatlantic-tea-time-episode-9-dan-and-tim-speak-from-florence/",
+   "type": "post",
+   "title": "Transatlantic Tea Time: EP9: Dan & Tim in Florence",
+   "words": 103,
+   "published": "2022-09-12",
+   "action": "redirect",
+   "target": "/insights/transatlantic-tea-time-episode-9-dan-and-tim-speak-from-florence/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/transatlantic-tea-time-episode-1-checking-in-with-dan-and-tim/",
+   "type": "post",
+   "title": "Transatlantic Tea Time EP1: Checking in with Dan & Tim",
+   "words": 95,
+   "published": "2021-02-26",
+   "action": "redirect",
+   "target": "/insights/transatlantic-tea-time-episode-1-checking-in-with-dan-and-tim/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/ids-talks-1-1-data-subject-access-requests-with-raoul-parekh/",
+   "type": "post",
+   "title": "iDS TALKS 1.1: Data Subject Access Requests w/ Raoul Parekh",
+   "words": 130,
+   "published": "2021-01-25",
+   "action": "redirect",
+   "target": "/capabilities/#privacy",
+   "note": "Privacy / cross-border"
+  },
+  {
+   "url": "/tabletops/",
+   "type": "post",
+   "title": "Tabletop Exercise",
+   "words": 767,
+   "published": "2020-07-21",
+   "action": "redirect",
+   "target": "/capabilities/#cybersecurity",
+   "note": "Cybersecurity"
+  },
+  {
+   "url": "/transatlantic-tea-time-episode-11-dan-and-tim-speak-with-elonor-duhs-from-bates-wells/",
+   "type": "post",
+   "title": "Transatlantic Tea Time: EP11: Eleonor Duhs - Bates Wells",
+   "words": 180,
+   "published": "2022-10-28",
+   "action": "redirect",
+   "target": "/insights/transatlantic-tea-time-episode-11-dan-and-tim-speak-with-elonor-duhs-from-bates-wells/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/risk-management-is-cheaper-than-crisis-repair/",
+   "type": "post",
+   "title": "Risk Management is Cheaper than Crisis Repair",
+   "words": 653,
+   "published": "2020-07-02",
+   "action": "redirect",
+   "target": "/capabilities/#cybersecurity",
+   "note": "Cybersecurity"
+  },
+  {
+   "url": "/gone-phishing-2/",
+   "type": "post",
+   "title": "‘Gone Phishing’ Blog (Part 2)",
+   "words": 933,
+   "published": "2019-09-05",
+   "action": "redirect",
+   "target": "/capabilities/#cybersecurity",
+   "note": "Cybersecurity"
+  },
+  {
+   "url": "/gone-phishing-1/",
+   "type": "post",
+   "title": "‘Gone Phishing’ Blog (Part 1)",
+   "words": 1159,
+   "published": "2019-07-09",
+   "action": "recreate",
+   "target": "/insights/gone-phishing-1/",
+   "note": "Long-form article"
+  },
+  {
+   "url": "/aba-cross-border-institute-ep-5-dan-regard-denise-backhouse/",
+   "type": "post",
+   "title": "ABA Cross-Border Institute Ep.5",
+   "words": 88,
+   "published": "2021-05-19",
+   "action": "redirect",
+   "target": "/capabilities/#privacy",
+   "note": "Privacy / cross-border"
+  },
+  {
+   "url": "/aba-cross-border-institute-ep2-dan-regard-warren-kruse/",
+   "type": "post",
+   "title": "ABA Cross-Border Institute EP2 | Dan Regard - Warren Kruse",
+   "words": 96,
+   "published": "2021-05-17",
+   "action": "redirect",
+   "target": "/capabilities/#privacy",
+   "note": "Privacy / cross-border"
+  },
+  {
+   "url": "/aba-cross-border-institute-ep3-dan-regard-cecil-a-lynn/",
+   "type": "post",
+   "title": "ABA Cross-Border Institute EP3 | Dan Regard - Cecil Lynn",
+   "words": 96,
+   "published": "2021-05-17",
+   "action": "redirect",
+   "target": "/capabilities/#privacy",
+   "note": "Privacy / cross-border"
+  },
+  {
+   "url": "/aba-cross-border-institute-ep1-dan-regard-timothy-latulippe/",
+   "type": "post",
+   "title": "ABA Cross-Border Institute EP1 | Dan Regard - Tim LaTulippe",
+   "words": 96,
+   "published": "2021-05-17",
+   "action": "redirect",
+   "target": "/insights/aba-cross-border-institute-ep1-dan-regard-timothy-latulippe/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/ids-talks-d3-8-0-with-tim-latulippe/",
+   "type": "post",
+   "title": "iDS Talks d3 8.0 with Tim LaTulippe",
+   "words": 247,
+   "published": "2024-02-20",
+   "action": "redirect",
+   "target": "/insights/ids-talks-d3-8-0-with-tim-latulippe/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/ids-talks-beyond-the-box-with-lori-armstrong-halber/",
+   "type": "post",
+   "title": "iDS Talks Beyond the Box with Lori Armstrong Halber",
+   "words": 203,
+   "published": "2023-11-28",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Short post / episode page"
+  },
+  {
+   "url": "/ids-talks-investigating-vehicle-accidents-in-a-digital-world-with-kristen-meeks/",
+   "type": "post",
+   "title": "Investigating Vehicle Accidents in a Digital World w/ Kristen Meeks",
+   "words": 235,
+   "published": "2023-09-14",
+   "action": "redirect",
+   "target": "/capabilities/#digital-forensics",
+   "note": "Digital forensics"
+  },
+  {
+   "url": "/ids-talks-delightfully-digestible-data-7-0/",
+   "type": "post",
+   "title": "iDS Talks Delightfully Digestible Data 7.0",
+   "words": 256,
+   "published": "2023-09-13",
+   "action": "redirect",
+   "target": "/insights/ids-talks-delightfully-digestible-data-7-0/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/ids-talks-intellectual-property-creation-protection-and-3-important-takeaways-with-elissa-hecker/",
+   "type": "post",
+   "title": "iDS Talks Intellectual Property – with Elissa Hecker",
+   "words": 239,
+   "published": "2023-09-07",
+   "action": "redirect",
+   "target": "/case-studies/protecting-trade-secrets/",
+   "note": "Trade secrets"
+  },
+  {
+   "url": "/ids-talks-ai-in-the-world-of-law-with-matt-peacock-and-miklos-orban/",
+   "type": "post",
+   "title": "iDS Talks AI in the World of Law w/ Matt Peacock & Miklos Orban",
+   "words": 250,
+   "published": "2023-08-16",
+   "action": "redirect",
+   "target": "/ai-evidence/",
+   "note": "AI"
+  },
+  {
+   "url": "/ids-talks-2-23-delightfully-digestible-data-6-0/",
+   "type": "post",
+   "title": "iDS Talks Delightfully Digestible Data 6.0",
+   "words": 262,
+   "published": "2023-08-05",
+   "action": "redirect",
+   "target": "/insights/ids-talks-2-23-delightfully-digestible-data-6-0/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/ids-talks-discovery-vis-a-vis-the-hague-with-alex-blumrosen-2/",
+   "type": "post",
+   "title": "iDS Talks Discovery Vis-à-Vis The Hague with Alex Blumrosen - iDS",
+   "words": 222,
+   "published": "2023-08-07",
+   "action": "redirect",
+   "target": "/capabilities/#privacy",
+   "note": "Privacy / cross-border"
+  },
+  {
+   "url": "/ids-talks-transatlantic-tea-time-farewell-and-make-way-for-the-practice-directive/",
+   "type": "post",
+   "title": "Farewell & Make Way: Practice Directive | iDS Talks",
+   "words": 223,
+   "published": "2023-07-06",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Short post / episode page"
+  },
+  {
+   "url": "/ids-talks-delightfully-digestible-data-generative-ai/",
+   "type": "post",
+   "title": "iDS Talks Delightfully Digestible Data – Generative AI - iDS",
+   "words": 213,
+   "published": "2023-06-27",
+   "action": "redirect",
+   "target": "/insights/ids-talks-delightfully-digestible-data-generative-ai/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/ids-talks-having-the-courage-to-create-opportunity-with-mark-emil/",
+   "type": "post",
+   "title": "iDS Talks Having the Courage to Create Opportunity - Mark Emil",
+   "words": 243,
+   "published": "2023-06-08",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Short post / episode page"
+  },
+  {
+   "url": "/ids-talks-explaining-gdpr-with-eleonor-duhs/",
+   "type": "post",
+   "title": "iDS Talks Explaining GDPR with Eleonor Duhs",
+   "words": 211,
+   "published": "2023-04-17",
+   "action": "redirect",
+   "target": "/capabilities/#privacy",
+   "note": "Privacy / cross-border"
+  },
+  {
+   "url": "/structured-data-collectionpreservation/",
+   "type": "post",
+   "title": "Structured Data Collection And Preservation",
+   "words": 1257,
+   "published": "2019-07-30",
+   "action": "recreate",
+   "target": "/insights/structured-data-collectionpreservation/",
+   "note": "Long-form article"
+  },
+  {
+   "url": "/collaborative-communications/",
+   "type": "post",
+   "title": "Collaborative Communications: Fun Facts & Artefacts Part 1: Zoom",
+   "words": 489,
+   "published": "2020-07-06",
+   "action": "redirect",
+   "target": "/capabilities/#digital-forensics",
+   "note": "Digital forensics"
+  },
+  {
+   "url": "/iba-competition-conference/",
+   "type": "post",
+   "title": "Standout Moments from the Annual IBA Competition Conference",
+   "words": 898,
+   "published": "2022-10-17",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "General"
+  },
+  {
+   "url": "/aba-cross-border-institute-ep-5-dan-regard-caroline-goulding/",
+   "type": "post",
+   "title": "ABA Cross-Border Institute EP.6 Dan Regard & Caroline Goulding",
+   "words": 91,
+   "published": "2021-08-03",
+   "action": "redirect",
+   "target": "/capabilities/#privacy",
+   "note": "Privacy / cross-border"
+  },
+  {
+   "url": "/ids-talks-fake-evidence-with-mark-gianturco/",
+   "type": "post",
+   "title": "Fake Evidence with Mark Gianturco | iDS Talks",
+   "words": 107,
+   "published": "2023-02-17",
+   "action": "redirect",
+   "target": "/capabilities/#digital-forensics",
+   "note": "Digital forensics"
+  },
+  {
+   "url": "/ids-talks-furlough-fraud-with-daniel-rupprecht/",
+   "type": "post",
+   "title": "Furlough Fraud with Daniel Rupprecht | iDS Talks",
+   "words": 113,
+   "published": "2023-02-03",
+   "action": "redirect",
+   "target": "/capabilities/#privacy",
+   "note": "Privacy / cross-border"
+  },
+  {
+   "url": "/ids-talks-lets-talk-family-time-with-mark-araujo/",
+   "type": "post",
+   "title": "Let’s Talk Family Time with Mark Araujo | iDS Talks",
+   "words": 146,
+   "published": "2023-04-05",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Short post / episode page"
+  },
+  {
+   "url": "/ids-talks-transportation-data-with-hunter-mcmahon/",
+   "type": "post",
+   "title": "Transportation Data with Hunter McMahon | iDS Talks",
+   "words": 126,
+   "published": "2023-04-12",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Short post / episode page"
+  },
+  {
+   "url": "/ids-talks-rising-tides-of-bipa-with-jeff-rosenthal/",
+   "type": "post",
+   "title": "Rising Tides of BIPA with Jeff Rosenthal | iDS Talks",
+   "words": 134,
+   "published": "2023-02-28",
+   "action": "redirect",
+   "target": "/capabilities/#privacy",
+   "note": "Privacy / cross-border"
+  },
+  {
+   "url": "/ids-talks-leveraging-ai-for-leaders-with-rich-bracken/",
+   "type": "post",
+   "title": "Leveraging AI for Leaders with Rich Bracken | iDS Talks",
+   "words": 209,
+   "published": "2024-02-22",
+   "action": "redirect",
+   "target": "/ai-evidence/",
+   "note": "AI"
+  },
+  {
+   "url": "/you-say-tomato/",
+   "type": "post",
+   "title": "You Say Tomato: American Tools with European Application",
+   "words": 610,
+   "published": "2020-12-15",
+   "action": "redirect",
+   "target": "/capabilities/#privacy",
+   "note": "Privacy / cross-border"
+  },
+  {
+   "url": "/transatlantic-tea-time-episode-8/",
+   "type": "post",
+   "title": "Transatlantic Tea Time: Episode 8: Dan in Belgium - iDS TALKS",
+   "words": 101,
+   "published": "2022-04-18",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Short post / episode page"
+  },
+  {
+   "url": "/false-evidence/",
+   "type": "post",
+   "title": "False Evidence: Questioning Document Authenticity in Court",
+   "words": 3253,
+   "published": "2023-11-14",
+   "action": "recreate",
+   "target": "/insights/false-evidence/",
+   "note": "Long-form article"
+  },
+  {
+   "url": "/heart-eyes-emoji/",
+   "type": "post",
+   "title": "Smiley Face with Heart Eyes - Emojis in eDiscovery",
+   "words": 886,
+   "published": "2022-07-18",
+   "action": "redirect",
+   "target": "/capabilities/#digital-forensics",
+   "note": "Digital forensics"
+  },
+  {
+   "url": "/time-zones/",
+   "type": "post",
+   "title": "Time Zones",
+   "words": 1993,
+   "published": "2023-03-28",
+   "action": "recreate",
+   "target": "/insights/time-zones/",
+   "note": "Long-form article"
+  },
+  {
+   "url": "/text-message-screenshots/",
+   "type": "post",
+   "title": "Text Message Screenshots: Real Or Fake?",
+   "words": 665,
+   "published": "2019-07-08",
+   "action": "redirect",
+   "target": "/capabilities/#digital-forensics",
+   "note": "Digital forensics"
+  },
+  {
+   "url": "/first-impressions/",
+   "type": "post",
+   "title": "First Impressions",
+   "words": 549,
+   "published": "2021-12-16",
+   "action": "redirect",
+   "target": "/insights/first-impressions/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/zoom-ahead/",
+   "type": "post",
+   "title": "Zoom Ahead (Zoom Application Data Storage)",
+   "words": 840,
+   "published": "2021-03-01",
+   "action": "redirect",
+   "target": "/capabilities/#cybersecurity",
+   "note": "Cybersecurity"
+  },
+  {
+   "url": "/the-art-of-consultation/",
+   "type": "post",
+   "title": "The Art of Consultation - Forensic Investigation",
+   "words": 954,
+   "published": "2021-07-12",
+   "action": "redirect",
+   "target": "/insights/the-art-of-consultation/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/structured-data-analysis-proving-a-negative-in-cases-of-fraud/",
+   "type": "post",
+   "title": "Structured Data Analysis in Cases of Fraud",
+   "words": 1151,
+   "published": "2023-02-01",
+   "action": "recreate",
+   "target": "/insights/structured-data-analysis-proving-a-negative-in-cases-of-fraud/",
+   "note": "Long-form article"
+  },
+  {
+   "url": "/consultative-ediscovery/",
+   "type": "post",
+   "title": "Consultative and Custom eDiscovery",
+   "words": 641,
+   "published": "2022-03-16",
+   "action": "redirect",
+   "target": "/capabilities/#ediscovery",
+   "note": "eDiscovery"
+  },
+  {
+   "url": "/ediscovery-document-review-workflow/",
+   "type": "post",
+   "title": "eDiscovery Document Review Workflow",
+   "words": 1320,
+   "published": "2021-11-01",
+   "action": "recreate",
+   "target": "/insights/ediscovery-document-review-workflow/",
+   "note": "Long-form article"
+  },
+  {
+   "url": "/choosing-ediscovery-firms/",
+   "type": "post",
+   "title": "How to Choose the Right eDiscovery Firm",
+   "words": 1738,
+   "published": "2021-08-25",
+   "action": "recreate",
+   "target": "/insights/choosing-ediscovery-firms/",
+   "note": "Long-form article"
+  },
+  {
+   "url": "/up-from-the-depths/",
+   "type": "post",
+   "title": "Up From The Depths: An eDiscovery Experience",
+   "words": 1611,
+   "published": "2021-07-02",
+   "action": "recreate",
+   "target": "/insights/up-from-the-depths/",
+   "note": "Long-form article"
+  },
+  {
+   "url": "/strategic-predictive-coding/",
+   "type": "post",
+   "title": "Strategic eDiscovery – Predictive Coding",
+   "words": 540,
+   "published": "2020-12-11",
+   "action": "redirect",
+   "target": "/capabilities/#ediscovery",
+   "note": "eDiscovery"
+  },
+  {
+   "url": "/collaborative-consultation/",
+   "type": "post",
+   "title": "The Benefits of a Consultancy-Led Approach",
+   "words": 1083,
+   "published": "2022-10-25",
+   "action": "recreate",
+   "target": "/insights/collaborative-consultation/",
+   "note": "Long-form article"
+  },
+  {
+   "url": "/5ws/",
+   "type": "post",
+   "title": "Leveraging Analytics in Legal Investigations",
+   "words": 1177,
+   "published": "2021-12-28",
+   "action": "recreate",
+   "target": "/insights/5ws/",
+   "note": "Long-form article"
+  },
+  {
+   "url": "/culling-strategies/",
+   "type": "post",
+   "title": "Culling Strategies",
+   "words": 890,
+   "published": "2021-05-27",
+   "action": "redirect",
+   "target": "/capabilities/#ediscovery",
+   "note": "eDiscovery"
+  },
+  {
+   "url": "/european-data-scrub/",
+   "type": "post",
+   "title": "iDS London – Data Scrub",
+   "words": 542,
+   "published": "2023-03-06",
+   "action": "redirect",
+   "target": "/insights/european-data-scrub/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/privilege-and-the-pitfalls-associated-with-cross-border-investigations/",
+   "type": "post",
+   "title": "Privilege & Pitfalls of Cross Border Investigations",
+   "words": 1310,
+   "published": "2021-03-15",
+   "action": "recreate",
+   "target": "/insights/privilege-and-the-pitfalls-associated-with-cross-border-investigations/",
+   "note": "Long-form article"
+  },
+  {
+   "url": "/new-bipa-regulations-in-illinois/",
+   "type": "post",
+   "title": "New BIPA Regulations in Illinois",
+   "words": 1428,
+   "published": "2023-02-23",
+   "action": "recreate",
+   "target": "/insights/new-bipa-regulations-in-illinois/",
+   "note": "Long-form article"
+  },
+  {
+   "url": "/protecting-kiosks/",
+   "type": "post",
+   "title": "Protecting Kiosks: A Valuable Customer Touch Point",
+   "words": 582,
+   "published": "2022-11-22",
+   "action": "redirect",
+   "target": "/capabilities/#cybersecurity",
+   "note": "Cybersecurity"
+  },
+  {
+   "url": "/ransomware-attack-recovery/",
+   "type": "post",
+   "title": "Ransomware Attack Recovery",
+   "words": 359,
+   "published": "2021-03-10",
+   "action": "redirect",
+   "target": "/capabilities/#cybersecurity",
+   "note": "Cybersecurity"
+  },
+  {
+   "url": "/departing-employees/",
+   "type": "post",
+   "title": "Out with Old, in with New: New Year Approach to Protecting your IP",
+   "words": 629,
+   "published": "2024-01-24",
+   "action": "redirect",
+   "target": "/insights/departing-employee-risk-assessment/",
+   "note": "Employee risk"
+  },
+  {
+   "url": "/great-resignation/",
+   "type": "post",
+   "title": "I QUIT!: The Great Resignation…and your data",
+   "words": 899,
+   "published": "2021-12-27",
+   "action": "redirect",
+   "target": "/insights/great-resignation/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/trade-secret-loss/",
+   "type": "post",
+   "title": "Mitigating Trade Secret Loss – The Easy Way",
+   "words": 1355,
+   "published": "2022-07-25",
+   "action": "recreate",
+   "target": "/insights/trade-secret-loss/",
+   "note": "Long-form article"
+  },
+  {
+   "url": "/chambers-and-partners2023/",
+   "type": "post",
+   "title": "iDS - Leading eDiscovery Firm by Chambers and Partners 2023",
+   "words": 515,
+   "published": "2023-07-10",
+   "action": "redirect",
+   "target": "/about/#recognition",
+   "note": "Chambers ranking news"
+  },
+  {
+   "url": "/ids-welcomes-philip-ogan/",
+   "type": "post",
+   "title": "iDS Welcomes Philip Ogan - Forensic Expert and ATM Specialist",
+   "words": 390,
+   "published": "2022-10-10",
+   "action": "redirect",
+   "target": "/our-experts/#phil-ogan",
+   "note": "Welcome announcement"
+  },
+  {
+   "url": "/ids-welcomes-bill-taylor/",
+   "type": "post",
+   "title": "iDS Welcomes Bill Taylor as Director, Investigations",
+   "words": 488,
+   "published": "2022-03-24",
+   "action": "redirect",
+   "target": "/our-experts/#bill-taylor",
+   "note": "Welcome announcement"
+  },
+  {
+   "url": "/mike-perelman-joins-ids/",
+   "type": "post",
+   "title": "iDS welcomes Director, Mike Perelman",
+   "words": 467,
+   "published": "2022-02-18",
+   "action": "redirect",
+   "target": "/our-experts/#mike-perelman",
+   "note": "Welcome announcement"
+  },
+  {
+   "url": "/senior-level-promotions/",
+   "type": "post",
+   "title": "iDiscovery Solutions Announces Multiple Senior Level Promotions",
+   "words": 507,
+   "published": "2023-01-26",
+   "action": "redirect",
+   "target": "/our-experts/",
+   "note": "Promotions announcement"
+  },
+  {
+   "url": "/more-senior-level-promotions/",
+   "type": "post",
+   "title": "iDiscovery Solutions Announces More Senior Level Promotions",
+   "words": 457,
+   "published": "2023-01-25",
+   "action": "redirect",
+   "target": "/our-experts/",
+   "note": "Promotions announcement"
+  },
+  {
+   "url": "/chambers-and-partners-5/",
+   "type": "post",
+   "title": "iDiscovery Solutions Receives 5th Chambers and Partners Ranking",
+   "words": 491,
+   "published": "2022-07-13",
+   "action": "redirect",
+   "target": "/about/#recognition",
+   "note": "Chambers ranking news"
+  },
+  {
+   "url": "/fact-crashing-methodology-book/",
+   "type": "post",
+   "title": "Dan Regard releases Fact Crashing™ Methodology book",
+   "words": 568,
+   "published": "2024-01-22",
+   "action": "redirect",
+   "target": "/fact-crashing/",
+   "note": "Fact Crashing methodology"
+  },
+  {
+   "url": "/access-to-justice/",
+   "type": "post",
+   "title": "Access to Justice in the New Age Courtroom",
+   "words": 364,
+   "published": "2023-06-14",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "General"
+  },
+  {
+   "url": "/work-life-integration/",
+   "type": "post",
+   "title": "How Work-Life Integration Works for Me",
+   "words": 769,
+   "published": "2022-10-20",
+   "action": "redirect",
+   "target": "/careers/",
+   "note": "Culture / careers"
+  },
+  {
+   "url": "/fc-principle9/",
+   "type": "post",
+   "title": "Fact Crashing™ Principle 9: Use Data to Work Toward Early Resolution",
+   "words": 794,
+   "published": "2022-03-23",
+   "action": "redirect",
+   "target": "/fact-crashing/",
+   "note": "Fact Crashing methodology"
+  },
+  {
+   "url": "/fc-principle8/",
+   "type": "post",
+   "title": "Fact Crashing™: Principle 8 - Use Data to Shape Other Discovery",
+   "words": 1106,
+   "published": "2022-03-23",
+   "action": "recreate",
+   "target": "/insights/fc-principle8/",
+   "note": "Long-form article"
+  },
+  {
+   "url": "/fc-principle7/",
+   "type": "post",
+   "title": "Fact Crashing™ Principle 7: Data Understanding is Required for Analysis",
+   "words": 797,
+   "published": "2022-03-22",
+   "action": "redirect",
+   "target": "/fact-crashing/",
+   "note": "Fact Crashing methodology"
+  },
+  {
+   "url": "/fc-principle6/",
+   "type": "post",
+   "title": "Fact Crashing™ Principle 6: Data Reliability Starts With Proper Collection",
+   "words": 967,
+   "published": "2022-03-22",
+   "action": "redirect",
+   "target": "/fact-crashing/",
+   "note": "Fact Crashing methodology"
+  },
+  {
+   "url": "/fc-principle5/",
+   "type": "post",
+   "title": "Principle 5. Data Subjective to Preservation & Protection - Fact Crashing™",
+   "words": 775,
+   "published": "2022-03-17",
+   "action": "redirect",
+   "target": "/fact-crashing/",
+   "note": "Fact Crashing methodology"
+  },
+  {
+   "url": "/fc-principle4/",
+   "type": "post",
+   "title": "Fact Crashing™: Principle 4 - Identify, Qualify and Prioritize Data Sources",
+   "words": 879,
+   "published": "2022-03-17",
+   "action": "redirect",
+   "target": "/fact-crashing/",
+   "note": "Fact Crashing methodology"
+  },
+  {
+   "url": "/frame-case-issues-as-data-centric-inquiries/",
+   "type": "post",
+   "title": "Fact Crashing™: Principle 3 - Frame Case Issues as Data-Centric Inquiries",
+   "words": 793,
+   "published": "2021-07-20",
+   "action": "redirect",
+   "target": "/fact-crashing/",
+   "note": "Fact Crashing methodology"
+  },
+  {
+   "url": "/action-data-and-vebal-data/",
+   "type": "post",
+   "title": "Fact Crashing™: Principle 2. Deep Dive: ACTION data v. VERBAL data",
+   "words": 1731,
+   "published": "2021-07-20",
+   "action": "recreate",
+   "target": "/insights/action-data-and-vebal-data/",
+   "note": "Long-form article"
+  },
+  {
+   "url": "/fact-crashing-part-iii-principle-2/",
+   "type": "post",
+   "title": "Fact Crashing™: Principle 2 Data Should be Addressed Early",
+   "words": 661,
+   "published": "2021-03-19",
+   "action": "redirect",
+   "target": "/fact-crashing/",
+   "note": "Fact Crashing methodology"
+  },
+  {
+   "url": "/fact-crashing-part-ii/",
+   "type": "post",
+   "title": "Fact Crashing™: Principle 1 - Data is Discoverable",
+   "words": 515,
+   "published": "2021-02-24",
+   "action": "redirect",
+   "target": "/fact-crashing/",
+   "note": "Fact Crashing methodology"
+  },
+  {
+   "url": "/fact-crashing-an-introduction/",
+   "type": "post",
+   "title": "Fact Crashing™: Introduction",
+   "words": 810,
+   "published": "2021-02-05",
+   "action": "redirect",
+   "target": "/fact-crashing/",
+   "note": "Fact Crashing methodology"
+  },
+  {
+   "url": "/sda-qdma-framework/",
+   "type": "post",
+   "title": "Optimized Structured Data Analytics: QDMA Framework - iDS",
+   "words": 946,
+   "published": "2022-05-10",
+   "action": "redirect",
+   "target": "/capabilities/#structured-data",
+   "note": "Structured data"
+  },
+  {
+   "url": "/taking-steps/",
+   "type": "post",
+   "title": "Taking STEPS™: Control What You Can",
+   "words": 1206,
+   "published": "2022-04-12",
+   "action": "recreate",
+   "target": "/insights/taking-steps/",
+   "note": "Long-form article"
+  },
+  {
+   "url": "/mobile-device-data/",
+   "type": "post",
+   "title": "Mobile Device Data Footprints",
+   "words": 808,
+   "published": "2019-10-15",
+   "action": "redirect",
+   "target": "/capabilities/#digital-forensics",
+   "note": "Digital forensics"
+  },
+  {
+   "url": "/investigation-dont-get-me-everything-find-me-something/",
+   "type": "post",
+   "title": "Investigations: Don't Get Me Everything, Find Me Something",
+   "words": 782,
+   "published": "2020-07-03",
+   "action": "redirect",
+   "target": "/capabilities/#special-investigations-unit",
+   "note": "Investigations"
+  },
+  {
+   "url": "/finely-tuned-upward-mobility/",
+   "type": "post",
+   "title": "Finely Tuned — 005 Upward Mobility",
+   "words": 651,
+   "published": "2020-10-08",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Short post / episode page"
+  },
+  {
+   "url": "/what-to-do-when-your-cio-leaves/",
+   "type": "post",
+   "title": "What to Do When Your CIO Leaves",
+   "words": 1259,
+   "published": "2020-12-18",
+   "action": "recreate",
+   "target": "/insights/what-to-do-when-your-cio-leaves/",
+   "note": "Long-form article"
+  },
+  {
+   "url": "/ids-talks-offboarding-employees-with-jacques-nack/",
+   "type": "post",
+   "title": "iDS Talks Offboarding Employees with Jacques Nack",
+   "words": 224,
+   "published": "2023-06-30",
+   "action": "redirect",
+   "target": "/insights/departing-employee-risk-assessment/",
+   "note": "Employee risk"
+  },
+  {
+   "url": "/ids-talks-chatgpt-with-jacques-nack/",
+   "type": "post",
+   "title": "iDS Talks chatGPT with Jacques Nack",
+   "words": 164,
+   "published": "2023-06-06",
+   "action": "redirect",
+   "target": "/ai-evidence/",
+   "note": "AI"
+  },
+  {
+   "url": "/ids-talks-compliance-101-with-jacques-nack/",
+   "type": "post",
+   "title": "iDS Talks Compliance 101 with Jacques Nack - iDS",
+   "words": 124,
+   "published": "2023-04-11",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Short post / episode page"
+  },
+  {
+   "url": "/ids-talks-whats-so-special-about-ids-special-investigations-unit-with-bill-taylor/",
+   "type": "post",
+   "title": "iDS’ Special Investigations Unit w/ Bill Taylor | iDS Talks",
+   "words": 217,
+   "published": "2023-06-07",
+   "action": "redirect",
+   "target": "/capabilities/#special-investigations-unit",
+   "note": "Investigations"
+  },
+  {
+   "url": "/technology-stack-concealment/",
+   "type": "post",
+   "title": "Why the Modern Technology Stack Makes Concealment So Hard",
+   "words": 715,
+   "published": "2026-06-02",
+   "action": "redirect",
+   "target": "/insights/technology-stack-concealment/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/liv-golf-collapse/",
+   "type": "post",
+   "title": "The Digital Paper Trail: What the LIV Golf Collapse Already Tells Us",
+   "words": 1351,
+   "published": "2026-06-04",
+   "action": "redirect",
+   "target": "/insights/liv-golf-collapse/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/ai-in-your-legal-firm/",
+   "type": "post",
+   "title": "Ask These Five Questions Before You Deploy AI in Your Legal Firm",
+   "words": 775,
+   "published": "2026-05-20",
+   "action": "redirect",
+   "target": "/insights/ai-in-your-legal-firm/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/evolution-of-ediscovery/",
+   "type": "post",
+   "title": "Banker's Boxes to the Cloud: The Evolution of eDiscovery",
+   "words": 668,
+   "published": "2026-04-30",
+   "action": "redirect",
+   "target": "/insights/evolution-of-ediscovery/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/building-teams/",
+   "type": "post",
+   "title": "Building Team Confidence and Resilience Starts With 1 Question",
+   "words": 529,
+   "published": "2026-05-18",
+   "action": "redirect",
+   "target": "/insights/building-teams/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/when-ai-goes-on-trial/",
+   "type": "post",
+   "title": "When AI Goes on Trial",
+   "words": 659,
+   "published": "2026-04-27",
+   "action": "redirect",
+   "target": "/insights/when-ai-goes-on-trial/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/taylormade-v-callaway/",
+   "type": "post",
+   "title": "TaylorMade v. Callaway: What the Case Means for Sports Litigation",
+   "words": 1793,
+   "published": "2026-04-30",
+   "action": "redirect",
+   "target": "/insights/taylormade-v-callaway/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/forensic-data-takes-the-stand/",
+   "type": "post",
+   "title": "When Forensic Data Takes the Stand",
+   "words": 718,
+   "published": "2026-04-23",
+   "action": "redirect",
+   "target": "/insights/forensic-data-takes-the-stand/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/case-for-human-expertise/",
+   "type": "post",
+   "title": "The Case for Human Expertise in an AI World",
+   "words": 664,
+   "published": "2026-04-09",
+   "action": "redirect",
+   "target": "/insights/case-for-human-expertise/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/caught-on-company-time/",
+   "type": "post",
+   "title": "Caught on Company Time",
+   "words": 695,
+   "published": "2026-04-13",
+   "action": "redirect",
+   "target": "/insights/caught-on-company-time/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/never-stop-asking-why/",
+   "type": "post",
+   "title": "The Best Investigators Never Stop Asking \"Why\"",
+   "words": 667,
+   "published": "2026-04-01",
+   "action": "redirect",
+   "target": "/insights/never-stop-asking-why/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/broken-covenants/",
+   "type": "post",
+   "title": "Broken Covenants: Private Messages, Public Consequences",
+   "words": 659,
+   "published": "2026-04-02",
+   "action": "redirect",
+   "target": "/insights/broken-covenants/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/ai-information-governance-risks/",
+   "type": "post",
+   "title": "Is Your Information Governance Keeping Up With AI?",
+   "words": 720,
+   "published": "2026-03-24",
+   "action": "redirect",
+   "target": "/insights/ai-information-governance-risks/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/intellectual-property-data/",
+   "type": "post",
+   "title": "When Intellectual Property Walks Out the Door, Data Stays Behind",
+   "words": 532,
+   "published": "2026-03-26",
+   "action": "redirect",
+   "target": "/insights/intellectual-property-data/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/navigating-ediscovery-on-mobile/",
+   "type": "post",
+   "title": "Mobile Data, Real Consequences: Navigating eDiscovery on Mobile",
+   "words": 361,
+   "published": "2026-03-13",
+   "action": "redirect",
+   "target": "/insights/navigating-ediscovery-on-mobile/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/forensic-data-validation/",
+   "type": "post",
+   "title": "The Fake, the Forensic, and the Fight for Truth",
+   "words": 1030,
+   "published": "2025-11-25",
+   "action": "redirect",
+   "target": "/insights/forensic-data-validation/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/brainstorm/",
+   "type": "post",
+   "title": "Don’t Bring an Umbrella to a Brainstorm",
+   "words": 116,
+   "published": "2025-11-18",
+   "action": "redirect",
+   "target": "/careers/",
+   "note": "Culture / careers"
+  },
+  {
+   "url": "/advantages-of-ai/",
+   "type": "post",
+   "title": "Faster Isn’t Better: The Real Advantage of AI",
+   "words": 1047,
+   "published": "2025-11-20",
+   "action": "redirect",
+   "target": "/insights/advantages-of-ai/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/integrating-ai-into-business/",
+   "type": "post",
+   "title": "19 Ways to Effectively Integrate AI into Business Processes in 2025",
+   "words": 295,
+   "published": "2025-11-05",
+   "action": "redirect",
+   "target": "/insights/integrating-ai-into-business/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/cross-border-data/",
+   "type": "post",
+   "title": "From Data Burden to Strategic Advantage",
+   "words": 122,
+   "published": "2025-11-11",
+   "action": "redirect",
+   "target": "/insights/cross-border-data/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/internet-of-things/",
+   "type": "post",
+   "title": "Navigating the Internet of Things Revolution in eDiscovery",
+   "words": 401,
+   "published": "2025-10-27",
+   "action": "redirect",
+   "target": "/capabilities/#digital-forensics",
+   "note": "Digital forensics"
+  },
+  {
+   "url": "/mobile-device-data-collection/",
+   "type": "post",
+   "title": "The Small Device with Massive Discovery Impact",
+   "words": 254,
+   "published": "2025-10-30",
+   "action": "redirect",
+   "target": "/capabilities/#digital-forensics",
+   "note": "Digital forensics"
+  },
+  {
+   "url": "/leadership-skills-resources/",
+   "type": "post",
+   "title": "20 Resources to Hone Your Leadership Skills",
+   "words": 263,
+   "published": "2025-10-22",
+   "action": "redirect",
+   "target": "/careers/",
+   "note": "Culture / careers"
+  },
+  {
+   "url": "/strategic-questioning/",
+   "type": "post",
+   "title": "Strategic Questioning: Unlocking Deeper Insights with \"Why?\"",
+   "words": 302,
+   "published": "2025-10-16",
+   "action": "redirect",
+   "target": "/insights/strategic-questioning/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/wrongful-conviction-data-analysis/",
+   "type": "post",
+   "title": "Data Can Help Free the Wrongly Incarcerated",
+   "words": 1041,
+   "published": "2025-10-14",
+   "action": "redirect",
+   "target": "/insights/wrongful-conviction-data-analysis/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/purposeful-pauses/",
+   "type": "post",
+   "title": "Coffee Breaks & Breakthroughs: Purposeful Pauses in an AI World",
+   "words": 460,
+   "published": "2025-10-07",
+   "action": "redirect",
+   "target": "/insights/purposeful-pauses/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/perspective-in-investigation/",
+   "type": "post",
+   "title": "The Bigger Picture: The Value of Different Perspectives",
+   "words": 1138,
+   "published": "2025-10-02",
+   "action": "redirect",
+   "target": "/insights/perspective-in-investigation/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/intellectual-property-101/",
+   "type": "post",
+   "title": "Intellectual Property 101: Protecting Your Business in a Digital Age",
+   "words": 1328,
+   "published": "2025-09-03",
+   "action": "recreate",
+   "target": "/insights/intellectual-property-101/",
+   "note": "Long-form article"
+  },
+  {
+   "url": "/select-plaintiff-analysis/",
+   "type": "post",
+   "title": "Initial Look at Select Plaintiffs vs. Entire Class Analysis",
+   "words": 893,
+   "published": "2025-09-10",
+   "action": "redirect",
+   "target": "/insights/select-plaintiff-analysis/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/finish-2025-strong/",
+   "type": "post",
+   "title": "How 20 Business Leaders Plan To Finish 2025 Strong",
+   "words": 228,
+   "published": "2025-07-02",
+   "action": "redirect",
+   "target": "/insights/finish-2025-strong/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/chambers-and-partners-2025/",
+   "type": "post",
+   "title": "Chambers and Partners 2025 - iDS Recognized 8th Straight Year",
+   "words": 421,
+   "published": "2025-06-30",
+   "action": "redirect",
+   "target": "/about/#recognition",
+   "note": "Chambers ranking news"
+  },
+  {
+   "url": "/multi-source-data/",
+   "type": "post",
+   "title": "Data Layers of Truth - The Power of Multiple Sources",
+   "words": 811,
+   "published": "2025-06-09",
+   "action": "redirect",
+   "target": "/insights/multi-source-data/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/hidden-electronic-evidence/",
+   "type": "post",
+   "title": "Hidden Sources of eDISCOVERY",
+   "words": 820,
+   "published": "2025-06-25",
+   "action": "redirect",
+   "target": "/capabilities/#ediscovery",
+   "note": "eDiscovery"
+  },
+  {
+   "url": "/ediscovery-tools/",
+   "type": "post",
+   "title": "Exploring New Tools, While Hitting Deadlines",
+   "words": 822,
+   "published": "2025-06-02",
+   "action": "redirect",
+   "target": "/capabilities/#ediscovery",
+   "note": "eDiscovery"
+  },
+  {
+   "url": "/well-placed-pause/",
+   "type": "post",
+   "title": "Don’t underestimate the power of a well-placed pause",
+   "words": 179,
+   "published": "2025-06-03",
+   "action": "redirect",
+   "target": "/insights/well-placed-pause/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/digital-evidence-authentication/",
+   "type": "post",
+   "title": "What Laba v. JBO Means for Digital Evidence: Forgery & Metadata",
+   "words": 635,
+   "published": "2025-05-29",
+   "action": "redirect",
+   "target": "/insights/digital-evidence-authentication/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/power-of-collaborative-investigations/",
+   "type": "post",
+   "title": "Power of Collaborative Investigations",
+   "words": 1521,
+   "published": "2025-05-21",
+   "action": "redirect",
+   "target": "/insights/power-of-collaborative-investigations/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/feeding-ai/",
+   "type": "post",
+   "title": "Feeding the Beast: What AI Eats—and Why It Matters",
+   "words": 702,
+   "published": "2025-05-22",
+   "action": "redirect",
+   "target": "/insights/feeding-ai/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/leveraging-ai/",
+   "type": "post",
+   "title": "Leveraging AI For Accelerating, Not Decision-Making",
+   "words": 193,
+   "published": "2025-04-29",
+   "action": "redirect",
+   "target": "/insights/leveraging-ai/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/pausing-for-inclusion/",
+   "type": "post",
+   "title": "Pausing for Inclusion: Fostering Innovation and Collaboration",
+   "words": 901,
+   "published": "2025-04-14",
+   "action": "redirect",
+   "target": "/insights/pausing-for-inclusion/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/system-generated-data/",
+   "type": "post",
+   "title": "Evolution of Evidence: From Testimony to System-Generated Data",
+   "words": 173,
+   "published": "2025-03-27",
+   "action": "redirect",
+   "target": "/insights/system-generated-data/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/departing-employee-risk-assessment/",
+   "type": "post",
+   "title": "Employee Risk Assessments for Departing Employees",
+   "words": 964,
+   "published": "2025-04-10",
+   "action": "redirect",
+   "target": "/insights/departing-employee-risk-assessment/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/ids-talks-community/",
+   "type": "post",
+   "title": "Community in eDiscovery: Networking, togetherness & positivity",
+   "words": 149,
+   "published": "2025-03-18",
+   "action": "redirect",
+   "target": "/insights/ids-talks-community/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/the-pixel-problem/",
+   "type": "post",
+   "title": "The Pixel Problem: A Wake-Up Call for Businesses",
+   "words": 204,
+   "published": "2025-03-25",
+   "action": "redirect",
+   "target": "/insights/the-pixel-problem/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/optical-character-recognition/",
+   "type": "post",
+   "title": "The CASE FOR MODERN Optical Character Recognition",
+   "words": 523,
+   "published": "2025-03-13",
+   "action": "redirect",
+   "target": "/capabilities/#ediscovery",
+   "note": "eDiscovery"
+  },
+  {
+   "url": "/ids-talks-best-practices-in-ediscovery-insights-from-industry-veterans-with-mark-drew/",
+   "type": "post",
+   "title": "Best Practices in eDiscovery: Insights from Industry Veterans",
+   "words": 193,
+   "published": "2025-03-11",
+   "action": "redirect",
+   "target": "/insights/ids-talks-best-practices-in-ediscovery-insights-from-industry-veterans-with-mark-drew/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/value-of-experience/",
+   "type": "post",
+   "title": "The Value Of Experience Gained Through Curiosity",
+   "words": 223,
+   "published": "2025-03-12",
+   "action": "redirect",
+   "target": "/insights/value-of-experience/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/ediscovery-budgeting/",
+   "type": "post",
+   "title": "Budgeting in the World of Investigations and eDiscovery",
+   "words": 692,
+   "published": "2025-02-12",
+   "action": "redirect",
+   "target": "/insights/ediscovery-budgeting/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/data-skepticism/",
+   "type": "post",
+   "title": "Questioning Data Assumptions: The Importance of Skepticism",
+   "words": 826,
+   "published": "2025-03-11",
+   "action": "redirect",
+   "target": "/insights/data-skepticism/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/ids-talks-tips-for-lawyers-effectively-managing-and-utilizing-data-with-hunter-mcmahon/",
+   "type": "post",
+   "title": "Tips for Lawyers: Effectively Managing and Utilizing Data",
+   "words": 164,
+   "published": "2025-02-03",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Short post / episode page"
+  },
+  {
+   "url": "/technology-driven-solutions/",
+   "type": "post",
+   "title": "Say YES to Solutions: Turning Technology & Mindset to Possibility",
+   "words": 853,
+   "published": "2025-01-30",
+   "action": "redirect",
+   "target": "/insights/technology-driven-solutions/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/the-journey-to-becoming-a-digital-forensics-expert-with-bobby-williams/",
+   "type": "post",
+   "title": "The Journey to Becoming a Digital Forensics Expert",
+   "words": 191,
+   "published": "2025-01-15",
+   "action": "redirect",
+   "target": "/insights/the-journey-to-becoming-a-digital-forensics-expert-with-bobby-williams/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/deep-data-diving/",
+   "type": "post",
+   "title": "Deep Data Diving: Evolution of Expertise in Digital Forensics",
+   "words": 1028,
+   "published": "2025-01-22",
+   "action": "redirect",
+   "target": "/insights/deep-data-diving/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/ai-hallucinations/",
+   "type": "post",
+   "title": "Artificial Intelligence Did Not Help Me Write This Expert Report",
+   "words": 1417,
+   "published": "2025-01-09",
+   "action": "redirect",
+   "target": "/insights/ai-hallucinations/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/information-without-perspective/",
+   "type": "post",
+   "title": "What is Information Without Perspective?",
+   "words": 329,
+   "published": "2024-12-16",
+   "action": "redirect",
+   "target": "/insights/information-without-perspective/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/ai-right-questions/",
+   "type": "post",
+   "title": "AI and the Right Questions: Hunter McMahon’s Forbes Insight",
+   "words": 272,
+   "published": "2024-12-17",
+   "action": "redirect",
+   "target": "/insights/ai-right-questions/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/bobbywilliams-gayle-oconnor-award/",
+   "type": "post",
+   "title": "Bobby Williams Named 2024 Gayle O’Connor Spirit Award Winner",
+   "words": 440,
+   "published": "2024-12-12",
+   "action": "redirect",
+   "target": "/insights/bobbywilliams-gayle-oconnor-award/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/building-a-career-in-legal-tech/",
+   "type": "post",
+   "title": "Blazing Trails: Building a Career in Legal Tech & Data Services",
+   "words": 986,
+   "published": "2024-12-13",
+   "action": "redirect",
+   "target": "/careers/",
+   "note": "Culture / careers"
+  },
+  {
+   "url": "/building-a-career-in-legal-technology/",
+   "type": "post",
+   "title": "Building a Career in Legal Technology and Data Services",
+   "words": 218,
+   "published": "2024-12-03",
+   "action": "redirect",
+   "target": "/careers/",
+   "note": "Culture / careers"
+  },
+  {
+   "url": "/gaming-electronically-stored-information/",
+   "type": "post",
+   "title": "GAME ON – For eDiscovery",
+   "words": 779,
+   "published": "2024-12-05",
+   "action": "redirect",
+   "target": "/capabilities/#ediscovery",
+   "note": "eDiscovery"
+  },
+  {
+   "url": "/tackling-data-hurdles/",
+   "type": "post",
+   "title": "Behind the Scenes: Tackling Data Hurdles in Legal Battles",
+   "words": 1075,
+   "published": "2024-11-05",
+   "action": "recreate",
+   "target": "/insights/tackling-data-hurdles/",
+   "note": "Long-form article"
+  },
+  {
+   "url": "/gdpr/",
+   "type": "post",
+   "title": "Global Data Privacy Laws (GDPR): Everything You Need to Know",
+   "words": 990,
+   "published": "2024-10-28",
+   "action": "redirect",
+   "target": "/insights/gdpr/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/ids-expands-forensic-expertise/",
+   "type": "post",
+   "title": "iDS Expands Forensic Expertise with Teddy Brown",
+   "words": 446,
+   "published": "2024-11-05",
+   "action": "redirect",
+   "target": "/our-experts/#theodore-brown",
+   "note": "Welcome announcement"
+  },
+  {
+   "url": "/global-data-privacy-laws/",
+   "type": "post",
+   "title": "Global Data Privacy Laws w/ Tim LaTulippe & Dom Tucker",
+   "words": 169,
+   "published": "2024-10-03",
+   "action": "redirect",
+   "target": "/insights/global-data-privacy-laws/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/finding-the-truth/",
+   "type": "post",
+   "title": "Finding the Truth, Running a Successful Internal Investigation",
+   "words": 178,
+   "published": "2024-09-19",
+   "action": "redirect",
+   "target": "/capabilities/#special-investigations-unit",
+   "note": "Investigations"
+  },
+  {
+   "url": "/ids-version-of-career-day/",
+   "type": "post",
+   "title": "iDS’ Version of Career Day w/ Dan Regard & Hunter McMahon",
+   "words": 171,
+   "published": "2024-09-16",
+   "action": "redirect",
+   "target": "/careers/",
+   "note": "Culture / careers"
+  },
+  {
+   "url": "/digital-data-management/",
+   "type": "post",
+   "title": "Avoiding Common Pitfalls in Digital Data Management",
+   "words": 1056,
+   "published": "2024-08-27",
+   "action": "redirect",
+   "target": "/insights/digital-data-management/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/ids-talks-emerging-technologies-in-legal-practice-whats-next-with-jacques-nack/",
+   "type": "post",
+   "title": "Emerging Technologies in Legal Practice: What’s Next?",
+   "words": 154,
+   "published": "2024-08-21",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Short post / episode page"
+  },
+  {
+   "url": "/ids-talks-large-scale-data-preservation-with-mike-perelman/",
+   "type": "post",
+   "title": "Large Scale Data Preservation with Mike Perelman | iDS Talks",
+   "words": 122,
+   "published": "2024-08-21",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Short post / episode page"
+  },
+  {
+   "url": "/evolution-litigation-technology/",
+   "type": "post",
+   "title": "The Evolution of Litigation Technology",
+   "words": 934,
+   "published": "2024-08-15",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "General"
+  },
+  {
+   "url": "/ids-talks-overcoming-data-challenges-in-high-stakes-litigation-with-julian-ackert/",
+   "type": "post",
+   "title": "iDS Talks Overcoming Data Challenges in High-Stakes Litigation",
+   "words": 149,
+   "published": "2024-07-30",
+   "action": "redirect",
+   "target": "/insights/ids-talks-overcoming-data-challenges-in-high-stakes-litigation-with-julian-ackert/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/large-scale-forensic-preservation/",
+   "type": "post",
+   "title": "Large-Scale Forensic Preservation: Data Integrity & Compliance",
+   "words": 798,
+   "published": "2024-08-06",
+   "action": "redirect",
+   "target": "/insights/large-scale-forensic-preservation/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/data-in-corporate-investigations/",
+   "type": "post",
+   "title": "The Crucial Role of Data in Corporate Investigations",
+   "words": 1319,
+   "published": "2024-07-25",
+   "action": "redirect",
+   "target": "/insights/data-in-corporate-investigations/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/complex-data-challenges/",
+   "type": "post",
+   "title": "Transforming Data Challenges into Success: A Client’s Journey",
+   "words": 927,
+   "published": "2024-07-11",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Short post / episode page"
+  },
+  {
+   "url": "/legal-digital-forensics/",
+   "type": "post",
+   "title": "iDS: Digital Forensics in the Legal World",
+   "words": 704,
+   "published": "2024-07-18",
+   "action": "redirect",
+   "target": "/capabilities/#digital-forensics",
+   "note": "Digital forensics"
+  },
+  {
+   "url": "/ids-talks-d3-version-10-0-with-tim-latulippe/",
+   "type": "post",
+   "title": "iDS Talks d3 version 10.0 with Tim LaTulippe",
+   "words": 207,
+   "published": "2024-07-09",
+   "action": "redirect",
+   "target": "/insights/ids-talks-d3-version-10-0-with-tim-latulippe/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/ids-talks-the-crucial-role-of-data-in-corporate-investigations-with-bill-taylor/",
+   "type": "post",
+   "title": "Crucial Role of Data in Corporate Investigations feat. Bill Taylor",
+   "words": 174,
+   "published": "2024-07-08",
+   "action": "redirect",
+   "target": "/capabilities/#special-investigations-unit",
+   "note": "Investigations"
+  },
+  {
+   "url": "/chamberspartners2024/",
+   "type": "post",
+   "title": "iDS Named Leading eDiscovery Firm, Chambers & Partners 2024",
+   "words": 475,
+   "published": "2024-06-25",
+   "action": "redirect",
+   "target": "/about/#recognition",
+   "note": "Chambers ranking news"
+  },
+  {
+   "url": "/ids-ltd-chambers-partners2024/",
+   "type": "post",
+   "title": "iDS Ltd named Leading eDiscovery Firm by Chambers & Partners",
+   "words": 460,
+   "published": "2024-06-25",
+   "action": "redirect",
+   "target": "/about/#recognition",
+   "note": "Chambers ranking news"
+  },
+  {
+   "url": "/ids-talks-data-driven-decision-making-in-corporate-legal-departments-with-hunter-mcmahon/",
+   "type": "post",
+   "title": "Data-Driven Decision Making in Corporate Legal Departments",
+   "words": 173,
+   "published": "2024-06-06",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Short post / episode page"
+  },
+  {
+   "url": "/ids-talks-the-role-of-digital-forensics-in-modern-legal-battles-with-jonathan-karchmer/",
+   "type": "post",
+   "title": "Digital Forensics in Modern Legal Battles, Jonathan Karchmer",
+   "words": 228,
+   "published": "2024-05-13",
+   "action": "redirect",
+   "target": "/capabilities/#digital-forensics",
+   "note": "Digital forensics"
+  },
+  {
+   "url": "/ai-in-ediscovery/",
+   "type": "post",
+   "title": "How AI is Revolutionizing eDiscovery in Legal Proceedings - iDS",
+   "words": 562,
+   "published": "2024-05-06",
+   "action": "redirect",
+   "target": "/ai-evidence/",
+   "note": "AI"
+  },
+  {
+   "url": "/ids-talks-d3-9-0-with-tim-latulippe/",
+   "type": "post",
+   "title": "iDS Talks d3 9.0 with Tim LaTulippe",
+   "words": 252,
+   "published": "2024-04-30",
+   "action": "redirect",
+   "target": "/insights/ids-talks-d3-9-0-with-tim-latulippe/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/ids-talks-navigating-the-complex-world-of-data-management-in-legal-firms-with-robert-kirtley/",
+   "type": "post",
+   "title": "Navigating the Complex World of Data Management in Legal Firms",
+   "words": 225,
+   "published": "2024-04-23",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Short post / episode page"
+  },
+  {
+   "url": "/pro-bono-cases-in-data-analytics/",
+   "type": "post",
+   "title": "Data’s Redemption: Pro Bono Cases in Data Analytics",
+   "words": 786,
+   "published": "2024-04-24",
+   "action": "redirect",
+   "target": "/about/#community",
+   "note": "Pro bono"
+  },
+  {
+   "url": "/concurrences/",
+   "type": "post",
+   "title": "Navigating Frontiers of Cartel Enforcement: Insights from Brussels",
+   "words": 964,
+   "published": "2024-04-10",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "General"
+  },
+  {
+   "url": "/ids-talks-the-evolution-of-ediscovery-where-are-we-heading-with-drew-oshaughnessy/",
+   "type": "post",
+   "title": "The Evolution of eDiscovery: Where Are We Heading?",
+   "words": 213,
+   "published": "2024-03-27",
+   "action": "redirect",
+   "target": "/capabilities/#ediscovery",
+   "note": "eDiscovery"
+  },
+  {
+   "url": "/ai-in-legal-tech/",
+   "type": "post",
+   "title": "The Evolution of AI in Legal Tech",
+   "words": 705,
+   "published": "2024-04-02",
+   "action": "redirect",
+   "target": "/ai-evidence/",
+   "note": "AI"
+  },
+  {
+   "url": "/ids-talks-ai-in-ediscovery-a-game-changer-for-legal-professionals-with-drew-gaibler/",
+   "type": "post",
+   "title": "iDS Talks AI in eDiscovery: Game Changer for Legal Professionals",
+   "words": 209,
+   "published": "2024-03-18",
+   "action": "redirect",
+   "target": "/insights/ids-talks-ai-in-ediscovery-a-game-changer-for-legal-professionals-with-drew-gaibler/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/system-generated-evidence/",
+   "type": "post",
+   "title": "The Courtroom's New Witness: System-Generated Evidence",
+   "words": 756,
+   "published": "2026-06-11",
+   "action": "redirect",
+   "target": "/insights/system-generated-evidence/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/digital-forensics-kincade-fire/",
+   "type": "post",
+   "title": "When the Smoke Clears: Digital Forensics and the Kincade Fire",
+   "words": 741,
+   "published": "2026-06-22",
+   "action": "redirect",
+   "target": "/insights/digital-forensics-kincade-fire/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/deepfakes-in-the-courtroom/",
+   "type": "post",
+   "title": "Deepfakes in the Courtroom: Can You Trust the Evidence?",
+   "words": 739,
+   "published": "2026-07-06",
+   "action": "redirect",
+   "target": "/insights/deepfakes-in-the-courtroom/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/chambers-partners-9/",
+   "type": "post",
+   "title": "iDS Recognized for a 9th Year in a row by Chambers & Partners",
+   "words": 415,
+   "published": "2026-06-30",
+   "action": "redirect",
+   "target": "/insights/chambers-partners-9/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/boutique-firm-is-back/",
+   "type": "post",
+   "title": "The Boutique Firm Is Back — And AI Is Why",
+   "words": 682,
+   "published": "2026-04-14",
+   "action": "redirect",
+   "target": "/insights/boutique-firm-is-back/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/ids-talks-out-of-bounds-unpacking-the-taylormade-v-callaway-lawsuit-w-bobby-williams-guests/",
+   "type": "post",
+   "title": "Out of Bounds: Unpacking the TaylorMade v. Callaway Lawsuit",
+   "words": 320,
+   "published": "2026-06-15",
+   "action": "redirect",
+   "target": "/insights/ids-talks-out-of-bounds-unpacking-the-taylormade-v-callaway-lawsuit-w-bobby-williams-guests/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/sparkle-service-leadership/",
+   "type": "post",
+   "title": "Sparkle, Service & Leadership w/ Bobby Williams & Bree Murphy",
+   "words": 253,
+   "published": "2026-03-23",
+   "action": "redirect",
+   "target": "/insights/sparkle-service-leadership/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/ediscovery-response-to-epstein-files/",
+   "type": "post",
+   "title": "iDS Talks - An eDiscovery Response to the Epstein Files",
+   "words": 299,
+   "published": "2026-03-09",
+   "action": "redirect",
+   "target": "/insights/ediscovery-response-to-epstein-files/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/ids-talks-curiosity-meets-innovation-with-hunter-mcmahonand-drew-oshaughnessy/",
+   "type": "post",
+   "title": "iDS Talks - Curiosity Meets Innovation",
+   "words": 267,
+   "published": "2025-10-08",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Short post / episode page"
+  },
+  {
+   "url": "/ids-talks-the-big-picture-with-bobby-williams-and-steffon-isaac/",
+   "type": "post",
+   "title": "iDS Talks The Big Picture with Bobby Williams and Steffon Isaac",
+   "words": 334,
+   "published": "2025-10-06",
+   "action": "redirect",
+   "target": "/insights/ids-talks-the-big-picture-with-bobby-williams-and-steffon-isaac/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/ids-talks-protecting-intellectual-property-in-the-age-of-ai-with-teddy-brown-mike-perelman/",
+   "type": "post",
+   "title": "iDS Talks Protecting Intellectual Property in the Age of AI",
+   "words": 317,
+   "published": "2025-09-22",
+   "action": "redirect",
+   "target": "/ai-evidence/",
+   "note": "AI"
+  },
+  {
+   "url": "/ids-talks-data-layers-of-truth/",
+   "type": "post",
+   "title": "iDS Talks Data Layers of Truth:The Power of Multiple Sources",
+   "words": 278,
+   "published": "2025-05-27",
+   "action": "redirect",
+   "target": "/capabilities/#structured-data",
+   "note": "Structured data"
+  },
+  {
+   "url": "/what-are-you-really-giving-ai/",
+   "type": "post",
+   "title": "Feeding the Beast: What are You Really Giving AI w/ Jacques Nack",
+   "words": 210,
+   "published": "2025-05-07",
+   "action": "redirect",
+   "target": "/ai-evidence/",
+   "note": "AI"
+  },
+  {
+   "url": "/ids-talks-exit-strategies/",
+   "type": "post",
+   "title": "Exit Strategies: Safeguarding ERAs for Departing Employees",
+   "words": 219,
+   "published": "2025-05-19",
+   "action": "redirect",
+   "target": "/insights/ids-talks-exit-strategies/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/what-examiner-looks-for/",
+   "type": "post",
+   "title": "What the Examiner Is Actually Looking For",
+   "words": 1941,
+   "published": "2026-07-02",
+   "action": "redirect",
+   "target": "/insights/what-examiner-looks-for/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/follow-the-data-not-the-phone/",
+   "type": "post",
+   "title": "Follow the Data, Not the Phone",
+   "words": 678,
+   "published": "2026-07-13",
+   "action": "redirect",
+   "target": "/insights/follow-the-data-not-the-phone/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/beyond-chain-of-custody/",
+   "type": "post",
+   "title": "Beyond Chain of Custody: The Case for Proof of Origin",
+   "words": 750,
+   "published": "2026-07-21",
+   "action": "redirect",
+   "target": "/insights/beyond-chain-of-custody/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/internet-of-things-evidence/",
+   "type": "post",
+   "title": "Your Smart Home Has a Long Memory: IoT Evidence in Litigation",
+   "words": 717,
+   "published": "2026-08-04",
+   "action": "redirect",
+   "target": "/insights/internet-of-things-evidence/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/ids-talks-our-newest-team-member-ken-gustafson-with-drew-oshaughnessy/",
+   "type": "post",
+   "title": "iDS Talks Our Newest Team Member Ken Gustafson with Drew O’Shaughnessy",
+   "words": 290,
+   "published": "2026-08-06",
+   "action": "redirect",
+   "target": "/insights/ids-talks-our-newest-team-member-ken-gustafson-with-drew-oshaughnessy/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/presenting-digital-evidence-to-juries/",
+   "type": "post",
+   "title": "The Smoking Trend: Presenting Digital Evidence to Juries",
+   "words": 726,
+   "published": "2026-08-13",
+   "action": "redirect",
+   "target": "/insights/presenting-digital-evidence-to-juries/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/pre-trial-framework/",
+   "type": "post",
+   "title": "Win the Digital Case Before the Trial Begins -: A pre-trial framework",
+   "words": 722,
+   "published": "2026-08-19",
+   "action": "redirect",
+   "target": "/insights/pre-trial-framework/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/ai-in-adjudication/",
+   "type": "post",
+   "title": "Are You Ready for AI in Adjudication?",
+   "words": 671,
+   "published": "2026-08-26",
+   "action": "redirect",
+   "target": "/insights/ai-in-adjudication/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/falsified-data-in-litigation/",
+   "type": "post",
+   "title": "When Evidence Lies: Challenging Falsified Data in Litigation",
+   "words": 785,
+   "published": "2026-09-30",
+   "action": "redirect",
+   "target": "/insights/falsified-data-in-litigation/",
+   "note": "Migrated post"
+  },
+  {
+   "url": "/ai-assisted-legal-work/",
+   "type": "post",
+   "title": "The Hidden Risk in AI-Assisted Legal Work",
+   "words": 750,
+   "published": "2026-10-06",
+   "action": "recreate",
+   "target": "/insights/ai-assisted-legal-work/",
+   "note": "Published after the new site was built"
+  },
+  {
+   "url": "/ai-and-the-billable-hour/",
+   "type": "post",
+   "title": "AI and the Billable Hour: The More Interesting Story",
+   "words": 685,
+   "published": "2026-10-13",
+   "action": "recreate",
+   "target": "/insights/ai-and-the-billable-hour/",
+   "note": "Published after the new site was built"
+  },
+  {
+   "url": "/",
+   "type": "page",
+   "title": "iDiscovery Solutions - Digital Forensic, eDiscovery, Data Privacy",
+   "words": 843,
+   "published": "2021-01-19",
+   "action": "live",
+   "target": "/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/ids-privacy-policy/",
+   "type": "page",
+   "title": "iDS Privacy Policy",
+   "words": 596,
+   "published": "2021-01-26",
+   "action": "redirect",
+   "target": "/privacy-policy/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/case-studies/working-remotely/",
+   "type": "page",
+   "title": "Employee Remote Work Assessment",
+   "words": 294,
+   "published": "2021-01-27",
+   "action": "redirect",
+   "target": "/case-studies/user-activity/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/case-studies/websites-at-school/",
+   "type": "page",
+   "title": "Internet Filtering Software – Reasonable Measures",
+   "words": 217,
+   "published": "2021-01-27",
+   "action": "redirect",
+   "target": "/case-studies/reasonable-measures/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/case-studies/quick-recovery-from-ransomware-attack/",
+   "type": "page",
+   "title": "Quick Recovery from Ransomware Attack",
+   "words": 358,
+   "published": "2021-03-10",
+   "action": "live",
+   "target": "/case-studies/quick-recovery-from-ransomware-attack/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/case-studies/protecting-trade-secrets/",
+   "type": "page",
+   "title": "Security Measures in Protecting Trade Secrets",
+   "words": 344,
+   "published": "2021-01-27",
+   "action": "live",
+   "target": "/case-studies/protecting-trade-secrets/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/aedi-participants/",
+   "type": "page",
+   "title": "AEDI Participants",
+   "words": 459,
+   "published": "2022-11-01",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/caffeinated-conversations/",
+   "type": "page",
+   "title": "Caffeinated Conversations",
+   "words": 141,
+   "published": "2021-11-03",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/case-studies/reasonable-measures/",
+   "type": "page",
+   "title": "Internet Filtering Software – Reasonable Measures",
+   "words": 214,
+   "published": "2021-12-03",
+   "action": "live",
+   "target": "/case-studies/reasonable-measures/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/case-studies/public-transportation/",
+   "type": "page",
+   "title": "User Collected Data – An Exercise in Information Privacy Expertise",
+   "words": 266,
+   "published": "2021-01-27",
+   "action": "live",
+   "target": "/case-studies/public-transportation/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/case-studies/office-remote-work/",
+   "type": "page",
+   "title": "Moving Offices to Remote Work",
+   "words": 303,
+   "published": "2021-12-03",
+   "action": "redirect",
+   "target": "/case-studies/user-activity/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/case-studies/forensic-neutral/",
+   "type": "page",
+   "title": "Working as a Forensic Neutral",
+   "words": 346,
+   "published": "2021-12-03",
+   "action": "live",
+   "target": "/case-studies/forensic-neutral/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/case-studies/leanreview/",
+   "type": "page",
+   "title": "LeanReview™ Helps Isolate Key Documents",
+   "words": 347,
+   "published": "2021-12-03",
+   "action": "live",
+   "target": "/case-studies/leanreview/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/case-studies/non-work-activity/",
+   "type": "page",
+   "title": "Data Shows Time Spent on Non-Work Activity - Case Study",
+   "words": 400,
+   "published": "2021-12-03",
+   "action": "live",
+   "target": "/case-studies/non-work-activity/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/case-studies/roles-and-responsibilities/",
+   "type": "page",
+   "title": "Roles and Responsibilities: A Workplace Case Study - iDS",
+   "words": 352,
+   "published": "2022-01-05",
+   "action": "redirect",
+   "target": "/case-studies/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/case-studies/screenshot-case/",
+   "type": "page",
+   "title": "Winning a Case with Just One Screenshot",
+   "words": 317,
+   "published": "2022-07-20",
+   "action": "live",
+   "target": "/case-studies/screenshot-case/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/case-studies/stored-information/",
+   "type": "page",
+   "title": "Maintaining Electronically Stored Information",
+   "words": 369,
+   "published": "2021-12-03",
+   "action": "redirect",
+   "target": "/case-studies/managing-information/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/case-studies/suspected-data-breach/",
+   "type": "page",
+   "title": "Suspected Data Breach",
+   "words": 323,
+   "published": "2021-12-03",
+   "action": "live",
+   "target": "/case-studies/suspected-data-breach/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/case-studies/user-activity/",
+   "type": "page",
+   "title": "Insight Into User Activity",
+   "words": 372,
+   "published": "2021-12-03",
+   "action": "live",
+   "target": "/case-studies/user-activity/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/case-studies/video-analysis/",
+   "type": "page",
+   "title": "Defeating Class Action Through Video Analysis - iDS",
+   "words": 288,
+   "published": "2021-12-03",
+   "action": "live",
+   "target": "/case-studies/video-analysis/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/case-studies/inappropriate-materials/",
+   "type": "page",
+   "title": "Inappropriate Materials Result in Appropriate Termination - iDS",
+   "words": 352,
+   "published": "2023-01-04",
+   "action": "live",
+   "target": "/case-studies/inappropriate-materials/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/what-we-do/cybersecurity/",
+   "type": "page",
+   "title": "Cybersecurity Services - What We Do",
+   "words": 537,
+   "published": "2021-10-28",
+   "action": "redirect",
+   "target": "/capabilities/#cybersecurity",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/what-we-do/privacy/",
+   "type": "page",
+   "title": "Privacy Services - What We Do",
+   "words": 886,
+   "published": "2021-10-28",
+   "action": "redirect",
+   "target": "/capabilities/#privacy",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/case-studies/production-texts/",
+   "type": "page",
+   "title": "Production Text Messages VS. Actual Texts",
+   "words": 284,
+   "published": "2021-12-03",
+   "action": "live",
+   "target": "/case-studies/production-texts/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/case-studies/surveillance-forensics/",
+   "type": "page",
+   "title": "Video Surveillance Forensics",
+   "words": 284,
+   "published": "2021-01-27",
+   "action": "live",
+   "target": "/case-studies/surveillance-forensics/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/case-studies/industry-trade-secrets/",
+   "type": "page",
+   "title": "Misappropriation of Trade Secrets",
+   "words": 311,
+   "published": "2021-01-27",
+   "action": "live",
+   "target": "/case-studies/industry-trade-secrets/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/case-studies/managing-information/",
+   "type": "page",
+   "title": "Information Governance",
+   "words": 281,
+   "published": "2021-01-27",
+   "action": "live",
+   "target": "/case-studies/managing-information/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/construction/",
+   "type": "page",
+   "title": "Construction",
+   "words": 491,
+   "published": "2023-09-26",
+   "action": "redirect",
+   "target": "/capabilities/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/factcrashing-ebook/",
+   "type": "page",
+   "title": "Fact Crashing™ Ebook (TGC)",
+   "words": 453,
+   "published": "2022-08-11",
+   "action": "redirect",
+   "target": "/fact-crashing/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/hospitality-and-lodging/",
+   "type": "page",
+   "title": "Hospitality and Lodging",
+   "words": 386,
+   "published": "2023-09-26",
+   "action": "redirect",
+   "target": "/capabilities/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/dawn-raid/",
+   "type": "page",
+   "title": "Paper to Digital: Dawn Raid",
+   "words": 151,
+   "published": "2021-10-19",
+   "action": "redirect",
+   "target": "/capabilities/#special-investigations-unit",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/pro-bono-program/",
+   "type": "page",
+   "title": "Pro Bono Program",
+   "words": 471,
+   "published": "2021-10-18",
+   "action": "redirect",
+   "target": "/about/#community",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/transportation/",
+   "type": "page",
+   "title": "Transportation",
+   "words": 684,
+   "published": "2023-04-20",
+   "action": "redirect",
+   "target": "/case-studies/public-transportation/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/what-we-do/structured-data/",
+   "type": "page",
+   "title": "Structured Data & Analytics",
+   "words": 431,
+   "published": "2021-10-28",
+   "action": "redirect",
+   "target": "/capabilities/#structured-data",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/what-we-do/information-governance/",
+   "type": "page",
+   "title": "Information Governance - What We Do",
+   "words": 476,
+   "published": "2021-10-28",
+   "action": "redirect",
+   "target": "/capabilities/#information-governance",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/what-we-do/ediscovery/",
+   "type": "page",
+   "title": "eDiscovery & Disclosure - What We Do",
+   "words": 614,
+   "published": "2021-10-28",
+   "action": "redirect",
+   "target": "/capabilities/#ediscovery",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/what-we-do/digital-forensics/",
+   "type": "page",
+   "title": "Digital Forensics - What We Do",
+   "words": 772,
+   "published": "2021-10-28",
+   "action": "redirect",
+   "target": "/capabilities/#digital-forensics",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/about/team/",
+   "type": "page",
+   "title": "iDiscovery Solutions Team | Professional Services Consulting Firm",
+   "words": 379,
+   "published": "2021-01-26",
+   "action": "redirect",
+   "target": "/our-experts/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/case-studies/",
+   "type": "page",
+   "title": "iDiscovery Case Studies",
+   "words": 290,
+   "published": "2021-01-20",
+   "action": "live",
+   "target": "/case-studies/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/case-studies/disclosure-obligations/",
+   "type": "page",
+   "title": "Meeting Disclosure Obligations with Workflows & Custom Solutions",
+   "words": 370,
+   "published": "2021-12-03",
+   "action": "live",
+   "target": "/case-studies/disclosure-obligations/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/era-checklist/",
+   "type": "page",
+   "title": "Employee Risk Assessment Checklist",
+   "words": 236,
+   "published": "2021-06-03",
+   "action": "redirect",
+   "target": "/employees-going-rogue/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/lawyers-have-heart/",
+   "type": "page",
+   "title": "Lawyers Have Heart",
+   "words": 234,
+   "published": "2021-04-21",
+   "action": "redirect",
+   "target": "/insights/ids-talks-lawyers-have-heart-with-bobby-williams/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/ids-fundamentals/",
+   "type": "page",
+   "title": "iDS Core Fundamentals",
+   "words": 1166,
+   "published": "2023-02-03",
+   "action": "redirect",
+   "target": "/careers/#core-values",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/case-studies/copyright-infringement/",
+   "type": "page",
+   "title": "Insight Into Copyright Infringement",
+   "words": 378,
+   "published": "2021-12-03",
+   "action": "live",
+   "target": "/case-studies/copyright-infringement/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/case-studies/capturing-data/",
+   "type": "page",
+   "title": "Capturing Data from Mobile Devices",
+   "words": 347,
+   "published": "2021-12-02",
+   "action": "live",
+   "target": "/case-studies/capturing-data/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/case-studies/access-company-system/",
+   "type": "page",
+   "title": "Inappropriate Employee Access to Company System - Case Study",
+   "words": 395,
+   "published": "2021-12-03",
+   "action": "live",
+   "target": "/case-studies/access-company-system/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/case-studies/leveraging-structured-data/",
+   "type": "page",
+   "title": "Leveraging Structured Data",
+   "words": 328,
+   "published": "2021-12-02",
+   "action": "live",
+   "target": "/case-studies/leveraging-structured-data/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/case-studies/digital-footprints/",
+   "type": "page",
+   "title": "Coders Try to Outsmart Their Digital Footprints - Case Study",
+   "words": 285,
+   "published": "2023-04-06",
+   "action": "live",
+   "target": "/case-studies/digital-footprints/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/case-studies/doctored-text-message/",
+   "type": "page",
+   "title": "Proof of a Doctored Text Message Wins Case - iDS Case Study",
+   "words": 293,
+   "published": "2023-01-04",
+   "action": "live",
+   "target": "/case-studies/doctored-text-message/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/uk-eu/",
+   "type": "page",
+   "title": "iDS UK & EU",
+   "words": 691,
+   "published": "2023-05-09",
+   "action": "redirect",
+   "target": "/about/#uk-eu",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/checklist/",
+   "type": "page",
+   "title": "Data Source Evaluation Checklist",
+   "words": 185,
+   "published": "2021-03-16",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/solutions/",
+   "type": "page",
+   "title": "Solutions",
+   "words": 192,
+   "published": "2021-01-20",
+   "action": "redirect",
+   "target": "/capabilities/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/idocumate/",
+   "type": "page",
+   "title": "iDocumate",
+   "words": 498,
+   "published": "2024-08-29",
+   "action": "recreate",
+   "target": "/idocumate/",
+   "note": "Unique content not on the new site"
+  },
+  {
+   "url": "/case-studies/employees-gone-bad/",
+   "type": "page",
+   "title": "Employees Gone Bad",
+   "words": 341,
+   "published": "2021-12-03",
+   "action": "live",
+   "target": "/case-studies/employees-gone-bad/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/athena-summit-pricing/",
+   "type": "page",
+   "title": "Athena Summit Pricing: Interior Cabins",
+   "words": 36,
+   "published": "2025-01-16",
+   "action": "redirect",
+   "target": "/about/#community",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/athena-summit/",
+   "type": "page",
+   "title": "Athena Summit",
+   "words": 1779,
+   "published": "2024-11-07",
+   "action": "redirect",
+   "target": "/about/#community",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/events/",
+   "type": "page",
+   "title": "Events",
+   "words": 212,
+   "published": "2022-07-08",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/ai-in-legal/",
+   "type": "page",
+   "title": "Artificial Intelligence in the Legal Field: Evaluating Its Role",
+   "words": 189,
+   "published": "2024-11-12",
+   "action": "redirect",
+   "target": "/ai-evidence/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/lidw/",
+   "type": "page",
+   "title": "London International Disputes Week Invitation",
+   "words": 87,
+   "published": "2025-04-21",
+   "action": "redirect",
+   "target": "/contact/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/is-your-evidence-real/",
+   "type": "page",
+   "title": "Executive Summary — Is Your Evidence Real?",
+   "words": 647,
+   "published": "2024-07-11",
+   "action": "redirect",
+   "target": "/executive-summary-deepfakes/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/navigating-emerging-trends/",
+   "type": "page",
+   "title": "Executive Summary — Navigating Emerging Trends",
+   "words": 624,
+   "published": "2025-05-12",
+   "action": "live",
+   "target": "/navigating-emerging-trends/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/executive-summary-deepfakes/",
+   "type": "page",
+   "title": "Executive Summary — Deepfakes",
+   "words": 781,
+   "published": "2025-08-21",
+   "action": "live",
+   "target": "/executive-summary-deepfakes/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/what-we-do/testimony/",
+   "type": "page",
+   "title": "Testimony",
+   "words": 286,
+   "published": "2021-10-28",
+   "action": "redirect",
+   "target": "/capabilities/#testimony",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/what-we-do/",
+   "type": "page",
+   "title": "What We Do",
+   "words": 794,
+   "published": "2021-10-27",
+   "action": "redirect",
+   "target": "/capabilities/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/what-we-do/audits-compliance/",
+   "type": "page",
+   "title": "Audits & Compliance - What We Do",
+   "words": 646,
+   "published": "2021-10-27",
+   "action": "redirect",
+   "target": "/capabilities/#information-governance",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/what-we-do/damages-forensic-accounting/",
+   "type": "page",
+   "title": "Damages & Forensic Accounting",
+   "words": 318,
+   "published": "2025-09-30",
+   "action": "redirect",
+   "target": "/capabilities/#damages-forensic-accounting",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/dan-regard/",
+   "type": "page",
+   "title": "Dan Regard",
+   "words": 611,
+   "published": "2023-03-01",
+   "action": "redirect",
+   "target": "/our-experts/#dan-regard",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/5-year-old-ceo/",
+   "type": "page",
+   "title": "The 5-Year-Old CEO , written by Hunter McMahon",
+   "words": 300,
+   "published": "2025-10-06",
+   "action": "redirect",
+   "target": "/insights/5-year-old-ceo/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/speakers/",
+   "type": "page",
+   "title": "Speakers",
+   "words": 493,
+   "published": "2024-01-19",
+   "action": "redirect",
+   "target": "/our-experts/speakers/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/publications/",
+   "type": "page",
+   "title": "iDS Publications",
+   "words": 874,
+   "published": "2025-11-12",
+   "action": "recreate",
+   "target": "/publications/",
+   "note": "Unique content not on the new site"
+  },
+  {
+   "url": "/becurious/",
+   "type": "page",
+   "title": "Be Curious",
+   "words": 718,
+   "published": "2025-05-19",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/julian-ackert/",
+   "type": "page",
+   "title": "Julian Ackert",
+   "words": 252,
+   "published": "2026-02-11",
+   "action": "redirect",
+   "target": "/our-experts/#julian-ackert",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/what-we-do/special-investigations-unit/",
+   "type": "page",
+   "title": "Special Investigations Unit | What We Do, iDiscovery Solutions",
+   "words": 520,
+   "published": "2023-09-13",
+   "action": "redirect",
+   "target": "/capabilities/#special-investigations-unit",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/testifying-expert-checklist/",
+   "type": "page",
+   "title": "When AI Enters Your Expert's Report, Are You Ready?",
+   "words": 673,
+   "published": "2025-10-13",
+   "action": "live",
+   "target": "/testifying-expert-checklist/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/about/",
+   "type": "page",
+   "title": "About iDiscovery - Digital Forensics, eDiscovery, Data Privacy",
+   "words": 841,
+   "published": "2021-01-20",
+   "action": "live",
+   "target": "/about/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/glossary/",
+   "type": "page",
+   "title": "Data Investigators Glossary",
+   "words": 568,
+   "published": "2026-03-03",
+   "action": "live",
+   "target": "/glossary/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/future-of-evidence/",
+   "type": "page",
+   "title": "The Future of Evidence in the Digital Age",
+   "words": 635,
+   "published": "2026-03-04",
+   "action": "live",
+   "target": "/future-of-evidence/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/fact-crashing/",
+   "type": "page",
+   "title": "Fact Crashing™",
+   "words": 307,
+   "published": "2021-05-10",
+   "action": "live",
+   "target": "/fact-crashing/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/careers/",
+   "type": "page",
+   "title": "Careers",
+   "words": 1287,
+   "published": "2021-01-20",
+   "action": "live",
+   "target": "/careers/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/teddy-brown/",
+   "type": "page",
+   "title": "Teddy Brown",
+   "words": 288,
+   "published": "2025-12-11",
+   "action": "redirect",
+   "target": "/our-experts/#theodore-brown",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/about/team/bill-taylor/",
+   "type": "page",
+   "title": "Bill Taylor",
+   "words": 610,
+   "published": "2026-05-28",
+   "action": "redirect",
+   "target": "/our-experts/#bill-taylor",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/contact/",
+   "type": "page",
+   "title": "Contact",
+   "words": 245,
+   "published": "2021-01-20",
+   "action": "live",
+   "target": "/contact/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/ai-information-governance/",
+   "type": "page",
+   "title": "Artificial Intelligence and Information Governance",
+   "words": 177,
+   "published": "2025-03-12",
+   "action": "redirect",
+   "target": "/insights/ai-information-governance-risks/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/blog/",
+   "type": "page",
+   "title": "iDiscovery iDS Blog",
+   "words": 2397,
+   "published": "2021-01-20",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/ids-talks/",
+   "type": "page",
+   "title": "iDS Talks Podcast",
+   "words": 986,
+   "published": "2021-02-08",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/in-the-shadows/",
+   "type": "page",
+   "title": "In the Shadows: The Data We Miss Until It Matters",
+   "words": 615,
+   "published": "2026-07-08",
+   "action": "live",
+   "target": "/in-the-shadows/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/the-ids-way/",
+   "type": "page",
+   "title": "The iDS Way",
+   "words": 226,
+   "published": "2021-11-01",
+   "action": "redirect",
+   "target": "/careers/#the-ids-way",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/bobbywilliams/",
+   "type": "page",
+   "title": "Bobby R. Williams, Jr.",
+   "words": 723,
+   "published": "2026-02-04",
+   "action": "redirect",
+   "target": "/our-experts/#bobby-r-williams",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/ids-resources/",
+   "type": "page",
+   "title": "iDS Resources",
+   "words": 154,
+   "published": "2024-02-09",
+   "action": "redirect",
+   "target": "/insights/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/mike-perelman/",
+   "type": "page",
+   "title": "Mike Perelman",
+   "words": 421,
+   "published": "2026-02-12",
+   "action": "redirect",
+   "target": "/our-experts/#mike-perelman",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/kenneth-gustafson/",
+   "type": "page",
+   "title": "Kenneth Gustafson, CFA",
+   "words": 466,
+   "published": "2026-09-01",
+   "action": "redirect",
+   "target": "/our-experts/#kenneth-gustafson",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/about/team/james-d-vaughn/",
+   "type": "page",
+   "title": "James D. Vaughn",
+   "words": 388,
+   "published": "2026-05-28",
+   "action": "redirect",
+   "target": "/our-experts/#james-vaughn",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/ai-in-investigations/",
+   "type": "page",
+   "title": "AI in Investigations: Power, Risk, and a New Standard for Defensibility",
+   "words": 294,
+   "published": "2026-06-09",
+   "action": "live",
+   "target": "/ai-in-investigations/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/employees-going-rogue/",
+   "type": "page",
+   "title": "Employees Going Rogue: IP Theft in the Gen AI Era",
+   "words": 319,
+   "published": "2026-09-08",
+   "action": "live",
+   "target": "/employees-going-rogue/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/huntermcmahon/",
+   "type": "page",
+   "title": "Hunter McMahon, iDS President",
+   "words": 944,
+   "published": "2025-11-06",
+   "action": "redirect",
+   "target": "/our-experts/#hunter-mcmahon",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/about/team/drew-gaibler/",
+   "type": "page",
+   "title": "Drew Gailbler, Director of Discovery",
+   "words": 467,
+   "published": "2026-04-28",
+   "action": "redirect",
+   "target": "/our-experts/#drew-gaibler",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/about/team/mark-clews/",
+   "type": "page",
+   "title": "Managing Director, Digital Forensics & eDiscovery",
+   "words": 624,
+   "published": "2026-09-24",
+   "action": "redirect",
+   "target": "/our-experts/#mark-clews",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/economics-hidden-in-contract/",
+   "type": "page",
+   "title": "The Economics Hidden in the Contract",
+   "words": 357,
+   "published": "2026-10-14",
+   "action": "live",
+   "target": "/economics-hidden-in-contract/",
+   "note": "Same address on the new site"
+  },
+  {
+   "url": "/warren-kruse/",
+   "type": "page",
+   "title": "Warren Kruse, Managing Director",
+   "words": 843,
+   "published": "2025-11-24",
+   "action": "redirect",
+   "target": "/our-experts/#warren-kruse",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/case-study/",
+   "type": "case-study",
+   "title": "Case Studies Archive",
+   "words": 41,
+   "published": "2021-01-26",
+   "action": "redirect",
+   "target": "/case-studies/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/case-study/protecting-trade-secrets/",
+   "type": "case-study",
+   "title": "Protecting Trade Secrets",
+   "words": 344,
+   "published": "2021-01-26",
+   "action": "redirect",
+   "target": "/case-studies/protecting-trade-secrets/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/case-study/managing-information/",
+   "type": "case-study",
+   "title": "Managing Information",
+   "words": 278,
+   "published": "2021-01-26",
+   "action": "redirect",
+   "target": "/case-studies/managing-information/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/publication/",
+   "type": "publications",
+   "title": "iDS Publications",
+   "words": 874,
+   "published": "2025-11-12",
+   "action": "redirect",
+   "target": "/publications/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/publication/the-5-year-old-ceo/",
+   "type": "publications",
+   "title": "5 Year Old CEO: The Power of Childlike Curiosity in Leadership",
+   "words": 152,
+   "published": "2025-11-12",
+   "action": "redirect",
+   "target": "/insights/5-year-old-ceo/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/publication/federal-judges-guide-to-discovery-edition-3-0/",
+   "type": "publications",
+   "title": "Federal Judges’ Guide to Discovery (Edition 3.0)",
+   "words": 153,
+   "published": "2025-11-12",
+   "action": "redirect",
+   "target": "/publications/#federal-judges-guide-to-discovery-edition-3-0",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/publication/essentials-of-e-discovery/",
+   "type": "publications",
+   "title": "Essentials of E-Discovery, 2nd ed.",
+   "words": 132,
+   "published": "2025-11-26",
+   "action": "redirect",
+   "target": "/publications/#essentials-of-e-discovery",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/publication/computer-forensics/",
+   "type": "publications",
+   "title": "Computer Forensics: Incident Response Essentials 1st Edition",
+   "words": 204,
+   "published": "2025-11-26",
+   "action": "redirect",
+   "target": "/publications/#computer-forensics",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/publication/managing-e-discovery-and-esi/",
+   "type": "publications",
+   "title": "Managing E-Discovery and ESI: From Pre-Litigation to Trial",
+   "words": 163,
+   "published": "2025-11-26",
+   "action": "redirect",
+   "target": "/publications/#managing-e-discovery-and-esi",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/publication/fact-crashing/",
+   "type": "publications",
+   "title": "Fact Crashing™ Methodology: Prioritize. Accelerate. Resolve.",
+   "words": 177,
+   "published": "2025-11-12",
+   "action": "redirect",
+   "target": "/fact-crashing/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/publication/the-sedona-principles/",
+   "type": "publications",
+   "title": "Best Practices & Principles for Electronic Document Production",
+   "words": 118,
+   "published": "2025-11-26",
+   "action": "redirect",
+   "target": "/publications/#the-sedona-principles",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/publication/discovery-of-mobile-device-data/",
+   "type": "publications",
+   "title": "Commentary on Discovery of Mobile Device Data",
+   "words": 120,
+   "published": "2025-11-26",
+   "action": "redirect",
+   "target": "/publications/#discovery-of-mobile-device-data",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/publication/international-principles-on-discovery/",
+   "type": "publications",
+   "title": "International Principles on Discovery, Disclosure & Data Protection",
+   "words": 124,
+   "published": "2025-11-26",
+   "action": "redirect",
+   "target": "/publications/#international-principles-on-discovery",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/publication/implications-of-the-iot/",
+   "type": "publications",
+   "title": "Electronic Discovery Implications of the Internet of Things (IoT)",
+   "words": 110,
+   "published": "2025-11-26",
+   "action": "redirect",
+   "target": "/publications/#implications-of-the-iot",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/publication/preservation-of-databases/",
+   "type": "publications",
+   "title": "Preservation and Production of Databases and Information",
+   "words": 121,
+   "published": "2025-11-26",
+   "action": "redirect",
+   "target": "/publications/#preservation-of-databases",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/team/",
+   "type": "team",
+   "title": "iDiscovery Solutions Team | Professional Services Consulting Firm",
+   "words": 379,
+   "published": "2021-01-26",
+   "action": "redirect",
+   "target": "/our-experts/",
+   "note": "Not on the new site: sent to Our Experts"
+  },
+  {
+   "url": "/team/mark-araujo/",
+   "type": "team",
+   "title": "Mark Araujo - Manager of Discovery Services Consulting",
+   "words": 317,
+   "published": "2003-10-08",
+   "action": "redirect",
+   "target": "/our-experts/#mark-araujo",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/amanda-whiting/",
+   "type": "team",
+   "title": "Amanda Whiting - Consultant, Analytics",
+   "words": 409,
+   "published": "2026-02-01",
+   "action": "redirect",
+   "target": "/our-experts/#amanda-whiting",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/bill-taylor/",
+   "type": "team",
+   "title": "Bill Taylor - Director, Investigations",
+   "words": 256,
+   "published": "2025-05-01",
+   "action": "redirect",
+   "target": "/our-experts/#bill-taylor",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/brett-chatterton/",
+   "type": "team",
+   "title": "Brett Chatterton - Consultant, SDA",
+   "words": 307,
+   "published": "2007-10-01",
+   "action": "redirect",
+   "target": "/our-experts/#brett-chatterton",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/bruce-gillis-jr/",
+   "type": "team",
+   "title": "Bruce Gillis Jr. - Managing Consultant & Team Lead, Forensics",
+   "words": 365,
+   "published": "2014-10-27",
+   "action": "redirect",
+   "target": "/our-experts/#bruce-gillis",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/chris-luciano/",
+   "type": "team",
+   "title": "Chris Luciano - Senior Consultant, Forensics",
+   "words": 354,
+   "published": "2021-11-20",
+   "action": "redirect",
+   "target": "/our-experts/#chris-luciano",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/daniel-watson/",
+   "type": "team",
+   "title": "Daniel Watson - Senior Technology Manager",
+   "words": 285,
+   "published": "2025-12-02",
+   "action": "redirect",
+   "target": "/our-experts/#daniel-watson",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/dominic-tucker/",
+   "type": "team",
+   "title": "Dominic Tucker - Associate Director, UK/EEA",
+   "words": 268,
+   "published": "2025-10-01",
+   "action": "redirect",
+   "target": "/our-experts/#dominic-tucker",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/fabrice-likosso/",
+   "type": "team",
+   "title": "Fabrice Likosso - Business Development Manager, Europe",
+   "words": 409,
+   "published": "2021-11-18",
+   "action": "redirect",
+   "target": "/our-experts/#fabrice-likosso",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/gina-johnson/",
+   "type": "team",
+   "title": "Gina Johnson - Consultant, Discovery Services",
+   "words": 328,
+   "published": "2021-11-03",
+   "action": "redirect",
+   "target": "/our-experts/#gina-johnson",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/greg-kaminski/",
+   "type": "team",
+   "title": "Greg Kaminski - Senior Consultant, Forensics",
+   "words": 277,
+   "published": "2021-11-05",
+   "action": "redirect",
+   "target": "/our-experts/#greg-kaminski",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/jada-chapman/",
+   "type": "team",
+   "title": "Jada Chapman - Junior Consultant",
+   "words": 297,
+   "published": "2006-12-09",
+   "action": "redirect",
+   "target": "/our-experts/#jada-chapman",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/jason-tonks/",
+   "type": "team",
+   "title": "Jason Tonks, Managing Consultant, Forensics (UK/EEA) - iDS",
+   "words": 316,
+   "published": "2025-08-01",
+   "action": "redirect",
+   "target": "/our-experts/#jason-tonks",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/jim-dallas/",
+   "type": "team",
+   "title": "Jim Dallas - Business Development Specialist",
+   "words": 301,
+   "published": "2008-10-21",
+   "action": "redirect",
+   "target": "/our-experts/#jim-dallas",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/jonah-kang/",
+   "type": "team",
+   "title": "Jonah Kang - Junior Consultant, Forensics",
+   "words": 324,
+   "published": "2021-11-07",
+   "action": "redirect",
+   "target": "/our-experts/#jonah-kang",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/julian-ackert/",
+   "type": "team",
+   "title": "Julian Ackert - Senior Managing Director",
+   "words": 286,
+   "published": "2000-10-02",
+   "action": "redirect",
+   "target": "/our-experts/#julian-ackert",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/kelsey-lopez/",
+   "type": "team",
+   "title": "Kelsey Lopez - Consultant",
+   "words": 214,
+   "published": "2021-11-19",
+   "action": "redirect",
+   "target": "/our-experts/#kelsey-lopez",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/kendall-tober/",
+   "type": "team",
+   "title": "Kendall Tober - Senior Consultant, Discovery Services",
+   "words": 324,
+   "published": "2025-07-01",
+   "action": "redirect",
+   "target": "/our-experts/#kendall-tober",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/mark-emil/",
+   "type": "team",
+   "title": "Mark Emil - Manager of Discovery Services Engineering",
+   "words": 385,
+   "published": "2010-10-21",
+   "action": "redirect",
+   "target": "/our-experts/#mark-emil",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/matt-thompson/",
+   "type": "team",
+   "title": "Matthew Thompson, Managing Consultant, Analytics",
+   "words": 342,
+   "published": "2025-06-01",
+   "action": "redirect",
+   "target": "/our-experts/#matt-thompson",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/milton-hooper/",
+   "type": "team",
+   "title": "Milton Hooper - Senior Discovery Analyst",
+   "words": 325,
+   "published": "2018-11-01",
+   "action": "redirect",
+   "target": "/our-experts/#milton-hooper",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/phil-ogan/",
+   "type": "team",
+   "title": "Managing Consultant, Forensics",
+   "words": 371,
+   "published": "2021-11-21",
+   "action": "redirect",
+   "target": "/our-experts/#phil-ogan",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/rami-burbar-2/",
+   "type": "team",
+   "title": "Rami Burbar - Consultant, Discovery Services",
+   "words": 347,
+   "published": "2006-10-15",
+   "action": "redirect",
+   "target": "/our-experts/#rami-burbar",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/robert-hofer/",
+   "type": "team",
+   "title": "Robert Hofer - Senior Consultant, Discovery Services",
+   "words": 274,
+   "published": "2017-10-31",
+   "action": "redirect",
+   "target": "/our-experts/#robert-hofer",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/ryan-trinh/",
+   "type": "team",
+   "title": "Ryan Trinh - Junior Consultant, Forensics",
+   "words": 305,
+   "published": "2025-09-01",
+   "action": "redirect",
+   "target": "/our-experts/#ryan-trinh",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/sara-smith/",
+   "type": "team",
+   "title": "Sara Smith - Senior Consultant, Discovery Services",
+   "words": 243,
+   "published": "2021-12-22",
+   "action": "redirect",
+   "target": "/our-experts/#sara-smith",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/thienthi-le/",
+   "type": "team",
+   "title": "Thienthi Le - Senior eDiscovery Analyst",
+   "words": 312,
+   "published": "2021-11-17",
+   "action": "redirect",
+   "target": "/our-experts/#thienthi-le",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/jennifer-a-brennan/",
+   "type": "team",
+   "title": "Jennifer A. Brennan - Director of Legal, Risk & Compliance",
+   "words": 327,
+   "published": "2005-10-10",
+   "action": "redirect",
+   "target": "/our-experts/#jennifer-a-brennan",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/chris-conway/",
+   "type": "team",
+   "title": "Chris Conway, Chief Financial Officer (CFO) iDiscovery Solutions",
+   "words": 316,
+   "published": "2007-10-20",
+   "action": "redirect",
+   "target": "/our-experts/#chris-conway",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/azzit-hussain/",
+   "type": "team",
+   "title": "Azzit Hussain - Director, Structured Data Analytics",
+   "words": 338,
+   "published": "2021-11-03",
+   "action": "redirect",
+   "target": "/our-experts/#azzit-hussain",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/shameka-glover/",
+   "type": "team",
+   "title": "Shameka Glover, Chief of Staff | iDS Team",
+   "words": 99,
+   "published": "2015-10-28",
+   "action": "redirect",
+   "target": "/our-experts/#shameka-glover",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/hung-han/",
+   "type": "team",
+   "title": "Managing Consultant, Forensics",
+   "words": 347,
+   "published": "2016-10-30",
+   "action": "redirect",
+   "target": "/our-experts/#hung-han",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/jonathan-karchmer/",
+   "type": "team",
+   "title": "Jonathan Karchmer - Associate Director, Forensics",
+   "words": 276,
+   "published": "2021-11-08",
+   "action": "redirect",
+   "target": "/our-experts/#jonathan-karchmer",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/drew-oshaughnessy/",
+   "type": "team",
+   "title": "Drew O’Shaughnessy - Consultant, Analytics",
+   "words": 240,
+   "published": "2021-11-23",
+   "action": "redirect",
+   "target": "/our-experts/#drew-oshaughnessy",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/mike-perelman/",
+   "type": "team",
+   "title": "Mike Perelman - Director",
+   "words": 320,
+   "published": "2021-11-27",
+   "action": "redirect",
+   "target": "/our-experts/#mike-perelman",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/elizabeth-rivers/",
+   "type": "team",
+   "title": "Elizabeth Rivers - Operations Specialist",
+   "words": 273,
+   "published": "2021-12-06",
+   "action": "redirect",
+   "target": "/our-experts/#elizabeth-rivers",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/melissa-shillinglaw/",
+   "type": "team",
+   "title": "Melissa Shillinglaw - Director of Talent & Experience at iDS",
+   "words": 245,
+   "published": "2021-12-18",
+   "action": "redirect",
+   "target": "/our-experts/#melissa-shillinglaw",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/jon-hurwitz/",
+   "type": "team",
+   "title": "Jon Hurwitz, Senior Managing Consultant & Team Manager",
+   "words": 340,
+   "published": "2021-11-02",
+   "action": "redirect",
+   "target": "/our-experts/#jon-hurwitz",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/nitin-khanna/",
+   "type": "team",
+   "title": "Nitin Khanna - Senior Administrator of Technology and Compliance",
+   "words": 259,
+   "published": "2021-11-11",
+   "action": "redirect",
+   "target": "/our-experts/#nitin-khanna",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/robert-kirtley/",
+   "type": "team",
+   "title": "Robert Kirtley - Affiliated Expert, Cybersecurity, Governance",
+   "words": 414,
+   "published": "2021-11-13",
+   "action": "redirect",
+   "target": "/our-experts/#robert-kirtley",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/dan-regard/",
+   "type": "team",
+   "title": "Dan Regard - Founder and CEO of iDiscovery Solutions",
+   "words": 454,
+   "published": "2021-12-04",
+   "action": "redirect",
+   "target": "/our-experts/#dan-regard",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/test/",
+   "type": "team",
+   "title": "Team - Test",
+   "words": 601,
+   "published": "2001-10-03",
+   "action": "redirect",
+   "target": "/our-experts/",
+   "note": "Not on the new site: sent to Our Experts"
+  },
+  {
+   "url": "/team/michael-sayegh/",
+   "type": "team",
+   "title": "Michael Sayegh - Junior Consultant, Forensics at iDS",
+   "words": 283,
+   "published": "2021-12-11",
+   "action": "redirect",
+   "target": "/our-experts/#michael-sayegh",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/mark-clews/",
+   "type": "team",
+   "title": "Mark Clews, iDS Managing Director, Digital Forensics & eDiscovery",
+   "words": 558,
+   "published": "2007-10-15",
+   "action": "redirect",
+   "target": "/our-experts/#mark-clews",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/arnold-garcia/",
+   "type": "team",
+   "title": "Arnold Garcia, Senior Managing Consultant, Forensics",
+   "words": 380,
+   "published": "2012-10-26",
+   "action": "redirect",
+   "target": "/our-experts/#arnold-garcia",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/rex-hart/",
+   "type": "team",
+   "title": "Rex Hart – Junior Consultant",
+   "words": 307,
+   "published": "2016-12-26",
+   "action": "redirect",
+   "target": "/our-experts/",
+   "note": "Not on the new site: sent to Our Experts"
+  },
+  {
+   "url": "/team/pam-keller/",
+   "type": "team",
+   "title": "Pam Keller, Director of Client Development",
+   "words": 313,
+   "published": "2021-11-10",
+   "action": "redirect",
+   "target": "/our-experts/#pam-keller",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/themify_popup/newsletter-signup/",
+   "type": "themify_popup",
+   "title": "iDiscovery Solutions - Digital Forensic, eDiscovery, Data Privacy",
+   "words": 843,
+   "published": "2021-01-19",
+   "action": "redirect",
+   "target": "/",
+   "note": "Covered by the new site structure"
+  },
+  {
+   "url": "/team/hunter-mcmahon/",
+   "type": "extra",
+   "title": "",
+   "words": 0,
+   "published": "",
+   "action": "redirect",
+   "target": "/our-experts/#hunter-mcmahon",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/team/teddy-brown/",
+   "type": "extra",
+   "title": "",
+   "words": 0,
+   "published": "",
+   "action": "redirect",
+   "target": "/our-experts/#theodore-brown",
+   "note": "Profile on Our Experts"
+  },
+  {
+   "url": "/timothy-latulippe/",
+   "type": "extra",
+   "title": "",
+   "words": 0,
+   "published": "",
+   "action": "redirect",
+   "target": "/our-experts/",
+   "note": "Not on the new site: sent to Our Experts"
+  },
+  {
+   "url": "/services/",
+   "type": "extra",
+   "title": "",
+   "words": 0,
+   "published": "",
+   "action": "redirect",
+   "target": "/capabilities/",
+   "note": "Old Services address"
+  },
+  {
+   "url": "/about/team/hunter-mcmahon/",
+   "type": "extra",
+   "title": "",
+   "words": 0,
+   "published": "",
+   "action": "redirect",
+   "target": "/our-experts/#hunter-mcmahon",
+   "note": "Profile on Our Experts"
+  }
+ ]
+}

@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "siteUrl": "https://idsinc.com",
+  "siteName": "iDiscovery Solutions",
+  "alternateName": "iDS",
+  "tagline": "Truth Through Data",
+  "titleSuffix": " | iDiscovery Solutions",
+  "language": "en-US",
+  "indexing": "blocked",
+  "defaultImage": "/assets/og/ids-social-card.png",
+  "twitterSite": "@iDiscoveryInc",
+  "verification": {
+    "google": "",
+    "bing": ""
+  },
+  "ai": {
+    "searchBots": true,
+    "trainingBots": true,
+    "llmsTxt": true,
+    "summary": "iDiscovery Solutions (iDS) is a consulting firm of digital forensics, structured data, eDiscovery and damages experts who testify to their conclusions. Founded in 2008, with offices in Washington DC, Costa Mesa, Alpharetta and London."
+  },
+  "organization": {
+    "legalName": "iDiscovery Solutions, Inc.",
+    "description": "iDiscovery Solutions (iDS) is a professional services consulting firm specializing in digital forensics, structured data analytics, eDiscovery and eDisclosure, damages and forensic accounting, investigations, cybersecurity, data privacy, and information governance. Its experts defend their conclusions under oath.",
+    "foundingDate": "2008",
+    "founder": {
+      "name": "Dan Regard",
+      "path": "/our-experts/#dan-regard",
+      "jobTitle": "Chief Executive Officer"
+    },
+    "logo": "/assets/ids-logo-navy.png",
+    "email": "info@idsinc.com",
+    "telephone": [
+      "+1-800-813-4832",
+      "+44-20-8242-4130"
+    ],
+    "contactPoints": [
+      {
+        "contactType": "customer service",
+        "telephone": "+1-800-813-4832",
+        "areaServed": "US"
+      },
+      {
+        "contactType": "customer service",
+        "telephone": "+44-20-8242-4130",
+        "areaServed": [
+          "GB",
+          "EU"
+        ]
+      }
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/company/idsinc",
+      "https://twitter.com/iDiscoveryInc",
+      "https://www.facebook.com/iDiscovery-Solutions-110210573904472",
+      "https://www.youtube.com/channel/UCarv7o1MeYfCp0eZ1IrufIw"
+    ],
+    "employees": 60,
+    "awards": [
+      "Chambers and Partners Band 1, eDiscovery"
+    ],
+    "knowsAbout": [
+      "Digital forensics",
+      "eDiscovery",
+      "Structured data analytics",
+      "Damages and forensic accounting",
+      "Corporate investigations",
+      "Cybersecurity",
+      "Data privacy",
+      "Information governance",
+      "Expert witness testimony",
+      "Artificial intelligence and evidence"
+    ],
+    "areaServed": [
+      "United States",
+      "United Kingdom",
+      "Europe",
+      "Asia",
+      "Latin America"
+    ],
+    "locations": [
+      {
+        "name": "Washington, DC",
+        "street": "3000 K Street NW, Suite 425",
+        "city": "Washington",
+        "region": "DC",
+        "postal": "20007",
+        "country": "US",
+        "headquarters": true
+      },
+      {
+        "name": "Costa Mesa, CA",
+        "street": "535 Anton Blvd., Suite 860",
+        "city": "Costa Mesa",
+        "region": "CA",
+        "postal": "92626",
+        "country": "US"
+      },
+      {
+        "name": "Alpharetta, GA",
+        "street": "11720 Amber Park Drive, Suite 160",
+        "city": "Alpharetta",
+        "region": "GA",
+        "postal": "30009",
+        "country": "US"
+      },
+      {
+        "name": "London, UK",
+        "street": "71-73 Carter Lane",
+        "city": "London",
+        "postal": "EC4V 5EQ",
+        "country": "GB"
+      }
+    ]
+  }
+}
