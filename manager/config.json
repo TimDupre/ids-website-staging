@@ -1,0 +1,10 @@
+{
+  "repo": { "owner": "TimDupre", "repo": "ids-website-staging", "branch": "main" },
+  "apiBase": "https://api.github.com",
+  "siteUrl": "https://ids-staging-z4swi.kinsta.page",
+  "deploy": {
+    "manualDeployUrl": "https://app.sevalla.com/static-site/ids-staging-z4swi/overview/manual-deploy?idCompany=162860e3-9bd4-4647-a343-7503277f9a25",
+    "purgeUrl": "https://app.sevalla.com/static-site/ids-staging-z4swi/networking?idCompany=162860e3-9bd4-4647-a343-7503277f9a25"
+  },
+  "tokenHelpUrl": "https://github.com/settings/personal-access-tokens/new"
+}
