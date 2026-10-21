@@ -12,6 +12,7 @@
  */
 (function () {
   var ANALYTICS_ID = '';            // e.g. 'G-XXXXXXXXXX' once the GA4 property exists
+  var HUBSPOT_ID = '51886431';      // HubSpot portal ID: its tracking code loads only after the visitor allows analytics
   var KEY = 'ids-consent', VERSION = 1;
   var listeners = [];
 
@@ -42,6 +43,18 @@
     s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ANALYTICS_ID;
     document.head.appendChild(s);
     window.gtag = gtag; gtag('js', new Date()); gtag('config', ANALYTICS_ID, { anonymize_ip: true });
+  }
+
+  /* ---------- HubSpot tracking code (analytics category) ---------- */
+  var hsLoaded = false;
+  function applyHubspot() {
+    var ok = !!(state && state.analytics);
+    if (!ok) { if (hsLoaded) { window._hsq = window._hsq || []; window._hsq.push(['revokeCookieConsent']); } return; }
+    if (!HUBSPOT_ID || hsLoaded) return;
+    hsLoaded = true;
+    var s = document.createElement('script');
+    s.id = 'hs-script-loader'; s.async = true; s.defer = true; s.src = 'https://js.hs-scripts.com/' + HUBSPOT_ID + '.js';
+    document.head.appendChild(s);
   }
 
   /* ---------- embedded media ---------- */
@@ -79,7 +92,7 @@
     });
   }
 
-  function apply() { applyAnalytics(); applyMedia(); }
+  function apply() { applyAnalytics(); applyHubspot(); applyMedia(); }
 
   /* ---------- banner and preferences ---------- */
   var banner, dialog;
@@ -107,7 +120,7 @@
         '<h2 id="cc-title">Cookie settings</h2><p>Choose which optional features you allow. Essential storage keeps the site working and remembers this choice.</p>' +
         '<div class="cc-row"><div><b>Essential</b><span>Needed for the site to work. Always on.</span></div><input type="checkbox" checked disabled aria-label="Essential, always on"></div>' +
         '<label class="cc-row"><div><b>Embedded media</b><span>YouTube videos and Blubrry podcast players. These services may set their own cookies.</span></div><input type="checkbox" name="media"></label>' +
-        '<label class="cc-row"><div><b>Analytics</b><span>Helps us understand which pages and content are useful. No advertising.</span></div><input type="checkbox" name="analytics"></label>' +
+        '<label class="cc-row"><div><b>Analytics</b><span>Uses HubSpot to understand which pages and content are useful, and to connect a form you submit with the pages you viewed. No advertising.</span></div><input type="checkbox" name="analytics"></label>' +
         '<div class="cc-actions"><button type="button" class="cc-btn cc-primary" data-cc="save">Save choices</button>' +
         '<button type="button" class="cc-btn" data-cc="all">Accept all</button><button type="button" class="cc-btn" data-cc="none">Reject non-essential</button></div>' +
         '<button type="button" class="cc-close" aria-label="Close" data-cc="close">&times;</button></div></div>');
