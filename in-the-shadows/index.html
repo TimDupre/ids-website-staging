@@ -473,15 +473,11 @@ details.disc[open] .plus::after { content: "\2013"; }
   <div style="max-width:760px;margin:0 auto;padding:72px 32px">
     <h2 style="font-size:26px;font-weight:bold;color:#404040;margin:0 0 12px">Download the executive summary</h2><div style="width:56px;height:3px;background:#DB6015;margin:0 0 20px"></div>
     <p style="font-size:16px;line-height:1.6;color:#595959;margin:0">Tell us where to find you and the download is yours straight away.</p>
-    <form id="ehc-form" class="ehc-form" novalidate>
-      <div><label for="ehc-first">First name*</label><input id="ehc-first" name="First name" autocomplete="given-name" required /></div>
-      <div><label for="ehc-last">Last name*</label><input id="ehc-last" name="Last name" autocomplete="family-name" required /></div>
-      <div class="full"><label for="ehc-email">Email*</label><input id="ehc-email" name="email" type="email" autocomplete="email" required /></div>
-      <div class="full"><label for="ehc-company">Company name</label><input id="ehc-company" name="Company" autocomplete="organization" /></div>
-      <input class="gd-hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" />
-      <div class="full"><p class="ehc-err" id="ehc-err" role="alert" hidden></p><button type="submit" class="ehc-btn">Get the executive summary</button>
-      <p class="ehc-note">Your details are shared only with iDS. See our <a href="/privacy-policy/" style="color:#003764">Privacy Policy</a>.</p></div>
-    </form>
+    <div id="ehc-hs-form" style="min-height:420px;margin-top:24px">
+<script src="https://js.hsforms.net/forms/embed/51886431.js" defer></script>
+<div class="hs-form-frame" data-region="na1" data-form-id="7bc7863c-7a2f-4015-be9f-0b57b154ce06" data-portal-id="51886431"></div>
+<noscript><p style="font-size:15px;line-height:1.6;color:#404040">The download form needs JavaScript. Please email us at <a href="mailto:info@idsinc.com">info@idsinc.com</a>.</p></noscript>
+</div>
   </div>
 </div>
 <div style="background:#F6F7F9;border-top:1px solid #E6E9ED">
@@ -494,23 +490,10 @@ details.disc[open] .plus::after { content: "\2013"; }
 </div>
 <script>
 (function(){
-  var f=document.getElementById('ehc-form'), err=document.getElementById('ehc-err');
-  if(!f) return;
-  f.addEventListener('submit',function(e){
-    e.preventDefault();
-    var bad=[].filter.call(f.querySelectorAll('[required]'),function(i){return !i.value.trim()||(i.type==='email'&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(i.value.trim()));});
-    if(bad.length){ err.textContent='Please add your first name, last name, and a valid email.'; err.hidden=false; bad[0].focus(); return; }
-    err.hidden=true;
-    var btn=f.querySelector('button'); btn.disabled=true; btn.textContent='One moment…';
-    var fd=new FormData(f);
-    fd.append('Download',"Executive summary: In the Shadows: The Data We Miss Until It Matters");
-    fd.append('Page',location.pathname);
-    fd.append('_subject',"Download request: In the Shadows: The Data We Miss Until It Matters");
-    try{ sessionStorage.setItem('ehc-first',f.querySelector('#ehc-first').value.trim()); }catch(x){}
-    var go=function(){ location.href='/in-the-shadows/download/'; };
-    var t=setTimeout(go,4000);
-    try{ fetch('https://formspree.io/f/xoevzboa',{method:'POST',body:fd,headers:{'Accept':'application/json'}}).then(function(){clearTimeout(t);go();},function(){clearTimeout(t);go();}); }catch(x){ clearTimeout(t); go(); }
-  });
+  var go=function(){ setTimeout(function(){ location.href='/in-the-shadows/download/'; },700); }, done=false;
+  var fire=function(){ if(done) return; done=true; try{ sessionStorage.removeItem('ehc-first'); }catch(x){} go(); };
+  window.addEventListener('message',function(e){ var d=e.data; if(typeof d==='string'){ try{ d=JSON.parse(d); }catch(x){ d=null; } } if(d && d.type==='hsFormCallback' && d.eventName==='onFormSubmitted') fire(); });
+  window.addEventListener('hs-form-event:on-submission:success',fire);
 })();
 </script>
 
