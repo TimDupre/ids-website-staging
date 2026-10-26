@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Julian Ackert
+N:Ackert;Julian;;;
+TITLE:Senior Managing Director
+ORG:iDiscovery Solutions
+EMAIL;TYPE=WORK:jackert@idsinc.com
+TEL;TYPE=WORK,VOICE:(202) 249-7865
+URL;TYPE=WORK:https://idsinc.com/team/julian-ackert/
+URL;TYPE=LinkedIn:https://www.linkedin.com/in/julianackert/
+NOTE:Over 20 years of consulting and project management experience in technology and litigation industries. Specializes in forensic data collection\, computer forensic analysis\, preservation & collection strategies\, and eDiscovery.
+END:VCARD
