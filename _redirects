@@ -472,7 +472,7 @@
 /navigating-emerging-trends/thank-you-confirmation-navigating-emerging-trends-copy/  /executive-summary-deepfakes/download/  301
 /paper-to-digital-dawn-raid/                                            /capabilities/#special-investigations-unit  301
 /podcast-2/                                                             /insights/  301
-/podcast/                                                               /feed/podcast/  301
+/podcast/  https://feeds.blubrry.com/feeds/ids_podcast.xml  301
 /privacy/                                                               /capabilities/#privacy  301
 /real-evidence-executive-summary-2/                                     /case-studies/video-analysis/  301
 /real-evidence-executive-summary/                                       /executive-summary-deepfakes/  301
@@ -491,8 +491,10 @@
 /terms-and-conditions/20230112-strnd-2/                                 /terms-and-conditions/20230901-strnd/  301
 /terms-and-conditions/20230112-tc/                                      /terms-and-conditions/20230112-strnd/  301
 
+# The podcast feed lives at Blubrry, independent of this site. Apple, Spotify and podcast apps follow this permanent redirect.
+/feed/podcast/  https://feeds.blubrry.com/feeds/ids_podcast.xml  301!
+
 # The old WordPress feeds (blog and comments). The podcast feed is served from /feed/podcast/.
-/feed/  /insights/  301
 /comments/feed/  /insights/  301
 
 # New post (published on the old site after the first scan)

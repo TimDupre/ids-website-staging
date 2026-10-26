@@ -1,2 +1,6 @@
 /feed/podcast/
   Content-Type: application/rss+xml; charset=utf-8
+
+/feed/
+  Content-Type: application/rss+xml; charset=utf-8
+  Cache-Control: public, max-age=600, s-maxage=600
