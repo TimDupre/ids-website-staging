@@ -11,7 +11,7 @@
  * the "Cookie settings" link in the footer, or window.idsConsent.open().
  */
 (function () {
-  var ANALYTICS_ID = '';            // e.g. 'G-XXXXXXXXXX' once the GA4 property exists
+  var ANALYTICS_ID = 'G-N1KVR2M7S2';            // e.g. 'G-XXXXXXXXXX' once the GA4 property exists
   var HUBSPOT_ID = '51886431';      // HubSpot portal ID: its tracking code loads only after the visitor allows analytics
   var KEY = 'ids-consent', VERSION = 1;
   var listeners = [];
