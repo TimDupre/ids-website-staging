@@ -37,3 +37,6 @@
 .gd-btn-alt:hover{background:#DB6015}
 .gd-tag-link{background:#003764}
 .gd-tag-link::before{content:none}
+.gd-cover.gd-art{padding:0;background:#001D40}
+.gd-cover.gd-art::before{background:var(--art) center/cover no-repeat;filter:blur(16px) saturate(1.15);transform:scale(1.25);opacity:.55}
+.gd-cover.gd-art::after{content:"";position:absolute;inset:0;background:var(--art) center/contain no-repeat}
