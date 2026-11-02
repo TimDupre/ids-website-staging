@@ -17,7 +17,7 @@
     "searchBots": true,
     "trainingBots": true,
     "llmsTxt": true,
-    "summary": "iDiscovery Solutions (iDS) is a consulting firm of digital forensics, structured data, eDiscovery and damages experts who testify to their conclusions. Founded in 2008, with offices in Washington DC, Costa Mesa, Alpharetta and London."
+    "summary": "iDiscovery Solutions (iDS) is a consulting firm of digital forensics, structured data, eDiscovery and damages experts who testify to their conclusions. Founded in 2008, with offices in Washington DC, Costa Mesa and Alpharetta."
   },
   "organization": {
     "legalName": "iDiscovery Solutions, Inc.",
@@ -31,22 +31,13 @@
     "logo": "/assets/ids-logo-navy.png",
     "email": "info@idsinc.com",
     "telephone": [
-      "+1-800-813-4832",
-      "+44-20-8242-4130"
+      "+1-800-813-4832"
     ],
     "contactPoints": [
       {
         "contactType": "customer service",
         "telephone": "+1-800-813-4832",
         "areaServed": "US"
-      },
-      {
-        "contactType": "customer service",
-        "telephone": "+44-20-8242-4130",
-        "areaServed": [
-          "GB",
-          "EU"
-        ]
       }
     ],
     "sameAs": [
@@ -103,13 +94,6 @@
         "region": "GA",
         "postal": "30009",
         "country": "US"
-      },
-      {
-        "name": "London, UK",
-        "street": "71-73 Carter Lane",
-        "city": "London",
-        "postal": "EC4V 5EQ",
-        "country": "GB"
       }
     ]
   }

@@ -2979,7 +2979,7 @@
    "words": 691,
    "published": "2023-05-09",
    "action": "redirect",
-   "target": "/about/#uk-eu",
+   "target": "/about/",
    "note": "Covered by the new site structure"
   },
   {
@@ -3709,7 +3709,7 @@
    "words": 268,
    "published": "2025-10-01",
    "action": "redirect",
-   "target": "/our-experts/#dominic-tucker",
+   "target": "/our-experts/",
    "note": "Profile on Our Experts"
   },
   {
@@ -3759,7 +3759,7 @@
    "words": 316,
    "published": "2025-08-01",
    "action": "redirect",
-   "target": "/our-experts/#jason-tonks",
+   "target": "/our-experts/",
    "note": "Profile on Our Experts"
   },
   {
