@@ -1,16 +1,16 @@
 # iDiscovery Solutions
 
-> iDiscovery Solutions (iDS) is a consulting firm of digital forensics, structured data, eDiscovery and damages experts who testify to their conclusions. Founded in 2008, with offices in Washington DC, Costa Mesa, Alpharetta and London.
+> iDiscovery Solutions (iDS) is a consulting firm of digital forensics, structured data, eDiscovery and damages experts who testify to their conclusions. Founded in 2008, with offices in Washington DC, Costa Mesa and Alpharetta.
 
 ## Key pages
 
 - [iDiscovery Solutions | Digital Forensics & eDiscovery Experts](https://idsinc.com/): Digital forensics, structured data, and eDiscovery experts who defend their conclusions under oath. Know what your evidence shows before the other side does.
-- [About iDiscovery Solutions: Experts Who Testify](https://idsinc.com/about/): iDS is a Chambers-ranked consultancy of digital forensics, eDiscovery, and data experts, founded in 2008, with offices in the US and London.
+- [About iDiscovery Solutions: Experts Who Testify](https://idsinc.com/about/): iDS is a Chambers-ranked consultancy of digital forensics, eDiscovery, and data experts, founded in 2008, with offices in the US.
 - [Capabilities: Nine Disciplines, One Evidentiary Foundation](https://idsinc.com/capabilities/): Digital forensics, structured data, eDiscovery, damages, investigations, cybersecurity, privacy, information governance, and expert testimony from one team.
 - [Our Experts: Testifying Digital Forensics & Data Experts](https://idsinc.com/our-experts/): Meet the testifying experts and the bench behind iDS: digital forensics, structured data, damages, investigations, and cybersecurity, led by CEO Dan Regard.
 - [Can You…? Questions Other Firms Declined to Answer](https://idsinc.com/can-you/): Generalized accounts of matters that began as questions other firms declined to answer, from class certification to trade secrets, and how iDS found the evidence.
 - [AI & Evidence: Tech Enabled, Not Tech Dependent](https://idsinc.com/ai-evidence/): Where AI helps expert work, where it cannot replace judgment, and how iDS evaluates AI-generated evidence so conclusions hold up under cross-examination.
-- [Contact iDS: Bring Us Your Question](https://idsinc.com/contact/): Tell us what you are trying to establish. The iDS team will say whether the evidence can get you there. Offices in Washington DC, California, Georgia, and London.
+- [Contact iDS: Bring Us Your Question](https://idsinc.com/contact/): Tell us what you are trying to establish. The iDS team will say whether the evidence can get you there. Offices in Washington DC, California, and Georgia.
 - [Careers at iDS: Expertise on an Expert-Built Platform](https://idsinc.com/careers/): A firm built by experts, for experts. Independently owned, with a 90-day launch program, growth coaching, and open roles in digital forensics and eDiscovery.
 
 ## Capabilities
@@ -199,4 +199,3 @@
 
 - Email: info@idsinc.com
 - Phone: +1-800-813-4832
-- Phone: +44-20-8242-4130
