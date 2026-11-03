@@ -39,6 +39,6 @@
 .gd-tag-link::before{content:none}
 .gd-cover.gd-art-fill,.gd-cover.gd-art-book{padding:0;background:#001D40}
 .gd-cover.gd-art-fill::before,.gd-cover.gd-art-book::before{display:none}
-.gd-cover.gd-art-fill{background:var(--art) center/cover no-repeat,#001D40}
+.gd-cover.gd-art-fill{background:var(--art) center top/cover no-repeat,#001D40}
 .gd-cover.gd-art-book{background:url(/assets/gd-covers/digital-bg.svg) center/cover no-repeat,#001D40}
 .gd-cover.gd-art-book::after{content:"";position:absolute;inset:6px 0;background:var(--art) center/contain no-repeat;filter:drop-shadow(0 8px 14px rgba(0,8,30,.55))}
