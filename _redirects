@@ -2,6 +2,9 @@
 # Format: old-address  new-address  status   (301 = permanent). The first matching rule wins; rules never replace a page that exists.
 # Edit these in the website dashboard under Search > Redirects.
 
+# www to the main address (added at launch)
+https://www.idsinc.com/*  https://idsinc.com/:splat  301!
+
 # Pages and sections that moved into the new site structure
 /ids-privacy-policy/                                         /privacy-policy/  301
 /case-studies/working-remotely/                              /case-studies/user-activity/  301
