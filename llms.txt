@@ -54,6 +54,7 @@
 
 ## Insights (articles, white papers and episodes)
 
+- [Digital Deception Always Leaves a Trail](https://idsinc.com/insights/ai-digital-deception/): AI tools and deepfakes have lowered the barrier to digital forgery dramatically, but one constant is that digital deception leaves a trail.
 - [AI and the Billable Hour: The More Interesting Story](https://idsinc.com/insights/ai-and-the-billable-hour/): AI is challenging the billable hour, but the common prediction — AI's speed reduces lawyers billable hours — misses the bigger story.
 - [The Hidden Risk in AI-Assisted Legal Work](https://idsinc.com/insights/ai-assisted-legal-work/): Dan Regard explores a shift in modern investigations as Legal work begins to include AI-Assistance and The Hidden Risk that comes with it.
 - [When Evidence Lies: Detecting Falsified Data in Litigation](https://idsinc.com/insights/falsified-data-in-litigation/): How to spot and challenge falsified data in litigation: evidence that feels too clean, too convenient, or too perfectly timed, and what forensics can show.
@@ -183,6 +184,7 @@
 
 - [Speakers & Educators for Legal and Data Events](https://idsinc.com/our-experts/speakers/): Book an iDS educator for your conference, retreat, or team training. Practical sessions on digital evidence, eDiscovery, AI, and data strategy that people can use.
 - [AI in Investigations: Power, Risk & Defensibility](https://idsinc.com/ai-in-investigations/): When data stops being a technical problem and becomes a trial problem, the expertise behind your investigation matters most. Watch the iDS webinar on AI.
+- [Neutral Work at iDS](https://idsinc.com/capabilities/neutral-work/): When the court needs an answer, not an advocate. iDS experts serve as court-appointed neutrals, special masters for ESI discovery, and neutrals agreed on by both parties.
 - [The Economics Hidden in the Contract | iDS Executive Summary](https://idsinc.com/economics-hidden-in-contract/): A contract is an economic mechanism, not just legal language. Download Kenneth Gustafson’s executive summary, written with Today’s General Counsel.
 - [Employees Going Rogue: IP Theft in the Gen AI Era](https://idsinc.com/employees-going-rogue/): A senior director resigns and IT checks USB history, personal email, and the cloud. Download the iDS executive summary on IP theft by departing employees.
 - [When Deepfakes Hit the Evidence Table | iDS Executive Summary](https://idsinc.com/executive-summary-deepfakes/): AI can now generate evidence. Download the iDS executive summary on how courts, counsel, and experts can detect and challenge deepfakes.
