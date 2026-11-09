@@ -15,15 +15,35 @@
 
 ## Capabilities
 
-- [Digital Forensics](https://idsinc.com/capabilities/#digital-forensics): Your data tells a story: who created it, how, and when
-- [Structured Data & Analytics](https://idsinc.com/capabilities/#structured-data): Databases are evidence, and they behave differently
-- [eDiscovery & Disclosure](https://idsinc.com/capabilities/#ediscovery): A complete, defensible record, at a cost that is defensible too
-- [Damages & Forensic Accounting](https://idsinc.com/capabilities/#damages-forensic-accounting): Financial exposure, stated as a range with named assumptions
-- [Investigations](https://idsinc.com/capabilities/#special-investigations-unit): Rapid response when the incident carries legal risk
-- [Cybersecurity](https://idsinc.com/capabilities/#cybersecurity): A single incident can cause lasting organizational harm
-- [Privacy](https://idsinc.com/capabilities/#privacy): Rights requests are an evidence problem before they are a legal one
-- [Information Governance & Compliance](https://idsinc.com/capabilities/#information-governance): Reduce the risk before it becomes a matter
-- [Expert Testimony](https://idsinc.com/capabilities/#testimony): The discipline every other discipline reports into
+- [Digital Forensics](https://idsinc.com/capabilities/digital-forensics/): Your data tells a story: who created it, how, and when
+- [Structured Data & Analytics](https://idsinc.com/capabilities/structured-data/): Databases are evidence, and they behave differently
+- [eDiscovery & Disclosure](https://idsinc.com/capabilities/ediscovery/): A complete, defensible record, at a cost that is defensible too
+- [Damages & Forensic Accounting](https://idsinc.com/capabilities/damages-forensic-accounting/): Financial exposure, stated as a range with named assumptions
+- [Investigations](https://idsinc.com/capabilities/special-investigations-unit/): Rapid response when the incident carries legal risk
+- [Cybersecurity](https://idsinc.com/capabilities/cybersecurity/): A single incident can cause lasting organizational harm
+- [Privacy](https://idsinc.com/capabilities/privacy/): Rights requests are an evidence problem before they are a legal one
+- [Information Governance & Compliance](https://idsinc.com/capabilities/information-governance/): Reduce the risk before it becomes a matter
+- [Expert Testimony](https://idsinc.com/capabilities/testimony/): The discipline every other discipline reports into
+
+## Testifying experts
+
+- [Dan Regard, Chief Executive Officer](https://idsinc.com/our-experts/dan-regard/): An electronic discovery and computer science consultant with 25 years of experience advising legal and corporate entities.
+- [Hunter McMahon, President](https://idsinc.com/our-experts/hunter-mcmahon/): Leads a team of consultative experts who solve complex legal and data challenges for law firms and corporations worldwide.
+- [Julian Ackert, Senior Managing Director](https://idsinc.com/our-experts/julian-ackert/): Forensic data collection and preservation strategy, computer forensic analysis, and the collection decisions that determine whether later analysis holds.
+- [James Vaughn, Senior Managing Director](https://idsinc.com/our-experts/james-vaughn/): James Vaughn, Senior Managing Director at iDS. Digital forensics and expert testimony across investigations and complex disputes, domestic and international.
+- [Warren Kruse, Managing Director](https://idsinc.com/our-experts/warren-kruse/): Digital forensics and incident response, with extended experience carrying forensic findings from examination through testimony.
+- [Mark Clews, Managing Director](https://idsinc.com/our-experts/mark-clews/): Mark Clews, Managing Director at iDS. Forensics and disclosure work where the evidentiary record spans multiple jurisdictions and collection regimes.
+- [Theodore Brown, Managing Director](https://idsinc.com/our-experts/theodore-brown/): Damages analysis and forensic accounting: what the financial record supports, under which assumptions, and how sensitive the number is to each of them.
+- [Kenneth Gustafson, CFA, Managing Director, Economics](https://idsinc.com/our-experts/kenneth-gustafson/): Kenneth Gustafson, CFA, Managing Director, Economics at iDS. Economic and valuation analysis in disputes where exposure has to be modeled rather than asserted.
+- [Bobby R. Williams, Jr., Director](https://idsinc.com/our-experts/bobby-r-williams/): Digital forensics and client-facing case leadership, with a focus on translating technical findings for the people who have to act on them.
+- [Drew Gaibler, Director of Discovery Services](https://idsinc.com/our-experts/drew-gaibler/): Spearheads the Discovery Services team, steering a group of technologists and consultants toward operational excellence.
+- [Azzit Hussain, Director, Structured Data Analytics](https://idsinc.com/our-experts/azzit-hussain/): Azzit Hussain, Director at iDS. Analysis of transactional systems and databases at population scale, and the methodology questions that follow.
+- [Bill Taylor, Director, Investigations](https://idsinc.com/our-experts/bill-taylor/): Bill Taylor, Director, Investigations at iDS. Former military intelligence analyst, state and federal prosecutor, defense lawyer, and commercial litigator.
+- [Mike Perelman, Director](https://idsinc.com/our-experts/mike-perelman/): Mike Perelman, Director at iDS. More than 25 years of public and private sector experience across investigations and technology-led matters.
+- [Jonathan Karchmer, Associate Director, Forensics](https://idsinc.com/our-experts/jonathan-karchmer/): Oversees project delivery across the Forensics team, and the research, development, and automation that advances how examinations are run.
+- [Amanda Whiting, Consultant, Analytics](https://idsinc.com/our-experts/amanda-whiting/): Analytics work on transactional and application data, with a focus on whether a pattern holds once the population is tested rather than the sample.
+- [Drew O’Shaughnessy, Consultant, Analytics](https://idsinc.com/our-experts/drew-oshaughnessy/): Drew O’Shaughnessy, Consultant, Analytics at iDS. Analytics across investigations and disputes, and co-host of iDS Talks.
+- [Robert Kirtley, Affiliated Expert](https://idsinc.com/our-experts/robert-kirtley/): Robert Kirtley, Affiliated Expert at iDS. Security, governance, and compliance posture: what an organization can show about how its systems were run.
 
 ## Case studies
 
