@@ -4,3 +4,6 @@
 /feed/
   Content-Type: application/rss+xml; charset=utf-8
   Cache-Control: public, max-age=600, s-maxage=600
+
+/*
+  Strict-Transport-Security: max-age=31536000
