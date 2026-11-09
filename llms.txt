@@ -18,7 +18,7 @@
 - [Digital Forensics](https://idsinc.com/capabilities/digital-forensics/): Your data tells a story: who created it, how, and when
 - [Structured Data & Analytics](https://idsinc.com/capabilities/structured-data/): Databases are evidence, and they behave differently
 - [eDiscovery & Disclosure](https://idsinc.com/capabilities/ediscovery/): A complete, defensible record, at a cost that is defensible too
-- [Damages & Forensic Accounting](https://idsinc.com/capabilities/damages-forensic-accounting/): Financial exposure, stated as a range with named assumptions
+- [Damages & Economics](https://idsinc.com/capabilities/damages-forensic-accounting/): Financial exposure, stated as a range with named assumptions
 - [Investigations](https://idsinc.com/capabilities/special-investigations-unit/): Rapid response when the incident carries legal risk
 - [Cybersecurity](https://idsinc.com/capabilities/cybersecurity/): A single incident can cause lasting organizational harm
 - [Privacy](https://idsinc.com/capabilities/privacy/): Rights requests are an evidence problem before they are a legal one
