@@ -90,7 +90,7 @@ img { max-width:100%; }
   .hero-pad { padding: 52px 24px 56px !important; }
 }
 @media (max-width: 960px) {
-  .hero-pad { grid-template-columns: 1fr !important; gap: 40px !important; }
+  .hero-pad { grid-template-columns: minmax(0,1fr) !important; gap: 40px !important; }
 }
 
 details.disc > summary { list-style: none; cursor: pointer; }
@@ -244,6 +244,8 @@ details.disc[open] .plus::after { content: "\2013"; }
 
 /* Closing CTA box (shared across pages) */
 .close-cta { border:1px solid #E6E9ED; display:flex; flex-direction:column; }
+@media (max-width:860px) { .close-wrap { grid-template-columns:minmax(0,1fr) !important; gap:40px !important; padding:56px 24px !important; } }
+iframe[src*="youtube"], iframe[data-consent-src*="youtube"] { max-width:100%; height:auto; aspect-ratio:16/9; } figure.wp-block-embed { margin-left:0; margin-right:0; }
 .close-cta .primary { background:var(--band); padding:30px 30px 28px; }
 .close-cta .primary h3 { color:#003764; font-size:22px; margin:0 0 10px; }
 .close-cta .secondary { background:#FFFFFF; padding:26px 30px; border-top:1px solid #E6E9ED; }
@@ -454,7 +456,7 @@ details.disc[open] .plus::after { content: "\2013"; }
 </div>
 
 <div style="background:#FFFFFF;border-top:1px solid #E6E9ED">
-  <div style="max-width:1200px;margin:0 auto;padding:88px 32px;display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:56px;align-items:start">
+  <div class="close-wrap" style="max-width:1200px;margin:0 auto;padding:88px 32px;display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:56px;align-items:start">
     <div>
       <div class="mono-label" style="margin-bottom:22px;display:block">What is at stake</div>
       <p style="font-size:clamp(28px,3vw,40px);font-weight:500;font-family:var(--display);letter-spacing:-.02em;line-height:1.16;color:#003764;margin:14px 0 18px;text-wrap:pretty">The earlier you understand the evidence, the better the decisions that follow.</p>

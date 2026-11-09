@@ -89,7 +89,7 @@ img { max-width:100%; }
   .hero-pad { padding: 52px 24px 56px !important; }
 }
 @media (max-width: 960px) {
-  .hero-pad { grid-template-columns: 1fr !important; gap: 40px !important; }
+  .hero-pad { grid-template-columns: minmax(0,1fr) !important; gap: 40px !important; }
 }
 
 details.disc > summary { list-style: none; cursor: pointer; }
@@ -243,6 +243,9 @@ details.disc[open] .plus::after { content: "\2013"; }
 
 /* Closing CTA box (shared across pages) */
 .close-cta { border:1px solid #E6E9ED; display:flex; flex-direction:column; }
+@media (max-width:860px) { .close-wrap { grid-template-columns:minmax(0,1fr) !important; gap:40px !important; padding:56px 24px !important; } }
+iframe[src*="youtube"], iframe[data-consent-src*="youtube"] { max-width:100%; height:auto; aspect-ratio:16/9; } figure.wp-block-embed { margin-left:0; margin-right:0; }
+@media (max-width:560px) { .pub-row { grid-template-columns:minmax(0,1fr) !important; gap:18px !important; } }
 .close-cta .primary { background:var(--band); padding:30px 30px 28px; }
 .close-cta .primary h3 { color:#003764; font-size:22px; margin:0 0 10px; }
 .close-cta .secondary { background:#FFFFFF; padding:26px 30px; border-top:1px solid #E6E9ED; }
@@ -406,7 +409,7 @@ details.disc[open] .plus::after { content: "\2013"; }
 <div style="max-width:900px;margin:0 auto;padding:56px 32px 88px">
   <h2 style="font-size:28px;font-weight:bold;letter-spacing:-.015em;color:#003764;margin:0 0 6px">Books</h2>
   <div style="border-top:1px solid #16212C;margin-top:14px">
-    <div id="federal-judges-guide-to-discovery-edition-3-0" style="display:grid;grid-template-columns:132px 1fr;gap:26px;padding:28px 0;border-bottom:1px solid #E6E9ED;scroll-margin-top:96px">
+    <div id="federal-judges-guide-to-discovery-edition-3-0" class="pub-row" style="display:grid;grid-template-columns:132px 1fr;gap:26px;padding:28px 0;border-bottom:1px solid #E6E9ED;scroll-margin-top:96px">
       <img src="/assets/uploads/Screenshot-2025-11-12-at-4.55.03-PM.png" alt="Cover of Federal Judges’ Guide to Discovery (Edition 3.0)" loading="lazy" style="width:132px;height:auto;max-height:200px;object-fit:contain;object-position:top;background:#F2F4F6;box-shadow:0 0 0 1px #E6E9ED" />
       <div>
         <div style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;margin-bottom:8px">Book</div>
@@ -416,7 +419,7 @@ details.disc[open] .plus::after { content: "\2013"; }
         <a href="https://www.amazon.com/Federal-Judges-Guide-Discovery/dp/B0DXQFTZ3H" target="_blank" rel="noopener" class="textlink">Get your copy</a>
       </div>
     </div>
-    <div id="fact-crashing" style="display:grid;grid-template-columns:132px 1fr;gap:26px;padding:28px 0;border-bottom:1px solid #E6E9ED;scroll-margin-top:96px">
+    <div id="fact-crashing" class="pub-row" style="display:grid;grid-template-columns:132px 1fr;gap:26px;padding:28px 0;border-bottom:1px solid #E6E9ED;scroll-margin-top:96px">
       <img src="/assets/uploads/FC-cover-scaled.jpg" alt="Cover of Fact Crashing™ Methodology: Prioritize. Accelerate. Resolve." loading="lazy" style="width:132px;height:auto;max-height:200px;object-fit:contain;object-position:top;background:#F2F4F6;box-shadow:0 0 0 1px #E6E9ED" />
       <div>
         <div style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;margin-bottom:8px">Book</div>
@@ -426,7 +429,7 @@ details.disc[open] .plus::after { content: "\2013"; }
         <a href="https://www.amazon.com/Fact-CrashingTM-Methodology-Dan-Regard-ebook/dp/B0CP88VKLC" target="_blank" rel="noopener" class="textlink">Get your copy</a>
       </div>
     </div>
-    <div id="the-5-year-old-ceo" style="display:grid;grid-template-columns:132px 1fr;gap:26px;padding:28px 0;border-bottom:1px solid #E6E9ED;scroll-margin-top:96px">
+    <div id="the-5-year-old-ceo" class="pub-row" style="display:grid;grid-template-columns:132px 1fr;gap:26px;padding:28px 0;border-bottom:1px solid #E6E9ED;scroll-margin-top:96px">
       <img src="/assets/uploads/5-Year-Old-CEO_FrontCover-scaled.jpg" alt="Cover of The 5-Year-Old CEO: The Power of Childlike Curiosity in Leadership" loading="lazy" style="width:132px;height:auto;max-height:200px;object-fit:contain;object-position:top;background:#F2F4F6;box-shadow:0 0 0 1px #E6E9ED" />
       <div>
         <div style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;margin-bottom:8px">Book</div>
@@ -436,7 +439,7 @@ details.disc[open] .plus::after { content: "\2013"; }
         <a href="/insights/5-year-old-ceo/" class="textlink">Read about the book</a>
       </div>
     </div>
-    <div id="essentials-of-e-discovery" style="display:grid;grid-template-columns:132px 1fr;gap:26px;padding:28px 0;border-bottom:1px solid #E6E9ED;scroll-margin-top:96px">
+    <div id="essentials-of-e-discovery" class="pub-row" style="display:grid;grid-template-columns:132px 1fr;gap:26px;padding:28px 0;border-bottom:1px solid #E6E9ED;scroll-margin-top:96px">
       <img src="/assets/uploads/Essentials_E-Discovery_2e_flat.png" alt="Cover of Essentials of E-Discovery, 2nd ed." loading="lazy" style="width:132px;height:auto;max-height:200px;object-fit:contain;object-position:top;background:#F2F4F6;box-shadow:0 0 0 1px #E6E9ED" />
       <div>
         <div style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;margin-bottom:8px">Book</div>
@@ -446,7 +449,7 @@ details.disc[open] .plus::after { content: "\2013"; }
         <a href="https://www.texasbarpractice.com/product/essentials-of-e-discovery-2nd-ed-2/" target="_blank" rel="noopener" class="textlink">Get your copy</a>
       </div>
     </div>
-    <div id="computer-forensics" style="display:grid;grid-template-columns:132px 1fr;gap:26px;padding:28px 0;border-bottom:1px solid #E6E9ED;scroll-margin-top:96px">
+    <div id="computer-forensics" class="pub-row" style="display:grid;grid-template-columns:132px 1fr;gap:26px;padding:28px 0;border-bottom:1px solid #E6E9ED;scroll-margin-top:96px">
       <img src="/assets/uploads/Computer-Forensics.jpg" alt="Cover of Computer Forensics: Incident Response Essentials" loading="lazy" style="width:132px;height:auto;max-height:200px;object-fit:contain;object-position:top;background:#F2F4F6;box-shadow:0 0 0 1px #E6E9ED" />
       <div>
         <div style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;margin-bottom:8px">Book</div>
@@ -456,7 +459,7 @@ details.disc[open] .plus::after { content: "\2013"; }
         <a href="https://www.amazon.com/Computer-Forensics-Incident-Response-Essentials/dp/0201707195" target="_blank" rel="noopener" class="textlink">Get your copy</a>
       </div>
     </div>
-    <div id="managing-e-discovery-and-esi" style="display:grid;grid-template-columns:132px 1fr;gap:26px;padding:28px 0;border-bottom:1px solid #E6E9ED;scroll-margin-top:96px">
+    <div id="managing-e-discovery-and-esi" class="pub-row" style="display:grid;grid-template-columns:132px 1fr;gap:26px;padding:28px 0;border-bottom:1px solid #E6E9ED;scroll-margin-top:96px">
       <img src="/assets/uploads/A1Q6NYFtstL._SY466_.jpg" alt="Cover of Managing E-Discovery and ESI: From Pre-Litigation to Trial" loading="lazy" style="width:132px;height:auto;max-height:200px;object-fit:contain;object-position:top;background:#F2F4F6;box-shadow:0 0 0 1px #E6E9ED" />
       <div>
         <div style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;margin-bottom:8px">Book</div>
@@ -470,7 +473,7 @@ details.disc[open] .plus::after { content: "\2013"; }
   <h2 style="font-size:28px;font-weight:bold;letter-spacing:-.015em;color:#003764;margin:56px 0 6px">The Sedona Conference publications</h2>
   <p style="font-size:16px;line-height:1.6;color:#404040;margin:0 0 6px">Dan Regard and Warren Kruse served on the drafting teams for these Sedona Conference commentaries, principles, and journals.</p>
   <div style="border-top:1px solid #16212C;margin-top:14px">
-    <div id="the-sedona-principles" style="display:grid;grid-template-columns:132px 1fr;gap:26px;padding:28px 0;border-bottom:1px solid #E6E9ED;scroll-margin-top:96px">
+    <div id="the-sedona-principles" class="pub-row" style="display:grid;grid-template-columns:132px 1fr;gap:26px;padding:28px 0;border-bottom:1px solid #E6E9ED;scroll-margin-top:96px">
       <img src="/assets/uploads/Screenshot-2025-11-26-at-2.45.25-PM.png" alt="Cover of The Sedona Principles: Best Practices, Recommendations &amp; Principles for Addressing Electronic Document Production" loading="lazy" style="width:132px;height:auto;max-height:200px;object-fit:contain;object-position:top;background:#F2F4F6;box-shadow:0 0 0 1px #E6E9ED" />
       <div>
         <div style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;margin-bottom:8px">Journal</div>
@@ -480,7 +483,7 @@ details.disc[open] .plus::after { content: "\2013"; }
         <a href="https://www.thesedonaconference.org/sites/default/files/3-2_Sedona_Principles_3d_Ed.pdf" target="_blank" rel="noopener" class="textlink">Download the journal</a>
       </div>
     </div>
-    <div id="preservation-of-databases" style="display:grid;grid-template-columns:132px 1fr;gap:26px;padding:28px 0;border-bottom:1px solid #E6E9ED;scroll-margin-top:96px">
+    <div id="preservation-of-databases" class="pub-row" style="display:grid;grid-template-columns:132px 1fr;gap:26px;padding:28px 0;border-bottom:1px solid #E6E9ED;scroll-margin-top:96px">
       <img src="/assets/uploads/Screenshot-2025-11-26-at-2.57.40-PM.png" alt="Cover of Addressing the Preservation and Production of Databases and Database Information in Civil Litigation" loading="lazy" style="width:132px;height:auto;max-height:200px;object-fit:contain;object-position:top;background:#F2F4F6;box-shadow:0 0 0 1px #E6E9ED" />
       <div>
         <div style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;margin-bottom:8px">Journal</div>
@@ -490,7 +493,7 @@ details.disc[open] .plus::after { content: "\2013"; }
         <a href="https://thesedonaconference.org/publications" target="_blank" rel="noopener" class="textlink">Find it at The Sedona Conference</a>
       </div>
     </div>
-    <div id="international-principles-on-discovery" style="display:grid;grid-template-columns:132px 1fr;gap:26px;padding:28px 0;border-bottom:1px solid #E6E9ED;scroll-margin-top:96px">
+    <div id="international-principles-on-discovery" class="pub-row" style="display:grid;grid-template-columns:132px 1fr;gap:26px;padding:28px 0;border-bottom:1px solid #E6E9ED;scroll-margin-top:96px">
       <img src="/assets/uploads/Screenshot-2025-11-26-at-3.08.05-PM.png" alt="Cover of International Principles on Discovery, Disclosure &amp; Data Protection in Civil Litigation" loading="lazy" style="width:132px;height:auto;max-height:200px;object-fit:contain;object-position:top;background:#F2F4F6;box-shadow:0 0 0 1px #E6E9ED" />
       <div>
         <div style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;margin-bottom:8px">Journal</div>
@@ -500,7 +503,7 @@ details.disc[open] .plus::after { content: "\2013"; }
         <a href="https://www.thesedonaconference.org/sites/default/files/publications/International%20Litigation%20Principles_Transitional%20Ed_Jan%202017.pdf" target="_blank" rel="noopener" class="textlink">Download the journal</a>
       </div>
     </div>
-    <div id="discovery-of-mobile-device-data" style="display:grid;grid-template-columns:132px 1fr;gap:26px;padding:28px 0;border-bottom:1px solid #E6E9ED;scroll-margin-top:96px">
+    <div id="discovery-of-mobile-device-data" class="pub-row" style="display:grid;grid-template-columns:132px 1fr;gap:26px;padding:28px 0;border-bottom:1px solid #E6E9ED;scroll-margin-top:96px">
       <img src="/assets/uploads/Screenshot-2025-11-26-at-3.15.50-PM.png" alt="Cover of Commentary on Discovery of Mobile Device Data" loading="lazy" style="width:132px;height:auto;max-height:200px;object-fit:contain;object-position:top;background:#F2F4F6;box-shadow:0 0 0 1px #E6E9ED" />
       <div>
         <div style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;margin-bottom:8px">Journal</div>
@@ -510,7 +513,7 @@ details.disc[open] .plus::after { content: "\2013"; }
         <a href="https://www.thesedonaconference.org/sites/default/files/publications/Commentary_On_Discovery_of_Mobile_Devices_Data_Public_Comment.pdf" target="_blank" rel="noopener" class="textlink">Download the journal</a>
       </div>
     </div>
-    <div id="implications-of-the-iot" style="display:grid;grid-template-columns:132px 1fr;gap:26px;padding:28px 0;border-bottom:1px solid #E6E9ED;scroll-margin-top:96px">
+    <div id="implications-of-the-iot" class="pub-row" style="display:grid;grid-template-columns:132px 1fr;gap:26px;padding:28px 0;border-bottom:1px solid #E6E9ED;scroll-margin-top:96px">
       <img src="/assets/uploads/Screenshot-2025-11-26-at-3.15.50-PM.png" alt="Cover of Primer on the Electronic Discovery Implications of the Internet of Things (IoT)" loading="lazy" style="width:132px;height:auto;max-height:200px;object-fit:contain;object-position:top;background:#F2F4F6;box-shadow:0 0 0 1px #E6E9ED" />
       <div>
         <div style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#DB6015;margin-bottom:8px">Journal</div>
@@ -524,7 +527,7 @@ details.disc[open] .plus::after { content: "\2013"; }
 </div>
 
 <div style="background:#FFFFFF;border-top:1px solid #E6E9ED">
-  <div style="max-width:1200px;margin:0 auto;padding:88px 32px;display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:56px;align-items:start">
+  <div class="close-wrap" style="max-width:1200px;margin:0 auto;padding:88px 32px;display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:56px;align-items:start">
     <div>
       <div class="mono-label" style="margin-bottom:22px;display:block">What is at stake</div>
       <p style="font-size:clamp(28px,3vw,40px);font-weight:500;font-family:var(--display);letter-spacing:-.02em;line-height:1.16;color:#003764;margin:14px 0 18px;text-wrap:pretty">The earlier you understand the evidence, the better the decisions that follow.</p>
