@@ -1,0 +1,56 @@
+/* iDS accessibility layer: skip link, keyboard focus, small-text contrast, and the accessibility options widget.
+   Only brand colours are used: navy #003764 / #0A2440, orange #DB6015, white and the existing greys. */
+
+/* Skip link: hidden until it receives keyboard focus */
+.ids-skip { position: absolute; left: -9999px; top: 8px; z-index: 100000; background: #003764; color: #FFFFFF; padding: 12px 18px; font-weight: bold; font-size: 15px; line-height: 1.2; text-decoration: none; border: 2px solid #FFFFFF; }
+.ids-skip:focus { left: 8px; }
+main#main-content:focus { outline: none; }
+
+/* Visible keyboard focus everywhere (orange passes 3:1 on white and on navy) */
+:focus-visible { outline: 3px solid #DB6015 !important; outline-offset: 2px !important; }
+
+/* Small grey text: slightly darker so it reaches 4.5:1 */
+[style*="6f7b88" i] { color: #5B6672 !important; }
+
+/* Never let an image push the page wider than the screen */
+main img { max-width: 100%; }
+
+/* Mobile menu button (replaces the checkbox label) */
+button.ids-menu-btn { font: inherit; background: transparent; cursor: pointer; }
+
+/* ---------- Accessibility widget ---------- */
+.ids-a11y-ui, .ids-a11y-ui * { box-sizing: border-box; letter-spacing: normal; word-spacing: normal; text-transform: none; }
+.ids-a11y-ui { font-family: Jost, Arial, Helvetica, sans-serif; color: #16212C; }
+.ids-a11y-btn { position: fixed; left: 16px; bottom: 16px; z-index: 9990; width: 48px; height: 48px; padding: 0; border: 2px solid #FFFFFF; border-radius: 50%; background: #003764; color: #FFFFFF; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 10px rgba(0, 8, 30, .35); }
+.ids-a11y-btn:hover { background: #0A2440; }
+.ids-a11y-btn svg { width: 26px; height: 26px; display: block; }
+.ids-a11y-panel { position: fixed; left: 16px; bottom: 76px; z-index: 9991; width: 330px; max-width: calc(100vw - 32px); max-height: calc(100vh - 100px); overflow: auto; background: #FFFFFF; border: 1px solid #BFBFBF; border-top: 4px solid #DB6015; box-shadow: 0 8px 30px rgba(0, 8, 30, .3); padding: 16px 16px 14px; font-size: 15px; line-height: 1.4; }
+.ids-a11y-panel[hidden] { display: none; }
+.ids-a11y-head { display: flex; align-items: center; justify-content: space-between; margin: 0 0 12px; }
+.ids-a11y-title { font-size: 17px; font-weight: bold; color: #003764; margin: 0; }
+.ids-a11y-x { width: 36px; height: 36px; border: 1px solid #BFBFBF; background: #FFFFFF; color: #003764; font-size: 20px; line-height: 1; cursor: pointer; }
+.ids-a11y-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin: 0 0 12px; }
+.ids-a11y-lbl { font-weight: bold; color: #16212C; }
+.ids-a11y-size { display: flex; align-items: center; gap: 8px; }
+.ids-a11y-size output { min-width: 46px; text-align: center; font-weight: bold; color: #003764; }
+.ids-a11y-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 0 0 12px; }
+.ids-a11y-ui button.ids-a11y-opt, .ids-a11y-ui button.ids-a11y-step { font: inherit; font-size: 14px; font-weight: bold; min-height: 44px; padding: 8px 10px; border: 2px solid #003764; background: #FFFFFF; color: #003764; cursor: pointer; text-align: center; }
+.ids-a11y-ui button.ids-a11y-step { min-width: 44px; font-size: 16px; }
+.ids-a11y-ui button[aria-pressed="true"] { background: #003764; color: #FFFFFF; }
+.ids-a11y-ui button.ids-a11y-opt[aria-pressed="true"]::before { content: "\2713\00a0"; }
+.ids-a11y-ui button:disabled { opacity: .45; cursor: default; }
+.ids-a11y-ui button.ids-a11y-reset { font: inherit; font-size: 14px; font-weight: bold; width: 100%; min-height: 44px; border: 2px solid #DB6015; background: #FFFFFF; color: #16212C; cursor: pointer; margin: 0 0 12px; }
+.ids-a11y-note { font-size: 13px; line-height: 1.5; color: #4A5560; margin: 0; }
+.ids-a11y-note a { color: #003764; text-decoration: underline; }
+
+/* ---------- Preferences applied by the widget ---------- */
+html.a11y-links body > *:not(.ids-a11y-ui) a { text-decoration: underline !important; text-underline-offset: .2em; }
+html.a11y-font body > *:not(.ids-a11y-ui), html.a11y-font body > *:not(.ids-a11y-ui) * { font-family: Arial, Helvetica, sans-serif !important; }
+html.a11y-space body > *:not(.ids-a11y-ui), html.a11y-space body > *:not(.ids-a11y-ui) * { line-height: 1.8 !important; letter-spacing: .04em !important; word-spacing: .12em !important; }
+html.a11y-still *:not(.ids-a11y-ui):not(.ids-a11y-ui *), html.a11y-still *::before, html.a11y-still *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+
+@media (max-width: 600px) {
+  .ids-a11y-btn { left: 10px; bottom: 10px; }
+  .ids-a11y-panel { left: 10px; bottom: 68px; }
+}
+@media print { .ids-a11y-ui, .ids-skip { display: none !important; } }
