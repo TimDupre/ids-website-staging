@@ -374,10 +374,28 @@
     });
   }
 
+  /* Keep the widget clear of the cookie banner while the banner is showing */
+  function lift() {
+    var w = document.querySelector('.ids-a11y-ui');
+    if (!w) return;
+    var h = 0, ban = document.querySelector('.cc-banner');
+    if (ban && !ban.hidden && ban.getClientRects().length) {
+      var cs = getComputedStyle(ban);
+      if (cs.display !== 'none' && cs.visibility !== 'hidden') h = Math.max(0, window.innerHeight - ban.getBoundingClientRect().top);
+    }
+    w.style.setProperty('--ids-a11y-lift', Math.round(h) + 'px');
+  }
+  function watchBanner() {
+    lift();
+    window.addEventListener('resize', lift);
+    document.addEventListener('click', function () { setTimeout(lift, 150); });
+    var n = 0, t = setInterval(function () { lift(); if (++n > 240) clearInterval(t); }, 500);
+  }
+
   function init() {
     safe(skipLink); safe(landmarks); safe(mobileMenu); safe(headingOrder);
     safe(chipLinks); safe(namelessLinks); safe(scrollRegions);
-    safe(load); safe(widget); safe(function () { apply(false); });
+    safe(load); safe(widget); safe(watchBanner); safe(function () { apply(false); });
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
 })();
