@@ -89,7 +89,12 @@ https://www.idsinc.com/*  https://idsinc.com/:splat  301!
 /team/brett-chatterton/      /our-experts/#brett-chatterton  301
 /team/bruce-gillis-jr/       /our-experts/#bruce-gillis  301
 /team/chris-luciano/         /our-experts/#chris-luciano  301
-/team/daniel-watson/         /our-experts/#daniel-watson  301
+/team/daniel-watson/         /our-experts/  301
+/our-experts/daniel-watson/  /our-experts/  301
+/assets/uploads/docs/iDS-DH-CV-DanielWatson-2026.pdf  /our-experts/  301
+/wp-content/uploads/2025/02/709399917-ids-dh-cv-danielwatson-2025.pdf  /our-experts/  301
+/wp-content/uploads/2025/12/iDS-DH-CV-DanielWatson-2026.pdf  /our-experts/  301
+/wp-content/uploads/2026/01/iDS-DH-CV-DanielWatson-2026.pdf  /our-experts/  301
 /team/dominic-tucker/        /our-experts/  301
 /team/fabrice-likosso/       /our-experts/#fabrice-likosso  301
 /team/gina-johnson/          /our-experts/#gina-johnson  301
